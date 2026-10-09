@@ -1,0 +1,24 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const html=fs.readFileSync(__dirname+'/index.html','utf8');
+const elements={};
+function element(){const classes=new Set();return {style:{},checked:false,classList:{add:n=>classes.add(n),remove:n=>classes.delete(n),toggle:(n,on)=>on?classes.add(n):classes.delete(n)},addEventListener(){},showModal(){this.open=true;},close(){this.open=false;},innerHTML:'',textContent:''};}
+for(const match of html.matchAll(/id="([^"]+)"/g))elements[match[1]]=element();
+const brand=element(),store=new Map([['lumahex-journey-v4',JSON.stringify({done:[0,2],index:3,introSeen:true,sound:false,attempts:{3:{placements:{0:[0,0]}}}})]]);
+const ctx={HexEngine:require('./engine.js'),HexMotifs:require('./motifs.js'),localStorage:{getItem:k=>store.get(k)||null,setItem:(k,v)=>store.set(k,v)},document:{getElementById:id=>{assert.ok(elements[id],'known DOM element '+id);return elements[id];},querySelector:s=>s==='.brand'?brand:null,querySelectorAll:()=>Object.values(elements).filter(e=>e.open)},window:{},navigator:{},location:{protocol:'file:'},setTimeout:()=>1,clearTimeout(){}};
+vm.createContext(ctx);vm.runInContext(fs.readFileSync(__dirname+'/game.js','utf8'),ctx);
+assert.equal(elements.levelNumber.textContent,'04');
+let save=JSON.parse(store.get('lumahex-journey-v5'));
+assert.deepEqual(save.done,[0,2],'collection survives migration');
+assert.deepEqual(save.attempts[3].placements,{},'old incompatible placements are discarded');
+brand.onclick({preventDefault(){}});
+assert.equal(elements.journey.open,true);assert.equal(elements.journeyProgress.textContent,'2 von 30 Rätseln gelöst');
+assert.equal((elements.journeyChapters.innerHTML.match(/data-journey=/g)||[]).length,30);
+elements.journeyContinue.onclick();assert.equal(elements.levelNumber.textContent,'02','continue selects first unsolved');
+elements.testAlmost.onclick();assert.equal(vm.runInContext('data.pieces.length-Object.keys(placements).length',ctx),1);
+elements.testStep.onclick();assert.equal(vm.runInContext('E.occupied(data,placements).size===data.cells.length',ctx),true);
+elements.undo.onclick();assert.equal(vm.runInContext('data.pieces.length-Object.keys(placements).length',ctx),1);
+elements.openJourney.onclick();assert.equal(elements.journeyProgress.textContent,'3 von 30 Rätseln gelöst');
+elements.journeyChapters.onclick({target:{closest:()=>({dataset:{journey:'29'}})}});assert.equal(elements.levelNumber.textContent,'30');
+elements.testFull.onclick();elements.next.onclick();assert.equal(elements.journey.open,true,'last puzzle leads to journey');
+assert.ok(html.includes('Version 0.5 · 30 unterschiedliche Rätsel'));
+console.log('PASS: game startup, save migration, journey navigation, automatic controls, undo and final-level navigation (simulated DOM).');

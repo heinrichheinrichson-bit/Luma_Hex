@@ -1,3 +1,15 @@
+# Version 0.5.0 — Rätselreise und neue Teileaufteilungen
+
+30 unterschiedliche Spielfelder, keine neuen Konturen in diesem Release. Die ersten drei Rätsel haben fünf bis sechs Teile. Jede Aufteilung wird deterministisch aus 24 Kandidaten ausgewählt, mit einer Bewertung für Kleinteile, wiederholte Teilformen und Zielanzahl. Spätere Level wechseln zwischen kompakten und umfangreicheren Kombinationen; die tatsächliche Schwierigkeit ist noch nicht durch Spieltests validiert.
+
+Die Rätselreise zeigt drei Kapitel, gelöste und angefangene Rätsel und führt zum ersten ungelösten Rätsel. Antippen des Logos oder der Schaltfläche in den Einstellungen öffnet die Reise. Kapitelabschluss wird beim Lösen angezeigt. Die bisherige Steinoptik bleibt bestehen; Neon- und Ringvarianten bleiben eine separate Designstudie.
+
+Speicherung: Gesammelte Konturen und Einstellungen aus 0.4 bleiben erhalten. Angefangene Platzierungen werden wegen geänderter Teileaufteilungen neu begonnen. Automatische Testabschlüsse zählen weiterhin zur Sammlung.
+
+Prüfungen: `node tests.cjs` und `node ui-tests.cjs`. Letzterer prüft Start, Migration, Navigation und Testaktionen in einem simulierten DOM; er ersetzt keinen echten Browser- oder S22-Test. APK gebaut und Signatur geprüft.
+
+## Vorherige Entwicklungsstände
+
 # Version 0.4.0 — unterschiedliche Spielfelder
 
 30 eigenständige Konturen, jedes Spielfeld einmal in der Hauptreihe. 10 neue Spielfelder; keine zusätzlichen Level durch Drehung, Spiegelung oder neue Teilevarianten. 14 Figuren und 16 abstrakte Formen, drei Kapitel. Testwerkzeuge bleiben erhalten. Fortschritt der bisherigen Konturen wird aus Version 0.3 übernommen; Platzierungen werden nur für deren erste Fassung übernommen.

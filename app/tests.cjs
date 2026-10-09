@@ -31,3 +31,6 @@ console.log(`PASS: ${TOTAL} levels, ${total} cells; connectivity, deterministic 
 // Reject duplicate outlines even when translated, mirrored or rotated on the hex grid.
 function signature(cells){const forms=[];for(let flip=0;flip<2;flip++)for(let turn=0;turn<6;turn++){let c=cells.map(([q,r])=>flip?[r,q]:[q,r]);for(let t=0;t<turn;t++)c=c.map(([q,r])=>[-r,q+r]);const q0=Math.min(...c.map(p=>p[0])),r0=Math.min(...c.map(p=>p[1]));forms.push(c.map(([q,r])=>[q-q0,r-r0].join(',')).sort().join(';'));}return forms.sort()[0];}
 const unique=new Set(M.motifs.map(m=>signature(m.cells)));assert.equal(unique.size,TOTAL,'every outline is unique, including rotations and reflections');console.log('PASS: 30 distinct outlines, including rotation/reflection comparison.');
+
+for(let i=0;i<3;i++){const d=E.level(i);assert.ok(d.pieces.length<=6,'opening puzzles have at most six pieces');assert.ok(d.pieces.every(p=>p.shape.length>=3),'opening has no tiny fragments');}
+console.log('PASS: opening piece-count and fragment limits.');

@@ -4,12 +4,12 @@
  const directions=[[1,0],[0,1],[-1,1],[-1,0],[0,-1],[1,-1]];
  const key=(q,r)=>q+','+r;
  function random(seed){return ()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t^=t+Math.imul(t^t>>>7,61|t);return ((t^t>>>14)>>>0)/4294967296;};}
- function level(index){
-  const motif=M.motifs[index%M.motifs.length],variant=Math.floor(index/M.motifs.length),rand=random(9187+index*7919),cells=M.cells(motif);
+ function partition(index,seed,targetSize){
+  const motif=M.motifs[index%M.motifs.length],variant=Math.floor(index/M.motifs.length),rand=random(seed),cells=M.cells(motif);
   const remaining=new Map(cells.map(c=>[key(...c),c])),groups=[];
   while(remaining.size){
    const pool=[...remaining.values()],start=pool[Math.floor(rand()*pool.length)],group=[start];remaining.delete(key(...start));
-   const target=4+Math.min(variant,2)+Math.floor(rand()*2);
+   const target=targetSize+Math.floor(rand()*2);
    while(group.length<target){const options=[];for(const [q,r] of group)for(const [dq,dr] of directions){const c=remaining.get(key(q+dq,r+dr));if(c&&!options.includes(c))options.push(c);}if(!options.length)break;const c=options[Math.floor(rand()*options.length)];group.push(c);remaining.delete(key(...c));}
    groups.push(group);
   }
@@ -17,6 +17,21 @@
   const pieces=groups.map((g,id)=>({id,home:g[0],shape:g.map(([q,r])=>[q-g[0][0],r-g[0][1]])}));
   for(let i=pieces.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[pieces[i],pieces[j]]=[pieces[j],pieces[i]];}
   return {index,motif,variant,cells,pieces};
+ }
+ function level(index){
+  // Fewer, larger pieces introduce the controls. Later levels alternate denser
+  // combinations with breathing room; these are design targets, not measured difficulty.
+  const target=index<3?7:index<7?6:index%5===4?6:4+(index%3===0?1:0);
+  let best=null,score=Infinity;
+  for(let candidate=0;candidate<24;candidate++){
+   const data=partition(index,9187+index*7919+candidate*104729,target);
+   const sizes=data.pieces.map(p=>p.shape.length);
+   const patterns=data.pieces.map(p=>{const minQ=Math.min(...p.shape.map(c=>c[0])),minR=Math.min(...p.shape.map(c=>c[1]));return p.shape.map(([q,r])=>key(q-minQ,r-minR)).sort().join(';');});
+   const repeats=patterns.length-new Set(patterns).size;
+   const value=sizes.filter(s=>s<=2).length*12+repeats*5+Math.abs(data.pieces.length-Math.round(data.cells.length/(target+.3)))*2;
+   if(value<score){score=value;best=data;}
+  }
+  return best;
  }
  function occupied(data,placements,except){const result=new Map();for(const p of data.pieces){const at=placements[p.id];if(!at||p.id===except)continue;for(const [q,r] of p.shape)result.set(key(q+at[0],r+at[1]),p.id);}return result;}
  function fits(data,placements,id,at){const p=data.pieces.find(p=>p.id===id);if(!p||!Array.isArray(at)||at.length!==2||!at.every(Number.isInteger))return false;const board=new Set(data.cells.map(c=>key(...c))),used=occupied(data,placements,id);return p.shape.every(([q,r])=>board.has(key(q+at[0],r+at[1]))&&!used.has(key(q+at[0],r+at[1])));}

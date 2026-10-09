@@ -2,7 +2,13 @@
 
 Eigenständiger Hexagon-Puzzle-Prototyp für Android und Browser.
 
-## Version 0.4.0
+## Version 0.5.0
+
+Rätselreise mit drei Kapiteln und Sprung zum nächsten ungelösten Rätsel. Neue, deterministisch ausgewählte Teileaufteilungen für alle 30 Spielfelder. Einstieg mit maximal sechs Teilen; spätere Aufteilungen mit unterschiedlichen Teileanzahlen. Keine neuen Konturen in dieser Version. Bisherige Optik unverändert; Neonstudien bleiben separat.
+
+Gesammelte Motive und Einstellungen aus 0.4 bleiben erhalten, angefangene Platzierungen starten wegen neuer Teileaufteilungen neu. Automatische Engine-Prüfungen und Bedienabläufe im simulierten DOM bestanden. APK gebaut und Signatur geprüft; physischer S22-Test steht aus.
+
+## Vorherige Version 0.4.0
 
 30 unterschiedliche Spielfelder, darunter zehn neue. Jedes Spielfeld erscheint einmal in der Hauptreihe. Drei Kapitel; Sammlung und Texte auf einzelne Rätsel angepasst. Frühere Wiederholungen entfallen. Fortschritt aus 0.3 wird für bekannte Konturen übernommen.
 
