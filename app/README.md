@@ -1,3 +1,15 @@
+# Version 0.9.0 — Klarere Navigation und ein zusammenhängendes UI
+
+Vier feste Hauptbereiche: Start, Rätsel, Sammlung und Einstellungen. Die Startseite zeigt einen direkten Einstieg ins nächste offene bzw. angefangene Rätsel sowie Gesamt- und Kapitelfortschritt. Die Rätselübersicht zeigt größere Karten, Kapitelwahl und Filter für offene bzw. gelöste Rätsel. Hauptansichten nutzen eine feste Navigation am unteren Rand mit sichtbarem aktivem Bereich. Spielansicht, Abschluss, Motivdetails, Einführung, Hilfe, Sicherung und Einstellungen folgen einem gemeinsamen Designsystem.
+
+Ton, Vibration, Fingerabstand, Hilfe und Spielstandsicherung sind in Gruppen gegliedert. Testwerkzeuge sind unter Einstellungen → Entwicklung & Tests erreichbar; eine Testaktion zeigt anschließend direkt das Spielfeld. Zurücksetzen braucht eine Bestätigung und bleibt rückgängig machbar. Die Android-Zurück-Taste führt von Detailansichten zur passenden übergeordneten Ansicht, von Hauptbereichen zur Startseite und erlaubt dort das Verlassen der App.
+
+Beim Ziehen kehren Teile auch bei einer Ablage außerhalb des Spielfelds automatisch in die Teileauswahl zurück. Der tatsächlich angehobene Ansatzpunkt berücksichtigt den Fingerabstand. Ungültiges Ablegen innerhalb des Feldes erhält die bisherige Position; Pointer-Abbruch verändert die Position ebenfalls nicht.
+
+300 Rätsel, bestehende Spielstände, Sicherungsformat und Fingerabstand bleiben kompatibel. Automatische Logik-, Bibliotheks-, Navigations-, Spielstands- und Ziehprüfungen bestanden. APK gebaut und signaturgeprüft. Die Navigation wurde im simulierten DOM geprüft; Layout und native Bedienung müssen auf dem S22 geprüft werden.
+
+## Frühere Entwicklungsstände
+
 # Version 0.8.1 — 300 unterschiedliche Rätsel
 
 240 neue abstrakte Spielfelder in zwölf abwechselnden Bauweisen ergänzen die bisherigen 60. 300 Rätsel, 30 Kapitel, 77 Felder mit blockierten Ankern. Die neuen Felder beginnen bei Nummer 61. Keine Farb-, Dreh- oder Spiegelvarianten als zusätzliche Level. Die Auswahl aus 1.244 Kandidaten ist deterministisch; exakte und nahe geometrische Wiederholungen werden gefiltert. Alle neuen Spielfelder haben 22–46 belegbare Zellen und höchstens zwölf Teile.

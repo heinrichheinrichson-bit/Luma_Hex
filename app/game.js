@@ -37,7 +37,7 @@ function render(){
 function load(n,fresh=false){
  clearTimeout(winTimer);$('board').classList.remove('completed');$('ghost').innerHTML='';drag=null;index=n;data=E.level(n);placements={};const stored=!fresh?attempts[n]:null;
  if(stored&&stored.placements&&typeof stored.placements==='object')for(const p of data.pieces)if(E.fits(data,placements,p.id,stored.placements[p.id]))placements[p.id]=[...stored.placements[p.id]];
- history=[];selected=null;hints=stored?Math.max(0,Number(stored.hints)||0):0;testUsed=stored?.testUsed===true;render();
+ window.scrollTo?.({top:0,behavior:'instant'});history=[];selected=null;hints=stored?Math.max(0,Number(stored.hints)||0):0;testUsed=stored?.testUsed===true;render();
  if(E.occupied(data,placements).size===data.cells.length)complete(false);
 }
 function checkpoint(){history.push({placements:clone(placements),hints,testUsed});if(history.length>100)history.shift();}
@@ -55,7 +55,7 @@ function complete(playSound=true){
  $('winText').textContent=`Level ${index+1} geschafft · ${testUsed?'Automatischer Testlauf':hints===0?'Ganz aus eigener Kraft':hints+' Hinweis'+(hints===1?'':'e')+' genutzt'}`;
  const chapterStart=Math.floor(index/10)*10,chapterDone=Array.from({length:10},(_,i)=>chapterStart+i).every(n=>done.has(n));
  if(chapterDone)$('winText').textContent+=' · Kapitel vollständig';
- $('next').textContent=nextUnsolved(index+1)===undefined?'Meine Rätselreise →':index%10===9?'Weiter ins nächste Kapitel →':'Nächstes Motiv →';
+ $('next').textContent=nextUnsolved(index+1)===undefined?'Meine Rätselreise →':'Nächstes Rätsel →';
  const completedIndex=index;clearTimeout(winTimer);winTimer=setTimeout(()=>{if(index===completedIndex&&E.occupied(data,placements).size===data.cells.length&&!document.querySelector('dialog[open]'))$('win').showModal();},700);
 }
 function place(id,at){if(!E.fits(data,placements,id,at)){toast('Fast! Dieses Teil passt hier noch nicht.');return false;}checkpoint();placements[id]=at;selected=null;render();tone();feedback();complete();return true;}
@@ -76,21 +76,22 @@ function finishDrag(e,cancel=false){if(!drag||e.pointerId!==drag.pointerId)retur
  if(cancel){selected=null;render();return;}
  if(!d.moved){if(d.source==='board'){selected=null;boardAction(cellAt(e));}else{selected=selected===d.id?null:d.id;render();}return;}
  const at=d.target;if(at&&E.fits(data,placements,d.id,at)){place(d.id,at);return;}
+ // The floated anchor defines the board target, including the configured finger gap.
  const tray=$('tray').getBoundingClientRect(),overTray=e.clientX>=tray.left&&e.clientX<=tray.right&&e.clientY>=tray.top&&e.clientY<=tray.bottom;
- if(d.source==='board'&&overTray){checkpoint();delete placements[d.id];selected=null;clearTimeout(winTimer);$('board').classList.remove('completed');render();return;}
+ if(d.source==='board'&&(!at||overTray)){checkpoint();delete placements[d.id];selected=null;clearTimeout(winTimer);$('board').classList.remove('completed');render();return;}
  selected=null;render();if(at)toast(d.source==='board'?'Hier passt es noch nicht. Das Teil bleibt an seinem bisherigen Platz.':'Hier passt das Teil noch nicht. Probiere eine andere Stelle.');
 }
 document.addEventListener('pointermove',moveDrag,{passive:false});document.addEventListener('pointerup',e=>finishDrag(e));document.addEventListener('pointercancel',e=>finishDrag(e,true));
 $('tray').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){const b=e.target.closest('[data-piece]');if(b&&!placements[+b.dataset.piece]){e.preventDefault();selected=+b.dataset.piece;render();}}});
 $('undo').onclick=()=>{const last=history.pop();if(!last)return;clearTimeout(winTimer);$('board').classList.remove('completed');placements=last.placements;hints=last.hints;testUsed=last.testUsed;selected=null;render();};
-$('reset').onclick=()=>{if(!Object.keys(placements).length)return;clearTimeout(winTimer);$('board').classList.remove('completed');checkpoint();placements={};selected=null;hints=0;testUsed=false;render();toast('Ein frischer Anfang.');};
-function testAction(mode){const result=E.autoPlace(data,placements,mode);if(!result){toast('Alle Teile sitzen bereits an ihrem Lösungsplatz.');return;}clearTimeout(winTimer);checkpoint();$('board').classList.remove('completed');placements=result.placements;selected=null;testUsed=true;render();tone();if(mode==='almost')toast('Genau ein Puzzleteil bleibt offen.');else if(mode==='step')toast(result.returned?'Ein Lösungsschritt gesetzt. Überlappende Teile wurden zurückgelegt.':'Ein Lösungsschritt gesetzt.');complete();}
+$('reset').onclick=()=>{if(!Object.keys(placements).length)return;$('resetDialog').showModal();};$('cancelReset').onclick=()=>$('resetDialog').close();$('confirmReset').onclick=()=>{$('resetDialog').close();clearTimeout(winTimer);$('board').classList.remove('completed');checkpoint();placements={};selected=null;hints=0;testUsed=false;render();toast('Ein frischer Anfang.');};
+function testAction(mode){closeDialogs();const result=E.autoPlace(data,placements,mode);if(!result){toast('Alle Teile sitzen bereits an ihrem Lösungsplatz.');return;}clearTimeout(winTimer);checkpoint();$('board').classList.remove('completed');placements=result.placements;selected=null;testUsed=true;render();tone();if(mode==='almost')toast('Genau ein Puzzleteil bleibt offen.');else if(mode==='step')toast(result.returned?'Ein Lösungsschritt gesetzt. Überlappende Teile wurden zurückgelegt.':'Ein Lösungsschritt gesetzt.');complete();}
 $('testStep').onclick=()=>testAction('step');$('testAlmost').onclick=()=>testAction('almost');$('testFull').onclick=()=>testAction('full');
-$('testPrevious').onclick=()=>load((index+TOTAL-1)%TOTAL);$('testNext').onclick=()=>load((index+1)%TOTAL);
+$('testPrevious').onclick=()=>{closeDialogs();load((index+TOTAL-1)%TOTAL);};$('testNext').onclick=()=>{closeDialogs();load((index+1)%TOTAL);};
 $('hint').onclick=()=>{const result=E.hint(data,placements);if(!result){continuePuzzle(index+1);return;}checkpoint();placements=result.placements;selected=null;hints++;render();tone();toast(result.returned?'Ein Teil sitzt richtig. Überlappende Teile liegen wieder unten.':'Ein kleiner Lichtblick für dich.');complete();};
 function closeDialogs(){for(const d of document.querySelectorAll('dialog[open]'))d.close();}
 function nextUnsolved(start=0){for(let offset=0;offset<TOTAL;offset++){const n=(start+offset)%TOTAL;if(!done.has(n))return n;}}
-function continuePuzzle(start=index){const next=nextUnsolved(start);closeDialogs();if(next===undefined)showJourney();else load(next);}
+function continuePuzzle(start=index){const next=nextUnsolved(start);closeDialogs();if(next===undefined)showJourney();else if(next!==index)load(next);}
 let galleryPage=0;
 function showGallery(){closeDialogs();const count=M.motifs.filter((m,i)=>unlocked(i).length).length;$('galleryProgress').textContent=count+' von '+COUNT+' Formen gesammelt';
  $('galleryPrevious').disabled=galleryPage===0;$('galleryNext').disabled=(galleryPage+1)*20>=COUNT;$('galleryPage').textContent=(galleryPage+1)+' / '+Math.ceil(COUNT/20);
@@ -99,6 +100,7 @@ $('galleryPrevious').onclick=()=>{if(galleryPage){galleryPage--;showGallery();}}
 function showDetail(m){galleryPage=Math.floor(m/20);detailMotif=m;const motif=M.motifs[m],levels=unlocked(m);closeDialogs();$('detailEyebrow').textContent=`DEIN LICHTSTÜCK · EIN EIGENES RÄTSEL`;$('detailArt').innerHTML=motifSVG(motif);$('detailTitle').textContent=motif.name;$('detailQuotes').innerHTML=Array.from({length:VARIANTS},(_,v)=>v).map(v=>`<div class="quote-card${done.has(m+v*COUNT)?' revealed':''}"><span>DEIN MOMENT</span><p>${done.has(m+v*COUNT)?motif.quotes[v]:'Hier wartet noch ein kleiner Moment auf dich.'}</p></div>`).join('');$('detail').showModal();}
 $('collection').onclick=showGallery;$('winCollection').onclick=()=>showDetail(index%COUNT);$('closeGallery').onclick=()=>$('gallery').close();$('galleryContinue').onclick=()=>{continuePuzzle();};$('closeDetail').onclick=showGallery;$('detailBack').onclick=showGallery;
 $('galleryGrid').onclick=e=>{const card=e.target.closest('[data-motif]');if(card&&!card.disabled)showDetail(+card.dataset.motif);};
+$('detailPlay').textContent='Noch einmal spielen →';
 $('detailPlay').onclick=()=>{const next=Array.from({length:VARIANTS},(_,v)=>detailMotif+v*COUNT).find(n=>!done.has(n));closeDialogs();load(next??detailMotif,next===undefined);};
 $('next').onclick=()=>{continuePuzzle(index+1);};$('replay').onclick=()=>{closeDialogs();load(index,true);};
 function showMenu(){closeDialogs();$('sound').checked=sound;$('vibration').checked=vibration;$('dragGap').value=dragGap;$('dragGapValue').textContent=dragGap+' px';$('levelSelect').innerHTML='<p class="fine-print">'+TOTAL+' unterschiedliche Rätsel · '+Math.ceil(TOTAL/10)+' Kapitel<br>Alle Spielfelder findest du in deiner Rätselreise.</p>';$('menu').showModal();}
@@ -108,11 +110,13 @@ load(nextUnsolved(index)??index);
 if(!introSeen)$('intro').showModal();
 if('serviceWorker' in navigator&&location.protocol!=='file:')navigator.serviceWorker.register('./sw.js').catch(()=>{});
 
-let journeyChapter=0;
+let journeyChapter=0,journeyFilter='all';
 function renderJourneyChapter(){
  const start=journeyChapter*10,end=Math.min(TOTAL,start+10),solved=Array.from({length:end-start},(_,i)=>start+i).filter(n=>done.has(n)).length;
  $('journeyChapterSelect').value=String(journeyChapter);$('journeyPrevious').disabled=journeyChapter===0;$('journeyNext').disabled=end>=TOTAL;
- $('journeyChapters').innerHTML='<section class="journey-chapter"><span class="eyebrow">KAPITEL '+(journeyChapter+1)+' · '+solved+'/'+(end-start)+'</span><h3>'+CHAPTERS[journeyChapter].toLocaleLowerCase('de-DE')+'</h3><div class="journey-levels">'+M.motifs.slice(start,end).map((m,i)=>{const n=start+i;return '<button data-journey="'+n+'" class="journey-level '+(done.has(n)?'solved':'')+' '+(n===index?'current':'')+'" aria-label="Rätsel '+(n+1)+': '+m.name+(done.has(n)?', gesammelt':'')+'">'+motifSVG(m,done.has(n))+'<b>'+String(n+1).padStart(2,'0')+'</b><span>'+m.name+'</span><small>'+(done.has(n)?recordLabel(n):attempts[n]&&Object.keys(attempts[n].placements||{}).length?'Angefangen':'Entdecken')+'</small></button>';}).join('')+'</div></section>';
+ $('journeyChapters').innerHTML='<section class="journey-chapter"><span class="eyebrow">KAPITEL '+(journeyChapter+1)+' · '+solved+'/'+(end-start)+'</span><h3>'+CHAPTERS[journeyChapter].toLocaleLowerCase('de-DE')+'</h3><div class="journey-levels">'+M.motifs.slice(start,end).map((m,i)=>{const n=start+i;if(journeyFilter==='open'&&done.has(n)||journeyFilter==='solved'&&!done.has(n))return '';return '<button data-journey="'+n+'" class="journey-level '+(done.has(n)?'solved':'')+' '+(n===index?'current':'')+'" aria-label="Rätsel '+(n+1)+': '+m.name+(done.has(n)?', gesammelt':'')+'">'+motifSVG(m,done.has(n))+'<b>'+String(n+1).padStart(2,'0')+'</b><span>'+m.name+'</span><small>'+(done.has(n)?recordLabel(n):attempts[n]&&Object.keys(attempts[n].placements||{}).length?'Angefangen':'Entdecken')+'</small></button>';}).join('')+'</div></section>';
+ if(!$('journeyChapters').innerHTML.includes('data-journey='))$('journeyChapters').innerHTML='<section class="empty-state"><p>'+ (journeyFilter==='open'?'Dieses Kapitel ist vollständig gelöst. Im nächsten Kapitel warten weitere Formen.':'In diesem Kapitel hast du noch kein Rätsel gesammelt.')+'</p></section>';
+ for(const [id,value] of [['filterAll','all'],['filterOpen','open'],['filterSolved','solved']])$(id).setAttribute('aria-pressed',String(journeyFilter===value));
 }
 function showJourney(){
  closeDialogs();journeyChapter=Math.floor(index/10);const next=Array.from({length:TOTAL},(_,i)=>i).find(n=>!done.has(n));
@@ -126,7 +130,7 @@ $('journeyChapterSelect').onchange=e=>{journeyChapter=Number(e.target.value);ren
 $('journeyPrevious').onclick=()=>{if(journeyChapter>0){journeyChapter--;renderJourneyChapter();}};
 $('journeyNext').onclick=()=>{if((journeyChapter+1)*10<TOTAL){journeyChapter++;renderJourneyChapter();}};
 $('jumpLevel').onclick=()=>{const n=Number($('jumpNumber').value);if(!Number.isInteger(n)||n<1||n>TOTAL){$('journeyStats').textContent='Bitte eine Rätselnummer von 1 bis '+TOTAL+' eingeben.';return;}closeDialogs();load(n-1);};
-document.querySelector('.brand').onclick=e=>{e.preventDefault();showJourney();};
+document.querySelector('.brand').onclick=e=>{e.preventDefault();showHome();};
  $('openJourney').onclick=showJourney;$('closeJourney').onclick=()=>$('journey').close();
  $('journeyChapters').onclick=e=>{const button=e.target.closest('[data-journey]');if(button){closeDialogs();load(+button.dataset.journey);}};
 
@@ -147,3 +151,28 @@ $('backupFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;
 document.addEventListener('visibilitychange',()=>{if(document.hidden)persist();});
 
 $('dragGap').oninput=e=>{dragGap=Math.max(24,Math.min(100,Number(e.target.value)||48));$('dragGapValue').textContent=dragGap+' px';persist();};
+
+// Main destinations are peers. Opening one never stacks it over another.
+function showHome(){
+ closeDialogs();persist();const next=nextUnsolved(index),n=next??index,m=M.motifs[n%COUNT],chapter=Math.floor(n/10),start=chapter*10;
+ const solved=Array.from({length:Math.min(10,TOTAL-start)},(_,i)=>start+i).filter(i=>done.has(i)).length;
+ $('homeArt').innerHTML=motifSVG(m);$('homeContinue').textContent=next===undefined?'Deine Sammlung ansehen →':'Weiterpuzzeln →';
+ $('homeResume').textContent=next===undefined?'Alle 300 Formen entdeckt. Schön gemacht!':'Rätsel '+String(n+1).padStart(2,'0')+' · '+m.name+(attempts[n]&&Object.keys(attempts[n].placements||{}).length?' · Angefangen':'');
+ $('homeSolved').textContent=String(done.size);$('homePercent').textContent=Math.round(done.size/TOTAL*100)+'%';
+ $('homeChapterLabel').textContent='KAPITEL '+String(chapter+1).padStart(2,'0');$('homeChapterTitle').textContent=CHAPTERS[chapter].toLocaleLowerCase('de-DE');$('homeChapterProgress').textContent=solved+' von 10 Formen gesammelt';$('homeChapterBar').style.width=solved*10+'%';
+ $('homeContinue').onclick=()=>{if(next===undefined)showGallery();else continuePuzzle(n);};
+ $('homeChapter').onclick=()=>{showJourney();journeyChapter=chapter;renderJourneyChapter();};$('home').showModal();
+}
+function routeView(route){if(route==='home')showHome();else if(route==='journey')showJourney();else if(route==='gallery')showGallery();else if(route==='menu')showMenu();}
+document.addEventListener('click',e=>{const button=e.target.closest?.('[data-route]');if(button)routeView(button.dataset.route);});
+$('gameHome').onclick=showHome;$('gameJourney').onclick=showJourney;
+$('openHelp').onclick=()=>{closeDialogs();$('help').showModal();};$('closeHelp').onclick=showMenu;
+for(const [id,value] of [['filterAll','all'],['filterOpen','open'],['filterSolved','solved']])$(id).onclick=()=>{journeyFilter=value;renderJourneyChapter();};
+function backView(){
+ for(const [id,parent] of [['resetDialog',null],['detail','gallery'],['backup','menu'],['help','menu'],['win',null],['intro','home'],['journey','home'],['gallery','home'],['menu','home']])if($(id).open){$(id).close();if(id==='intro'){introSeen=true;persist();}if(parent)routeView(parent);return true;}
+ if($('home').open)return false;showHome();return true;
+}
+window.LumaBack=backView;
+for(const id of ['home','journey','gallery','menu','detail','backup','help','resetDialog','win'])$(id).addEventListener('cancel',e=>{if(id==='home')return;e.preventDefault();backView();});
+$('start').onclick=()=>{introSeen=true;persist();showHome();};
+if(introSeen)showHome();

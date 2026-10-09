@@ -25,11 +25,11 @@ public class MainActivity extends Activity {
  private static final int SAVE_BACKUP=900,OPEN_BACKUP=901;
  @Override public void onCreate(Bundle state){
   super.onCreate(state);
-  getWindow().setStatusBarColor(Color.rgb(7,21,30));
-  getWindow().setNavigationBarColor(Color.rgb(7,21,30));
-  FrameLayout frame=new FrameLayout(this);frame.setBackgroundColor(Color.rgb(7,21,30));
+  getWindow().setStatusBarColor(Color.rgb(11,20,38));
+  getWindow().setNavigationBarColor(Color.rgb(11,20,38));
+  FrameLayout frame=new FrameLayout(this);frame.setBackgroundColor(Color.rgb(11,20,38));
   frame.setOnApplyWindowInsetsListener((v,insets)->{android.graphics.Insets bars=insets.getInsets(WindowInsets.Type.systemBars()|WindowInsets.Type.displayCutout());v.setPadding(bars.left,bars.top,bars.right,bars.bottom);return insets;});
-  web=new WebView(this);web.setBackgroundColor(Color.rgb(7,21,30));
+  web=new WebView(this);web.setBackgroundColor(Color.rgb(11,20,38));
   web.getSettings().setJavaScriptEnabled(true);web.getSettings().setDomStorageEnabled(true);
   web.getSettings().setAllowFileAccess(false);web.getSettings().setAllowContentAccess(false);
   web.getSettings().setMediaPlaybackRequiresUserGesture(false);
@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
   if(request==SAVE_BACKUP){String text=pendingBackup;pendingBackup=null;if(text==null)return;try(OutputStream stream=getContentResolver().openOutputStream(data.getData(),"wt")){if(stream==null)throw new Exception();stream.write(text.getBytes(StandardCharsets.UTF_8));notifyUser("Spielstand gesichert.");}catch(Exception e){notifyUser("Die Sicherung konnte nicht gespeichert werden.");}}
   else {try(InputStream stream=getContentResolver().openInputStream(data.getData());ByteArrayOutputStream bytes=new ByteArrayOutputStream()){if(stream==null)throw new Exception();byte[] buffer=new byte[8192];int n;while((n=stream.read(buffer))!=-1){if(bytes.size()+n>1000000)throw new Exception();bytes.write(buffer,0,n);}String text=new String(bytes.toByteArray(),StandardCharsets.UTF_8);web.evaluateJavascript("window.LumaReceiveBackup("+JSONObject.quote(text)+")",null);}catch(Exception e){notifyUser("Die Sicherung konnte nicht gelesen werden. Maximale Größe: 1 MB.");}}
  }
- @Override public void onBackPressed(){web.evaluateJavascript("(()=>{const d=document.querySelector('dialog[open]');if(d){d.close();return true;}return false;})()",result->{if(!"true".equals(result))super.onBackPressed();});}
+ @Override public void onBackPressed(){web.evaluateJavascript("window.LumaBack ? window.LumaBack() : false",result->{if(!"true".equals(result))super.onBackPressed();});}
  @Override protected void onPause(){super.onPause();web.onPause();}
  @Override protected void onResume(){super.onResume();if(web!=null)web.onResume();}
  @Override protected void onDestroy(){web.destroy();super.onDestroy();}
