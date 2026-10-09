@@ -1,3 +1,13 @@
+# Version 0.8.0 — 300 unterschiedliche Rätsel
+
+240 neue abstrakte Spielfelder in zwölf abwechselnden Bauweisen ergänzen die bisherigen 60. 300 Rätsel, 30 Kapitel, 77 Felder mit blockierten Ankern. Die neuen Felder beginnen bei Nummer 61. Keine Farb-, Dreh- oder Spiegelvarianten als zusätzliche Level. Die Auswahl aus 1.244 Kandidaten ist deterministisch; exakte und nahe geometrische Wiederholungen werden gefiltert. Alle neuen Spielfelder haben 22–46 belegbare Zellen und höchstens zwölf Teile.
+
+Rätselreise mit Kapitelauswahl, Blättertasten und direktem Sprung zu einer Nummer. Jeweils zehn Rätselvorschauen bzw. 20 Sammlungsbilder werden gleichzeitig aufgebaut. Die bisherigen 60 Level und alle Fingerabstand-Einstellungen bleiben unverändert und mit 0.7 kompatibel.
+
+Prüfungen: `node tests.cjs`, `node library-tests.cjs`, `node ui-tests.cjs`, `node save-tests.cjs`, `node drag-tests.cjs`. Alle bestanden. Die 240 neuen Spielfeldgrafiken wurden in sechs Atlasseiten visuell geprüft. APK gebaut und signaturgeprüft. Bedienabläufe sind im simulierten DOM geprüft, noch nicht auf einem physischen S22. Schwierigkeit und Ausbalancierung brauchen Spieltests. Details in den Versionsnotizen.
+
+## Vorherige Entwicklungsstände
+
 # Version 0.7.0 — Ziehen mit freier Sicht und Anker-Rätsel
 
 Das ganze Puzzleteil schwebt oberhalb des Fingers oder Stifts. Der Abstand wird aus seiner tatsächlichen Größe berechnet und ist zwischen 24 und 100 CSS-Pixeln einstellbar. Direkter Wechsel bereits gesetzter Teile, Rückgabe in die Ablage, ungültige Ablagen ohne Verlust der vorherigen Position und Rückgängig. Maus, Antippen und Tastatur bleiben nutzbar.

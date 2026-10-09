@@ -1,0 +1,1442 @@
+{
+  "library-facets-01": {
+    "name": "Facetten · Morgenlicht",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-terraces-01": {
+    "name": "Stufenwege · Morgenlicht",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-arches-01": {
+    "name": "Lichtbögen · Morgenlicht",
+    "quotes": [
+      "Du hast den Bogen gefunden. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-bridges-01": {
+    "name": "Verbindungen · Morgenlicht",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-ribbons-01": {
+    "name": "Bänder · Morgenlicht",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-notches-01": {
+    "name": "Nischenwege · Morgenlicht",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-windows-01": {
+    "name": "Fensterlicht · Morgenlicht",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-anchors-01": {
+    "name": "Ankerwege · Morgenlicht",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-fans-01": {
+    "name": "Fächerwege · Morgenlicht",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-islands-01": {
+    "name": "Inselpfade · Morgenlicht",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-channels-01": {
+    "name": "Durchgänge · Morgenlicht",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-forks-01": {
+    "name": "Abzweigungen · Morgenlicht",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Ein guter Anfang für deinen nächsten Gedanken."
+    ]
+  },
+  "library-terraces-02": {
+    "name": "Stufenwege · Abendruhe",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-arches-02": {
+    "name": "Lichtbögen · Abendruhe",
+    "quotes": [
+      "Du hast den Bogen gefunden. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-bridges-02": {
+    "name": "Verbindungen · Abendruhe",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-ribbons-02": {
+    "name": "Bänder · Abendruhe",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-notches-02": {
+    "name": "Nischenwege · Abendruhe",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-windows-02": {
+    "name": "Fensterlicht · Abendruhe",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-anchors-02": {
+    "name": "Ankerwege · Abendruhe",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-fans-02": {
+    "name": "Fächerwege · Abendruhe",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-islands-02": {
+    "name": "Inselpfade · Abendruhe",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-channels-02": {
+    "name": "Durchgänge · Abendruhe",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-forks-02": {
+    "name": "Abzweigungen · Abendruhe",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-facets-02": {
+    "name": "Facetten · Abendruhe",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Jetzt darf der Kopf kurz Feierabend machen."
+    ]
+  },
+  "library-arches-03": {
+    "name": "Lichtbögen · Silberpfad",
+    "quotes": [
+      "Du hast den Bogen gefunden. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-bridges-03": {
+    "name": "Verbindungen · Silberpfad",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-ribbons-03": {
+    "name": "Bänder · Silberpfad",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-notches-03": {
+    "name": "Nischenwege · Silberpfad",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-windows-03": {
+    "name": "Fensterlicht · Silberpfad",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-anchors-03": {
+    "name": "Ankerwege · Silberpfad",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-fans-03": {
+    "name": "Fächerwege · Silberpfad",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-islands-03": {
+    "name": "Inselpfade · Silberpfad",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-channels-03": {
+    "name": "Durchgänge · Silberpfad",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-forks-03": {
+    "name": "Abzweigungen · Silberpfad",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-facets-03": {
+    "name": "Facetten · Silberpfad",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-terraces-03": {
+    "name": "Stufenwege · Silberpfad",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Kein großer Plan nötig. Ein guter Zug hat gereicht."
+    ]
+  },
+  "library-bridges-04": {
+    "name": "Verbindungen · Sommerwind",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-ribbons-04": {
+    "name": "Bänder · Sommerwind",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-notches-04": {
+    "name": "Nischenwege · Sommerwind",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-windows-04": {
+    "name": "Fensterlicht · Sommerwind",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-anchors-04": {
+    "name": "Ankerwege · Sommerwind",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-fans-04": {
+    "name": "Fächerwege · Sommerwind",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-islands-04": {
+    "name": "Inselpfade · Sommerwind",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-channels-04": {
+    "name": "Durchgänge · Sommerwind",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-forks-04": {
+    "name": "Abzweigungen · Sommerwind",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-facets-04": {
+    "name": "Facetten · Sommerwind",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-terraces-04": {
+    "name": "Stufenwege · Sommerwind",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-arches-04": {
+    "name": "Lichtbögen · Sommerwind",
+    "quotes": [
+      "Du hast den Bogen gefunden. Ein kleiner Erfolg, ganz ohne Eile."
+    ]
+  },
+  "library-ribbons-05": {
+    "name": "Bänder · Sternenblick",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-notches-05": {
+    "name": "Nischenwege · Sternenblick",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-windows-05": {
+    "name": "Fensterlicht · Sternenblick",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-anchors-05": {
+    "name": "Ankerwege · Sternenblick",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-fans-05": {
+    "name": "Fächerwege · Sternenblick",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-islands-05": {
+    "name": "Inselpfade · Sternenblick",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-channels-05": {
+    "name": "Durchgänge · Sternenblick",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-forks-05": {
+    "name": "Abzweigungen · Sternenblick",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-facets-05": {
+    "name": "Facetten · Sternenblick",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-terraces-05": {
+    "name": "Stufenwege · Sternenblick",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-arches-05": {
+    "name": "Lichtbögen · Sternenblick",
+    "quotes": [
+      "Du hast den Bogen gefunden. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-bridges-05": {
+    "name": "Verbindungen · Sternenblick",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Für diesen Moment brauchst du keine perfekte Tagesplanung."
+    ]
+  },
+  "library-notches-06": {
+    "name": "Nischenwege · Kleine Weite",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-windows-06": {
+    "name": "Fensterlicht · Kleine Weite",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-anchors-06": {
+    "name": "Ankerwege · Kleine Weite",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-fans-06": {
+    "name": "Fächerwege · Kleine Weite",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-islands-06": {
+    "name": "Inselpfade · Kleine Weite",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-channels-06": {
+    "name": "Durchgänge · Kleine Weite",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-forks-06": {
+    "name": "Abzweigungen · Kleine Weite",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-facets-06": {
+    "name": "Facetten · Kleine Weite",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-terraces-06": {
+    "name": "Stufenwege · Kleine Weite",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-arches-06": {
+    "name": "Lichtbögen · Kleine Weite",
+    "quotes": [
+      "Du hast den Bogen gefunden. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-bridges-06": {
+    "name": "Verbindungen · Kleine Weite",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-ribbons-06": {
+    "name": "Bänder · Kleine Weite",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Lass dir ruhig einen Augenblick dafür."
+    ]
+  },
+  "library-windows-07": {
+    "name": "Fensterlicht · Leiser Fluss",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-anchors-07": {
+    "name": "Ankerwege · Leiser Fluss",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-fans-07": {
+    "name": "Fächerwege · Leiser Fluss",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-islands-07": {
+    "name": "Inselpfade · Leiser Fluss",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-channels-07": {
+    "name": "Durchgänge · Leiser Fluss",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-forks-07": {
+    "name": "Abzweigungen · Leiser Fluss",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-facets-07": {
+    "name": "Facetten · Leiser Fluss",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-terraces-07": {
+    "name": "Stufenwege · Leiser Fluss",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-arches-07": {
+    "name": "Lichtbögen · Leiser Fluss",
+    "quotes": [
+      "Du hast den Bogen gefunden. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-bridges-07": {
+    "name": "Verbindungen · Leiser Fluss",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-ribbons-07": {
+    "name": "Bänder · Leiser Fluss",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-notches-07": {
+    "name": "Nischenwege · Leiser Fluss",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. So viel Ruhe passt zwischen ein paar Ecken."
+    ]
+  },
+  "library-anchors-08": {
+    "name": "Ankerwege · Goldener Winkel",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-fans-08": {
+    "name": "Fächerwege · Goldener Winkel",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-islands-08": {
+    "name": "Inselpfade · Goldener Winkel",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-channels-08": {
+    "name": "Durchgänge · Goldener Winkel",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-forks-08": {
+    "name": "Abzweigungen · Goldener Winkel",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-facets-08": {
+    "name": "Facetten · Goldener Winkel",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-terraces-08": {
+    "name": "Stufenwege · Goldener Winkel",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-arches-08": {
+    "name": "Lichtbögen · Goldener Winkel",
+    "quotes": [
+      "Du hast den Bogen gefunden. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-bridges-08": {
+    "name": "Verbindungen · Goldener Winkel",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-ribbons-08": {
+    "name": "Bänder · Goldener Winkel",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-notches-08": {
+    "name": "Nischenwege · Goldener Winkel",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-windows-08": {
+    "name": "Fensterlicht · Goldener Winkel",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Das wäre ein guter Moment für einen zufriedenen Seufzer."
+    ]
+  },
+  "library-fans-09": {
+    "name": "Fächerwege · Neue Aussicht",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-islands-09": {
+    "name": "Inselpfade · Neue Aussicht",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-channels-09": {
+    "name": "Durchgänge · Neue Aussicht",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-forks-09": {
+    "name": "Abzweigungen · Neue Aussicht",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-facets-09": {
+    "name": "Facetten · Neue Aussicht",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-terraces-09": {
+    "name": "Stufenwege · Neue Aussicht",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-arches-09": {
+    "name": "Lichtbögen · Neue Aussicht",
+    "quotes": [
+      "Du hast den Bogen gefunden. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-bridges-09": {
+    "name": "Verbindungen · Neue Aussicht",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-ribbons-09": {
+    "name": "Bänder · Neue Aussicht",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-notches-09": {
+    "name": "Nischenwege · Neue Aussicht",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-windows-09": {
+    "name": "Fensterlicht · Neue Aussicht",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-anchors-09": {
+    "name": "Ankerwege · Neue Aussicht",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Manchmal ist die passende Lücke der beste Fund."
+    ]
+  },
+  "library-islands-10": {
+    "name": "Inselpfade · Zwischenzeit",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-channels-10": {
+    "name": "Durchgänge · Zwischenzeit",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-forks-10": {
+    "name": "Abzweigungen · Zwischenzeit",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-facets-10": {
+    "name": "Facetten · Zwischenzeit",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-terraces-10": {
+    "name": "Stufenwege · Zwischenzeit",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-arches-10": {
+    "name": "Lichtbögen · Zwischenzeit",
+    "quotes": [
+      "Du hast den Bogen gefunden. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-bridges-10": {
+    "name": "Verbindungen · Zwischenzeit",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-ribbons-10": {
+    "name": "Bänder · Zwischenzeit",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-notches-10": {
+    "name": "Nischenwege · Zwischenzeit",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-windows-10": {
+    "name": "Fensterlicht · Zwischenzeit",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-anchors-10": {
+    "name": "Ankerwege · Zwischenzeit",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-fans-10": {
+    "name": "Fächerwege · Zwischenzeit",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Ein bisschen Geduld sieht hier ziemlich gut aus."
+    ]
+  },
+  "library-channels-11": {
+    "name": "Durchgänge · Heller Gedanke",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-forks-11": {
+    "name": "Abzweigungen · Heller Gedanke",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-facets-11": {
+    "name": "Facetten · Heller Gedanke",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-terraces-11": {
+    "name": "Stufenwege · Heller Gedanke",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-arches-11": {
+    "name": "Lichtbögen · Heller Gedanke",
+    "quotes": [
+      "Du hast den Bogen gefunden. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-bridges-11": {
+    "name": "Verbindungen · Heller Gedanke",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-ribbons-11": {
+    "name": "Bänder · Heller Gedanke",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-notches-11": {
+    "name": "Nischenwege · Heller Gedanke",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-windows-11": {
+    "name": "Fensterlicht · Heller Gedanke",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-anchors-11": {
+    "name": "Ankerwege · Heller Gedanke",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-fans-11": {
+    "name": "Fächerwege · Heller Gedanke",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-islands-11": {
+    "name": "Inselpfade · Heller Gedanke",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Dein nächster guter Gedanke hat jetzt etwas mehr Platz."
+    ]
+  },
+  "library-forks-12": {
+    "name": "Abzweigungen · Nordlicht",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-facets-12": {
+    "name": "Facetten · Nordlicht",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-terraces-12": {
+    "name": "Stufenwege · Nordlicht",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-arches-12": {
+    "name": "Lichtbögen · Nordlicht",
+    "quotes": [
+      "Du hast den Bogen gefunden. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-bridges-12": {
+    "name": "Verbindungen · Nordlicht",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-ribbons-12": {
+    "name": "Bänder · Nordlicht",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-notches-12": {
+    "name": "Nischenwege · Nordlicht",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-windows-12": {
+    "name": "Fensterlicht · Nordlicht",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-anchors-12": {
+    "name": "Ankerwege · Nordlicht",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-fans-12": {
+    "name": "Fächerwege · Nordlicht",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-islands-12": {
+    "name": "Inselpfade · Nordlicht",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-channels-12": {
+    "name": "Durchgänge · Nordlicht",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Du musst heute nicht alles lösen. Dieses Rätsel reicht erst mal."
+    ]
+  },
+  "library-facets-13": {
+    "name": "Facetten · Freiraum",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-terraces-13": {
+    "name": "Stufenwege · Freiraum",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-arches-13": {
+    "name": "Lichtbögen · Freiraum",
+    "quotes": [
+      "Du hast den Bogen gefunden. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-bridges-13": {
+    "name": "Verbindungen · Freiraum",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-ribbons-13": {
+    "name": "Bänder · Freiraum",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-notches-13": {
+    "name": "Nischenwege · Freiraum",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-windows-13": {
+    "name": "Fensterlicht · Freiraum",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-anchors-13": {
+    "name": "Ankerwege · Freiraum",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-fans-13": {
+    "name": "Fächerwege · Freiraum",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-islands-13": {
+    "name": "Inselpfade · Freiraum",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-channels-13": {
+    "name": "Durchgänge · Freiraum",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-forks-13": {
+    "name": "Abzweigungen · Freiraum",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Eine Pause kann durchaus Ecken und Kanten haben."
+    ]
+  },
+  "library-terraces-14": {
+    "name": "Stufenwege · Gute Verbindung",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-arches-14": {
+    "name": "Lichtbögen · Gute Verbindung",
+    "quotes": [
+      "Du hast den Bogen gefunden. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-bridges-14": {
+    "name": "Verbindungen · Gute Verbindung",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-ribbons-14": {
+    "name": "Bänder · Gute Verbindung",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-notches-14": {
+    "name": "Nischenwege · Gute Verbindung",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-windows-14": {
+    "name": "Fensterlicht · Gute Verbindung",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-anchors-14": {
+    "name": "Ankerwege · Gute Verbindung",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-fans-14": {
+    "name": "Fächerwege · Gute Verbindung",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-islands-14": {
+    "name": "Inselpfade · Gute Verbindung",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-channels-14": {
+    "name": "Durchgänge · Gute Verbindung",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-forks-14": {
+    "name": "Abzweigungen · Gute Verbindung",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-facets-14": {
+    "name": "Facetten · Gute Verbindung",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Ein letzter Stein. Dann gehört der Moment dir."
+    ]
+  },
+  "library-arches-15": {
+    "name": "Lichtbögen · Ruhiger Pol",
+    "quotes": [
+      "Du hast den Bogen gefunden. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-bridges-15": {
+    "name": "Verbindungen · Ruhiger Pol",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-ribbons-15": {
+    "name": "Bänder · Ruhiger Pol",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-notches-15": {
+    "name": "Nischenwege · Ruhiger Pol",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-windows-15": {
+    "name": "Fensterlicht · Ruhiger Pol",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-anchors-15": {
+    "name": "Ankerwege · Ruhiger Pol",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-fans-15": {
+    "name": "Fächerwege · Ruhiger Pol",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-islands-15": {
+    "name": "Inselpfade · Ruhiger Pol",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-channels-15": {
+    "name": "Durchgänge · Ruhiger Pol",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-forks-15": {
+    "name": "Abzweigungen · Ruhiger Pol",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-facets-15": {
+    "name": "Facetten · Ruhiger Pol",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-terraces-15": {
+    "name": "Stufenwege · Ruhiger Pol",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Hier hat sich das Ausprobieren gelohnt."
+    ]
+  },
+  "library-bridges-16": {
+    "name": "Verbindungen · Sonnenfenster",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-ribbons-16": {
+    "name": "Bänder · Sonnenfenster",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-notches-16": {
+    "name": "Nischenwege · Sonnenfenster",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-windows-16": {
+    "name": "Fensterlicht · Sonnenfenster",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-anchors-16": {
+    "name": "Ankerwege · Sonnenfenster",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-fans-16": {
+    "name": "Fächerwege · Sonnenfenster",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-islands-16": {
+    "name": "Inselpfade · Sonnenfenster",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-channels-16": {
+    "name": "Durchgänge · Sonnenfenster",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-forks-16": {
+    "name": "Abzweigungen · Sonnenfenster",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-facets-16": {
+    "name": "Facetten · Sonnenfenster",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-terraces-16": {
+    "name": "Stufenwege · Sonnenfenster",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-arches-16": {
+    "name": "Lichtbögen · Sonnenfenster",
+    "quotes": [
+      "Du hast den Bogen gefunden. Manche Umwege sind einfach Teil eines guten Ergebnisses."
+    ]
+  },
+  "library-ribbons-17": {
+    "name": "Bänder · Blaue Stunde",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-notches-17": {
+    "name": "Nischenwege · Blaue Stunde",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-windows-17": {
+    "name": "Fensterlicht · Blaue Stunde",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-anchors-17": {
+    "name": "Ankerwege · Blaue Stunde",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-fans-17": {
+    "name": "Fächerwege · Blaue Stunde",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-islands-17": {
+    "name": "Inselpfade · Blaue Stunde",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-channels-17": {
+    "name": "Durchgänge · Blaue Stunde",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-forks-17": {
+    "name": "Abzweigungen · Blaue Stunde",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-facets-17": {
+    "name": "Facetten · Blaue Stunde",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-terraces-17": {
+    "name": "Stufenwege · Blaue Stunde",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-arches-17": {
+    "name": "Lichtbögen · Blaue Stunde",
+    "quotes": [
+      "Du hast den Bogen gefunden. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-bridges-17": {
+    "name": "Verbindungen · Blaue Stunde",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Heute hat die letzte Ecke den Unterschied gemacht."
+    ]
+  },
+  "library-notches-18": {
+    "name": "Nischenwege · Weitblick",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-windows-18": {
+    "name": "Fensterlicht · Weitblick",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-anchors-18": {
+    "name": "Ankerwege · Weitblick",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-fans-18": {
+    "name": "Fächerwege · Weitblick",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-islands-18": {
+    "name": "Inselpfade · Weitblick",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-channels-18": {
+    "name": "Durchgänge · Weitblick",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-forks-18": {
+    "name": "Abzweigungen · Weitblick",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-facets-18": {
+    "name": "Facetten · Weitblick",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-terraces-18": {
+    "name": "Stufenwege · Weitblick",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-arches-18": {
+    "name": "Lichtbögen · Weitblick",
+    "quotes": [
+      "Du hast den Bogen gefunden. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-bridges-18": {
+    "name": "Verbindungen · Weitblick",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-ribbons-18": {
+    "name": "Bänder · Weitblick",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Ein kleines Leuchten für zwischendurch."
+    ]
+  },
+  "library-windows-19": {
+    "name": "Fensterlicht · Lichtspur",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-anchors-19": {
+    "name": "Ankerwege · Lichtspur",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-fans-19": {
+    "name": "Fächerwege · Lichtspur",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-islands-19": {
+    "name": "Inselpfade · Lichtspur",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-channels-19": {
+    "name": "Durchgänge · Lichtspur",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-forks-19": {
+    "name": "Abzweigungen · Lichtspur",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-facets-19": {
+    "name": "Facetten · Lichtspur",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-terraces-19": {
+    "name": "Stufenwege · Lichtspur",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-arches-19": {
+    "name": "Lichtbögen · Lichtspur",
+    "quotes": [
+      "Du hast den Bogen gefunden. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-bridges-19": {
+    "name": "Verbindungen · Lichtspur",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-ribbons-19": {
+    "name": "Bänder · Lichtspur",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-notches-19": {
+    "name": "Nischenwege · Lichtspur",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Du darfst ruhig kurz stolz auf deine Geduld sein."
+    ]
+  },
+  "library-anchors-20": {
+    "name": "Ankerwege · Feierabend",
+    "quotes": [
+      "Die Anker bleiben stehen. Den Freiraum hast du gestaltet. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  },
+  "library-fans-20": {
+    "name": "Fächerwege · Feierabend",
+    "quotes": [
+      "Aufgefächert, ausprobiert und passend zusammengesetzt. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  },
+  "library-islands-20": {
+    "name": "Inselpfade · Feierabend",
+    "quotes": [
+      "Von Insel zu Insel hast du deinen Weg gefunden. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  },
+  "library-channels-20": {
+    "name": "Durchgänge · Feierabend",
+    "quotes": [
+      "Der Durchgang ist frei. Das Rätsel ist gelöst. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  },
+  "library-forks-20": {
+    "name": "Abzweigungen · Feierabend",
+    "quotes": [
+      "Ein paar Abzweigungen später passt alles zusammen. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  },
+  "library-facets-20": {
+    "name": "Facetten · Feierabend",
+    "quotes": [
+      "Jede Facette hat ihren Platz gefunden. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  },
+  "library-terraces-20": {
+    "name": "Stufenwege · Feierabend",
+    "quotes": [
+      "Stufe für Stufe ist daraus etwas Ganzes geworden. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  },
+  "library-arches-20": {
+    "name": "Lichtbögen · Feierabend",
+    "quotes": [
+      "Du hast den Bogen gefunden. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  },
+  "library-bridges-20": {
+    "name": "Verbindungen · Feierabend",
+    "quotes": [
+      "Eine gute Verbindung, von dir zusammengesetzt. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  },
+  "library-ribbons-20": {
+    "name": "Bänder · Feierabend",
+    "quotes": [
+      "Das Band ist vollständig. Die Gedanken dürfen weiterziehen. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  },
+  "library-notches-20": {
+    "name": "Nischenwege · Feierabend",
+    "quotes": [
+      "Auch die kleinen Nischen haben ihren Platz bekommen. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  },
+  "library-windows-20": {
+    "name": "Fensterlicht · Feierabend",
+    "quotes": [
+      "Ein neuer Blick durch dein fertiges Lichtfenster. Den Rest des Tages kannst du wieder ohne Raster angehen."
+    ]
+  }
+}
