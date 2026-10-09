@@ -2,7 +2,15 @@
 
 Eigenständiger Hexagon-Puzzle-Prototyp für Android und Browser.
 
-## Version 0.6.0
+## Version 0.7.0
+
+Das gesamte Teil schwebt beim Ziehen über dem Finger, mit einstellbarem Abstand. Gesetzte Teile können direkt weitergezogen oder zurück in die Ablage bewegt werden. Ungültige Ablagen und Abbrüche erhalten die vorherige Position. Größeres Spielfeld, offene Ablage und überarbeitete plastische Steine. 60 verschiedene Rätsel; zehn neue Anker-Rätsel mit blockierten Zellen. Die bisherigen 50 Rätsel bleiben kompatibel.
+
+Automatische Prüfungen einschließlich Ziehabläufen im simulierten DOM bestanden; Grafikvorschau visuell geprüft, APK gebaut und signaturgeprüft. Physischer S22-Test steht aus. Details: releases/Luma-Hex-0.7-Notizen.md.
+
+Ausbauziel: mehrere hundert bis möglichst tausend abwechslungsreiche Spielfelder, nachdem Bedienung und Gestaltung überzeugen. Lösbarkeits- und Duplikatprüfungen sowie visuelle Auswahl und Spieltests bilden die Qualitätssicherung.
+
+## Vorherige Version 0.6.0
 
 50 unterschiedliche Spielfelder in fünf Kapiteln, davon 20 neu. Figuren und freie Formen wechseln sich ab. Die ersten 30 Rätsel bleiben unverändert und sind mit 0.5 kompatibel. Spielstandsicherung als JSON-Datei oder Code, mit Validierung und Vorschau vor dem Laden. Android verwendet die System-Dateiauswahl. Testansichten, Lösungen mit Hinweis und Lösungen ohne Hinweise werden getrennt erfasst. Die Neon-/Ringstudien bleiben separat.
 

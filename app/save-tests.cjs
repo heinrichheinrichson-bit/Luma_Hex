@@ -7,6 +7,8 @@ bad(v=>v.app='other');bad(v=>v.format=99);bad(v=>v.catalog.reverse());bad(v=>v.s
 bad(v=>{const ids=Object.keys(v.save.attempts[0].placements);v.save.attempts[0].placements[ids[1]]=v.save.attempts[0].placements[ids[0]];});
 assert.throws(()=>S.decode('x'.repeat(1000001)));assert.throws(()=>S.decode('<script>'));
 const older=JSON.parse(S.encode({...save,index:1,attempts:{}}));older.catalog=older.catalog.slice(0,30);assert.equal(S.decode(JSON.stringify(older)).index,1,'earlier catalog prefix remains compatible');
-console.log('PASS: backup roundtrip for 50 boards, invalid files, incompatible catalogs, collisions, bounds and size limit.');
+console.log('PASS: backup roundtrip for 60 boards, invalid files, incompatible catalogs, collisions, bounds and size limit.');
 
 bad(v=>{const id=Object.keys(v.save.attempts[0].placements)[0];v.save.attempts[0].placements['0'+id]=v.save.attempts[0].placements[id];});
+
+assert.equal(S.decode(S.encode({...save,dragGap:72})).dragGap,72,'drag clearance survives backup');

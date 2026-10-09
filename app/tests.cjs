@@ -25,12 +25,15 @@ for(let n=0;n<TOTAL;n++){
  let stepped={};for(let step=0;step<data.pieces.length;step++){const before=JSON.stringify(stepped);const next=E.autoPlace(data,stepped,'step');assert.equal(JSON.stringify(stepped),before,'test step preserves undo state');stepped=next.placements;assert.equal(Object.keys(stepped).length,step+1,'one new piece per step');}assert.deepEqual(stepped,full,'steps reach full solution');
  total+=data.cells.length;
 }
-assert.equal(TOTAL,50);assert.equal(M.variants,1);assert.equal(M.motifs.filter(m=>m.kind==='figure').length,24);assert.equal(M.motifs.filter(m=>m.kind==='abstract').length,26);
+assert.equal(TOTAL,60);assert.equal(M.variants,1);assert.equal(M.motifs.filter(m=>m.kind==='figure').length,24);assert.equal(M.motifs.filter(m=>m.kind==='abstract').length,36);
 console.log(`PASS: ${TOTAL} levels, ${total} cells; connectivity, deterministic solutions, frame bounds, collisions, texts, hint validity, convergence and test controls.`);
 
 // Reject duplicate outlines even when translated, mirrored or rotated on the hex grid.
 function signature(cells){const forms=[];for(let flip=0;flip<2;flip++)for(let turn=0;turn<6;turn++){let c=cells.map(([q,r])=>flip?[r,q]:[q,r]);for(let t=0;t<turn;t++)c=c.map(([q,r])=>[-r,q+r]);const q0=Math.min(...c.map(p=>p[0])),r0=Math.min(...c.map(p=>p[1]));forms.push(c.map(([q,r])=>[q-q0,r-r0].join(',')).sort().join(';'));}return forms.sort()[0];}
-const unique=new Set(M.motifs.map(m=>signature(m.cells)));assert.equal(unique.size,TOTAL,'every outline is unique, including rotations and reflections');console.log('PASS: 50 distinct outlines, including rotation/reflection comparison.');
+const unique=new Set(M.motifs.map(m=>signature(m.cells)));assert.equal(unique.size,TOTAL,'every outline is unique, including rotations and reflections');console.log('PASS: 60 distinct outlines, including rotation/reflection comparison.');
 
 for(let i=0;i<3;i++){const d=E.level(i);assert.ok(d.pieces.length<=6,'opening puzzles have at most six pieces');assert.ok(d.pieces.every(p=>p.shape.length>=3),'opening has no tiny fragments');}
 console.log('PASS: opening piece-count and fragment limits.');
+
+for(const m of M.motifs.filter(m=>m.blocked)){assert.equal(m.blocked.length,new Set(m.blocked.map(c=>c.join(','))).size);assert.ok(m.blocked.every(b=>!m.cells.some(c=>c.join(',')===b.join(','))),'obstacles are outside fillable cells');const d=E.level(M.motifs.indexOf(m));for(const p of d.pieces)for(const b of m.blocked)assert.equal(E.fits(d,{},p.id,b),false,'obstacle cannot receive piece anchor');}
+console.log('PASS: 10 obstacle boards with unfillable anchor cells.');

@@ -23,7 +23,7 @@
   }
   const records={};
   if(object(raw.records))for(const [n,value] of Object.entries(raw.records))if(valid(Number(n))&&object(value)&&['own','hint','test','legacy'].includes(value.mode))records[n]={mode:value.mode,hints:Number.isInteger(value.hints)&&value.hints>=0?value.hints:0};
-  return {index:raw.index,done:[...new Set(raw.done)],attempts,records,sound:raw.sound!==false,vibration:raw.vibration!==false,introSeen:raw.introSeen===true};
+  return {index:raw.index,done:[...new Set(raw.done)],attempts,records,...(Number.isFinite(raw.dragGap)?{dragGap:Math.max(24,Math.min(100,raw.dragGap))}:{}),sound:raw.sound!==false,vibration:raw.vibration!==false,introSeen:raw.introSeen===true};
  }
  const api={encode,decode};if(typeof module!=='undefined')module.exports=api;else root.HexSave=api;
 })(typeof window!=='undefined'?window:globalThis);

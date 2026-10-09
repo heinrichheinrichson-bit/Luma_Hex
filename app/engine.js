@@ -45,5 +45,10 @@
   for(const other of data.pieces){const at=next[other.id];if(other.id!==p.id&&at&&other.shape.some(([q,r])=>goal.has(key(q+at[0],r+at[1])))){delete next[other.id];returned++;}}
   next[p.id]=[...p.home];return {placements:next,returned};
  }
- const api={level,key,occupied,fits,directions,layout,hint,autoPlace};if(typeof module!=='undefined')module.exports=api;else root.HexEngine=api;
+ function dragPosition(bounds,x,y,touch,gap=48,grab=[0,0]){
+  if(!touch)return {x:x-grab[0],y:y-grab[1]};
+  // Keep the entire bounding box above the finger, including tall pieces.
+  return {x:x-(bounds.minX+bounds.w/2),y:y-Math.max(24,Math.min(100,gap))-(bounds.minY+bounds.h)};
+ }
+ const api={level,key,occupied,fits,directions,layout,hint,autoPlace,dragPosition};if(typeof module!=='undefined')module.exports=api;else root.HexEngine=api;
 })(typeof window!=='undefined'?window:globalThis);

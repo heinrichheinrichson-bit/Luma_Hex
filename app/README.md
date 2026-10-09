@@ -1,3 +1,17 @@
+# Version 0.7.0 — Ziehen mit freier Sicht und Anker-Rätsel
+
+Das ganze Puzzleteil schwebt oberhalb des Fingers oder Stifts. Der Abstand wird aus seiner tatsächlichen Größe berechnet und ist zwischen 24 und 100 CSS-Pixeln einstellbar. Direkter Wechsel bereits gesetzter Teile, Rückgabe in die Ablage, ungültige Ablagen ohne Verlust der vorherigen Position und Rückgängig. Maus, Antippen und Tastatur bleiben nutzbar.
+
+Überarbeitete Spielfeldgröße, offene Teileablage, plastischere Steine und tiefere Blautöne. Noch keine Festlegung auf die separat gespeicherten Neon-/Ringdesigns.
+
+60 unterschiedliche Rätsel, darunter zehn neue Spielfelder mit blockierten Ankerzellen im sechsten Kapitel. Die ersten 50 Teileaufteilungen bleiben unverändert. Alle vier Testsuiten (tests.cjs, ui-tests.cjs, save-tests.cjs, drag-tests.cjs) bestehen. Bedienabläufe werden im simulierten DOM geprüft, nicht auf einem echten Gerät. Grafikvorschau aus tatsächlichen Spielfeld- und Teile-SVGs gerendert und visuell geprüft. APK gebaut und Signatur geprüft.
+
+Der S22-Test von Fingergefühl, Abstand und responsivem Layout steht aus. Die Gestaltung ist weiter in Entwicklung; kein fertiger Play-Store-Release.
+
+Langfristiges Ziel: mehrere hundert bis möglichst etwa tausend abwechslungsreiche Rätsel, sobald Bedienung und Gestaltung überzeugen. Außenformen, Aussparungen, Ankerfelder und passende Teilkombinationen bilden den Werkzeugkasten. Automatische Lösbarkeits- und Duplikatprüfungen ergänzen visuelle Auswahl und Spieltests. Keine künstliche Vergrößerung der Hauptreihe durch wiederholte Motive mit neuen Teilevarianten.
+
+## Vorherige Entwicklungsstände
+
 # Version 0.6.0 — 50 Lichtstücke und Spielstandsicherung
 
 50 unterschiedliche Spielfelder in fünf Kapiteln. 20 neue Konturen, abwechselnd Figuren und abstrakte Formen: Eistüte, Apfel, Kaktus, Schildkröte, Ballon, Glocke, Burg, Kerze, Musiknote und Vogel sowie zehn neue freie Formen. Alle haben eigene Abschlusstexte. Keine Spiegelungen, Drehungen oder Teilevarianten als zusätzliche Level. Die ersten 30 Rätsel behalten ihre Teile und Indizes; Spielstände aus 0.5 bleiben kompatibel.
