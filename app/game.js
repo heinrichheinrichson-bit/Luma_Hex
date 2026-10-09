@@ -91,13 +91,14 @@ $('testPrevious').onclick=()=>{closeDialogs();load((index+TOTAL-1)%TOTAL);};$('t
 $('hint').onclick=()=>{const result=E.hint(data,placements);if(!result){continuePuzzle(index+1);return;}checkpoint();placements=result.placements;selected=null;hints++;render();tone();toast(result.returned?'Ein Teil sitzt richtig. Überlappende Teile liegen wieder unten.':'Ein kleiner Lichtblick für dich.');complete();};
 function closeDialogs(){for(const d of document.querySelectorAll('dialog[open]'))d.close();}
 function nextUnsolved(start=0){for(let offset=0;offset<TOTAL;offset++){const n=(start+offset)%TOTAL;if(!done.has(n))return n;}}
-function continuePuzzle(start=index){const next=nextUnsolved(start);closeDialogs();if(next===undefined)showJourney();else if(next!==index)load(next);}
+function continuePuzzle(start=index){const next=nextUnsolved(0);closeDialogs();if(next===undefined)showJourney();else if(next!==index)load(next);}
 let galleryPage=0;
-function showGallery(){closeDialogs();const count=M.motifs.filter((m,i)=>unlocked(i).length).length;$('galleryProgress').textContent=count+' von '+COUNT+' Formen gesammelt';
- $('galleryPrevious').disabled=galleryPage===0;$('galleryNext').disabled=(galleryPage+1)*20>=COUNT;$('galleryPage').textContent=(galleryPage+1)+' / '+Math.ceil(COUNT/20);
- $('galleryGrid').innerHTML=M.motifs.slice(galleryPage*20,galleryPage*20+20).map((m,i)=>{const n=galleryPage*20+i,lit=unlocked(n).length>0;return '<button class="gallery-card'+(lit?' unlocked':'')+'" data-motif="'+n+'" '+(lit?'':'disabled')+' aria-label="'+m.name+(lit?', gesammelt':', noch nicht gesammelt')+'">'+motifSVG(m,lit)+'<strong>'+m.name+'</strong><span>'+String(n+1).padStart(2,'0')+' · '+(lit?recordLabel(n):'Noch entdecken')+'</span></button>';}).join('');$('gallery').showModal();}
-$('galleryPrevious').onclick=()=>{if(galleryPage){galleryPage--;showGallery();}};$('galleryNext').onclick=()=>{if((galleryPage+1)*20<COUNT){galleryPage++;showGallery();}};
-function showDetail(m){galleryPage=Math.floor(m/20);detailMotif=m;const motif=M.motifs[m],levels=unlocked(m);closeDialogs();$('detailEyebrow').textContent=`DEIN LICHTSTÜCK · EIN EIGENES RÄTSEL`;$('detailArt').innerHTML=motifSVG(motif);$('detailTitle').textContent=motif.name;$('detailQuotes').innerHTML=Array.from({length:VARIANTS},(_,v)=>v).map(v=>`<div class="quote-card${done.has(m+v*COUNT)?' revealed':''}"><span>DEIN MOMENT</span><p>${done.has(m+v*COUNT)?motif.quotes[v]:'Hier wartet noch ein kleiner Moment auf dich.'}</p></div>`).join('');$('detail').showModal();}
+function collectedMotifs(){return M.motifs.map((_,i)=>i).filter(i=>unlocked(i).length);}
+function showGallery(){closeDialogs();const collected=collectedMotifs(),pages=Math.max(1,Math.ceil(collected.length/20));galleryPage=Math.min(galleryPage,pages-1);$('galleryProgress').textContent=collected.length+' Lichtstücke gesammelt';
+ $('galleryPrevious').disabled=galleryPage===0;$('galleryNext').disabled=galleryPage+1>=pages;$('galleryPage').textContent=(galleryPage+1)+' / '+pages;
+ $('galleryGrid').innerHTML=collected.slice(galleryPage*20,galleryPage*20+20).map(n=>{const m=M.motifs[n];return '<button class="gallery-card unlocked" data-motif="'+n+'" aria-label="'+m.name+', gesammelt">'+motifSVG(m,true)+'<strong>'+m.name+'</strong><span>'+String(n+1).padStart(2,'0')+' · '+recordLabel(n)+'</span></button>';}).join('')||'<div class="empty-state"><p>Dein erstes Lichtstück wartet auf dich. Löse eine Form – hier bekommt sie ihren Platz.</p></div>';$('gallery').showModal();}
+$('galleryPrevious').onclick=()=>{if(galleryPage){galleryPage--;showGallery();}};$('galleryNext').onclick=()=>{if((galleryPage+1)*20<collectedMotifs().length){galleryPage++;showGallery();}};
+function showDetail(m){galleryPage=Math.floor(Math.max(0,collectedMotifs().indexOf(m))/20);detailMotif=m;const motif=M.motifs[m],levels=unlocked(m);closeDialogs();$('detailEyebrow').textContent=`DEIN LICHTSTÜCK · EIN EIGENES RÄTSEL`;$('detailArt').innerHTML=motifSVG(motif);$('detailTitle').textContent=motif.name;$('detailQuotes').innerHTML=Array.from({length:VARIANTS},(_,v)=>v).map(v=>`<div class="quote-card${done.has(m+v*COUNT)?' revealed':''}"><span>DEIN MOMENT</span><p>${done.has(m+v*COUNT)?motif.quotes[v]:'Hier wartet noch ein kleiner Moment auf dich.'}</p></div>`).join('');$('detail').showModal();}
 $('collection').onclick=showGallery;$('winCollection').onclick=()=>showDetail(index%COUNT);$('closeGallery').onclick=()=>$('gallery').close();$('galleryContinue').onclick=()=>{continuePuzzle();};$('closeDetail').onclick=showGallery;$('detailBack').onclick=showGallery;
 $('galleryGrid').onclick=e=>{const card=e.target.closest('[data-motif]');if(card&&!card.disabled)showDetail(+card.dataset.motif);};
 $('detailPlay').textContent='Noch einmal spielen →';
@@ -106,33 +107,35 @@ $('next').onclick=()=>{continuePuzzle(index+1);};$('replay').onclick=()=>{closeD
 function showMenu(){closeDialogs();$('sound').checked=sound;$('vibration').checked=vibration;$('dragGap').value=dragGap;$('dragGapValue').textContent=dragGap+' px';$('levelSelect').innerHTML='<p class="fine-print">'+TOTAL+' unterschiedliche Rätsel · '+Math.ceil(TOTAL/10)+' Kapitel<br>Alle Spielfelder findest du in deiner Rätselreise.</p>';$('menu').showModal();}
 $('settings').onclick=showMenu;$('levelSelect').onclick=e=>{const b=e.target.closest('[data-level]');if(b){closeDialogs();load(+b.dataset.level);}};$('closeMenu').onclick=()=>$('menu').close();$('sound').onchange=e=>{sound=e.target.checked;persist();if(sound)tone();};$('vibration').onchange=e=>{vibration=e.target.checked;persist();};
 $('start').onclick=()=>{introSeen=true;persist();$('intro').close();tone();};$('intro').addEventListener('cancel',()=>{introSeen=true;persist();});
-load(nextUnsolved(index)??index);
+load(nextUnsolved(0)??index);
 if(!introSeen)$('intro').showModal();
 if('serviceWorker' in navigator&&location.protocol!=='file:')navigator.serviceWorker.register('./sw.js').catch(()=>{});
 
-let journeyChapter=0,journeyFilter='all';
+let journeyChapter=0;
+function frontier(){return nextUnsolved(0);}
+function accessible(n){return n===frontier()||done.has(n)||Object.keys(attempts[n]?.placements||{}).length>0;}
+function chapterAccessible(ch){const first=frontier();return ch===Math.floor((first??(TOTAL-1))/10)||Array.from({length:10},(_,i)=>ch*10+i).some(accessible);}
 function renderJourneyChapter(){
- const start=journeyChapter*10,end=Math.min(TOTAL,start+10),solved=Array.from({length:end-start},(_,i)=>start+i).filter(n=>done.has(n)).length;
- $('journeyChapterSelect').value=String(journeyChapter);$('journeyPrevious').disabled=journeyChapter===0;$('journeyNext').disabled=end>=TOTAL;
- $('journeyChapters').innerHTML='<section class="journey-chapter"><span class="eyebrow">KAPITEL '+(journeyChapter+1)+' · '+solved+'/'+(end-start)+'</span><h3>'+CHAPTERS[journeyChapter].toLocaleLowerCase('de-DE')+'</h3><div class="journey-levels">'+M.motifs.slice(start,end).map((m,i)=>{const n=start+i;if(journeyFilter==='open'&&done.has(n)||journeyFilter==='solved'&&!done.has(n))return '';return '<button data-journey="'+n+'" class="journey-level '+(done.has(n)?'solved':'')+' '+(n===index?'current':'')+'" aria-label="Rätsel '+(n+1)+': '+m.name+(done.has(n)?', gesammelt':'')+'">'+motifSVG(m,done.has(n))+'<b>'+String(n+1).padStart(2,'0')+'</b><span>'+m.name+'</span><small>'+(done.has(n)?recordLabel(n):attempts[n]&&Object.keys(attempts[n].placements||{}).length?'Angefangen':'Entdecken')+'</small></button>';}).join('')+'</div></section>';
- if(!$('journeyChapters').innerHTML.includes('data-journey='))$('journeyChapters').innerHTML='<section class="empty-state"><p>'+ (journeyFilter==='open'?'Dieses Kapitel ist vollständig gelöst. Im nächsten Kapitel warten weitere Formen.':'In diesem Kapitel hast du noch kein Rätsel gesammelt.')+'</p></section>';
- for(const [id,value] of [['filterAll','all'],['filterOpen','open'],['filterSolved','solved']])$(id).setAttribute('aria-pressed',String(journeyFilter===value));
+ const start=journeyChapter*10,end=Math.min(TOTAL,start+10),solved=Array.from({length:end-start},(_,i)=>start+i).filter(n=>done.has(n)).length,first=frontier(),activeChapter=Math.floor((first??(TOTAL-1))/10);
+ $('journeyPrevious').disabled=!Array.from({length:journeyChapter},(_,i)=>i).some(chapterAccessible);$('journeyNext').disabled=!Array.from({length:CHAPTERS.length-journeyChapter-1},(_,i)=>journeyChapter+1+i).some(chapterAccessible);
+ $('chapterTrail').innerHTML='<span class="eyebrow">DEIN WEG</span><div class="chapter-milestones">'+Array.from({length:CHAPTERS.length},(_,ch)=>ch).filter(ch=>ch<=activeChapter+1||chapterAccessible(ch)).map(ch=>{const count=Array.from({length:10},(_,i)=>ch*10+i).filter(n=>done.has(n)).length,open=chapterAccessible(ch);return '<button data-chapter="'+ch+'" '+(open?'':'disabled')+' '+(ch===journeyChapter?'aria-current="step"':'')+'><b>'+(count===10?'✓':open?String(ch+1).padStart(2,'0'):'◇')+'</b><span>Kapitel '+(ch+1)+'</span></button>';}).join('')+'</div>';
+ $('journeyChapters').innerHTML='<section class="journey-chapter"><span class="eyebrow">KAPITEL '+(journeyChapter+1)+' · '+solved+' VON '+(end-start)+'</span><h3>'+CHAPTERS[journeyChapter].toLocaleLowerCase('de-DE')+'</h3><div class="journey-levels">'+M.motifs.slice(start,end).map((m,i)=>{const n=start+i,open=accessible(n),current=n===first;return '<button data-journey="'+n+'" '+(open?'':'disabled')+' class="journey-level '+(done.has(n)?'solved':'')+' '+(current?'current':'')+' '+(!open?'locked':'')+'" aria-label="Rätsel '+(n+1)+(open?': '+m.name:' · Noch gesperrt')+'">'+(open?motifSVG(m,done.has(n)):'<div class="locked-art" aria-hidden="true">◇</div>')+'<b>'+String(n+1).padStart(2,'0')+'</b><span>'+(open?m.name:'Noch entdecken')+'</span><small>'+(done.has(n)?recordLabel(n):current?'Jetzt spielen →':open?'Angefangen':'Nach Rätsel '+n)+'</small></button>';}).join('')+'</div></section>';
 }
 function showJourney(){
- closeDialogs();journeyChapter=Math.floor(index/10);const next=Array.from({length:TOTAL},(_,i)=>i).find(n=>!done.has(n));
- const own=Object.values(records).filter(r=>r.mode==='own').length,test=Object.values(records).filter(r=>r.mode==='test').length;
- $('journeyProgress').textContent=done.size+' von '+TOTAL+' Lichtstücken gesammelt';$('journeyStats').textContent=own+' ohne Hinweise · '+test+' per Testwerkzeug';
- $('journeyContinue').textContent=next===undefined?'Alle Lichtstücke ansehen →':'Weiter mit Rätsel '+String(next+1).padStart(2,'0')+' →';$('journeyContinue').onclick=()=>{if(next===undefined)showGallery();else{closeDialogs();load(next);}};
- $('journeyChapterSelect').innerHTML=CHAPTERS.map((name,ch)=>'<option value="'+ch+'">'+String(ch+1).padStart(2,'0')+' · '+name.toLocaleLowerCase('de-DE')+'</option>').join('');
+ closeDialogs();const next=frontier();journeyChapter=Math.floor((next??(TOTAL-1))/10);
+ $('journeyProgress').textContent=done.size+' Formen gesammelt';$('journeyStats').textContent='Ein Rätsel nach dem anderen. In deinem Tempo.';
+ $('journeyGuidance').textContent=next===undefined?'Alle Kapitel entdeckt. Deine Formen bleiben zum Wiederholen hier.':'Löse die nächste Form. Nach zehn Rätseln öffnet sich ein neues Kapitel.';
+ $('journeyContinue').textContent=next===undefined?'Deine Sammlung ansehen →':'Rätsel '+String(next+1).padStart(2,'0')+' weiterspielen →';$('journeyContinue').onclick=()=>{if(next===undefined)showGallery();else continuePuzzle(next);};
  $('jumpNumber').max=TOTAL;$('jumpNumber').value=index+1;renderJourneyChapter();$('journey').showModal();
 }
-$('journeyChapterSelect').onchange=e=>{journeyChapter=Number(e.target.value);renderJourneyChapter();};
-$('journeyPrevious').onclick=()=>{if(journeyChapter>0){journeyChapter--;renderJourneyChapter();}};
-$('journeyNext').onclick=()=>{if((journeyChapter+1)*10<TOTAL){journeyChapter++;renderJourneyChapter();}};
-$('jumpLevel').onclick=()=>{const n=Number($('jumpNumber').value);if(!Number.isInteger(n)||n<1||n>TOTAL){$('journeyStats').textContent='Bitte eine Rätselnummer von 1 bis '+TOTAL+' eingeben.';return;}closeDialogs();load(n-1);};
+$('chapterTrail').onclick=e=>{const b=e.target.closest('[data-chapter]');if(b&&chapterAccessible(+b.dataset.chapter)){journeyChapter=+b.dataset.chapter;renderJourneyChapter();}};
+$('journeyPrevious').onclick=()=>{for(let ch=journeyChapter-1;ch>=0;ch--)if(chapterAccessible(ch)){journeyChapter=ch;renderJourneyChapter();break;}};
+$('journeyNext').onclick=()=>{for(let ch=journeyChapter+1;ch<CHAPTERS.length;ch++)if(chapterAccessible(ch)){journeyChapter=ch;renderJourneyChapter();break;}};
+// Direct jumps are deliberately confined to development tools.
+$('jumpLevel').onclick=()=>{const n=Number($('jumpNumber').value);if(!Number.isInteger(n)||n<1||n>TOTAL){toast('Bitte eine Rätselnummer von 1 bis '+TOTAL+' eingeben.');return;}closeDialogs();load(n-1);};
 document.querySelector('.brand').onclick=e=>{e.preventDefault();showHome();};
  $('openJourney').onclick=showJourney;$('closeJourney').onclick=()=>$('journey').close();
- $('journeyChapters').onclick=e=>{const button=e.target.closest('[data-journey]');if(button){closeDialogs();load(+button.dataset.journey);}};
+ $('journeyChapters').onclick=e=>{const button=e.target.closest('[data-journey]');if(button&&accessible(+button.dataset.journey)){closeDialogs();load(+button.dataset.journey);}};
 
 function recordLabel(n){const mode=records[n]?.mode;return mode==='own'?'✦ Ohne Hinweise':mode==='hint'?'✓ Mit Hinweis':mode==='test'?'⚙ Testansicht':'✓ Gesammelt';}
 function showBackup(){closeDialogs();persist();$('backupCode').value=HexSave.encode(readSave(STORAGE));$('backupStatus').textContent='Die Sicherung enthält deine Sammlung, Einstellungen und angefangenen Rätsel.';$('restorePreview').hidden=true;$('confirmRestore').hidden=true;pendingRestore=null;$('backup').showModal();}
@@ -154,11 +157,11 @@ $('dragGap').oninput=e=>{dragGap=Math.max(24,Math.min(100,Number(e.target.value)
 
 // Main destinations are peers. Opening one never stacks it over another.
 function showHome(){
- closeDialogs();persist();const next=nextUnsolved(index),n=next??index,m=M.motifs[n%COUNT],chapter=Math.floor(n/10),start=chapter*10;
+ closeDialogs();persist();const next=frontier(),n=next??index,m=M.motifs[n%COUNT],chapter=Math.floor(n/10),start=chapter*10;
  const solved=Array.from({length:Math.min(10,TOTAL-start)},(_,i)=>start+i).filter(i=>done.has(i)).length;
  $('homeArt').innerHTML=motifSVG(m);$('homeContinue').textContent=next===undefined?'Deine Sammlung ansehen →':'Weiterpuzzeln →';
  $('homeResume').textContent=next===undefined?'Alle 300 Formen entdeckt. Schön gemacht!':'Rätsel '+String(n+1).padStart(2,'0')+' · '+m.name+(attempts[n]&&Object.keys(attempts[n].placements||{}).length?' · Angefangen':'');
- $('homeSolved').textContent=String(done.size);$('homePercent').textContent=Math.round(done.size/TOTAL*100)+'%';
+ $('homeSolved').textContent=String(done.size);$('homePercent').textContent=String(chapter+1).padStart(2,'0');
  $('homeChapterLabel').textContent='KAPITEL '+String(chapter+1).padStart(2,'0');$('homeChapterTitle').textContent=CHAPTERS[chapter].toLocaleLowerCase('de-DE');$('homeChapterProgress').textContent=solved+' von 10 Formen gesammelt';$('homeChapterBar').style.width=solved*10+'%';
  $('homeContinue').onclick=()=>{if(next===undefined)showGallery();else continuePuzzle(n);};
  $('homeChapter').onclick=()=>{showJourney();journeyChapter=chapter;renderJourneyChapter();};$('home').showModal();
@@ -167,7 +170,7 @@ function routeView(route){if(route==='home')showHome();else if(route==='journey'
 document.addEventListener('click',e=>{const button=e.target.closest?.('[data-route]');if(button)routeView(button.dataset.route);});
 $('gameHome').onclick=showHome;$('gameJourney').onclick=showJourney;
 $('openHelp').onclick=()=>{closeDialogs();$('help').showModal();};$('closeHelp').onclick=showMenu;
-for(const [id,value] of [['filterAll','all'],['filterOpen','open'],['filterSolved','solved']])$(id).onclick=()=>{journeyFilter=value;renderJourneyChapter();};
+
 function backView(){
  for(const [id,parent] of [['resetDialog',null],['detail','gallery'],['backup','menu'],['help','menu'],['win',null],['intro','home'],['journey','home'],['gallery','home'],['menu','home']])if($(id).open){$(id).close();if(id==='intro'){introSeen=true;persist();}if(parent)routeView(parent);return true;}
  if($('home').open)return false;showHome();return true;
