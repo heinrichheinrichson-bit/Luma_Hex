@@ -1,3 +1,11 @@
+# Version 0.4.0 — unterschiedliche Spielfelder
+
+30 eigenständige Konturen, jedes Spielfeld einmal in der Hauptreihe. 10 neue Spielfelder; keine zusätzlichen Level durch Drehung, Spiegelung oder neue Teilevarianten. 14 Figuren und 16 abstrakte Formen, drei Kapitel. Testwerkzeuge bleiben erhalten. Fortschritt der bisherigen Konturen wird aus Version 0.3 übernommen; Platzierungen werden nur für deren erste Fassung übernommen.
+
+Automatisch geprüft: Lösungen, zusammenhängende Spielfelder und Teile, Kollisionen, Hinweise, Testwerkzeuge sowie Einzigartigkeit unter Drehung und Spiegelung. Konturenübersicht visuell geprüft. Noch kein Test auf einem physischen Samsung S22; Schwierigkeit noch nicht durch Spieltests abgestimmt.
+
+## Vorheriger Entwicklungsstand
+
 # Luma Hex — Motiv-Edition 0.2
 
 ## Sammlung 0.3 (aktueller Entwicklungsstand)

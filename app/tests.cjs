@@ -25,5 +25,9 @@ for(let n=0;n<TOTAL;n++){
  let stepped={};for(let step=0;step<data.pieces.length;step++){const before=JSON.stringify(stepped);const next=E.autoPlace(data,stepped,'step');assert.equal(JSON.stringify(stepped),before,'test step preserves undo state');stepped=next.placements;assert.equal(Object.keys(stepped).length,step+1,'one new piece per step');}assert.deepEqual(stepped,full,'steps reach full solution');
  total+=data.cells.length;
 }
-assert.equal(TOTAL,100);assert.equal(M.motifs.filter(m=>m.kind==='figure').length,12);assert.equal(M.motifs.filter(m=>m.kind==='abstract').length,8);
+assert.equal(TOTAL,30);assert.equal(M.variants,1);assert.equal(M.motifs.filter(m=>m.kind==='figure').length,14);assert.equal(M.motifs.filter(m=>m.kind==='abstract').length,16);
 console.log(`PASS: ${TOTAL} levels, ${total} cells; connectivity, deterministic solutions, frame bounds, collisions, texts, hint validity, convergence and test controls.`);
+
+// Reject duplicate outlines even when translated, mirrored or rotated on the hex grid.
+function signature(cells){const forms=[];for(let flip=0;flip<2;flip++)for(let turn=0;turn<6;turn++){let c=cells.map(([q,r])=>flip?[r,q]:[q,r]);for(let t=0;t<turn;t++)c=c.map(([q,r])=>[-r,q+r]);const q0=Math.min(...c.map(p=>p[0])),r0=Math.min(...c.map(p=>p[1]));forms.push(c.map(([q,r])=>[q-q0,r-r0].join(',')).sort().join(';'));}return forms.sort()[0];}
+const unique=new Set(M.motifs.map(m=>signature(m.cells)));assert.equal(unique.size,TOTAL,'every outline is unique, including rotations and reflections');console.log('PASS: 30 distinct outlines, including rotation/reflection comparison.');
