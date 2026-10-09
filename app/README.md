@@ -1,4 +1,4 @@
-# Version 0.8.0 — 300 unterschiedliche Rätsel
+# Version 0.8.1 — 300 unterschiedliche Rätsel
 
 240 neue abstrakte Spielfelder in zwölf abwechselnden Bauweisen ergänzen die bisherigen 60. 300 Rätsel, 30 Kapitel, 77 Felder mit blockierten Ankern. Die neuen Felder beginnen bei Nummer 61. Keine Farb-, Dreh- oder Spiegelvarianten als zusätzliche Level. Die Auswahl aus 1.244 Kandidaten ist deterministisch; exakte und nahe geometrische Wiederholungen werden gefiltert. Alle neuen Spielfelder haben 22–46 belegbare Zellen und höchstens zwölf Teile.
 
