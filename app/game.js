@@ -9,8 +9,10 @@ let data,placements={},history=[],selected=null,hints=0,testUsed=false,drag=null
 let attempts=saved.attempts&&typeof saved.attempts==='object'?saved.attempts:{};
 let done=new Set(Array.isArray(saved.done)?saved.done.filter(n=>Number.isInteger(n)&&n>=0&&n<TOTAL):[]);
 let sound=(saved.sound??old.sound)!==false,vibration=(saved.vibration??old.vibration)!==false,introSeen=(saved.introSeen??old.introSeen)===true;
+const records=saved.records&&typeof saved.records==='object'?saved.records:{};
+const CHAPTERS=['ERSTES LEUCHTEN','KLEINE ENTDECKUNGEN','NEUE WEGE','KLEINE WUNDER','FORMEN IM FLUSS'];
 const clone=value=>JSON.parse(JSON.stringify(value));
-function persist(){attempts[index]={placements:clone(placements),hints,testUsed};try{localStorage.setItem(STORAGE,JSON.stringify({index,attempts,done:[...done],sound,vibration,introSeen}));}catch{}}
+function persist(){attempts[index]={placements:clone(placements),hints,testUsed};try{localStorage.setItem(STORAGE,JSON.stringify({index,attempts,done:[...done],records,sound,vibration,introSeen}));}catch{}}
 function point(q,r,s){return [Math.sqrt(3)*s*(q+r/2),1.5*s*r];}
 function polygon(x,y,s){return Array.from({length:6},(_,i)=>{const a=(60*i-30)*Math.PI/180;return `${(x+s*Math.cos(a)).toFixed(2)},${(y+s*Math.sin(a)).toFixed(2)}`;}).join(' ');}
 function defs(){return '<defs>'+colors.map((c,i)=>`<linearGradient id="gem${i}" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="${c[0]}"/><stop offset=".48" stop-color="${c[1]}"/><stop offset="1" stop-color="${c[2]}"/></linearGradient>`).join('')+'</defs>';}
@@ -24,7 +26,7 @@ function renderBoard(preview=null){
 }
 function render(){
  renderBoard();$('levelNumber').textContent=String(index+1).padStart(2,'0');$('levelTitle').textContent=data.motif.name;$('motifSubtitle').textContent=data.motif.subtitle;
- $('chapter').textContent=`KAPITEL ${Math.floor(index/10)+1} · ${['ERSTES LEUCHTEN','KLEINE ENTDECKUNGEN','NEUE WEGE'][Math.floor(index/10)]}`;
+ $('chapter').textContent=`KAPITEL ${Math.floor(index/10)+1} · ${CHAPTERS[Math.floor(index/10)]}`;
  const count=E.occupied(data,placements).size;$('progressLabel').textContent=`${count} von ${data.cells.length} Kristallen`;$('progress').style.width=count/data.cells.length*100+'%';$('undo').disabled=!history.length;$('hint').innerHTML=count===data.cells.length?'<span>→</span>Weiter':'<span>✧</span>Hinweis';
  $('stars').textContent=data.pieces.length+' Teile';$('instruction').textContent=selected===null?(index<3?'Weißer Punkt = Ansatzfeld':'Ziehen oder antippen'):'Lichtpunkt auf das Zielfeld setzen';$('trayTitle').textContent=`DEINE ${data.pieces.length} TEILE`;$('tray').classList.toggle('dense',data.pieces.length>8);
  $('tray').innerHTML=data.pieces.map(p=>`<button class="piece${placements[p.id]?' placed':''}${selected===p.id?' selected':''}" data-piece="${p.id}" aria-label="Kristallteil ${p.id+1}, ${p.shape.length} Felder${placements[p.id]?', bereits gesetzt':''}" aria-pressed="${selected===p.id}">${shapeSVG(p).html}</button>`).join('');
@@ -42,9 +44,12 @@ function toast(text){$('toast').textContent=text;$('toast').classList.add('show'
 function feedback(){if(vibration){if(window.LumaFeedback)window.LumaFeedback.vibrate();else if(navigator.vibrate)navigator.vibrate(12);}}
 function complete(playSound=true){
  if(E.occupied(data,placements).size!==data.cells.length)return;
- const first=!unlocked(index%COUNT).length;done.add(index);persist();$('collectionCount').textContent=M.motifs.filter((m,i)=>unlocked(i).length).length;if(playSound)tone(true);$('board').classList.add('completed');
+ const first=!unlocked(index%COUNT).length;done.add(index);
+ const mode=testUsed?'test':hints?'hint':'own',rank={legacy:0,test:1,hint:2,own:3},prior=records[index];
+ if(!prior||rank[mode]>rank[prior.mode]||mode===prior.mode&&hints<prior.hints)records[index]={mode,hints};
+ persist();$('collectionCount').textContent=M.motifs.filter((m,i)=>unlocked(i).length).length;if(playSound)tone(true);$('board').classList.add('completed');
  $('winArt').innerHTML=motifSVG(data.motif);$('winTitle').textContent=data.motif.name;$('winQuote').textContent=data.motif.quotes[data.variant];
- $('winEyebrow').textContent=first?'DEIN NEUES LICHTSTÜCK':'EIN NEUER MOMENT FÜR DEINE SAMMLUNG';
+ $('winEyebrow').textContent=testUsed?'TESTANSICHT · VOLLSTÄNDIGES MOTIV':first?'DEIN NEUES LICHTSTÜCK':'SCHÖN, DASS DU WIEDER DA BIST';
  $('winText').textContent=`Level ${index+1} geschafft · ${testUsed?'Automatischer Testlauf':hints===0?'Ganz aus eigener Kraft':hints+' Hinweis'+(hints===1?'':'e')+' genutzt'}`;
  const chapterStart=Math.floor(index/10)*10,chapterDone=Array.from({length:10},(_,i)=>chapterStart+i).every(n=>done.has(n));
  if(chapterDone)$('winText').textContent+=' · Kapitel vollständig';
@@ -86,12 +91,30 @@ if('serviceWorker' in navigator&&location.protocol!=='file:')navigator.serviceWo
 
 function showJourney(){
  closeDialogs();const next=Array.from({length:TOTAL},(_,i)=>i).find(n=>!done.has(n));
- $('journeyProgress').textContent=done.size+' von '+TOTAL+' Rätseln gelöst';
+ const own=Object.values(records).filter(r=>r.mode==='own').length,test=Object.values(records).filter(r=>r.mode==='test').length;
+ $('journeyProgress').textContent=done.size+' von '+TOTAL+' Lichtstücken gesammelt';
+ $('journeyStats').textContent=own+' ohne Hinweise · '+test+' per Testwerkzeug';
  $('journeyContinue').textContent=next===undefined?'Alle Lichtstücke ansehen →':'Weiter mit Rätsel '+String(next+1).padStart(2,'0')+' →';
  $('journeyContinue').onclick=()=>{if(next===undefined)showGallery();else{closeDialogs();load(next);}};
- $('journeyChapters').innerHTML=[0,1,2].map(ch=>{const start=ch*10,solved=Array.from({length:10},(_,i)=>start+i).filter(n=>done.has(n)).length;return '<section class="journey-chapter"><span class="eyebrow">KAPITEL '+(ch+1)+' · '+solved+'/10</span><h3>'+['Erstes Leuchten','Kleine Entdeckungen','Neue Wege'][ch]+'</h3><div class="journey-levels">'+M.motifs.slice(start,start+10).map((m,i)=>{const n=start+i;return '<button data-journey="'+n+'" class="journey-level '+(done.has(n)?'solved':'')+' '+(n===index?'current':'')+'" aria-label="Rätsel '+(n+1)+': '+m.name+(done.has(n)?', gelöst':'')+'">'+motifSVG(m,done.has(n))+'<b>'+String(n+1).padStart(2,'0')+'</b><span>'+m.name+'</span><small>'+(done.has(n)?'✓ Gelöst':attempts[n]&&Object.keys(attempts[n].placements||{}).length?'Angefangen':'Entdecken')+'</small></button>';}).join('')+'</div></section>';}).join('');
+ $('journeyChapters').innerHTML=Array.from({length:Math.ceil(TOTAL/10)},(_,i)=>i).map(ch=>{const start=ch*10,solved=Array.from({length:10},(_,i)=>start+i).filter(n=>done.has(n)).length;return '<section class="journey-chapter"><span class="eyebrow">KAPITEL '+(ch+1)+' · '+solved+'/10</span><h3>'+CHAPTERS[ch].toLocaleLowerCase('de-DE')+'</h3><div class="journey-levels">'+M.motifs.slice(start,start+10).map((m,i)=>{const n=start+i;return '<button data-journey="'+n+'" class="journey-level '+(done.has(n)?'solved':'')+' '+(n===index?'current':'')+'" aria-label="Rätsel '+(n+1)+': '+m.name+(done.has(n)?', gelöst':'')+'">'+motifSVG(m,done.has(n))+'<b>'+String(n+1).padStart(2,'0')+'</b><span>'+m.name+'</span><small>'+(done.has(n)?recordLabel(n):attempts[n]&&Object.keys(attempts[n].placements||{}).length?'Angefangen':'Entdecken')+'</small></button>';}).join('')+'</div></section>';}).join('');
  $('journey').showModal();
 }
 document.querySelector('.brand').onclick=e=>{e.preventDefault();showJourney();};
  $('openJourney').onclick=showJourney;$('closeJourney').onclick=()=>$('journey').close();
  $('journeyChapters').onclick=e=>{const button=e.target.closest('[data-journey]');if(button){closeDialogs();load(+button.dataset.journey);}};
+
+function recordLabel(n){const mode=records[n]?.mode;return mode==='own'?'✦ Ohne Hinweise':mode==='hint'?'✓ Mit Hinweis':mode==='test'?'⚙ Testansicht':'✓ Gesammelt';}
+function showBackup(){closeDialogs();persist();$('backupCode').value=HexSave.encode(readSave(STORAGE));$('backupStatus').textContent='Die Sicherung enthält deine Sammlung, Einstellungen und angefangenen Rätsel.';$('restorePreview').hidden=true;$('confirmRestore').hidden=true;pendingRestore=null;$('backup').showModal();}
+let pendingRestore=null;
+function inspectBackup(text){try{pendingRestore=HexSave.decode(text);$('backupCode').value=text;$('restorePreview').textContent=pendingRestore.done.length+' gesammelte Lichtstücke · weiter bei Rätsel '+(pendingRestore.index+1)+'. Beim Übernehmen wird der aktuelle Spielstand ersetzt.';$('restorePreview').hidden=false;$('confirmRestore').hidden=false;$('backupStatus').textContent='Sicherung geprüft. Du kannst sie jetzt übernehmen.';}catch(error){pendingRestore=null;$('confirmRestore').hidden=true;$('restorePreview').hidden=true;$('backupStatus').textContent=error.message;}}
+window.LumaReceiveBackup=text=>{showBackup();inspectBackup(text);};
+$('openBackup').onclick=showBackup;$('closeBackup').onclick=()=>$('backup').close();
+$('checkBackup').onclick=()=>inspectBackup($('backupCode').value);
+$('backupCode').oninput=()=>{pendingRestore=null;$('confirmRestore').hidden=true;$('restorePreview').hidden=true;$('backupStatus').textContent='Geänderten Code bitte erneut prüfen.';};
+$('confirmRestore').onclick=()=>{if(!pendingRestore)return;try{localStorage.setItem(STORAGE,JSON.stringify(pendingRestore));location.reload();}catch{$('backupStatus').textContent='Der Spielstand konnte nicht gespeichert werden.';}};
+$('copyBackup').onclick=async()=>{try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText($('backupCode').value);$('backupStatus').textContent='Sicherungscode kopiert.';}else{$('backupCode').focus();$('backupCode').select();$('backupStatus').textContent='Code markiert. Über das Textmenü kopieren.';}}catch{$('backupCode').focus();$('backupCode').select();$('backupStatus').textContent='Code markiert. Über das Textmenü kopieren.';}};
+$('saveBackupFile').onclick=()=>{persist();const text=HexSave.encode(readSave(STORAGE));if(window.LumaFeedback?.saveBackup){window.LumaFeedback.saveBackup(text);return;}const blob=new Blob([text],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='Luma-Hex-Spielstand.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+$('loadBackupFile').onclick=()=>{if(window.LumaFeedback?.openBackup){window.LumaFeedback.openBackup();return;}$('backupFile').click();};
+$('backupFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;if(file.size>1000000){$('backupStatus').textContent='Die Sicherung ist zu groß.';return;}try{inspectBackup(await file.text());}catch{$('backupStatus').textContent='Die Datei konnte nicht gelesen werden.';}e.target.value='';};
+
+document.addEventListener('visibilitychange',()=>{if(document.hidden)persist();});

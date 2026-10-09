@@ -1,3 +1,27 @@
+# Version 0.6.0 — 50 Lichtstücke und Spielstandsicherung
+
+50 unterschiedliche Spielfelder in fünf Kapiteln. 20 neue Konturen, abwechselnd Figuren und abstrakte Formen: Eistüte, Apfel, Kaktus, Schildkröte, Ballon, Glocke, Burg, Kerze, Musiknote und Vogel sowie zehn neue freie Formen. Alle haben eigene Abschlusstexte. Keine Spiegelungen, Drehungen oder Teilevarianten als zusätzliche Level. Die ersten 30 Rätsel behalten ihre Teile und Indizes; Spielstände aus 0.5 bleiben kompatibel.
+
+## Spielfluss und Bedienung
+
+Die Rätselreise unterscheidet Lösungen ohne Hinweise, mit Hinweis und Testansichten. Automatische Testabschlüsse schalten die Sammlung weiter frei, werden aber nicht als eigene Leistung gezählt. Bessere Ergebnisse können Testansichten ersetzen. Ältere Abschlüsse ohne Aufzeichnung bleiben als gesammelt markiert. Größere Mindestflächen für wichtige Schaltflächen und Unterstützung der Systemeinstellung für reduzierte Bewegung.
+
+## Sicherung
+
+In den Einstellungen unter Spielstand sichern & laden: JSON-Datei speichern oder laden; alternativ Sicherungscode kopieren und einfügen. Android verwendet die System-Dateiauswahl, die Browserfassung einen Download und Dateiupload. Jede importierte Sicherung wird vor dem Übernehmen geprüft und als Vorschau angezeigt. Geprüft werden Format, Katalog, Indizes, Teilepositionen und Überlappungen. Dateigröße maximal 1 MB. Sammlung, Einstellungen, angefangene Rätsel und Ergebnisarten sind enthalten. Kein Konto und keine Cloud nötig.
+
+## Prüfungen und Grenzen
+
+`node tests.cjs`, `node ui-tests.cjs`, `node save-tests.cjs`. 50 lösbare, zusammenhängende und unter Drehung/Spiegelung unterschiedliche Konturen; Hinweise, Testwerkzeuge, Kollisionen und Einstiegslimits geprüft. Bedienabläufe, Migration, Sicherungsvorschau und Übernahme im simulierten DOM geprüft. Neue Konturenübersicht visuell geprüft. Die ersten 30 Level wurden mit 0.5 verglichen und sind unverändert. APK wird gebaut und signaturgeprüft.
+
+Noch kein physischer Samsung-S22-Test. Die native Dateiauswahl und das visuelle Layout auf dem Gerät müssen praktisch geprüft werden. Die Schwierigkeit ist konstruktiv abgestimmt, noch nicht durch Spielertests validiert. Keine Werbung oder Bezahlfunktionen eingebaut; kein fertiger Play-Store-Release. Die Neon-/Ringentwürfe bleiben separat.
+
+## Gestaltungsreferenzen
+
+[Polygrams](https://play.google.com/store/apps/details?id=com.mindmill.tangram.block.puzzle): unterschiedliche Puzzleformen und Levelpakete. [Tangram Master](https://play.google.com/store/apps/details?id=com.littlebeargames.tangram): Sammlung verschiedener Herausforderungen. Eigene Geometrien, Texte und Assets. Einzelne öffentliche Rezensionen sind Hinweise, keine repräsentative Marktstudie.
+
+## Vorherige Entwicklungsstände
+
 # Version 0.5.0 — Rätselreise und neue Teileaufteilungen
 
 30 unterschiedliche Spielfelder, keine neuen Konturen in diesem Release. Die ersten drei Rätsel haben fünf bis sechs Teile. Jede Aufteilung wird deterministisch aus 24 Kandidaten ausgewählt, mit einer Bewertung für Kleinteile, wiederholte Teilformen und Zielanzahl. Spätere Level wechseln zwischen kompakten und umfangreicheren Kombinationen; die tatsächliche Schwierigkeit ist noch nicht durch Spieltests validiert.
