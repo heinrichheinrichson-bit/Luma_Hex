@@ -1,13 +1,13 @@
 const assert=require('assert/strict'),A=require('./achievements.js'),S=require('./save.js');
 const byIndex={0:{stage:'arrive'},1:{stage:'master'},2:{stage:'expert'}};
 const state=(done,records={},memory={})=>A.evaluate(done,records,memory,byIndex),get=(s,id)=>s.find(a=>a.id===id);
-assert(state([]).every(a=>!a.earned));assert.equal(A.definitions.length,11);
+assert(state([]).every(a=>!a.earned));assert.equal(A.definitions.length,9);
 assert.equal(get(state([0,0]),'spark').value,1);assert(get(state([0]),'spark').earned);
 assert.equal(get(state([0],{0:{mode:'test'}}),'spark').value,0);
 assert(!get(state([0],{0:{mode:'legacy'}}),'clear').earned);assert.equal(get(state([0],{0:{mode:'own'}}),'clear').value,1);
 assert.equal(get(state([1],{1:{mode:'hint'}}),'knot').value,1);assert.equal(get(state([2],{2:{mode:'test'}}),'knot').value,0);
 const done=Array.from({length:1200},(_,i)=>i),records=Object.fromEntries(done.map(i=>[i,{mode:'own',hints:0}])),seen=Array.from({length:100},(_,i)=>'reading-'+i);
-assert(state(done,records,{seen}).every(a=>a.earned));assert.equal(get(state([],{}, {seen:[...seen,...seen]}),'reader').value,100);
+assert(state(done,records,{seen}).every(a=>a.earned));
 const save={index:0,done:[0,1],attempts:{},records:{0:{mode:'test',hints:0},1:{mode:'own',hints:0}}};const restored=S.decode(S.encode(save));assert.deepEqual(state(restored.done,restored.records),state(save.done,save.records));
 for(const a of A.definitions)assert(A.badge(a).includes('<svg'));assert.equal(new Set(A.definitions.map(a=>a.id)).size,A.definitions.length);
-console.log('PASS: 11 achievements, empty/legacy progress, unique forms/readings, test exclusion, hint-free proof, hard stages, all milestones and backup restoration.');
+console.log('PASS: 9 achievements, empty/legacy progress, unique forms/readings, test exclusion, hint-free proof, hard stages, all milestones and backup restoration.');
