@@ -6,7 +6,7 @@
  const object=value=>value&&typeof value==='object'&&!Array.isArray(value);
  function encode(save){return JSON.stringify({app:'luma-hex',format:1,catalog:M.motifs.map(m=>m.id),savedAt:new Date().toISOString(),save},null,2);}
  function decode(text){
-  if(typeof text!=='string'||text.length>1000000)throw Error('Die Sicherung ist zu groß.');
+  if(typeof text!=='string'||text.length>5000000)throw Error('Die Sicherung ist zu groß.');
   let source;try{source=JSON.parse(text);}catch{throw Error('Das ist keine lesbare Sicherungsdatei.');}
   if(!object(source)||source.app!=='luma-hex'||source.format!==1||!object(source.save)||!Array.isArray(source.catalog))throw Error('Das ist keine unterstützte Luma-Hex-Sicherung.');
   if(source.catalog.length>M.motifs.length||!source.catalog.every((id,n)=>id===M.motifs[n].id))throw Error('Diese Sicherung gehört zu einer anderen Rätselsammlung.');
@@ -26,7 +26,9 @@
   const records={};
   if(object(raw.records))for(const [n,value] of Object.entries(raw.records))if(valid(Number(n))&&object(value)&&['own','hint','test','legacy'].includes(value.mode))records[n]={mode:value.mode,hints:Number.isInteger(value.hints)&&value.hints>=0?value.hints:0};
   let finishMemory;
-  if(raw.finishMemory!==undefined){const f=raw.finishMemory;if(!object(f)||!Array.isArray(f.recent)||f.recent.length>72||!f.recent.every(id=>F.get(id))||!object(f.byPuzzle)||!Object.entries(f.byPuzzle).every(([n,id])=>String(Number(n))===n&&valid(Number(n))&&F.get(id)))throw Error('Die gespeicherten Abschlusstexte sind ungültig.');finishMemory={recent:[...f.recent],byPuzzle:{...f.byPuzzle}};}
+  if(raw.finishMemory!==undefined){const f=raw.finishMemory,ids=value=>Array.isArray(value)&&value.length<=F.lines.length&&value.every(id=>typeof id==='string'&&F.get(id))&&new Set(value).size===value.length,keys=value=>object(value)&&Object.keys(value).every(n=>String(Number(n))===n&&valid(Number(n)));
+   if(!object(f)||!Array.isArray(f.recent)||f.recent.length>72||!f.recent.every(id=>F.get(id))||!keys(f.byPuzzle)||!Object.values(f.byPuzzle).every(id=>F.get(id))||('seen' in f&&!ids(f.seen))||('history' in f&&(!keys(f.history)||!Object.values(f.history).every(ids))))throw Error('Die gespeicherten Abschlusstexte sind ungültig.');finishMemory=F.normalize(f);
+  }
   return {...(finishMemory?{finishMemory}:{}),index:raw.index,done:[...new Set(raw.done)],attempts,records,...(Number.isFinite(raw.dragGap)?{dragGap:Math.max(24,Math.min(100,raw.dragGap))}:{}),sound:raw.sound!==false,vibration:raw.vibration!==false,introSeen:raw.introSeen===true,...(Number.isInteger(raw.tutorialProgress)&&raw.tutorialProgress>=0&&raw.tutorialProgress<=6?{tutorialProgress:raw.tutorialProgress}:{})};
  }
  const api={encode,decode};if(typeof module!=='undefined')module.exports=api;else root.HexSave=api;

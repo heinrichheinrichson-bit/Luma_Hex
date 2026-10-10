@@ -1,3 +1,7 @@
+# Version 0.16.0 – Persönliche Lesemomente
+
+1208 unterschiedliche Texte: Fakten, belegte Zitate, Humor, Gedanken und kleine Rätsel mit aufklappbarer Antwort. Zufällige Auswahl ohne Wiederholung bis der Vorrat durchlaufen wurde; danach werden lange zurückliegende Texte bevorzugt, die letzten 72 ausgeschlossen. Kategorien, Themen und Autoren werden nach Möglichkeit abgewechselt. Jeder erneut gespielte Abschluss erhält einen neuen Text. Öffnen, Neuladen, Übungen und automatische Testabschlüsse verbrauchen keine persönlichen Lesemomente. Sammlung → Deine Lesemomente zeigt gelesene Texte auf Seiten mit je 20 Einträgen. Spielstandsicherungen enthalten die Lesehistorie; alte Sicherungen bleiben unterstützt. Fakten und Zitate enthalten Quellen.
+
 # Version 0.13.0 – 1200 Rätsel
 
 900 neue unterschiedliche Konturen, darunter 600 größere Herausforderungen, ergänzen die vorhandenen 300. 120 Kapitel in sechs Reiseabschnitten. Bisherige Rätsel, Teile und Reihenfolge bleiben unverändert. Sieben Testsuiten prüfen Bibliothek, Curriculum, Navigation, Ziehen, Sicherungen und Rückwärtskompatibilität. Menschliche Schwierigkeit und Spielgefühl müssen noch mit Spieltests abgestimmt werden.

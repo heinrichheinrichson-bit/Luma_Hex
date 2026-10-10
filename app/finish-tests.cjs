@@ -1,9 +1,15 @@
-const assert=require('assert/strict'),F=require('./finish.js'),S=require('./save.js');
-const mem={recent:[],byPuzzle:{}},seen=new Set(),kinds=new Set();
-for(let n=0;n<1200;n++){const line=F.choose({id:'abstract'},mem,String(n));assert(!line.retired);assert(!mem.recent.includes(line.id),'no repeat within 72 finishes');if(n<F.active.length){assert(!seen.has(line.id));seen.add(line.id);}if(n<9)kinds.add(line.kind);mem.byPuzzle[n]=line.id;mem.recent.push(line.id);mem.recent=mem.recent.slice(-72);assert.equal(F.choose({id:'abstract'},mem,String(n)).id,line.id);}
-assert.equal(seen.size,F.active.length);assert.equal(kinds.size,5);
+const assert=require('assert/strict'),fs=require('fs'),vm=require('vm'),F=require('./finish.js'),S=require('./save.js');
+let seed=84731;const random=()=>((seed=Math.imul(seed,1664525)+1013904223>>>0)/4294967296);
+const mem=F.normalize(),seen=new Set(),kinds=new Set();for(let n=0;n<F.active.length;n++){const l=F.award(mem,String(n%1200),random);assert(!l.retired);assert(!seen.has(l.id),'unseen pool drawn without replacement');seen.add(l.id);if(n<5)kinds.add(l.kind);}assert.equal(kinds.size,5);assert.equal(seen.size,F.active.length);
+for(let n=0;n<1600;n++){const recent=mem.recent.slice();const l=F.award(mem,String(n%1200),random);assert(!recent.includes(l.id),'exhausted pool repeats only outside recent 72');}
 assert.equal(new Set(F.lines.map(v=>v.id)).size,F.lines.length);assert.equal(new Set(F.active.map(v=>v.text)).size,F.active.length);
-for(const l of F.active){assert(!/nicht verwendet|Puzzle|Display|Spielfeld/i.test(l.text));if(['fact','quote'].includes(l.kind))assert.match(l.source.url,/^https:\/\//);if(l.kind==='quote')assert(l.author&&l.work);if(l.kind==='riddle')assert(l.answer);}
-assert(!F.choose({}, {recent:[],byPuzzle:{0:'humor-0'}},'0').retired);
-const save={index:0,done:[],attempts:{},finishMemory:mem};assert.deepEqual(S.decode(S.encode(save)).finishMemory,mem);save.finishMemory={recent:['humor-0'],byPuzzle:{0:'humor-0'}};assert.equal(S.decode(S.encode(save)).finishMemory.byPuzzle[0],'humor-0');save.finishMemory.recent=['unknown'];assert.throws(()=>S.decode(S.encode(save)));
-console.log('PASS: 82 unique active texts, five categories in first nine finishes, 1200 selections, 72-finish repeat spacing, legacy migration, metadata and backup validation.');
+for(const l of F.active){assert(!/nicht verwendet|Puzzle|Display|Spielfeld/i.test(l.text));if(['fact','quote'].includes(l.kind))assert.match(l.source.url,/^https:\/\//);if(l.kind==='quote')assert(l.author&&l.work);if(l.kind==='riddle')assert(l.answer);if(l.anagram)assert.equal([...l.anagram].sort().join(''),[...l.scramble].sort().join(''));}
+const save={index:0,done:[],attempts:{},finishMemory:mem};assert.deepEqual(S.decode(S.encode(save)).finishMemory,mem);
+const old={recent:['humor-0'],byPuzzle:{0:'humor-0'}};const migrated=F.normalize(old);assert(migrated.seen.includes('humor-0'));assert.deepEqual(migrated.history[0],['humor-0']);assert.equal(S.decode(S.encode({...save,finishMemory:old})).finishMemory.byPuzzle[0],'humor-0');
+for(const bad of [{...mem,seen:['unknown']},{...mem,history:{0:['unknown']}},{...mem,history:{1200:['v2-fact-0']}},{...mem,seen:['v2-fact-0','v2-fact-0']}])assert.throws(()=>S.decode(S.encode({...save,finishMemory:bad})));
+const same=F.normalize();F.award(same,'0',random);const first=same.byPuzzle[0];F.award(same,'0',random);assert.notEqual(same.byPuzzle[0],first);assert.equal(same.history[0].length,2);
+const untouched=JSON.stringify(mem);F.choose(null,mem,'1',random);assert.equal(JSON.stringify(mem),untouched,'preview is read-only');
+// New catalog entries become eligible even when the former catalog was exhausted.
+const sandbox={};vm.createContext(sandbox);const code=fs.readFileSync(__dirname+'/finish.js','utf8').replace('const active=lines.filter',`lines.push({id:'future-entry',kind:'humor',text:'Ein neuer Inhalt.'});const active=lines.filter`);vm.runInContext(code,sandbox);const grown=sandbox.HexFinish,m=F.normalize();m.seen=F.active.map(l=>l.id);assert.equal(grown.choose(null,m,'',random).id,'future-entry');
+const other=F.normalize();let seed2=21;const random2=()=>((seed2=Math.imul(seed2,1664525)+1013904223>>>0)/4294967296);assert.notEqual(F.award(other,'0',random2).id,F.award(F.normalize(),'0',random).id,'order is not fixed by puzzle');
+console.log('PASS: '+F.active.length+' unique active texts, random draws without replacement, category balance, 1600 exhausted-pool draws, archive, backups, old saves, previews, anagrams and catalog growth.');
