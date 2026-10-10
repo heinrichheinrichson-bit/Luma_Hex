@@ -39,7 +39,7 @@ function render(){
  renderBoard();$('levelNumber').textContent=tutorialIndex===null?numberOf(index):String(tutorialIndex+1).padStart(2,'0');$('levelTitle').textContent=data.motif.name;$('motifSubtitle').textContent=data.motif.subtitle;
  $('chapter').textContent=tutorialIndex===null?C.stages.find(s=>s.id===C.byIndex[index].stage).name.toUpperCase()+' · KAPITEL '+(chapterOf(index)+1):'ERSTE SCHRITTE · '+(tutorialIndex+1)+' VON 6';
  $('lessonGuide').hidden=tutorialIndex===null;if(tutorialIndex!==null){$('lessonText').textContent=C.lessons[tutorialIndex].text;$('lessonProgress').textContent='Dein Lernschritt '+(tutorialIndex+1)+' / 6';}
- $('winCollection').hidden=tutorialIndex!==null;
+ $('winCollection').hidden=tutorialIndex!==null;if(tutorialIndex!==null)$('winAchievements').innerHTML='';
  const count=E.occupied(data,placements).size;$('progressLabel').textContent=`${count} von ${data.cells.length} Kristallen`;$('progress').style.width=count/data.cells.length*100+'%';$('undo').disabled=!history.length;$('hint').innerHTML=count===data.cells.length?"<span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></span>Weiter":"<span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M9 18h6M10 22h4M8 12a6 6 0 1 1 8 0l-1 3H9Z\"/></svg></span>Hinweis";
  $('stars').textContent=data.pieces.length+' Teile';$('instruction').textContent=selected===null?(index<3?'Weißer Punkt = Ansatzfeld':'Ziehen oder antippen'):'Lichtpunkt auf das Zielfeld setzen';$('trayTitle').textContent=`DEINE ${data.pieces.length} TEILE`;$('tray').classList.toggle('dense',data.pieces.length>8);
  $('tray').innerHTML=data.pieces.map(p=>`<button class="piece${placements[p.id]?' placed':''}${selected===p.id?' selected':''}" data-piece="${p.id}" aria-label="Kristallteil ${p.id+1}, ${p.shape.length} Felder${placements[p.id]?', bereits gesetzt':''}" aria-pressed="${selected===p.id}">${shapeSVG(p).html}</button>`).join('');
@@ -59,6 +59,7 @@ function feedback(){if(vibration){if(window.LumaFeedback)window.LumaFeedback.vib
 function complete(playSound=true){
  if(tutorialIndex!==null){completeLesson(playSound);return;}
  if(E.occupied(data,placements).size!==data.cells.length)return;
+ const beforeAchievements=achievementState().filter(a=>a.earned).map(a=>a.id);const awardAchievements=!completionAwarded&&!testUsed;
  const fresh=!done.has(index);done.add(index);
  const mode=testUsed?'test':hints?'hint':'own',rank={legacy:0,test:1,hint:2,own:3},prior=records[index];
  if(!prior||rank[mode]>rank[prior.mode]||mode===prior.mode&&hints<prior.hints)records[index]={mode,hints};
@@ -67,6 +68,7 @@ function complete(playSound=true){
  $('winArt').innerHTML=motifSVG(data.motif);$('winTitle').textContent=milestone?'Etappe geschafft!':'Geschafft!';if(!completionAwarded){runMoment=testUsed?HexFinish.choose(data.motif,finishMemory):HexFinish.award(finishMemory,String(index));completionAwarded=true;}
  $('winQuote').textContent=runMoment?.text||finishLine(index,data.motif);$('winExtra').innerHTML=runMoment?momentExtra(runMoment):'';persist();
  $('winEyebrow').textContent=testUsed?'TESTLAUF':milestone?'ETAPPE '+(chapterOf(index)+1)+' · 10 / 10':'RÄTSEL '+numberOf(index);
+ const newlyEarned=awardAchievements?achievementState().filter(a=>a.earned&&!beforeAchievements.includes(a.id)):[];$('winAchievements').innerHTML=newlyEarned.map(a=>'<div class="achievement-unlock">'+HexAchievements.badge(a)+'<span><small>NEUER ERFOLG</small><strong>'+a.name+'</strong></span></div>').join('');if(newlyEarned.length)toast('Neuer Erfolg: '+newlyEarned[0].name);
  $('winText').textContent=milestone?'Alle zehn Rätsel dieser Etappe sind vollständig.':'';
  const nextPuzzle=nextUnsolved(index+1);$('next').innerHTML=nextPuzzle===undefined?'Meine Rätselreise':'<span class="next-preview" aria-hidden="true">'+motifSVG(M.motifs[nextPuzzle],false)+'</span><span>Rätsel '+numberOf(nextPuzzle)+' spielen</span>';
  const completedIndex=index;clearTimeout(winTimer);winTimer=setTimeout(()=>{if(index===completedIndex&&E.occupied(data,placements).size===data.cells.length&&!document.querySelector('dialog[open]'))$('win').showModal();},700);
@@ -107,7 +109,7 @@ function nextUnsolved(){return ORDER.find(n=>!done.has(n));}
 function continuePuzzle(start=index){if(tutorialIndex!==null){if(E.occupied(data,placements).size===data.cells.length)advanceLesson();else closeDialogs();return;}if(tutorialProgress<6){loadLesson(tutorialProgress);return;}const next=nextUnsolved(0);closeDialogs();if(next===undefined)showJourney();else if(next!==index)load(next);}
 let galleryPage=0;
 function collectedMotifs(){return M.motifs.map((_,i)=>i).filter(i=>unlocked(i).length);}
-function showGallery(){closeDialogs();const collected=collectedMotifs(),pages=Math.max(1,Math.ceil(collected.length/20));galleryPage=Math.min(galleryPage,pages-1);$('galleryProgress').textContent=collected.length+' Lichtstücke gesammelt';
+function showGallery(){closeDialogs();const achievements=achievementState();$('achievementEntryCount').textContent=achievements.filter(a=>a.earned).length+' von '+achievements.length+' freigeschaltet';const collected=collectedMotifs(),pages=Math.max(1,Math.ceil(collected.length/20));galleryPage=Math.min(galleryPage,pages-1);$('galleryProgress').textContent=collected.length+' Lichtstücke gesammelt';
  $('galleryPrevious').disabled=galleryPage===0;$('galleryNext').disabled=galleryPage+1>=pages;$('galleryPage').textContent=(galleryPage+1)+' / '+pages;
  $('galleryGrid').innerHTML=collected.slice(galleryPage*20,galleryPage*20+20).map(n=>{const m=M.motifs[n];return '<button class="gallery-card unlocked" data-motif="'+n+'" aria-label="'+m.name+', gesammelt">'+motifSVG(m,true)+'<strong>'+m.name+'</strong><span>'+numberOf(n)+' · '+recordLabel(n)+'</span></button>';}).join('')||'<div class="empty-state"><p>Dein erstes Lichtstück wartet auf dich. Löse eine Form – hier bekommt sie ihren Platz.</p></div>';$('gallery').showModal();}
 $('galleryPrevious').onclick=()=>{if(galleryPage){galleryPage--;showGallery();}};$('galleryNext').onclick=()=>{if((galleryPage+1)*20<collectedMotifs().length){galleryPage++;showGallery();}};
@@ -192,11 +194,11 @@ $('gameHome').onclick=showHome;$('gameJourney').onclick=showJourney;
 $('openHelp').onclick=()=>{closeDialogs();$('help').showModal();};$('closeHelp').onclick=showMenu;
 
 function backView(){
- for(const [id,parent] of [['resetDialog',null],['detail','gallery'],['backup','menu'],['help','menu'],['win',null],['intro','home'],['journey','home'],['gallery','home'],['menu','home']])if($(id).open){$(id).close();if(id==='intro'){introSeen=true;persist();}if(parent)routeView(parent);return true;}
+ for(const [id,parent] of [['achievements','gallery'],['resetDialog',null],['detail','gallery'],['backup','menu'],['help','menu'],['win',null],['intro','home'],['journey','home'],['gallery','home'],['menu','home']])if($(id).open){$(id).close();if(id==='intro'){introSeen=true;persist();}if(parent)routeView(parent);return true;}
  if($('home').open)return false;showHome();return true;
 }
 window.LumaBack=backView;
-for(const id of ['home','journey','gallery','menu','detail','backup','help','resetDialog','win'])$(id).addEventListener('cancel',e=>{if(id==='home')return;e.preventDefault();backView();});
+for(const id of ['home','journey','gallery','menu','detail','backup','help','resetDialog','win','achievements'])$(id).addEventListener('cancel',e=>{if(id==='home')return;e.preventDefault();backView();});
 $('start').onclick=()=>{introSeen=true;persist();loadLesson(tutorialProgress<6?tutorialProgress:0);};
 if(introSeen)showHome();
 
@@ -213,3 +215,7 @@ $('skipLesson').onclick=()=>{persist();tutorialProgress=6;tutorialIndex=null;loa
 
 function showMoments(page=0){closeDialogs();const ids=finishMemory.seen.slice().reverse();momentsPage=Math.max(0,Math.min(Math.max(0,Math.ceil(ids.length/20)-1),page));$('detailArt').hidden=true;$('detailEyebrow').hidden=false;$('detailEyebrow').textContent=ids.length+' GELESEN · '+HexFinish.active.length+' IM VORRAT';$('detailTitle').textContent='Deine Lesemomente';$('detailQuotes').innerHTML=ids.length?ids.slice(momentsPage*20,momentsPage*20+20).map(id=>{const l=HexFinish.get(id);return '<article class="quote-card"><p>'+escapeText(l.text)+'</p>'+momentExtra(l)+'</article>';}).join(''):'<p>Nach deinem ersten gelösten Rätsel beginnt deine Lesesammlung.</p>';$('momentPager').hidden=ids.length<=20;$('momentsPrev').disabled=momentsPage===0;$('momentsNext').disabled=(momentsPage+1)*20>=ids.length;$('momentPage').textContent=(momentsPage+1)+' / '+Math.max(1,Math.ceil(ids.length/20));$('detail').showModal();$('detail').scrollTop=0;}
 $('openMoments').onclick=()=>showMoments();$('momentsPrev').onclick=()=>showMoments(momentsPage-1);$('momentsNext').onclick=()=>showMoments(momentsPage+1);
+
+function achievementState(){return HexAchievements.evaluate(done,records,finishMemory,C.byIndex);}
+function showAchievements(){closeDialogs();const all=achievementState(),earned=all.filter(a=>a.earned),next=all.filter(a=>!a.earned).sort((a,b)=>b.value/b.target-a.value/a.target)[0];$('achievementCount').textContent=earned.length+' von '+all.length+' Erfolgen freigeschaltet';$('achievementHero').innerHTML=next?'<div class="achievement-focus">'+HexAchievements.badge(next)+'<div><small>DEIN NÄCHSTER MEILENSTEIN</small><h3>'+next.name+'</h3><p>'+next.description+'</p><strong>'+Math.min(next.value,next.target)+' / '+next.target+'</strong></div></div>':'<div class="achievement-focus"><h3>Alle Erfolge gesammelt.</h3><p>1.200 Formen. Unzählige kleine Entdeckungen.</p></div>';$('achievementList').innerHTML=all.map(a=>'<article class="achievement-row '+(a.earned?'earned':'pending')+'">'+HexAchievements.badge(a)+'<div><h3>'+a.name+'</h3><p>'+a.description+'</p><div class="achievement-track" role="progressbar" aria-label="'+a.name+'" aria-valuemin="0" aria-valuemax="'+a.target+'" aria-valuenow="'+Math.min(a.value,a.target)+'"><i style="width:'+Math.min(100,a.value/a.target*100)+'%"></i></div><small>'+(a.earned?'Erreicht ✓':Math.min(a.value,a.target)+' / '+a.target)+'</small></div></article>').join('');$('achievements').showModal();$('achievements').scrollTop=0;}
+$('openAchievements').onclick=showAchievements;$('closeAchievements').onclick=showGallery;
