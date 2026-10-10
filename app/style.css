@@ -55,3 +55,22 @@ body,dialog.screen{background:radial-gradient(ellipse at 50% 42%,#7edbc219,trans
 /* 0.12.1: the board takes priority over interface chrome. */
 .app{padding:8px 12px max(8px,env(safe-area-inset-bottom))}.app header{margin-bottom:4px;min-height:44px}.app .level-heading{padding-inline:6px}.app h1{font-size:17px;margin:0 0 6px}.app .progress-line{padding-inline:6px}.app .level-badge{padding:2px 8px}.app .progress-track{margin-top:5px}.app .board-wrap{margin:4px -4px 8px;min-height:0;flex:1 0 auto}.app #board{display:block;width:100%;height:auto;aspect-ratio:400/340;min-height:0;max-height:none;flex:0 0 auto}.app .tray{padding:10px 6px}.app .piece{height:52px}.app .tray.dense .piece{height:45px}.app .tools{margin:5px 0 0;gap:8px}.app .tools button{min-height:62px;gap:4px;padding:2px;font-size:10px}.app .tools button span{width:40px;height:40px}.app .game-level-link{min-height:36px;font-size:10px}
 @media(max-height:650px){.app #board{height:auto;min-height:0;max-height:none}.app .piece{height:46px}.app .tray.dense .piece{height:42px}.app .tools button{min-height:58px}.app .tools button span{width:36px;height:36px}}
+
+/* 0.12.2: home is a single fitted screen, never a scrolling page. */
+#home .screen-body{display:flex;flex-direction:column;overflow:hidden;min-height:0;padding:16px 24px 12px;gap:0}
+#home .home-wordmark{flex:0 0 auto;margin:0 0 16px;font-size:16px;line-height:22px}
+#home .home-hero{flex:0 0 auto;min-height:0;padding:0}
+#home .home-hero .eyebrow{font-size:9px;line-height:14px}
+#home .home-hero h2{font-size:clamp(21px,6.5vw,29px)!important;line-height:1.1;margin:6px 0 4px!important}
+#homeContinue{flex:1 1 0%;min-height:0;margin:8px 0 0;display:flex;flex-direction:column;overflow:hidden}
+#home .home-live-preview{flex:1 1 0%;min-height:0;height:auto;width:100%;margin:0;overflow:hidden}
+#home .home-live-preview svg{display:block;width:100%;height:100%;max-height:none;min-height:0}
+#home .home-play-label{flex:0 0 auto;font-size:20px;line-height:26px;padding:8px 10px;min-height:44px}
+#home .resume-label{flex:0 0 auto;margin:0 0 10px;font-size:10px!important;line-height:16px;min-height:0}
+#home .chapter-card{flex:0 0 auto;min-height:44px;padding:10px 0 2px;border-top:1px solid var(--line)}
+#home .chapter-card .eyebrow,#home .chapter-card strong{display:none}
+#home .chapter-card>span:not(.eyebrow){font-size:11px;line-height:16px}
+#home .chapter-card>i{margin-top:7px;height:3px}
+#home .app-nav{flex:0 0 auto}
+@media(max-height:650px){#home .screen-body{padding-top:10px;padding-bottom:8px}#home .home-wordmark{margin-bottom:8px}#home .home-hero h2{font-size:23px!important}#home .resume-label{margin-bottom:5px}#home .chapter-card{padding-top:7px}#home .home-play-label{font-size:18px}}
+@media(orientation:landscape) and (max-height:550px){#home .screen-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);grid-template-rows:auto auto minmax(0,1fr) auto;column-gap:18px;padding:10px 20px}#home .home-wordmark{grid-column:1;grid-row:1;margin:0 0 6px}#home .home-hero{grid-column:1;grid-row:2}#homeContinue{grid-column:2;grid-row:1 / 5;margin:0;height:100%;min-height:0}#home .resume-label{grid-column:1;grid-row:3;align-self:center;margin:4px 0}#home .chapter-card{grid-column:1;grid-row:4}#home .app-nav{min-height:58px;padding-top:4px;padding-bottom:4px}#home .app-nav button{min-height:48px;gap:3px}}
