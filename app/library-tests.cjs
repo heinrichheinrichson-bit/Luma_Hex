@@ -9,6 +9,6 @@ for(let i=60;i<data.length;i++){
   for(const bits of aligned){let difference=bits^old.canonical,count=0;while(difference&&count<=maximumDifference){difference&=difference-1n;count++;}assert.ok(count>maximumDifference,'new puzzle too similar: '+i+' and '+j);}
  }
 }
-assert.equal(new Set(M.motifs.slice(60).map(m=>m.quotes[0])).size,240,'new closing texts are distinct');
-const families=new Map();for(const m of M.motifs.slice(60))families.set(m.family,(families.get(m.family)||0)+1);assert.equal(families.size,12);assert.ok([...families.values()].every(n=>n===20));
-console.log('PASS: 240 new fields, 12 balanced construction families, distinct closing texts and near-duplicate rejection under rotation/reflection and small translations.');
+assert.equal(new Set(M.motifs.slice(60).map(m=>m.quotes[0])).size,1140,'new closing texts are distinct');
+const families=new Map();for(const m of M.motifs.slice(60))families.set(m.family,(families.get(m.family)||0)+1);assert.equal(families.size,12);assert.ok([...families.values()].every(n=>n===95));
+console.log('PASS: 1140 expanded fields, 12 balanced construction families, distinct closing texts and near-duplicate rejection under rotation/reflection and small translations.');

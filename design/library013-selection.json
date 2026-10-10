@@ -1,0 +1,1569 @@
+{
+  "total": 600,
+  "candidates": 3492,
+  "similarityLimit": 0.82,
+  "families": [
+    {
+      "id": "facets",
+      "name": "Facetten",
+      "count": 25
+    },
+    {
+      "id": "terraces",
+      "name": "Stufenwege",
+      "count": 25
+    },
+    {
+      "id": "arches",
+      "name": "Lichtbögen",
+      "count": 25
+    },
+    {
+      "id": "bridges",
+      "name": "Verbindungen",
+      "count": 25
+    },
+    {
+      "id": "ribbons",
+      "name": "Bänder",
+      "count": 25
+    },
+    {
+      "id": "notches",
+      "name": "Nischenwege",
+      "count": 25
+    },
+    {
+      "id": "windows",
+      "name": "Fensterlicht",
+      "count": 25
+    },
+    {
+      "id": "anchors",
+      "name": "Ankerwege",
+      "count": 25
+    },
+    {
+      "id": "fans",
+      "name": "Fächerwege",
+      "count": 25
+    },
+    {
+      "id": "islands",
+      "name": "Inselpfade",
+      "count": 25
+    },
+    {
+      "id": "channels",
+      "name": "Durchgänge",
+      "count": 25
+    },
+    {
+      "id": "forks",
+      "name": "Abzweigungen",
+      "count": 25
+    }
+  ],
+  "added": [
+    {
+      "id": "library-facets-21",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-21",
+      "cells": 32,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-21",
+      "cells": 32,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-21",
+      "cells": 26,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-21",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-21",
+      "cells": 26,
+      "blocked": 4
+    },
+    {
+      "id": "library-windows-21",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-21",
+      "cells": 28,
+      "blocked": 3
+    },
+    {
+      "id": "library-fans-21",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-21",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-21",
+      "cells": 36,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-21",
+      "cells": 26,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-22",
+      "cells": 24,
+      "blocked": 2
+    },
+    {
+      "id": "library-arches-22",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-22",
+      "cells": 26,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-22",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-22",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-22",
+      "cells": 38,
+      "blocked": 2
+    },
+    {
+      "id": "library-anchors-22",
+      "cells": 35,
+      "blocked": 2
+    },
+    {
+      "id": "library-fans-22",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-22",
+      "cells": 27,
+      "blocked": 1
+    },
+    {
+      "id": "library-channels-22",
+      "cells": 31,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-22",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-22",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-23",
+      "cells": 38,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-23",
+      "cells": 24,
+      "blocked": 2
+    },
+    {
+      "id": "library-ribbons-23",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-23",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-23",
+      "cells": 33,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-23",
+      "cells": 38,
+      "blocked": 6
+    },
+    {
+      "id": "library-fans-23",
+      "cells": 33,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-23",
+      "cells": 28,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-23",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-23",
+      "cells": 32,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-23",
+      "cells": 31,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-23",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-24",
+      "cells": 23,
+      "blocked": 2
+    },
+    {
+      "id": "library-ribbons-24",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-24",
+      "cells": 23,
+      "blocked": 2
+    },
+    {
+      "id": "library-windows-24",
+      "cells": 32,
+      "blocked": 2
+    },
+    {
+      "id": "library-anchors-24",
+      "cells": 23,
+      "blocked": 3
+    },
+    {
+      "id": "library-fans-24",
+      "cells": 30,
+      "blocked": 2
+    },
+    {
+      "id": "library-islands-24",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-24",
+      "cells": 27,
+      "blocked": 2
+    },
+    {
+      "id": "library-forks-24",
+      "cells": 24,
+      "blocked": 1
+    },
+    {
+      "id": "library-facets-24",
+      "cells": 29,
+      "blocked": 2
+    },
+    {
+      "id": "library-terraces-24",
+      "cells": 31,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-24",
+      "cells": 28,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-25",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-25",
+      "cells": 34,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-25",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-25",
+      "cells": 24,
+      "blocked": 2
+    },
+    {
+      "id": "library-fans-25",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-25",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-25",
+      "cells": 40,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-25",
+      "cells": 28,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-25",
+      "cells": 40,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-25",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-25",
+      "cells": 34,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-25",
+      "cells": 41,
+      "blocked": 2
+    },
+    {
+      "id": "library-notches-26",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-26",
+      "cells": 43,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-26",
+      "cells": 39,
+      "blocked": 3
+    },
+    {
+      "id": "library-fans-26",
+      "cells": 29,
+      "blocked": 2
+    },
+    {
+      "id": "library-islands-26",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-26",
+      "cells": 36,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-26",
+      "cells": 32,
+      "blocked": 2
+    },
+    {
+      "id": "library-facets-26",
+      "cells": 24,
+      "blocked": 2
+    },
+    {
+      "id": "library-terraces-26",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-26",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-26",
+      "cells": 39,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-26",
+      "cells": 28,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-27",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-27",
+      "cells": 31,
+      "blocked": 3
+    },
+    {
+      "id": "library-fans-27",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-27",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-27",
+      "cells": 46,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-27",
+      "cells": 29,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-27",
+      "cells": 38,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-27",
+      "cells": 45,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-27",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-27",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-27",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-27",
+      "cells": 35,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-28",
+      "cells": 28,
+      "blocked": 4
+    },
+    {
+      "id": "library-fans-28",
+      "cells": 35,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-28",
+      "cells": 28,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-28",
+      "cells": 33,
+      "blocked": 1
+    },
+    {
+      "id": "library-forks-28",
+      "cells": 31,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-28",
+      "cells": 42,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-28",
+      "cells": 26,
+      "blocked": 2
+    },
+    {
+      "id": "library-arches-28",
+      "cells": 26,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-28",
+      "cells": 27,
+      "blocked": 2
+    },
+    {
+      "id": "library-ribbons-28",
+      "cells": 26,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-28",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-28",
+      "cells": 38,
+      "blocked": 0
+    },
+    {
+      "id": "library-fans-29",
+      "cells": 35,
+      "blocked": 2
+    },
+    {
+      "id": "library-islands-29",
+      "cells": 25,
+      "blocked": 2
+    },
+    {
+      "id": "library-channels-29",
+      "cells": 39,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-29",
+      "cells": 33,
+      "blocked": 2
+    },
+    {
+      "id": "library-facets-29",
+      "cells": 32,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-29",
+      "cells": 25,
+      "blocked": 2
+    },
+    {
+      "id": "library-arches-29",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-29",
+      "cells": 33,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-29",
+      "cells": 26,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-29",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-29",
+      "cells": 30,
+      "blocked": 2
+    },
+    {
+      "id": "library-anchors-29",
+      "cells": 35,
+      "blocked": 2
+    },
+    {
+      "id": "library-islands-30",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-30",
+      "cells": 44,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-30",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-30",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-30",
+      "cells": 33,
+      "blocked": 3
+    },
+    {
+      "id": "library-arches-30",
+      "cells": 35,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-30",
+      "cells": 28,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-30",
+      "cells": 29,
+      "blocked": 2
+    },
+    {
+      "id": "library-notches-30",
+      "cells": 33,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-30",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-30",
+      "cells": 25,
+      "blocked": 4
+    },
+    {
+      "id": "library-fans-30",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-31",
+      "cells": 30,
+      "blocked": 2
+    },
+    {
+      "id": "library-forks-31",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-31",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-31",
+      "cells": 33,
+      "blocked": 2
+    },
+    {
+      "id": "library-arches-31",
+      "cells": 28,
+      "blocked": 1
+    },
+    {
+      "id": "library-bridges-31",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-31",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-31",
+      "cells": 33,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-31",
+      "cells": 29,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-31",
+      "cells": 36,
+      "blocked": 3
+    },
+    {
+      "id": "library-fans-31",
+      "cells": 29,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-31",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-32",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-32",
+      "cells": 36,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-32",
+      "cells": 34,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-32",
+      "cells": 28,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-32",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-32",
+      "cells": 24,
+      "blocked": 2
+    },
+    {
+      "id": "library-notches-32",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-32",
+      "cells": 35,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-32",
+      "cells": 23,
+      "blocked": 3
+    },
+    {
+      "id": "library-fans-32",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-32",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-32",
+      "cells": 42,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-33",
+      "cells": 24,
+      "blocked": 1
+    },
+    {
+      "id": "library-terraces-33",
+      "cells": 26,
+      "blocked": 2
+    },
+    {
+      "id": "library-arches-33",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-33",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-33",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-33",
+      "cells": 32,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-33",
+      "cells": 32,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-33",
+      "cells": 33,
+      "blocked": 2
+    },
+    {
+      "id": "library-fans-33",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-33",
+      "cells": 28,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-33",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-33",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-34",
+      "cells": 40,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-34",
+      "cells": 26,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-34",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-34",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-34",
+      "cells": 34,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-34",
+      "cells": 32,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-34",
+      "cells": 22,
+      "blocked": 2
+    },
+    {
+      "id": "library-fans-34",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-34",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-34",
+      "cells": 34,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-34",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-34",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-35",
+      "cells": 29,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-35",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-35",
+      "cells": 23,
+      "blocked": 2
+    },
+    {
+      "id": "library-notches-35",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-35",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-35",
+      "cells": 33,
+      "blocked": 3
+    },
+    {
+      "id": "library-fans-35",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-35",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-35",
+      "cells": 25,
+      "blocked": 2
+    },
+    {
+      "id": "library-forks-35",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-35",
+      "cells": 35,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-35",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-36",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-36",
+      "cells": 23,
+      "blocked": 2
+    },
+    {
+      "id": "library-notches-36",
+      "cells": 39,
+      "blocked": 2
+    },
+    {
+      "id": "library-windows-36",
+      "cells": 32,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-36",
+      "cells": 39,
+      "blocked": 5
+    },
+    {
+      "id": "library-fans-36",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-36",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-36",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-36",
+      "cells": 40,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-36",
+      "cells": 36,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-36",
+      "cells": 44,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-36",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-37",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-37",
+      "cells": 26,
+      "blocked": 2
+    },
+    {
+      "id": "library-windows-37",
+      "cells": 31,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-37",
+      "cells": 25,
+      "blocked": 2
+    },
+    {
+      "id": "library-fans-37",
+      "cells": 23,
+      "blocked": 2
+    },
+    {
+      "id": "library-islands-37",
+      "cells": 22,
+      "blocked": 2
+    },
+    {
+      "id": "library-channels-37",
+      "cells": 22,
+      "blocked": 3
+    },
+    {
+      "id": "library-forks-37",
+      "cells": 22,
+      "blocked": 2
+    },
+    {
+      "id": "library-facets-37",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-37",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-37",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-37",
+      "cells": 26,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-38",
+      "cells": 30,
+      "blocked": 2
+    },
+    {
+      "id": "library-windows-38",
+      "cells": 34,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-38",
+      "cells": 30,
+      "blocked": 1
+    },
+    {
+      "id": "library-fans-38",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-38",
+      "cells": 22,
+      "blocked": 2
+    },
+    {
+      "id": "library-channels-38",
+      "cells": 24,
+      "blocked": 2
+    },
+    {
+      "id": "library-forks-38",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-38",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-38",
+      "cells": 39,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-38",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-38",
+      "cells": 43,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-38",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-39",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-39",
+      "cells": 39,
+      "blocked": 2
+    },
+    {
+      "id": "library-fans-39",
+      "cells": 23,
+      "blocked": 2
+    },
+    {
+      "id": "library-islands-39",
+      "cells": 23,
+      "blocked": 4
+    },
+    {
+      "id": "library-channels-39",
+      "cells": 42,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-39",
+      "cells": 26,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-39",
+      "cells": 44,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-39",
+      "cells": 38,
+      "blocked": 2
+    },
+    {
+      "id": "library-arches-39",
+      "cells": 25,
+      "blocked": 1
+    },
+    {
+      "id": "library-bridges-39",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-39",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-39",
+      "cells": 24,
+      "blocked": 4
+    },
+    {
+      "id": "library-anchors-40",
+      "cells": 33,
+      "blocked": 5
+    },
+    {
+      "id": "library-fans-40",
+      "cells": 26,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-40",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-40",
+      "cells": 29,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-40",
+      "cells": 26,
+      "blocked": 1
+    },
+    {
+      "id": "library-facets-40",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-40",
+      "cells": 38,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-40",
+      "cells": 38,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-40",
+      "cells": 30,
+      "blocked": 2
+    },
+    {
+      "id": "library-ribbons-40",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-40",
+      "cells": 35,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-40",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-fans-41",
+      "cells": 42,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-41",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-41",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-41",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-41",
+      "cells": 23,
+      "blocked": 3
+    },
+    {
+      "id": "library-terraces-41",
+      "cells": 46,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-41",
+      "cells": 29,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-41",
+      "cells": 33,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-41",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-41",
+      "cells": 37,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-41",
+      "cells": 41,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-41",
+      "cells": 25,
+      "blocked": 4
+    },
+    {
+      "id": "library-islands-42",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-42",
+      "cells": 46,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-42",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-42",
+      "cells": 26,
+      "blocked": 2
+    },
+    {
+      "id": "library-terraces-42",
+      "cells": 36,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-42",
+      "cells": 23,
+      "blocked": 3
+    },
+    {
+      "id": "library-bridges-42",
+      "cells": 36,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-42",
+      "cells": 23,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-42",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-42",
+      "cells": 27,
+      "blocked": 4
+    },
+    {
+      "id": "library-anchors-42",
+      "cells": 37,
+      "blocked": 2
+    },
+    {
+      "id": "library-fans-42",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-43",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-43",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-43",
+      "cells": 23,
+      "blocked": 2
+    },
+    {
+      "id": "library-terraces-43",
+      "cells": 32,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-43",
+      "cells": 28,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-43",
+      "cells": 35,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-43",
+      "cells": 22,
+      "blocked": 2
+    },
+    {
+      "id": "library-notches-43",
+      "cells": 31,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-43",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-43",
+      "cells": 27,
+      "blocked": 4
+    },
+    {
+      "id": "library-fans-43",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-43",
+      "cells": 32,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-44",
+      "cells": 32,
+      "blocked": 1
+    },
+    {
+      "id": "library-facets-44",
+      "cells": 30,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-44",
+      "cells": 26,
+      "blocked": 0
+    },
+    {
+      "id": "library-arches-44",
+      "cells": 36,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-44",
+      "cells": 31,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-44",
+      "cells": 25,
+      "blocked": 2
+    },
+    {
+      "id": "library-notches-44",
+      "cells": 25,
+      "blocked": 1
+    },
+    {
+      "id": "library-windows-44",
+      "cells": 39,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-44",
+      "cells": 22,
+      "blocked": 3
+    },
+    {
+      "id": "library-fans-44",
+      "cells": 25,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-44",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-44",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-facets-45",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-terraces-45",
+      "cells": 35,
+      "blocked": 2
+    },
+    {
+      "id": "library-arches-45",
+      "cells": 27,
+      "blocked": 0
+    },
+    {
+      "id": "library-bridges-45",
+      "cells": 36,
+      "blocked": 0
+    },
+    {
+      "id": "library-ribbons-45",
+      "cells": 33,
+      "blocked": 0
+    },
+    {
+      "id": "library-notches-45",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-windows-45",
+      "cells": 22,
+      "blocked": 0
+    },
+    {
+      "id": "library-anchors-45",
+      "cells": 33,
+      "blocked": 2
+    },
+    {
+      "id": "library-fans-45",
+      "cells": 24,
+      "blocked": 0
+    },
+    {
+      "id": "library-islands-45",
+      "cells": 29,
+      "blocked": 0
+    },
+    {
+      "id": "library-channels-45",
+      "cells": 29,
+      "blocked": 0
+    },
+    {
+      "id": "library-forks-45",
+      "cells": 24,
+      "blocked": 0
+    }
+  ]
+}

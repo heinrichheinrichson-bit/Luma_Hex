@@ -1,0 +1,1201 @@
+﻿Nummer;ID;Name;Stufe;Felder;Teile;Anker;Struktur;Score
+1;library-ribbons-09;Bänder · Neue Aussicht;Ankommen;22;3;0;Kompakt;18.565
+2;fan;Fächer;Ankommen;22;3;0;Kompakt;20.966
+3;library-fans-15;Fächerwege · Ruhiger Pol;Ankommen;22;3;0;Kompakt;21.587
+4;library-forks-09;Abzweigungen · Neue Aussicht;Ankommen;23;4;0;Kompakt;22.958
+5;library-bridges-18;Verbindungen · Weitblick;Ankommen;28;4;0;Kompakt;23.881
+6;library-islands-06;Inselpfade · Kleine Weite;Ankommen;25;4;0;Kompakt;24.322
+7;library-fans-18;Fächerwege · Weitblick;Ankommen;22;4;0;Kompakt;24.382
+8;library-forks-06;Abzweigungen · Kleine Weite;Ankommen;23;4;0;Kompakt;24.58
+9;library-channels-14;Durchgänge · Gute Verbindung;Ankommen;22;4;0;Kompakt;24.63
+10;library-fans-20;Fächerwege · Feierabend;Ankommen;26;4;0;Kompakt;24.67
+11;wave;Wellenband;Ankommen;23;4;0;Kompakt;24.79
+12;library-forks-17;Abzweigungen · Blaue Stunde;Ankommen;27;4;0;Kompakt;24.882
+13;bridge;Brückenspiel;Ankommen;27;4;0;Kompakt;24.92
+14;library-islands-07;Inselpfade · Leiser Fluss;Ankommen;22;4;0;Kompakt;25.086
+15;library-bridges-05;Verbindungen · Sternenblick;Ankommen;28;4;0;Kompakt;25.29
+16;library-islands-14;Inselpfade · Gute Verbindung;Ankommen;24;4;0;Kompakt;25.406
+17;library-facets-08;Facetten · Goldener Winkel;Ankommen;25;4;0;Kompakt;25.566
+18;library-notches-08;Nischenwege · Goldener Winkel;Ankommen;25;4;0;Kompakt;25.644
+19;library-notches-09;Nischenwege · Neue Aussicht;Ankommen;23;4;0;Kompakt;25.658
+20;library-channels-11;Durchgänge · Heller Gedanke;Ankommen;22;4;0;Kompakt;25.875
+21;library-ribbons-01;Bänder · Morgenlicht;Ankommen;25;4;0;Kompakt;26.265
+22;library-forks-04;Abzweigungen · Sommerwind;Ankommen;26;4;0;Kompakt;26.326
+23;library-bridges-04;Verbindungen · Sommerwind;Ankommen;23;4;0;Kompakt;26.335
+24;library-arches-06;Lichtbögen · Kleine Weite;Ankommen;26;4;0;Kompakt;26.392
+25;library-ribbons-20;Bänder · Feierabend;Ankommen;22;4;0;Kompakt;26.398
+26;library-fans-03;Fächerwege · Silberpfad;Ankommen;23;4;0;Kompakt;26.512
+27;library-windows-20;Fensterlicht · Feierabend;Ankommen;23;4;0;Verzweigt;26.657
+28;library-terraces-08;Stufenwege · Goldener Winkel;Ankommen;22;4;0;Kompakt;26.694
+29;library-bridges-15;Verbindungen · Ruhiger Pol;Ankommen;25;4;0;Kompakt;26.721
+30;library-islands-13;Inselpfade · Freiraum;Ankommen;22;4;0;Kompakt;26.841
+31;candle;Kerze;Ankommen;27;4;0;Langgezogen;27.194
+32;library-fans-06;Fächerwege · Kleine Weite;Ankommen;23;4;0;Kompakt;26.854
+33;fish;Fisch;Ankommen;25;4;0;Kompakt;27.922
+34;library-fans-07;Fächerwege · Leiser Fluss;Ankommen;24;4;0;Kompakt;26.972
+35;library-islands-01;Inselpfade · Morgenlicht;Ankommen;24;4;0;Kompakt;27.161
+36;library-fans-10;Fächerwege · Zwischenzeit;Ankommen;25;4;0;Kompakt;27.262
+37;library-notches-05;Nischenwege · Sternenblick;Ankommen;23;4;0;Kompakt;27.301
+38;star;Sternenfeld;Ankommen;25;4;0;Verzweigt;27.732
+39;library-channels-13;Durchgänge · Freiraum;Ankommen;27;4;0;Kompakt;28.083
+40;library-ribbons-11;Bänder · Heller Gedanke;Ankommen;24;5;0;Kompakt;28.306
+41;note;Musiknote;Ankommen;21;5;0;Kompakt;29.515
+42;library-windows-02;Fensterlicht · Abendruhe;Ankommen;22;5;0;Kompakt;28.928
+43;library-fans-17;Fächerwege · Blaue Stunde;Ankommen;23;5;0;Kompakt;29.377
+44;library-forks-12;Abzweigungen · Nordlicht;Ankommen;25;5;0;Kompakt;29.408
+45;ring;Lichtring;Ankommen;30;5;0;Kompakt;29.436
+46;library-forks-03;Abzweigungen · Silberpfad;Ankommen;26;5;0;Kompakt;29.715
+47;library-forks-18;Abzweigungen · Weitblick;Ankommen;27;5;0;Kompakt;29.719
+48;chevron;Zickzack;Ankommen;21;5;0;Kompakt;29.757
+49;library-channels-19;Durchgänge · Lichtspur;Ankommen;22;5;0;Verzweigt;29.786
+50;library-arches-05;Lichtbögen · Sternenblick;Ankommen;22;5;0;Kompakt;29.819
+51;library-islands-11;Inselpfade · Heller Gedanke;Ankommen;22;5;0;Kompakt;29.828
+52;library-bridges-09;Verbindungen · Neue Aussicht;Ankommen;23;5;0;Kompakt;29.947
+53;library-facets-04;Facetten · Sommerwind;Ankommen;26;5;0;Kompakt;30.016
+54;bolt;Funkenweg;Ankommen;20;5;0;Kompakt;30.197
+55;library-forks-10;Abzweigungen · Zwischenzeit;Ankommen;23;5;0;Kompakt;30.258
+56;library-facets-07;Facetten · Leiser Fluss;Ankommen;24;5;0;Kompakt;30.295
+57;library-terraces-16;Stufenwege · Sonnenfenster;Ankommen;22;5;0;Kompakt;30.398
+58;library-fans-12;Fächerwege · Nordlicht;Ankommen;29;5;0;Kompakt;30.495
+59;library-forks-11;Abzweigungen · Heller Gedanke;Ankommen;22;5;0;Kompakt;30.51
+60;library-arches-15;Lichtbögen · Ruhiger Pol;Ankommen;26;5;0;Kompakt;30.557
+61;library-anchors-03;Ankerwege · Silberpfad;Entdecken;22;3;3;Verzweigt;22.72
+62;block01;Der erste Anker;Entdecken;18;4;1;Kompakt;24.924
+63;library-arches-03;Lichtbögen · Silberpfad;Entdecken;27;4;2;Kompakt;26.086
+64;library-ribbons-08;Bänder · Goldener Winkel;Entdecken;23;4;2;Kompakt;27.09
+65;library-ribbons-05;Bänder · Sternenblick;Entdecken;22;4;1;Kompakt;28.253
+66;library-anchors-08;Ankerwege · Goldener Winkel;Entdecken;24;4;3;Kompakt;30.117
+67;library-forks-07;Abzweigungen · Leiser Fluss;Entdecken;22;5;0;Kompakt;30.583
+68;library-forks-02;Abzweigungen · Abendruhe;Entdecken;23;5;2;Kompakt;30.591
+69;library-facets-19;Facetten · Lichtspur;Entdecken;24;5;0;Kompakt;30.603
+70;library-terraces-19;Stufenwege · Lichtspur;Entdecken;22;5;0;Kompakt;30.642
+71;library-terraces-11;Stufenwege · Heller Gedanke;Entdecken;27;5;0;Kompakt;30.775
+72;library-channels-17;Durchgänge · Blaue Stunde;Entdecken;26;5;0;Kompakt;30.982
+73;library-bridges-16;Verbindungen · Sonnenfenster;Entdecken;24;5;0;Kompakt;31.053
+74;library-terraces-12;Stufenwege · Nordlicht;Entdecken;30;5;0;Kompakt;31.097
+75;library-islands-04;Inselpfade · Sommerwind;Entdecken;25;5;0;Kompakt;31.105
+76;library-islands-20;Inselpfade · Feierabend;Entdecken;22;5;0;Kompakt;31.13
+77;library-forks-16;Abzweigungen · Sonnenfenster;Entdecken;23;5;2;Kompakt;31.191
+78;library-fans-05;Fächerwege · Sternenblick;Entdecken;24;5;0;Kompakt;31.203
+79;library-arches-20;Lichtbögen · Feierabend;Entdecken;22;5;0;Kompakt;31.333
+80;library-terraces-02;Stufenwege · Abendruhe;Entdecken;26;5;0;Kompakt;31.338
+81;key;Schlüssel;Entdecken;27;5;0;Kompakt;31.498
+82;library-islands-19;Inselpfade · Lichtspur;Entdecken;31;5;0;Kompakt;31.35
+83;library-terraces-01;Stufenwege · Morgenlicht;Entdecken;22;5;0;Kompakt;31.41
+84;library-fans-09;Fächerwege · Neue Aussicht;Entdecken;26;5;0;Kompakt;31.47
+85;library-terraces-15;Stufenwege · Ruhiger Pol;Entdecken;29;5;0;Kompakt;31.507
+86;library-fans-13;Fächerwege · Freiraum;Entdecken;22;5;0;Kompakt;31.525
+87;library-bridges-19;Verbindungen · Lichtspur;Entdecken;24;5;0;Kompakt;31.54
+88;library-arches-12;Lichtbögen · Nordlicht;Entdecken;29;5;0;Kompakt;31.637
+89;library-ribbons-02;Bänder · Abendruhe;Entdecken;24;5;0;Kompakt;31.639
+90;library-facets-13;Facetten · Freiraum;Entdecken;25;4;4;Kompakt;31.671
+91;library-channels-20;Durchgänge · Feierabend;Entdecken;29;5;0;Kompakt;31.762
+92;library-ribbons-14;Bänder · Gute Verbindung;Entdecken;30;5;0;Kompakt;31.811
+93;library-ribbons-19;Bänder · Lichtspur;Entdecken;22;5;0;Langgezogen;31.838
+94;library-notches-15;Nischenwege · Ruhiger Pol;Entdecken;29;5;0;Kompakt;31.884
+95;library-forks-15;Abzweigungen · Ruhiger Pol;Entdecken;24;5;0;Kompakt;31.938
+96;library-channels-18;Durchgänge · Weitblick;Entdecken;29;5;0;Kompakt;32.062
+97;library-bridges-07;Verbindungen · Leiser Fluss;Entdecken;26;5;0;Kompakt;32.071
+98;library-terraces-14;Stufenwege · Gute Verbindung;Entdecken;27;5;0;Verzweigt;32.087
+99;library-facets-16;Facetten · Sonnenfenster;Entdecken;31;5;0;Kompakt;32.27
+100;library-facets-10;Facetten · Zwischenzeit;Entdecken;28;5;0;Kompakt;32.369
+101;rocket;Rakete;Entdecken;33;5;0;Langgezogen;32.643
+102;library-ribbons-10;Bänder · Zwischenzeit;Entdecken;23;5;2;Kompakt;32.377
+103;library-facets-15;Facetten · Ruhiger Pol;Entdecken;23;5;1;Kompakt;32.493
+104;library-windows-19;Fensterlicht · Lichtspur;Entdecken;27;5;1;Kompakt;32.498
+105;balance;Balance;Entdecken;33;5;0;Kompakt;32.524
+106;library-notches-18;Nischenwege · Weitblick;Entdecken;33;5;0;Kompakt;32.68
+107;library-facets-14;Facetten · Gute Verbindung;Entdecken;23;5;2;Kompakt;32.714
+108;library-fans-02;Fächerwege · Abendruhe;Entdecken;34;5;0;Kompakt;32.729
+109;library-facets-03;Facetten · Silberpfad;Entdecken;30;5;0;Kompakt;32.813
+110;library-terraces-17;Stufenwege · Blaue Stunde;Entdecken;27;5;0;Kompakt;33.019
+111;library-windows-12;Fensterlicht · Nordlicht;Entdecken;31;5;0;Verzweigt;33.104
+112;library-ribbons-18;Bänder · Weitblick;Entdecken;23;5;2;Kompakt;33.29
+113;library-ribbons-07;Bänder · Leiser Fluss;Entdecken;22;5;3;Kompakt;33.387
+114;library-islands-16;Inselpfade · Sonnenfenster;Entdecken;26;5;2;Kompakt;33.404
+115;library-notches-13;Nischenwege · Freiraum;Entdecken;31;5;2;Kompakt;33.415
+116;library-islands-17;Inselpfade · Blaue Stunde;Entdecken;22;5;2;Kompakt;33.542
+117;petals;Windrad;Entdecken;29;5;0;Kompakt;33.558
+118;library-ribbons-17;Bänder · Blaue Stunde;Entdecken;25;5;2;Kompakt;33.611
+119;library-arches-19;Lichtbögen · Lichtspur;Entdecken;32;5;2;Verzweigt;33.625
+120;library-anchors-14;Ankerwege · Gute Verbindung;Entdecken;24;5;3;Verzweigt;33.64
+121;library-channels-02;Durchgänge · Abendruhe;Entdecken;25;5;2;Kompakt;33.722
+122;library-forks-20;Abzweigungen · Feierabend;Entdecken;25;6;0;Kompakt;33.833
+123;library-terraces-20;Stufenwege · Feierabend;Entdecken;33;5;0;Verzweigt;33.893
+124;library-windows-15;Fensterlicht · Ruhiger Pol;Entdecken;23;5;2;Verzweigt;34.002
+125;library-anchors-06;Ankerwege · Kleine Weite;Entdecken;22;5;4;Kompakt;34.128
+126;library-bridges-17;Verbindungen · Blaue Stunde;Entdecken;24;6;0;Kompakt;34.229
+127;library-anchors-13;Ankerwege · Freiraum;Entdecken;22;5;4;Verzweigt;34.231
+128;library-notches-01;Nischenwege · Morgenlicht;Entdecken;24;6;0;Verzweigt;34.318
+129;block08;Vier Stationen;Entdecken;29;5;4;Kompakt;34.429
+130;library-anchors-17;Ankerwege · Blaue Stunde;Entdecken;24;5;3;Kompakt;34.437
+131;flower;Blume;Entdecken;34;5;0;Verzweigt;34.791
+132;library-islands-02;Inselpfade · Abendruhe;Entdecken;24;6;0;Kompakt;34.617
+133;library-terraces-07;Stufenwege · Leiser Fluss;Entdecken;29;5;1;Kompakt;34.691
+134;library-islands-08;Inselpfade · Goldener Winkel;Entdecken;24;6;0;Kompakt;34.729
+135;library-islands-12;Inselpfade · Nordlicht;Entdecken;24;6;0;Kompakt;34.869
+136;library-bridges-03;Verbindungen · Silberpfad;Entdecken;24;6;0;Kompakt;34.959
+137;library-ribbons-12;Bänder · Nordlicht;Entdecken;25;6;0;Kompakt;34.966
+138;library-bridges-12;Verbindungen · Nordlicht;Entdecken;26;6;0;Kompakt;34.979
+139;block10;Freie Bahn;Entdecken;29;5;4;Kompakt;35.095
+140;stair;Stufenlicht;Entdecken;24;6;0;Kompakt;35.107
+141;hexagon;Wabenruhe;Entdecken;37;5;0;Kompakt;35.141
+142;library-ribbons-06;Bänder · Kleine Weite;Entdecken;26;6;0;Kompakt;35.204
+143;library-forks-13;Abzweigungen · Freiraum;Entdecken;26;6;0;Kompakt;35.27
+144;library-channels-07;Durchgänge · Leiser Fluss;Entdecken;27;6;0;Kompakt;35.364
+145;library-fans-08;Fächerwege · Goldener Winkel;Entdecken;25;6;0;Kompakt;35.493
+146;library-windows-03;Fensterlicht · Silberpfad;Entdecken;27;6;0;Kompakt;35.509
+147;library-bridges-02;Verbindungen · Abendruhe;Entdecken;30;5;2;Kompakt;35.636
+148;library-ribbons-15;Bänder · Ruhiger Pol;Entdecken;26;6;0;Kompakt;35.772
+149;library-fans-14;Fächerwege · Gute Verbindung;Entdecken;25;6;0;Kompakt;35.777
+150;library-arches-09;Lichtbögen · Neue Aussicht;Entdecken;31;6;0;Kompakt;35.822
+151;library-islands-03;Inselpfade · Silberpfad;Knobeln;25;6;0;Kompakt;35.871
+152;library-bridges-06;Verbindungen · Kleine Weite;Knobeln;27;6;0;Kompakt;35.886
+153;library-anchors-09;Ankerwege · Neue Aussicht;Knobeln;27;6;1;Kompakt;36.129
+154;library-windows-01;Fensterlicht · Morgenlicht;Knobeln;34;6;0;Kompakt;36.25
+155;library-channels-10;Durchgänge · Zwischenzeit;Knobeln;29;5;4;Verzweigt;36.276
+156;library-anchors-19;Ankerwege · Lichtspur;Knobeln;25;6;2;Kompakt;36.301
+157;library-terraces-13;Stufenwege · Freiraum;Knobeln;27;6;0;Kompakt;36.553
+158;library-ribbons-13;Bänder · Freiraum;Knobeln;30;6;0;Kompakt;36.555
+159;library-bridges-20;Verbindungen · Feierabend;Knobeln;25;6;0;Kompakt;36.589
+160;library-islands-05;Inselpfade · Sternenblick;Knobeln;24;6;1;Kompakt;36.917
+161;bird;Vogel;Knobeln;30;6;0;Kompakt;36.945
+162;library-islands-10;Inselpfade · Zwischenzeit;Knobeln;32;6;0;Kompakt;36.993
+163;library-notches-07;Nischenwege · Leiser Fluss;Knobeln;28;6;0;Kompakt;37.125
+164;library-notches-03;Nischenwege · Silberpfad;Knobeln;34;6;0;Kompakt;37.148
+165;library-anchors-01;Ankerwege · Morgenlicht;Knobeln;29;6;2;Kompakt;37.158
+166;gate;Lichttor;Knobeln;34;6;0;Kompakt;37.159
+167;library-islands-18;Inselpfade · Weitblick;Knobeln;26;6;2;Kompakt;37.176
+168;library-channels-05;Durchgänge · Sternenblick;Knobeln;36;6;0;Kompakt;37.253
+169;library-forks-05;Abzweigungen · Sternenblick;Knobeln;28;6;1;Kompakt;37.273
+170;library-terraces-03;Stufenwege · Silberpfad;Knobeln;27;6;0;Kompakt;37.275
+171;icecream;Eistüte;Knobeln;33;6;0;Kompakt;37.512
+172;library-windows-07;Fensterlicht · Leiser Fluss;Knobeln;32;6;0;Kompakt;37.49
+173;cup;Tasse;Knobeln;33;6;0;Verzweigt;38.392
+174;library-fans-01;Fächerwege · Morgenlicht;Knobeln;24;6;1;Kompakt;37.548
+175;library-facets-11;Facetten · Heller Gedanke;Knobeln;27;6;2;Kompakt;37.636
+176;block02;Zwei Ruhepunkte;Knobeln;31;6;2;Kompakt;37.649
+177;library-windows-17;Fensterlicht · Blaue Stunde;Knobeln;40;6;0;Kompakt;37.666
+178;library-anchors-15;Ankerwege · Ruhiger Pol;Knobeln;25;6;3;Kompakt;37.733
+179;library-notches-17;Nischenwege · Blaue Stunde;Knobeln;24;6;2;Kompakt;37.784
+180;library-anchors-16;Ankerwege · Sonnenfenster;Knobeln;34;5;5;Kompakt;38.395
+181;library-anchors-10;Ankerwege · Zwischenzeit;Knobeln;27;6;2;Kompakt;38.409
+182;library-facets-05;Facetten · Sternenblick;Knobeln;25;6;2;Kompakt;38.445
+183;library-arches-07;Lichtbögen · Leiser Fluss;Knobeln;32;7;0;Kompakt;38.471
+184;library-arches-11;Lichtbögen · Heller Gedanke;Knobeln;39;6;1;Verzweigt;38.513
+185;library-windows-13;Fensterlicht · Freiraum;Knobeln;33;6;2;Kompakt;38.569
+186;cross;Kreuzlicht;Knobeln;33;6;0;Kompakt;38.581
+187;library-facets-01;Facetten · Morgenlicht;Knobeln;30;6;2;Kompakt;38.593
+188;library-bridges-10;Verbindungen · Zwischenzeit;Knobeln;36;6;0;Langgezogen;38.623
+189;library-anchors-18;Ankerwege · Weitblick;Knobeln;26;6;4;Kompakt;38.833
+190;library-channels-01;Durchgänge · Morgenlicht;Knobeln;32;7;0;Kompakt;38.853
+191;cactus;Kaktus;Knobeln;36;6;0;Verzweigt;38.904
+192;library-forks-19;Abzweigungen · Lichtspur;Knobeln;30;7;0;Kompakt;39.011
+193;library-arches-13;Lichtbögen · Freiraum;Knobeln;32;7;0;Kompakt;39.063
+194;library-islands-15;Inselpfade · Ruhiger Pol;Knobeln;27;6;2;Kompakt;39.065
+195;block05;Drei Fixpunkte;Knobeln;35;6;3;Kompakt;39.123
+196;library-arches-17;Lichtbögen · Blaue Stunde;Knobeln;29;7;1;Verzweigt;39.674
+197;library-channels-03;Durchgänge · Silberpfad;Knobeln;30;7;0;Kompakt;39.726
+198;spiral;Spurensuche;Knobeln;32;7;0;Verzweigt;39.754
+199;library-fans-04;Fächerwege · Sommerwind;Knobeln;29;7;0;Kompakt;39.767
+200;library-channels-06;Durchgänge · Kleine Weite;Knobeln;31;7;0;Kompakt;39.9
+201;butterfly;Schmetterling;Knobeln;47;6;0;Kompakt;40.383
+202;library-ribbons-03;Bänder · Silberpfad;Knobeln;28;7;0;Kompakt;39.936
+203;library-arches-08;Lichtbögen · Goldener Winkel;Knobeln;31;7;0;Kompakt;39.964
+204;library-windows-04;Fensterlicht · Sommerwind;Knobeln;38;6;2;Kompakt;40.169
+205;library-notches-19;Nischenwege · Lichtspur;Knobeln;30;7;0;Kompakt;40.17
+206;library-bridges-08;Verbindungen · Goldener Winkel;Knobeln;31;7;0;Kompakt;40.215
+207;library-fans-16;Fächerwege · Sonnenfenster;Knobeln;29;7;0;Kompakt;40.284
+208;library-forks-08;Abzweigungen · Goldener Winkel;Knobeln;30;7;0;Kompakt;40.303
+209;library-forks-14;Abzweigungen · Gute Verbindung;Knobeln;28;7;0;Kompakt;40.327
+210;library-windows-09;Fensterlicht · Neue Aussicht;Knobeln;28;7;0;Kompakt;40.335
+211;library-facets-20;Facetten · Feierabend;Knobeln;29;7;0;Kompakt;40.391
+212;comet;Schweif;Knobeln;28;7;0;Kompakt;40.522
+213;crescent;Mondbogen;Knobeln;29;7;0;Kompakt;40.529
+214;ribbon;Faltenspiel;Knobeln;31;7;0;Kompakt;40.566
+215;library-arches-01;Lichtbögen · Morgenlicht;Knobeln;28;7;0;Kompakt;40.775
+216;library-arches-16;Lichtbögen · Sonnenfenster;Knobeln;31;7;0;Kompakt;40.815
+217;library-facets-09;Facetten · Neue Aussicht;Knobeln;32;7;0;Kompakt;40.817
+218;library-notches-12;Nischenwege · Nordlicht;Knobeln;31;6;2;Kompakt;40.875
+219;library-fans-19;Fächerwege · Lichtspur;Knobeln;31;7;0;Kompakt;41.048
+220;library-islands-09;Inselpfade · Neue Aussicht;Knobeln;32;7;0;Kompakt;41.173
+221;library-terraces-09;Stufenwege · Neue Aussicht;Knobeln;29;7;0;Kompakt;41.206
+222;library-notches-14;Nischenwege · Gute Verbindung;Knobeln;29;7;0;Kompakt;41.247
+223;library-channels-04;Durchgänge · Sommerwind;Knobeln;31;7;0;Kompakt;41.262
+224;library-anchors-11;Ankerwege · Heller Gedanke;Knobeln;39;6;4;Kompakt;41.358
+225;library-fans-11;Fächerwege · Heller Gedanke;Knobeln;34;7;0;Kompakt;41.435
+226;library-bridges-11;Verbindungen · Heller Gedanke;Knobeln;34;7;0;Kompakt;41.545
+227;library-channels-08;Durchgänge · Goldener Winkel;Knobeln;36;7;0;Kompakt;41.565
+228;library-windows-10;Fensterlicht · Zwischenzeit;Knobeln;39;7;0;Kompakt;41.584
+229;library-anchors-20;Ankerwege · Feierabend;Knobeln;35;7;1;Kompakt;41.727
+230;library-arches-18;Lichtbögen · Weitblick;Knobeln;35;7;2;Kompakt;41.895
+231;bell;Glocke;Knobeln;31;7;0;Verzweigt;42.813
+232;library-bridges-01;Verbindungen · Morgenlicht;Knobeln;39;7;0;Kompakt;41.982
+233;library-bridges-13;Verbindungen · Freiraum;Knobeln;35;7;0;Kompakt;41.988
+234;library-terraces-06;Stufenwege · Kleine Weite;Knobeln;31;7;0;Kompakt;42.082
+235;library-arches-14;Lichtbögen · Gute Verbindung;Knobeln;30;7;2;Kompakt;42.34
+236;orbit;Doppelklang;Knobeln;37;7;0;Kompakt;42.458
+237;alcove;Nischen;Knobeln;37;7;0;Kompakt;42.827
+238;library-notches-06;Nischenwege · Kleine Weite;Knobeln;39;7;0;Kompakt;42.854
+239;library-windows-14;Fensterlicht · Gute Verbindung;Knobeln;30;7;2;Kompakt;42.989
+240;library-windows-11;Fensterlicht · Heller Gedanke;Knobeln;29;7;2;Kompakt;43.087
+241;turtle;Schildkröte;Meistern;36;7;0;Kompakt;43.612
+242;block06;Um die Ecke;Meistern;31;7;3;Kompakt;43.5
+243;boat;Segelboot;Meistern;41;7;0;Verzweigt;43.816
+244;library-windows-05;Fensterlicht · Sternenblick;Meistern;33;8;0;Kompakt;44.035
+245;library-facets-02;Facetten · Abendruhe;Meistern;30;7;2;Kompakt;44.105
+246;library-anchors-12;Ankerwege · Nordlicht;Meistern;30;7;4;Kompakt;44.21
+247;library-arches-04;Lichtbögen · Sommerwind;Meistern;35;8;0;Kompakt;44.479
+248;ladder;Sprossen;Meistern;37;8;0;Kompakt;44.989
+249;library-ribbons-16;Bänder · Sonnenfenster;Meistern;36;8;0;Kompakt;45.143
+250;library-ribbons-04;Bänder · Sommerwind;Meistern;35;8;0;Kompakt;45.174
+251;cat;Katze;Meistern;37;8;0;Kompakt;45.495
+252;library-anchors-05;Ankerwege · Sternenblick;Meistern;38;7;4;Kompakt;45.306
+253;library-anchors-02;Ankerwege · Abendruhe;Meistern;37;7;3;Kompakt;45.308
+254;library-forks-01;Abzweigungen · Morgenlicht;Meistern;36;8;0;Kompakt;45.371
+255;library-arches-02;Lichtbögen · Abendruhe;Meistern;33;8;0;Kompakt;45.623
+256;library-windows-08;Fensterlicht · Goldener Winkel;Meistern;35;8;0;Kompakt;45.884
+257;library-windows-18;Fensterlicht · Weitblick;Meistern;36;8;0;Kompakt;45.888
+258;library-bridges-14;Verbindungen · Gute Verbindung;Meistern;35;8;0;Kompakt;45.934
+259;fork;Dreiklang;Meistern;37;8;0;Kompakt;46.044
+260;library-notches-10;Nischenwege · Zwischenzeit;Meistern;35;8;0;Kompakt;46.284
+261;library-facets-17;Facetten · Blaue Stunde;Meistern;36;8;0;Kompakt;46.418
+262;library-notches-02;Nischenwege · Abendruhe;Meistern;34;8;1;Kompakt;46.876
+263;library-anchors-07;Ankerwege · Leiser Fluss;Meistern;36;8;1;Kompakt;47.188
+264;library-windows-16;Fensterlicht · Sonnenfenster;Meistern;44;8;0;Kompakt;47.214
+265;library-terraces-04;Stufenwege · Sommerwind;Meistern;33;8;1;Kompakt;47.463
+266;library-channels-09;Durchgänge · Neue Aussicht;Meistern;34;8;2;Kompakt;47.528
+267;block03;Versetzte Wege;Meistern;33;8;2;Kompakt;47.664
+268;library-terraces-05;Stufenwege · Sternenblick;Meistern;40;8;0;Kompakt;47.749
+269;block07;Zwischenräume;Meistern;34;8;3;Kompakt;47.969
+270;block04;Die kleine Insel;Meistern;34;8;3;Kompakt;48.095
+271;tree;Tannenbaum;Meistern;38;8;0;Verzweigt;48.11
+272;library-terraces-10;Stufenwege · Zwischenzeit;Meistern;35;8;2;Kompakt;48.105
+273;heart;Herz;Meistern;48;8;0;Kompakt;48.864
+274;frame;Fensterspiel;Meistern;40;9;0;Kompakt;48.834
+275;house;Häuschen;Meistern;44;8;0;Kompakt;49.117
+276;library-channels-16;Durchgänge · Sonnenfenster;Meistern;37;9;0;Kompakt;49.176
+277;umbrella;Regenschirm;Meistern;38;9;0;Kompakt;50.573
+278;library-arches-10;Lichtbögen · Zwischenzeit;Meistern;39;9;0;Kompakt;49.597
+279;library-channels-12;Durchgänge · Nordlicht;Meistern;40;9;0;Kompakt;49.69
+280;library-anchors-04;Ankerwege · Sommerwind;Meistern;33;8;4;Kompakt;50.157
+281;balloon;Ballon;Meistern;37;9;0;Kompakt;51.235
+282;library-facets-06;Facetten · Kleine Weite;Meistern;39;9;0;Kompakt;51.084
+283;mushroom;Pilz;Meistern;41;9;0;Kompakt;51.479
+284;library-facets-18;Facetten · Weitblick;Meistern;40;9;0;Kompakt;51.237
+285;crown;Krone;Meistern;38;9;0;Kompakt;51.59
+286;library-windows-06;Fensterlicht · Kleine Weite;Meistern;39;9;0;Kompakt;51.255
+287;terrace;Terrassen;Meistern;40;9;0;Kompakt;51.377
+288;diamond;Prisma;Meistern;43;9;0;Kompakt;51.802
+289;block09;Die stille Achse;Meistern;37;9;3;Kompakt;52.776
+290;library-notches-20;Nischenwege · Feierabend;Meistern;40;9;1;Kompakt;52.993
+291;castle;Burg;Meistern;50;9;0;Kompakt;53.794
+292;weave;Flechtwerk;Meistern;41;10;0;Kompakt;54.569
+293;apple;Apfel;Meistern;42;10;0;Kompakt;56.252
+294;library-notches-16;Nischenwege · Sonnenfenster;Meistern;42;10;0;Kompakt;54.695
+295;library-facets-12;Facetten · Nordlicht;Meistern;43;10;0;Kompakt;55.694
+296;hourglass;Sanduhr;Meistern;45;10;0;Kompakt;56.278
+297;library-channels-15;Durchgänge · Ruhiger Pol;Meistern;44;10;0;Kompakt;56.396
+298;library-notches-11;Nischenwege · Heller Gedanke;Meistern;45;10;0;Kompakt;56.609
+299;library-terraces-18;Stufenwege · Weitblick;Meistern;45;10;0;Kompakt;57.155
+300;library-notches-04;Nischenwege · Sommerwind;Meistern;45;10;2;Kompakt;58.998
+301;library-ribbons-34;Bänder · Wendepunkt;Neue Horizonte;22;3;0;Kompakt;19.831
+302;library-windows-45;Fensterlicht · Weitblick;Neue Horizonte;22;3;0;Kompakt;19.975
+303;library-forks-37;Abzweigungen · Gegenstrom;Neue Horizonte;22;3;2;Kompakt;22.575
+304;library-anchors-44;Ankerwege · Ruhepol;Neue Horizonte;22;3;3;Verzweigt;23.02
+305;library-bridges-30;Verbindungen · Balance;Neue Horizonte;28;4;0;Kompakt;23.881
+306;library-fans-32;Fächerwege · Neue Perspektive;Neue Horizonte;22;4;0;Kompakt;24.141
+307;library-ribbons-29;Bänder · Eckpunkt;Neue Horizonte;26;4;0;Kompakt;24.16
+308;library-forks-45;Abzweigungen · Weitblick;Neue Horizonte;24;4;0;Kompakt;24.402
+309;library-channels-33;Durchgänge · Funkensprung;Neue Horizonte;23;4;0;Verzweigt;24.581
+310;library-ribbons-40;Bänder · Fernweh;Neue Horizonte;22;4;0;Kompakt;24.864
+311;library-notches-28;Nischenwege · Gedankenfluss;Neue Horizonte;27;4;0;Kompakt;24.941
+312;library-arches-26;Lichtbögen · Freier Blick;Neue Horizonte;23;4;0;Kompakt;25.142
+313;library-ribbons-31;Bänder · Windspiel;Neue Horizonte;22;4;0;Kompakt;25.164
+314;library-fans-38;Fächerwege · Spurwechsel;Neue Horizonte;22;4;0;Kompakt;25.297
+315;library-ribbons-21;Bänder · Morgentau;Neue Horizonte;23;4;0;Kompakt;25.457
+316;library-islands-21;Inselpfade · Morgentau;Neue Horizonte;23;4;0;Kompakt;25.69
+317;library-fans-27;Fächerwege · Kleine Reise;Neue Horizonte;25;4;0;Kompakt;25.777
+318;library-windows-27;Fensterlicht · Kleine Reise;Neue Horizonte;23;4;0;Verzweigt;25.78
+319;library-channels-43;Durchgänge · Richtungswechsel;Neue Horizonte;27;4;0;Kompakt;25.964
+320;library-bridges-35;Verbindungen · Augenblick;Neue Horizonte;27;4;0;Kompakt;25.998
+321;library-arches-29;Lichtbögen · Eckpunkt;Neue Horizonte;22;4;0;Verzweigt;26.098
+322;library-fans-22;Fächerwege · Seitenwechsel;Neue Horizonte;24;4;0;Kompakt;26.118
+323;library-forks-42;Abzweigungen · Sternstunde;Neue Horizonte;24;4;0;Kompakt;26.118
+324;library-forks-32;Abzweigungen · Neue Perspektive;Neue Horizonte;23;4;0;Kompakt;26.151
+325;library-fans-30;Fächerwege · Balance;Neue Horizonte;24;4;0;Kompakt;26.195
+326;library-arches-39;Lichtbögen · Durchblick;Neue Horizonte;25;4;1;Verzweigt;26.201
+327;library-fans-40;Fächerwege · Fernweh;Neue Horizonte;26;4;0;Kompakt;26.215
+328;library-ribbons-42;Bänder · Sternstunde;Neue Horizonte;23;4;0;Langgezogen;26.245
+329;library-bridges-24;Verbindungen · Farbenspiel;Neue Horizonte;23;4;2;Kompakt;26.302
+330;library-bridges-22;Verbindungen · Seitenwechsel;Neue Horizonte;26;4;0;Kompakt;26.331
+331;library-forks-24;Abzweigungen · Farbenspiel;Neue Horizonte;24;4;1;Kompakt;26.602
+332;library-islands-34;Inselpfade · Wendepunkt;Neue Horizonte;23;4;0;Kompakt;26.681
+333;library-arches-31;Lichtbögen · Windspiel;Neue Horizonte;28;4;1;Kompakt;26.701
+334;library-fans-35;Fächerwege · Augenblick;Neue Horizonte;23;4;0;Kompakt;26.935
+335;library-terraces-37;Stufenwege · Gegenstrom;Neue Horizonte;23;4;0;Kompakt;26.935
+336;library-facets-41;Facetten · Atempause;Neue Horizonte;23;4;3;Kompakt;26.935
+337;library-anchors-34;Ankerwege · Wendepunkt;Neue Horizonte;22;4;2;Kompakt;26.982
+338;library-terraces-35;Stufenwege · Augenblick;Neue Horizonte;27;4;0;Kompakt;27.494
+339;library-ribbons-43;Bänder · Richtungswechsel;Neue Horizonte;22;4;2;Kompakt;27.498
+340;library-channels-38;Durchgänge · Spurwechsel;Neue Horizonte;24;4;2;Kompakt;27.64
+341;library-notches-29;Nischenwege · Eckpunkt;Neue Horizonte;25;5;0;Kompakt;27.697
+342;library-fans-43;Fächerwege · Richtungswechsel;Neue Horizonte;27;4;0;Kompakt;27.794
+343;library-forks-31;Abzweigungen · Windspiel;Neue Horizonte;22;5;0;Kompakt;28.52
+344;library-arches-37;Lichtbögen · Gegenstrom;Neue Horizonte;23;5;0;Kompakt;28.569
+345;library-ribbons-22;Bänder · Seitenwechsel;Neue Horizonte;25;5;0;Kompakt;28.589
+346;library-bridges-39;Verbindungen · Durchblick;Neue Horizonte;27;5;0;Kompakt;28.72
+347;library-forks-33;Abzweigungen · Funkensprung;Neue Horizonte;24;5;0;Kompakt;28.729
+348;library-facets-33;Facetten · Funkensprung;Neue Horizonte;24;4;1;Kompakt;28.914
+349;library-forks-41;Abzweigungen · Atempause;Neue Horizonte;24;5;0;Kompakt;29.096
+350;library-channels-37;Durchgänge · Gegenstrom;Neue Horizonte;22;4;3;Kompakt;29.286
+351;library-facets-37;Facetten · Gegenstrom;Neue Horizonte;23;5;0;Kompakt;29.388
+352;library-facets-34;Facetten · Wendepunkt;Neue Horizonte;22;5;0;Kompakt;29.528
+353;library-islands-44;Inselpfade · Ruhepol;Neue Horizonte;24;5;0;Kompakt;29.539
+354;library-arches-38;Lichtbögen · Spurwechsel;Neue Horizonte;25;5;0;Kompakt;29.555
+355;library-channels-44;Durchgänge · Ruhepol;Neue Horizonte;22;5;0;Kompakt;29.654
+356;library-islands-27;Inselpfade · Kleine Reise;Neue Horizonte;25;5;0;Kompakt;29.708
+357;library-bridges-33;Verbindungen · Funkensprung;Neue Horizonte;25;5;0;Kompakt;29.834
+358;library-islands-30;Inselpfade · Balance;Neue Horizonte;24;5;0;Kompakt;29.837
+359;library-ribbons-37;Bänder · Gegenstrom;Neue Horizonte;25;5;0;Kompakt;29.855
+360;library-terraces-26;Stufenwege · Freier Blick;Neue Horizonte;22;5;0;Kompakt;29.975
+361;library-windows-21;Fensterlicht · Morgentau;Neue Horizonte;24;5;0;Kompakt;29.996
+362;library-arches-32;Lichtbögen · Neue Perspektive;Neue Horizonte;28;5;0;Kompakt;30.016
+363;library-arches-35;Lichtbögen · Augenblick;Neue Horizonte;29;5;0;Kompakt;30.129
+364;library-ribbons-25;Bänder · Leiser Bogen;Neue Horizonte;25;5;0;Kompakt;30.134
+365;library-islands-35;Inselpfade · Augenblick;Neue Horizonte;23;5;0;Kompakt;30.143
+366;library-fans-34;Fächerwege · Wendepunkt;Neue Horizonte;22;5;0;Kompakt;30.217
+367;library-forks-35;Abzweigungen · Augenblick;Neue Horizonte;24;5;0;Kompakt;30.296
+368;library-bridges-27;Verbindungen · Kleine Reise;Neue Horizonte;27;5;0;Kompakt;30.317
+369;library-islands-45;Inselpfade · Weitblick;Neue Horizonte;29;5;0;Kompakt;30.337
+370;library-bridges-34;Verbindungen · Wendepunkt;Neue Horizonte;25;5;0;Kompakt;30.344
+371;library-facets-22;Facetten · Seitenwechsel;Neue Horizonte;23;5;0;Kompakt;30.443
+372;library-forks-34;Abzweigungen · Wendepunkt;Neue Horizonte;22;5;0;Kompakt;30.517
+373;library-anchors-28;Ankerwege · Gedankenfluss;Neue Horizonte;28;4;4;Kompakt;30.58
+374;library-facets-21;Facetten · Morgentau;Neue Horizonte;24;5;0;Kompakt;30.603
+375;library-ribbons-27;Bänder · Kleine Reise;Neue Horizonte;23;5;0;Kompakt;30.67
+376;library-ribbons-41;Bänder · Atempause;Neue Horizonte;22;5;0;Kompakt;30.698
+377;library-bridges-36;Verbindungen · Lichtspur;Neue Horizonte;24;5;0;Kompakt;30.718
+378;library-islands-25;Inselpfade · Leiser Bogen;Neue Horizonte;22;5;0;Kompakt;30.81
+379;library-islands-39;Inselpfade · Durchblick;Neue Horizonte;23;4;4;Kompakt;30.824
+380;library-notches-35;Nischenwege · Augenblick;Neue Horizonte;25;5;0;Kompakt;30.867
+381;library-islands-36;Inselpfade · Lichtspur;Neue Horizonte;25;5;0;Kompakt;30.878
+382;library-notches-26;Nischenwege · Freier Blick;Neue Horizonte;27;5;0;Kompakt;30.887
+383;library-forks-38;Abzweigungen · Spurwechsel;Neue Horizonte;25;5;0;Kompakt;30.944
+384;library-facets-38;Facetten · Spurwechsel;Neue Horizonte;23;5;0;Kompakt;30.97
+385;library-islands-37;Inselpfade · Gegenstrom;Neue Horizonte;22;5;2;Kompakt;31.009
+386;library-facets-45;Facetten · Weitblick;Neue Horizonte;24;5;0;Kompakt;31.018
+387;library-facets-40;Facetten · Fernweh;Neue Horizonte;22;5;0;Kompakt;31.11
+388;library-windows-30;Fensterlicht · Balance;Neue Horizonte;25;5;0;Kompakt;31.122
+389;library-arches-27;Lichtbögen · Kleine Reise;Neue Horizonte;22;5;0;Verzweigt;31.154
+390;library-windows-40;Fensterlicht · Fernweh;Neue Horizonte;30;5;0;Kompakt;31.3
+391;library-ribbons-39;Bänder · Durchblick;Neue Horizonte;23;5;0;Kompakt;31.393
+392;library-anchors-25;Ankerwege · Leiser Bogen;Neue Horizonte;24;5;2;Kompakt;31.445
+393;library-arches-41;Lichtbögen · Atempause;Neue Horizonte;29;5;0;Kompakt;31.462
+394;library-islands-40;Inselpfade · Fernweh;Neue Horizonte;23;5;0;Kompakt;31.487
+395;library-fans-44;Fächerwege · Ruhepol;Neue Horizonte;25;5;0;Kompakt;31.678
+396;library-notches-32;Nischenwege · Neue Perspektive;Neue Horizonte;27;5;0;Kompakt;31.733
+397;library-anchors-32;Ankerwege · Neue Perspektive;Neue Horizonte;23;5;3;Kompakt;31.891
+398;library-channels-40;Durchgänge · Fernweh;Neue Horizonte;29;5;0;Verzweigt;31.974
+399;library-islands-33;Inselpfade · Funkensprung;Neue Horizonte;28;5;0;Kompakt;31.993
+400;library-ribbons-28;Bänder · Gedankenfluss;Neue Horizonte;26;5;0;Kompakt;32.07
+401;library-bridges-21;Verbindungen · Morgentau;Neue Horizonte;26;5;0;Kompakt;32.165
+402;library-notches-25;Nischenwege · Leiser Bogen;Neue Horizonte;34;5;0;Kompakt;32.174
+403;library-islands-26;Inselpfade · Freier Blick;Neue Horizonte;30;5;0;Kompakt;32.178
+404;library-notches-44;Nischenwege · Ruhepol;Neue Horizonte;25;5;1;Kompakt;32.197
+405;library-windows-37;Fensterlicht · Gegenstrom;Neue Horizonte;31;5;0;Kompakt;32.27
+406;library-forks-29;Abzweigungen · Eckpunkt;Neue Horizonte;33;5;2;Kompakt;32.285
+407;library-arches-42;Lichtbögen · Sternstunde;Neue Horizonte;23;5;3;Kompakt;32.285
+408;library-facets-23;Facetten · Zwischenraum;Neue Horizonte;31;5;0;Kompakt;32.665
+409;library-ribbons-35;Bänder · Augenblick;Neue Horizonte;23;5;2;Kompakt;32.743
+410;library-ribbons-36;Bänder · Lichtspur;Neue Horizonte;23;5;2;Langgezogen;32.858
+411;library-arches-28;Lichtbögen · Gedankenfluss;Neue Horizonte;26;6;0;Kompakt;32.87
+412;library-forks-43;Abzweigungen · Richtungswechsel;Neue Horizonte;27;6;0;Kompakt;33.165
+413;library-windows-24;Fensterlicht · Farbenspiel;Neue Horizonte;32;5;2;Kompakt;33.276
+414;library-anchors-24;Ankerwege · Farbenspiel;Neue Horizonte;23;5;3;Kompakt;33.288
+415;library-facets-43;Facetten · Richtungswechsel;Neue Horizonte;23;5;2;Kompakt;33.402
+416;library-arches-45;Lichtbögen · Weitblick;Neue Horizonte;27;6;0;Kompakt;33.487
+417;library-terraces-22;Stufenwege · Seitenwechsel;Neue Horizonte;24;5;2;Verzweigt;33.495
+418;library-anchors-37;Ankerwege · Gegenstrom;Neue Horizonte;25;5;2;Kompakt;33.663
+419;library-ribbons-23;Bänder · Zwischenraum;Neue Horizonte;24;6;0;Langgezogen;33.763
+420;library-ribbons-24;Bänder · Farbenspiel;Neue Horizonte;25;6;0;Kompakt;33.811
+421;library-terraces-32;Stufenwege · Neue Perspektive;Neue Horizonte;34;5;0;Kompakt;33.853
+422;library-terraces-28;Stufenwege · Gedankenfluss;Neue Horizonte;26;5;2;Kompakt;33.882
+423;library-notches-33;Nischenwege · Funkensprung;Neue Horizonte;32;5;0;Verzweigt;33.93
+424;library-fans-37;Fächerwege · Gegenstrom;Neue Horizonte;23;5;2;Kompakt;33.993
+425;library-notches-38;Nischenwege · Spurwechsel;Neue Horizonte;30;5;2;Kompakt;33.997
+426;library-islands-38;Inselpfade · Spurwechsel;Neue Horizonte;22;5;2;Kompakt;34.009
+427;library-ribbons-38;Bänder · Spurwechsel;Neue Horizonte;24;6;0;Kompakt;34.049
+428;library-windows-43;Fensterlicht · Richtungswechsel;Neue Horizonte;24;6;0;Kompakt;34.058
+429;library-islands-41;Inselpfade · Atempause;Neue Horizonte;25;6;0;Kompakt;34.089
+430;library-notches-24;Nischenwege · Farbenspiel;Neue Horizonte;23;5;2;Verzweigt;34.235
+431;library-facets-42;Facetten · Sternstunde;Neue Horizonte;26;5;2;Kompakt;34.371
+432;library-fans-39;Fächerwege · Durchblick;Neue Horizonte;23;5;2;Kompakt;34.393
+433;library-windows-42;Fensterlicht · Sternstunde;Neue Horizonte;27;5;4;Kompakt;34.409
+434;library-fans-42;Fächerwege · Sternstunde;Neue Horizonte;25;6;0;Kompakt;34.416
+435;library-channels-34;Durchgänge · Wendepunkt;Neue Horizonte;34;6;0;Kompakt;34.418
+436;library-arches-36;Lichtbögen · Lichtspur;Neue Horizonte;25;6;0;Verzweigt;34.433
+437;library-bridges-37;Verbindungen · Gegenstrom;Neue Horizonte;26;6;0;Kompakt;34.589
+438;library-fans-26;Fächerwege · Freier Blick;Neue Horizonte;29;5;2;Kompakt;34.653
+439;library-channels-41;Durchgänge · Atempause;Neue Horizonte;24;6;0;Verzweigt;34.695
+440;library-fans-36;Fächerwege · Lichtspur;Neue Horizonte;24;6;0;Kompakt;34.786
+441;library-windows-35;Fensterlicht · Augenblick;Neue Horizonte;27;6;0;Kompakt;34.83
+442;library-arches-34;Lichtbögen · Wendepunkt;Neue Horizonte;26;6;0;Kompakt;34.978
+443;library-arches-44;Lichtbögen · Ruhepol;Neue Horizonte;36;6;0;Kompakt;34.993
+444;library-terraces-23;Stufenwege · Zwischenraum;Neue Horizonte;25;6;0;Kompakt;35.016
+445;library-bridges-32;Verbindungen · Neue Perspektive;Neue Horizonte;24;6;0;Kompakt;35.017
+446;library-bridges-31;Verbindungen · Windspiel;Neue Horizonte;27;6;0;Kompakt;35.097
+447;library-fans-21;Fächerwege · Morgentau;Neue Horizonte;27;6;0;Kompakt;35.13
+448;library-forks-21;Abzweigungen · Morgentau;Neue Horizonte;26;6;0;Kompakt;35.149
+449;library-channels-45;Durchgänge · Weitblick;Neue Horizonte;29;6;0;Kompakt;35.158
+450;library-islands-24;Inselpfade · Farbenspiel;Neue Horizonte;30;6;0;Kompakt;35.189
+451;library-forks-39;Abzweigungen · Durchblick;Neue Horizonte;26;6;0;Kompakt;35.268
+452;library-channels-22;Durchgänge · Seitenwechsel;Neue Horizonte;31;6;0;Kompakt;35.282
+453;library-forks-23;Abzweigungen · Zwischenraum;Neue Horizonte;32;6;0;Kompakt;35.297
+454;library-channels-23;Durchgänge · Zwischenraum;Neue Horizonte;27;6;0;Kompakt;35.309
+455;library-anchors-43;Ankerwege · Richtungswechsel;Neue Horizonte;27;5;4;Kompakt;35.309
+456;library-notches-45;Nischenwege · Weitblick;Neue Horizonte;24;6;0;Kompakt;35.333
+457;library-notches-42;Nischenwege · Sternstunde;Neue Horizonte;27;6;0;Kompakt;35.344
+458;library-islands-31;Inselpfade · Windspiel;Neue Horizonte;27;6;0;Kompakt;35.364
+459;library-facets-31;Facetten · Windspiel;Neue Horizonte;24;6;0;Kompakt;35.477
+460;library-fans-45;Fächerwege · Weitblick;Neue Horizonte;24;6;0;Kompakt;35.517
+461;library-facets-24;Facetten · Farbenspiel;Neue Horizonte;29;5;2;Kompakt;35.518
+462;library-forks-22;Abzweigungen · Seitenwechsel;Neue Horizonte;27;6;0;Kompakt;35.52
+463;library-terraces-44;Stufenwege · Ruhepol;Neue Horizonte;26;6;0;Kompakt;35.727
+464;library-windows-33;Fensterlicht · Funkensprung;Neue Horizonte;32;6;0;Kompakt;35.844
+465;library-forks-25;Abzweigungen · Leiser Bogen;Neue Horizonte;28;6;0;Kompakt;35.857
+466;library-notches-23;Nischenwege · Zwischenraum;Neue Horizonte;30;6;0;Kompakt;35.962
+467;library-arches-33;Lichtbögen · Funkensprung;Neue Horizonte;27;6;0;Kompakt;36.097
+468;library-islands-32;Inselpfade · Neue Perspektive;Neue Horizonte;24;6;0;Kompakt;36.159
+469;library-fans-25;Fächerwege · Leiser Bogen;Neue Horizonte;25;6;0;Kompakt;36.294
+470;library-arches-23;Lichtbögen · Zwischenraum;Neue Horizonte;38;6;0;Kompakt;36.298
+471;library-islands-22;Inselpfade · Seitenwechsel;Neue Horizonte;27;6;1;Kompakt;36.482
+472;library-facets-30;Facetten · Balance;Neue Horizonte;30;6;0;Kompakt;36.508
+473;library-windows-39;Fensterlicht · Durchblick;Neue Horizonte;30;6;0;Kompakt;36.577
+474;library-windows-32;Fensterlicht · Neue Perspektive;Neue Horizonte;35;6;0;Kompakt;36.589
+475;library-islands-28;Inselpfade · Gedankenfluss;Neue Horizonte;28;6;0;Kompakt;36.595
+476;library-forks-40;Abzweigungen · Fernweh;Neue Horizonte;26;6;1;Kompakt;36.66
+477;library-windows-36;Fensterlicht · Lichtspur;Neue Horizonte;32;6;0;Kompakt;36.686
+478;library-bridges-23;Verbindungen · Zwischenraum;Neue Horizonte;24;6;2;Kompakt;36.762
+479;library-forks-26;Abzweigungen · Freier Blick;Neue Horizonte;32;6;2;Kompakt;36.865
+480;library-facets-26;Facetten · Freier Blick;Neue Horizonte;24;6;2;Kompakt;36.917
+481;library-islands-42;Inselpfade · Sternstunde;Neue Horizonte;30;6;0;Kompakt;37.201
+482;library-bridges-43;Verbindungen · Richtungswechsel;Neue Horizonte;35;6;0;Kompakt;37.233
+483;library-bridges-28;Verbindungen · Gedankenfluss;Neue Horizonte;27;6;2;Kompakt;37.241
+484;library-notches-41;Nischenwege · Atempause;Neue Horizonte;37;6;0;Kompakt;37.328
+485;library-channels-25;Durchgänge · Leiser Bogen;Neue Horizonte;40;6;0;Kompakt;37.366
+486;library-terraces-43;Stufenwege · Richtungswechsel;Neue Horizonte;32;6;0;Kompakt;37.398
+487;library-islands-29;Inselpfade · Eckpunkt;Neue Horizonte;25;6;2;Kompakt;37.489
+488;library-fans-23;Fächerwege · Zwischenraum;Neue Horizonte;33;6;0;Kompakt;37.513
+489;library-forks-44;Abzweigungen · Ruhepol;Neue Horizonte;32;6;1;Kompakt;37.613
+490;library-terraces-25;Stufenwege · Leiser Bogen;Neue Horizonte;30;6;0;Kompakt;37.632
+491;library-notches-37;Nischenwege · Gegenstrom;Neue Horizonte;26;6;2;Kompakt;37.784
+492;library-facets-36;Facetten · Lichtspur;Neue Horizonte;36;6;0;Kompakt;37.803
+493;library-terraces-33;Stufenwege · Funkensprung;Neue Horizonte;26;6;2;Kompakt;37.869
+494;library-channels-31;Durchgänge · Windspiel;Neue Horizonte;30;6;2;Kompakt;38.089
+495;library-channels-28;Durchgänge · Gedankenfluss;Neue Horizonte;33;6;1;Kompakt;38.169
+496;library-ribbons-30;Bänder · Balance;Neue Horizonte;29;6;2;Kompakt;38.207
+497;library-anchors-30;Ankerwege · Balance;Neue Horizonte;25;6;4;Kompakt;38.608
+498;library-ribbons-32;Bänder · Neue Perspektive;Neue Horizonte;24;6;2;Kompakt;38.677
+499;library-channels-35;Durchgänge · Augenblick;Neue Horizonte;25;6;2;Verzweigt;38.722
+500;library-terraces-40;Stufenwege · Fernweh;Neue Horizonte;38;6;0;Kompakt;38.725
+501;library-ribbons-44;Bänder · Ruhepol;Neue Horizonte;25;6;2;Kompakt;38.767
+502;library-arches-43;Lichtbögen · Richtungswechsel;Neue Horizonte;28;7;0;Kompakt;38.813
+503;library-terraces-29;Stufenwege · Eckpunkt;Neue Horizonte;25;6;2;Kompakt;38.844
+504;library-channels-24;Durchgänge · Farbenspiel;Neue Horizonte;27;6;2;Kompakt;38.857
+505;library-channels-36;Durchgänge · Lichtspur;Neue Horizonte;30;7;0;Kompakt;38.922
+506;library-anchors-41;Ankerwege · Atempause;Neue Horizonte;25;6;4;Kompakt;39.418
+507;library-forks-27;Abzweigungen · Kleine Reise;Neue Horizonte;29;7;0;Kompakt;39.451
+508;library-arches-22;Lichtbögen · Seitenwechsel;Neue Horizonte;30;7;0;Kompakt;39.652
+509;library-notches-43;Nischenwege · Richtungswechsel;Neue Horizonte;31;7;0;Kompakt;39.73
+510;library-windows-25;Fensterlicht · Leiser Bogen;Neue Horizonte;30;7;0;Kompakt;39.74
+511;library-forks-30;Abzweigungen · Balance;Neue Horizonte;30;7;0;Kompakt;39.747
+512;library-notches-39;Nischenwege · Durchblick;Neue Horizonte;24;6;4;Verzweigt;39.818
+513;library-ribbons-26;Bänder · Freier Blick;Neue Horizonte;28;7;0;Langgezogen;39.824
+514;library-notches-22;Nischenwege · Seitenwechsel;Neue Horizonte;30;7;0;Kompakt;40.026
+515;library-fans-31;Fächerwege · Windspiel;Neue Horizonte;29;7;0;Kompakt;40.062
+516;library-forks-28;Abzweigungen · Gedankenfluss;Neue Horizonte;31;7;0;Kompakt;40.148
+517;library-terraces-21;Stufenwege · Morgentau;Neue Horizonte;32;7;0;Kompakt;40.247
+518;library-windows-31;Fensterlicht · Windspiel;Neue Horizonte;29;7;0;Kompakt;40.418
+519;library-arches-24;Lichtbögen · Farbenspiel;Neue Horizonte;28;7;0;Kompakt;40.444
+520;library-windows-34;Fensterlicht · Wendepunkt;Neue Horizonte;32;7;0;Kompakt;40.464
+521;library-arches-21;Lichtbögen · Morgentau;Neue Horizonte;32;7;0;Kompakt;40.667
+522;library-facets-44;Facetten · Ruhepol;Neue Horizonte;30;7;0;Kompakt;40.689
+523;library-notches-21;Nischenwege · Morgentau;Neue Horizonte;26;6;4;Kompakt;40.769
+524;library-ribbons-33;Bänder · Funkensprung;Neue Horizonte;30;7;0;Kompakt;40.81
+525;library-anchors-31;Ankerwege · Windspiel;Neue Horizonte;36;6;3;Kompakt;40.853
+526;library-bridges-44;Verbindungen · Ruhepol;Neue Horizonte;31;7;0;Kompakt;40.904
+527;library-islands-23;Inselpfade · Zwischenraum;Neue Horizonte;28;7;0;Kompakt;40.958
+528;library-fans-33;Fächerwege · Funkensprung;Neue Horizonte;30;7;0;Kompakt;41.062
+529;library-islands-43;Inselpfade · Richtungswechsel;Neue Horizonte;32;7;0;Kompakt;41.173
+530;library-anchors-38;Ankerwege · Spurwechsel;Neue Horizonte;30;7;1;Kompakt;41.227
+531;library-notches-31;Nischenwege · Windspiel;Neue Horizonte;33;7;0;Kompakt;41.244
+532;library-terraces-31;Stufenwege · Windspiel;Neue Horizonte;33;6;2;Kompakt;41.253
+533;library-terraces-24;Stufenwege · Farbenspiel;Neue Horizonte;31;7;0;Kompakt;41.255
+534;library-facets-29;Facetten · Eckpunkt;Neue Horizonte;32;7;0;Kompakt;41.364
+535;library-bridges-42;Verbindungen · Sternstunde;Neue Horizonte;36;7;0;Kompakt;41.615
+536;library-terraces-45;Stufenwege · Weitblick;Neue Horizonte;35;6;2;Kompakt;41.822
+537;library-bridges-40;Verbindungen · Fernweh;Neue Horizonte;30;7;2;Kompakt;41.845
+538;library-bridges-45;Verbindungen · Weitblick;Neue Horizonte;36;7;0;Kompakt;42.56
+539;library-channels-30;Durchgänge · Balance;Neue Horizonte;44;7;0;Kompakt;42.574
+540;library-facets-27;Facetten · Kleine Reise;Neue Horizonte;38;7;0;Kompakt;42.601
+541;library-bridges-38;Verbindungen · Spurwechsel;Neue Horizonte;43;7;0;Kompakt;42.713
+542;library-fans-29;Fächerwege · Eckpunkt;Neue Horizonte;35;7;2;Kompakt;42.788
+543;library-anchors-40;Ankerwege · Fernweh;Neue Horizonte;33;6;5;Kompakt;43.19
+544;library-windows-38;Fensterlicht · Spurwechsel;Neue Horizonte;34;8;0;Kompakt;43.668
+545;library-fans-24;Fächerwege · Farbenspiel;Neue Horizonte;30;7;2;Kompakt;43.788
+546;library-terraces-27;Stufenwege · Kleine Reise;Neue Horizonte;45;7;0;Kompakt;43.853
+547;library-windows-29;Fensterlicht · Eckpunkt;Neue Horizonte;30;7;2;Kompakt;43.906
+548;library-anchors-27;Ankerwege · Kleine Reise;Neue Horizonte;31;7;3;Kompakt;44.164
+549;library-windows-23;Fensterlicht · Zwischenraum;Neue Horizonte;33;8;0;Kompakt;44.297
+550;library-anchors-22;Ankerwege · Seitenwechsel;Neue Horizonte;35;7;2;Kompakt;44.305
+551;library-anchors-36;Ankerwege · Lichtspur;Neue Horizonte;39;6;5;Kompakt;44.448
+552;library-notches-27;Nischenwege · Kleine Reise;Neue Horizonte;35;8;0;Kompakt;44.66
+553;library-bridges-29;Verbindungen · Eckpunkt;Neue Horizonte;33;8;0;Kompakt;44.681
+554;library-anchors-21;Ankerwege · Morgentau;Neue Horizonte;28;7;3;Kompakt;44.702
+555;library-bridges-41;Verbindungen · Atempause;Neue Horizonte;33;8;0;Kompakt;44.816
+556;library-arches-25;Lichtbögen · Leiser Bogen;Neue Horizonte;34;8;0;Kompakt;44.841
+557;library-bridges-25;Verbindungen · Leiser Bogen;Neue Horizonte;41;7;2;Kompakt;44.916
+558;library-arches-30;Lichtbögen · Balance;Neue Horizonte;35;8;0;Kompakt;45.028
+559;library-anchors-23;Ankerwege · Zwischenraum;Neue Horizonte;38;6;6;Kompakt;45.101
+560;library-terraces-30;Stufenwege · Balance;Neue Horizonte;33;7;3;Kompakt;45.144
+561;library-channels-21;Durchgänge · Morgentau;Neue Horizonte;36;8;0;Kompakt;45.161
+562;library-ribbons-45;Bänder · Weitblick;Neue Horizonte;33;8;0;Kompakt;45.177
+563;library-notches-40;Nischenwege · Fernweh;Neue Horizonte;35;8;0;Kompakt;45.399
+564;library-facets-35;Facetten · Augenblick;Neue Horizonte;35;8;0;Kompakt;45.544
+565;library-forks-36;Abzweigungen · Lichtspur;Neue Horizonte;40;8;0;Kompakt;45.744
+566;library-fans-28;Fächerwege · Gedankenfluss;Neue Horizonte;35;8;0;Langgezogen;45.926
+567;library-notches-30;Nischenwege · Balance;Neue Horizonte;33;8;0;Verzweigt;46.009
+568;library-notches-34;Nischenwege · Wendepunkt;Neue Horizonte;34;8;0;Kompakt;46.302
+569;library-facets-32;Facetten · Neue Perspektive;Neue Horizonte;36;8;0;Kompakt;46.479
+570;library-channels-26;Durchgänge · Freier Blick;Neue Horizonte;36;8;0;Kompakt;46.496
+571;library-terraces-42;Stufenwege · Sternstunde;Neue Horizonte;36;8;0;Verzweigt;47.059
+572;library-anchors-33;Ankerwege · Funkensprung;Neue Horizonte;33;8;2;Kompakt;47.323
+573;library-fans-41;Fächerwege · Atempause;Neue Horizonte;42;8;0;Kompakt;47.589
+574;library-facets-28;Facetten · Gedankenfluss;Neue Horizonte;42;8;0;Kompakt;47.919
+575;library-terraces-34;Stufenwege · Wendepunkt;Neue Horizonte;40;8;0;Kompakt;47.957
+576;library-anchors-45;Ankerwege · Weitblick;Neue Horizonte;33;8;2;Kompakt;48.044
+577;library-anchors-29;Ankerwege · Eckpunkt;Neue Horizonte;35;8;2;Kompakt;48.244
+578;library-facets-39;Facetten · Durchblick;Neue Horizonte;44;8;0;Kompakt;48.355
+579;library-anchors-35;Ankerwege · Augenblick;Neue Horizonte;33;8;3;Kompakt;49.045
+580;library-bridges-26;Verbindungen · Freier Blick;Neue Horizonte;39;9;0;Kompakt;49.196
+581;library-terraces-39;Stufenwege · Durchblick;Neue Horizonte;38;8;2;Kompakt;49.637
+582;library-anchors-39;Ankerwege · Durchblick;Neue Horizonte;39;8;2;Kompakt;49.84
+583;library-channels-29;Durchgänge · Eckpunkt;Neue Horizonte;39;9;0;Kompakt;50.187
+584;library-channels-32;Durchgänge · Neue Perspektive;Neue Horizonte;42;9;0;Kompakt;50.398
+585;library-arches-40;Lichtbögen · Fernweh;Neue Horizonte;38;9;0;Kompakt;50.403
+586;library-channels-39;Durchgänge · Durchblick;Neue Horizonte;42;9;0;Kompakt;50.636
+587;library-windows-28;Fensterlicht · Gedankenfluss;Neue Horizonte;38;9;0;Kompakt;50.734
+588;library-terraces-38;Stufenwege · Spurwechsel;Neue Horizonte;39;9;0;Kompakt;50.788
+589;library-windows-44;Fensterlicht · Ruhepol;Neue Horizonte;39;9;0;Kompakt;51.179
+590;library-facets-25;Facetten · Leiser Bogen;Neue Horizonte;40;9;0;Kompakt;51.377
+591;library-terraces-36;Stufenwege · Lichtspur;Neue Horizonte;44;9;0;Kompakt;52.294
+592;library-anchors-42;Ankerwege · Sternstunde;Neue Horizonte;37;9;2;Kompakt;52.436
+593;library-windows-22;Fensterlicht · Seitenwechsel;Neue Horizonte;38;9;2;Kompakt;52.591
+594;library-notches-36;Nischenwege · Lichtspur;Neue Horizonte;39;9;2;Verzweigt;53.664
+595;library-anchors-26;Ankerwege · Freier Blick;Neue Horizonte;39;9;3;Kompakt;54.13
+596;library-windows-41;Fensterlicht · Atempause;Neue Horizonte;41;10;0;Kompakt;54.526
+597;library-windows-26;Fensterlicht · Freier Blick;Neue Horizonte;43;10;0;Kompakt;55.061
+598;library-terraces-41;Stufenwege · Atempause;Neue Horizonte;46;10;0;Kompakt;56.786
+599;library-channels-42;Durchgänge · Sternstunde;Neue Horizonte;46;11;0;Kompakt;59.12
+600;library-channels-27;Durchgänge · Kleine Reise;Neue Horizonte;46;11;0;Kompakt;59.961
+601;library-notches-92;Nischenwege · Sternstunde / Gedanken;Herausforderung;34;5;0;Verzweigt;29.774
+602;library-bridges-50;Verbindungen · Leiser Bogen / Wege;Herausforderung;34;5;0;Langgezogen;30.239
+603;library-channels-71;Durchgänge · Morgentau / Gedanken;Herausforderung;34;5;0;Kompakt;30.539
+604;library-forks-75;Abzweigungen · Leiser Bogen / Gedanken;Herausforderung;34;5;0;Kompakt;30.676
+605;library-channels-63;Durchgänge · Spurwechsel / Wege;Herausforderung;34;5;0;Kompakt;30.839
+606;library-ribbons-59;Bänder · Wendepunkt / Wege;Herausforderung;34;5;0;Langgezogen;31.148
+607;library-forks-83;Abzweigungen · Funkensprung / Gedanken;Herausforderung;34;5;0;Kompakt;31.274
+608;library-fans-68;Fächerwege · Richtungswechsel / Wege;Herausforderung;34;5;0;Kompakt;31.537
+609;library-notches-58;Nischenwege · Funkensprung / Wege;Herausforderung;34;5;0;Kompakt;31.962
+610;library-ribbons-80;Bänder · Balance / Gedanken;Herausforderung;34;5;2;Kompakt;32.839
+611;library-fans-78;Fächerwege · Gedankenfluss / Gedanken;Herausforderung;34;5;0;Kompakt;33.118
+612;library-terraces-65;Stufenwege · Fernweh / Wege;Herausforderung;34;5;0;Kompakt;33.253
+613;library-fans-73;Fächerwege · Zwischenraum / Gedanken;Herausforderung;34;5;0;Kompakt;33.629
+614;library-facets-48;Facetten · Zwischenraum / Wege;Herausforderung;34;5;0;Kompakt;33.718
+615;library-islands-90;Inselpfade · Fernweh / Gedanken;Herausforderung;34;5;0;Kompakt;33.773
+616;library-ribbons-75;Bänder · Leiser Bogen / Gedanken;Herausforderung;34;5;0;Kompakt;33.976
+617;library-arches-77;Lichtbögen · Kleine Reise / Gedanken;Herausforderung;34;5;1;Kompakt;33.984
+618;library-fans-94;Fächerwege · Ruhepol / Gedanken;Herausforderung;34;5;0;Kompakt;34.058
+619;library-terraces-52;Stufenwege · Kleine Reise / Wege;Herausforderung;34;5;0;Verzweigt;34.153
+620;library-terraces-73;Stufenwege · Zwischenraum / Gedanken;Herausforderung;36;5;2;Kompakt;34.216
+621;library-anchors-90;Ankerwege · Fernweh / Gedanken;Herausforderung;34;5;4;Kompakt;34.584
+622;library-facets-95;Facetten · Weitblick / Gedanken;Herausforderung;34;5;2;Kompakt;34.774
+623;library-arches-51;Lichtbögen · Freier Blick / Wege;Herausforderung;40;6;0;Kompakt;34.777
+624;library-arches-60;Lichtbögen · Augenblick / Wege;Herausforderung;34;6;0;Kompakt;34.913
+625;library-forks-70;Abzweigungen · Weitblick / Wege;Herausforderung;36;6;0;Kompakt;35.182
+626;library-terraces-91;Stufenwege · Atempause / Gedanken;Herausforderung;34;5;2;Kompakt;35.351
+627;library-channels-62;Durchgänge · Gegenstrom / Wege;Herausforderung;34;6;0;Kompakt;35.441
+628;library-islands-91;Inselpfade · Atempause / Gedanken;Herausforderung;34;6;0;Kompakt;35.461
+629;library-windows-91;Fensterlicht · Atempause / Gedanken;Herausforderung;35;6;0;Kompakt;35.555
+630;library-windows-73;Fensterlicht · Zwischenraum / Gedanken;Herausforderung;34;6;0;Kompakt;35.658
+631;library-forks-63;Abzweigungen · Spurwechsel / Wege;Herausforderung;34;6;0;Kompakt;35.741
+632;library-fans-69;Fächerwege · Ruhepol / Wege;Herausforderung;34;6;0;Kompakt;35.761
+633;library-islands-80;Inselpfade · Balance / Gedanken;Herausforderung;35;6;0;Kompakt;35.809
+634;library-bridges-63;Verbindungen · Spurwechsel / Wege;Herausforderung;37;6;0;Kompakt;35.941
+635;library-islands-85;Inselpfade · Augenblick / Gedanken;Herausforderung;38;6;0;Kompakt;36.003
+636;library-ribbons-46;Bänder · Morgentau / Wege;Herausforderung;35;6;0;Langgezogen;36.029
+637;library-ribbons-89;Bänder · Durchblick / Gedanken;Herausforderung;34;6;0;Kompakt;36.086
+638;library-ribbons-88;Bänder · Spurwechsel / Gedanken;Herausforderung;39;6;0;Langgezogen;36.149
+639;library-forks-48;Abzweigungen · Zwischenraum / Wege;Herausforderung;34;6;0;Kompakt;36.156
+640;library-forks-60;Abzweigungen · Augenblick / Wege;Herausforderung;34;6;0;Kompakt;36.263
+641;library-forks-51;Abzweigungen · Freier Blick / Wege;Herausforderung;34;6;0;Kompakt;36.329
+642;library-forks-62;Abzweigungen · Gegenstrom / Wege;Herausforderung;35;6;0;Kompakt;36.329
+643;library-fans-81;Fächerwege · Windspiel / Gedanken;Herausforderung;35;6;0;Kompakt;36.344
+644;library-ribbons-47;Bänder · Seitenwechsel / Wege;Herausforderung;34;6;0;Kompakt;36.406
+645;library-windows-64;Fensterlicht · Durchblick / Wege;Herausforderung;34;6;0;Kompakt;36.477
+646;library-fans-84;Fächerwege · Wendepunkt / Gedanken;Herausforderung;34;6;0;Kompakt;36.477
+647;library-windows-57;Fensterlicht · Neue Perspektive / Wege;Herausforderung;35;6;0;Kompakt;36.493
+648;library-channels-89;Durchgänge · Durchblick / Gedanken;Herausforderung;40;6;0;Kompakt;36.511
+649;library-islands-73;Inselpfade · Zwischenraum / Gedanken;Herausforderung;34;6;0;Kompakt;36.55
+650;library-channels-76;Durchgänge · Freier Blick / Gedanken;Herausforderung;38;6;0;Kompakt;36.557
+651;library-ribbons-68;Bänder · Richtungswechsel / Wege;Herausforderung;34;6;0;Kompakt;36.559
+652;library-forks-49;Abzweigungen · Farbenspiel / Wege;Herausforderung;35;6;0;Kompakt;36.629
+653;library-terraces-71;Stufenwege · Morgentau / Gedanken;Herausforderung;34;6;0;Kompakt;36.686
+654;library-arches-84;Lichtbögen · Wendepunkt / Gedanken;Herausforderung;34;6;0;Kompakt;36.729
+655;library-facets-67;Facetten · Sternstunde / Wege;Herausforderung;34;6;0;Kompakt;36.769
+656;library-fans-52;Fächerwege · Kleine Reise / Wege;Herausforderung;35;6;0;Kompakt;36.777
+657;library-forks-93;Abzweigungen · Richtungswechsel / Gedanken;Herausforderung;36;6;0;Kompakt;36.797
+658;library-arches-69;Lichtbögen · Ruhepol / Wege;Herausforderung;40;6;1;Kompakt;36.808
+659;library-anchors-48;Ankerwege · Zwischenraum / Wege;Herausforderung;35;6;1;Kompakt;36.901
+660;library-arches-64;Lichtbögen · Durchblick / Wege;Herausforderung;38;6;0;Kompakt;36.903
+661;library-channels-84;Durchgänge · Wendepunkt / Gedanken;Herausforderung;36;6;0;Kompakt;37.049
+662;library-fans-87;Fächerwege · Gegenstrom / Gedanken;Herausforderung;34;6;0;Kompakt;37.073
+663;library-islands-70;Inselpfade · Weitblick / Wege;Herausforderung;34;6;0;Kompakt;37.077
+664;library-islands-64;Inselpfade · Durchblick / Wege;Herausforderung;36;6;0;Kompakt;37.138
+665;library-ribbons-93;Bänder · Richtungswechsel / Gedanken;Herausforderung;36;6;0;Kompakt;37.168
+666;library-windows-70;Fensterlicht · Weitblick / Wege;Herausforderung;36;6;0;Kompakt;37.305
+667;library-bridges-73;Verbindungen · Zwischenraum / Gedanken;Herausforderung;35;6;0;Kompakt;37.319
+668;library-islands-77;Inselpfade · Kleine Reise / Gedanken;Herausforderung;38;6;0;Kompakt;37.325
+669;library-channels-59;Durchgänge · Wendepunkt / Wege;Herausforderung;34;6;0;Kompakt;37.352
+670;library-forks-88;Abzweigungen · Spurwechsel / Gedanken;Herausforderung;36;6;0;Kompakt;37.389
+671;library-ribbons-67;Bänder · Sternstunde / Wege;Herausforderung;39;6;0;Kompakt;37.417
+672;library-ribbons-83;Bänder · Funkensprung / Gedanken;Herausforderung;34;6;0;Kompakt;37.429
+673;library-islands-52;Inselpfade · Kleine Reise / Wege;Herausforderung;34;6;2;Kompakt;37.462
+674;library-windows-88;Fensterlicht · Spurwechsel / Gedanken;Herausforderung;35;6;0;Kompakt;37.466
+675;library-bridges-55;Verbindungen · Balance / Wege;Herausforderung;35;6;0;Kompakt;37.473
+676;library-islands-72;Inselpfade · Seitenwechsel / Gedanken;Herausforderung;38;6;0;Kompakt;37.499
+677;library-ribbons-85;Bänder · Augenblick / Gedanken;Herausforderung;38;6;0;Kompakt;37.523
+678;library-facets-58;Facetten · Funkensprung / Wege;Herausforderung;37;6;0;Kompakt;37.532
+679;library-channels-50;Durchgänge · Leiser Bogen / Wege;Herausforderung;36;6;0;Kompakt;37.553
+680;library-arches-82;Lichtbögen · Neue Perspektive / Gedanken;Herausforderung;36;6;0;Kompakt;37.553
+681;library-ribbons-54;Bänder · Eckpunkt / Wege;Herausforderung;37;6;0;Kompakt;37.557
+682;library-forks-54;Abzweigungen · Eckpunkt / Wege;Herausforderung;35;6;1;Kompakt;37.567
+683;library-windows-83;Fensterlicht · Funkensprung / Gedanken;Herausforderung;35;6;2;Kompakt;37.601
+684;library-ribbons-72;Bänder · Seitenwechsel / Gedanken;Herausforderung;38;6;0;Kompakt;37.625
+685;library-windows-62;Fensterlicht · Gegenstrom / Wege;Herausforderung;39;6;0;Kompakt;37.648
+686;library-islands-46;Inselpfade · Morgentau / Wege;Herausforderung;35;6;0;Kompakt;37.655
+687;library-fans-65;Fächerwege · Fernweh / Wege;Herausforderung;35;6;0;Kompakt;37.715
+688;library-anchors-56;Ankerwege · Windspiel / Wege;Herausforderung;34;5;3;Kompakt;37.738
+689;library-fans-93;Fächerwege · Richtungswechsel / Gedanken;Herausforderung;34;6;0;Kompakt;37.748
+690;library-channels-83;Durchgänge · Funkensprung / Gedanken;Herausforderung;34;6;0;Kompakt;37.848
+691;library-arches-48;Lichtbögen · Zwischenraum / Wege;Herausforderung;37;6;0;Kompakt;37.853
+692;library-notches-50;Nischenwege · Leiser Bogen / Wege;Herausforderung;36;6;1;Kompakt;38.049
+693;library-islands-67;Inselpfade · Sternstunde / Wege;Herausforderung;34;6;2;Kompakt;38.249
+694;library-notches-79;Nischenwege · Eckpunkt / Gedanken;Herausforderung;38;6;0;Kompakt;38.313
+695;library-forks-67;Abzweigungen · Sternstunde / Wege;Herausforderung;38;6;1;Kompakt;38.326
+696;library-islands-59;Inselpfade · Wendepunkt / Wege;Herausforderung;39;6;0;Kompakt;38.396
+697;library-arches-95;Lichtbögen · Weitblick / Gedanken;Herausforderung;38;6;0;Kompakt;38.457
+698;library-facets-74;Facetten · Farbenspiel / Gedanken;Herausforderung;40;6;0;Kompakt;38.571
+699;library-anchors-53;Ankerwege · Gedankenfluss / Wege;Herausforderung;36;6;1;Kompakt;38.627
+700;library-windows-78;Fensterlicht · Gedankenfluss / Gedanken;Herausforderung;40;6;0;Verzweigt;38.71
+701;library-notches-66;Nischenwege · Atempause / Wege;Herausforderung;35;6;0;Kompakt;38.733
+702;library-facets-66;Facetten · Atempause / Wege;Herausforderung;38;6;0;Kompakt;38.735
+703;library-channels-68;Durchgänge · Richtungswechsel / Wege;Herausforderung;40;6;0;Kompakt;38.808
+704;library-windows-49;Fensterlicht · Farbenspiel / Wege;Herausforderung;36;6;2;Kompakt;38.837
+705;library-islands-49;Inselpfade · Farbenspiel / Wege;Herausforderung;34;6;2;Kompakt;38.85
+706;library-channels-53;Durchgänge · Gedankenfluss / Wege;Herausforderung;34;6;0;Kompakt;38.905
+707;library-notches-84;Nischenwege · Wendepunkt / Gedanken;Herausforderung;38;6;0;Kompakt;38.958
+708;library-terraces-86;Stufenwege · Lichtspur / Gedanken;Herausforderung;35;6;0;Kompakt;38.973
+709;library-facets-61;Facetten · Lichtspur / Wege;Herausforderung;40;6;0;Kompakt;39.115
+710;library-arches-72;Lichtbögen · Seitenwechsel / Gedanken;Herausforderung;38;7;0;Verzweigt;39.346
+711;library-arches-62;Lichtbögen · Gegenstrom / Wege;Herausforderung;35;7;0;Kompakt;39.552
+712;library-arches-85;Lichtbögen · Augenblick / Gedanken;Herausforderung;39;6;2;Kompakt;39.65
+713;library-ribbons-62;Bänder · Gegenstrom / Wege;Herausforderung;37;7;0;Kompakt;39.719
+714;library-islands-88;Inselpfade · Spurwechsel / Gedanken;Herausforderung;34;6;2;Kompakt;40.018
+715;library-arches-87;Lichtbögen · Gegenstrom / Gedanken;Herausforderung;39;7;0;Kompakt;40.183
+716;library-facets-70;Facetten · Weitblick / Wege;Herausforderung;34;6;2;Kompakt;40.273
+717;library-anchors-82;Ankerwege · Neue Perspektive / Gedanken;Herausforderung;35;6;3;Kompakt;40.277
+718;library-arches-81;Lichtbögen · Windspiel / Gedanken;Herausforderung;38;7;0;Kompakt;40.29
+719;library-forks-52;Abzweigungen · Kleine Reise / Wege;Herausforderung;34;7;0;Kompakt;40.316
+720;library-forks-81;Abzweigungen · Windspiel / Gedanken;Herausforderung;34;6;2;Kompakt;40.329
+721;library-terraces-78;Stufenwege · Gedankenfluss / Gedanken;Herausforderung;35;6;2;Kompakt;40.412
+722;library-notches-69;Nischenwege · Ruhepol / Wege;Herausforderung;34;6;2;Langgezogen;40.511
+723;library-ribbons-56;Bänder · Windspiel / Wege;Herausforderung;36;7;0;Kompakt;40.587
+724;library-channels-74;Durchgänge · Farbenspiel / Gedanken;Herausforderung;38;7;0;Kompakt;40.607
+725;library-forks-57;Abzweigungen · Neue Perspektive / Wege;Herausforderung;35;7;0;Kompakt;40.664
+726;library-bridges-79;Verbindungen · Eckpunkt / Gedanken;Herausforderung;38;7;0;Kompakt;40.706
+727;library-windows-52;Fensterlicht · Kleine Reise / Wege;Herausforderung;35;7;0;Kompakt;40.711
+728;library-facets-76;Facetten · Freier Blick / Gedanken;Herausforderung;35;7;0;Kompakt;40.741
+729;library-facets-53;Facetten · Gedankenfluss / Wege;Herausforderung;36;6;2;Kompakt;40.805
+730;library-anchors-77;Ankerwege · Kleine Reise / Gedanken;Herausforderung;34;6;4;Kompakt;40.817
+731;library-ribbons-77;Bänder · Kleine Reise / Gedanken;Herausforderung;36;7;0;Kompakt;40.824
+732;library-bridges-91;Verbindungen · Atempause / Gedanken;Herausforderung;37;7;0;Kompakt;40.867
+733;library-notches-53;Nischenwege · Gedankenfluss / Wege;Herausforderung;39;6;3;Kompakt;40.917
+734;library-bridges-64;Verbindungen · Durchblick / Wege;Herausforderung;35;7;0;Kompakt;40.944
+735;library-notches-63;Nischenwege · Spurwechsel / Wege;Herausforderung;41;7;0;Kompakt;41.101
+736;library-arches-66;Lichtbögen · Atempause / Wege;Herausforderung;38;7;0;Kompakt;41.207
+737;library-ribbons-71;Bänder · Morgentau / Gedanken;Herausforderung;36;7;0;Kompakt;41.211
+738;library-anchors-74;Ankerwege · Farbenspiel / Gedanken;Herausforderung;39;6;3;Kompakt;41.217
+739;library-channels-95;Durchgänge · Weitblick / Gedanken;Herausforderung;37;7;0;Kompakt;41.226
+740;library-bridges-61;Verbindungen · Lichtspur / Wege;Herausforderung;36;7;0;Kompakt;41.236
+741;library-terraces-56;Stufenwege · Windspiel / Wege;Herausforderung;34;6;2;Kompakt;41.258
+742;library-bridges-76;Verbindungen · Freier Blick / Gedanken;Herausforderung;41;7;0;Kompakt;41.266
+743;library-islands-61;Inselpfade · Lichtspur / Wege;Herausforderung;36;7;0;Kompakt;41.315
+744;library-ribbons-50;Bänder · Leiser Bogen / Wege;Herausforderung;37;7;0;Kompakt;41.376
+745;library-ribbons-65;Bänder · Fernweh / Wege;Herausforderung;36;7;0;Kompakt;41.467
+746;library-ribbons-74;Bänder · Farbenspiel / Gedanken;Herausforderung;37;7;0;Kompakt;41.473
+747;library-islands-95;Inselpfade · Weitblick / Gedanken;Herausforderung;35;7;0;Kompakt;41.501
+748;library-anchors-86;Ankerwege · Lichtspur / Gedanken;Herausforderung;34;6;4;Kompakt;41.502
+749;library-facets-55;Facetten · Balance / Wege;Herausforderung;35;7;0;Kompakt;41.506
+750;library-anchors-68;Ankerwege · Richtungswechsel / Wege;Herausforderung;34;6;3;Kompakt;41.506
+751;library-notches-71;Nischenwege · Morgentau / Gedanken;Herausforderung;38;6;2;Kompakt;41.513
+752;library-fans-48;Fächerwege · Zwischenraum / Wege;Herausforderung;37;7;0;Kompakt;41.521
+753;library-windows-94;Fensterlicht · Ruhepol / Gedanken;Herausforderung;36;7;0;Kompakt;41.563
+754;library-islands-94;Inselpfade · Ruhepol / Gedanken;Herausforderung;37;7;0;Kompakt;41.577
+755;library-ribbons-95;Bänder · Weitblick / Gedanken;Herausforderung;36;7;0;Kompakt;41.613
+756;library-islands-79;Inselpfade · Eckpunkt / Gedanken;Herausforderung;35;7;0;Kompakt;41.688
+757;library-fans-60;Fächerwege · Augenblick / Wege;Herausforderung;38;6;2;Langgezogen;41.736
+758;library-fans-57;Fächerwege · Neue Perspektive / Wege;Herausforderung;37;7;0;Kompakt;41.753
+759;library-bridges-89;Verbindungen · Durchblick / Gedanken;Herausforderung;46;7;0;Kompakt;41.764
+760;library-forks-72;Abzweigungen · Seitenwechsel / Gedanken;Herausforderung;36;7;0;Kompakt;41.802
+761;library-facets-94;Facetten · Ruhepol / Gedanken;Herausforderung;36;7;0;Kompakt;41.816
+762;library-notches-72;Nischenwege · Seitenwechsel / Gedanken;Herausforderung;37;7;0;Kompakt;41.826
+763;library-forks-66;Abzweigungen · Atempause / Wege;Herausforderung;37;7;0;Kompakt;41.869
+764;library-forks-87;Abzweigungen · Gegenstrom / Gedanken;Herausforderung;37;7;0;Kompakt;41.869
+765;library-notches-93;Nischenwege · Richtungswechsel / Gedanken;Herausforderung;38;7;0;Kompakt;41.883
+766;library-bridges-46;Verbindungen · Morgentau / Wege;Herausforderung;36;7;0;Kompakt;41.913
+767;library-terraces-77;Stufenwege · Kleine Reise / Gedanken;Herausforderung;36;7;0;Langgezogen;41.913
+768;library-forks-84;Abzweigungen · Wendepunkt / Gedanken;Herausforderung;36;7;0;Kompakt;41.961
+769;library-forks-80;Abzweigungen · Balance / Gedanken;Herausforderung;42;7;0;Kompakt;42.077
+770;library-notches-90;Nischenwege · Fernweh / Gedanken;Herausforderung;39;7;0;Kompakt;42.087
+771;library-anchors-92;Ankerwege · Sternstunde / Gedanken;Herausforderung;37;7;1;Kompakt;42.16
+772;library-fans-63;Fächerwege · Spurwechsel / Wege;Herausforderung;39;7;0;Kompakt;42.189
+773;library-notches-51;Nischenwege · Freier Blick / Wege;Herausforderung;35;7;0;Kompakt;42.202
+774;library-notches-87;Nischenwege · Gegenstrom / Gedanken;Herausforderung;36;7;0;Kompakt;42.266
+775;library-windows-79;Fensterlicht · Eckpunkt / Gedanken;Herausforderung;37;7;0;Kompakt;42.276
+776;library-terraces-92;Stufenwege · Sternstunde / Gedanken;Herausforderung;40;7;0;Kompakt;42.306
+777;library-facets-64;Facetten · Durchblick / Wege;Herausforderung;35;7;0;Kompakt;42.333
+778;library-terraces-59;Stufenwege · Wendepunkt / Wege;Herausforderung;35;7;0;Kompakt;42.337
+779;library-windows-76;Fensterlicht · Freier Blick / Gedanken;Herausforderung;36;7;1;Kompakt;42.366
+780;library-channels-86;Durchgänge · Lichtspur / Gedanken;Herausforderung;39;7;0;Kompakt;42.373
+781;library-channels-65;Durchgänge · Fernweh / Wege;Herausforderung;39;7;0;Kompakt;42.387
+782;library-islands-82;Inselpfade · Neue Perspektive / Gedanken;Herausforderung;39;7;0;Kompakt;42.461
+783;library-notches-81;Nischenwege · Windspiel / Gedanken;Herausforderung;36;7;0;Kompakt;42.465
+784;library-bridges-81;Verbindungen · Windspiel / Gedanken;Herausforderung;42;7;0;Kompakt;42.686
+785;library-bridges-49;Verbindungen · Farbenspiel / Wege;Herausforderung;39;7;0;Kompakt;42.74
+786;library-forks-78;Abzweigungen · Gedankenfluss / Gedanken;Herausforderung;37;7;1;Kompakt;42.826
+787;library-bridges-68;Verbindungen · Richtungswechsel / Wege;Herausforderung;43;7;0;Kompakt;42.846
+788;library-windows-67;Fensterlicht · Sternstunde / Wege;Herausforderung;39;7;1;Kompakt;42.884
+789;library-arches-50;Lichtbögen · Leiser Bogen / Wege;Herausforderung;35;7;1;Kompakt;42.942
+790;library-facets-79;Facetten · Eckpunkt / Gedanken;Herausforderung;42;7;0;Kompakt;42.969
+791;library-notches-54;Nischenwege · Eckpunkt / Wege;Herausforderung;38;7;0;Kompakt;42.99
+792;library-fans-86;Fächerwege · Lichtspur / Gedanken;Herausforderung;41;7;0;Kompakt;42.993
+793;library-fans-90;Fächerwege · Fernweh / Gedanken;Herausforderung;40;7;0;Kompakt;43.002
+794;library-arches-63;Lichtbögen · Spurwechsel / Wege;Herausforderung;36;7;2;Kompakt;43.039
+795;library-anchors-89;Ankerwege · Durchblick / Gedanken;Herausforderung;36;7;3;Kompakt;43.055
+796;library-windows-75;Fensterlicht · Leiser Bogen / Gedanken;Herausforderung;42;7;0;Kompakt;43.063
+797;library-islands-51;Inselpfade · Freier Blick / Wege;Herausforderung;41;7;0;Kompakt;43.137
+798;library-fans-55;Fächerwege · Balance / Wege;Herausforderung;41;7;0;Kompakt;43.155
+799;library-arches-90;Lichtbögen · Fernweh / Gedanken;Herausforderung;41;7;0;Kompakt;43.162
+800;library-channels-80;Durchgänge · Balance / Gedanken;Herausforderung;36;7;0;Verzweigt;43.209
+801;library-anchors-69;Ankerwege · Ruhepol / Wege;Herausforderung;35;6;5;Kompakt;43.223
+802;library-terraces-74;Stufenwege · Farbenspiel / Gedanken;Herausforderung;37;7;0;Verzweigt;43.225
+803;library-channels-56;Durchgänge · Windspiel / Wege;Herausforderung;36;7;2;Kompakt;43.236
+804;library-windows-65;Fensterlicht · Fernweh / Wege;Herausforderung;44;7;0;Kompakt;43.261
+805;library-islands-93;Inselpfade · Richtungswechsel / Gedanken;Herausforderung;43;7;0;Kompakt;43.302
+806;library-channels-55;Durchgänge · Balance / Wege;Herausforderung;44;7;0;Kompakt;43.335
+807;library-windows-61;Fensterlicht · Lichtspur / Wege;Herausforderung;36;7;2;Kompakt;43.338
+808;library-facets-88;Facetten · Spurwechsel / Gedanken;Herausforderung;35;7;2;Kompakt;43.41
+809;library-ribbons-92;Bänder · Sternstunde / Gedanken;Herausforderung;38;7;1;Kompakt;43.422
+810;library-bridges-52;Verbindungen · Kleine Reise / Wege;Herausforderung;35;7;2;Kompakt;43.44
+811;library-fans-79;Fächerwege · Eckpunkt / Gedanken;Herausforderung;34;7;2;Kompakt;43.462
+812;library-anchors-70;Ankerwege · Weitblick / Wege;Herausforderung;34;7;2;Kompakt;43.518
+813;library-windows-47;Fensterlicht · Seitenwechsel / Wege;Herausforderung;36;8;0;Kompakt;43.616
+814;library-channels-58;Durchgänge · Funkensprung / Wege;Herausforderung;41;7;1;Kompakt;43.665
+815;library-terraces-83;Stufenwege · Funkensprung / Gedanken;Herausforderung;41;7;0;Kompakt;43.681
+816;library-arches-57;Lichtbögen · Neue Perspektive / Wege;Herausforderung;36;7;2;Kompakt;43.73
+817;library-facets-85;Facetten · Augenblick / Gedanken;Herausforderung;39;7;2;Kompakt;43.787
+818;library-terraces-60;Stufenwege · Augenblick / Wege;Herausforderung;44;7;0;Kompakt;43.818
+819;library-fans-47;Fächerwege · Seitenwechsel / Wege;Herausforderung;42;7;0;Kompakt;43.832
+820;library-arches-70;Lichtbögen · Weitblick / Wege;Herausforderung;36;8;0;Kompakt;43.87
+821;library-notches-57;Nischenwege · Neue Perspektive / Wege;Herausforderung;36;7;1;Kompakt;43.882
+822;library-bridges-60;Verbindungen · Augenblick / Wege;Herausforderung;41;7;1;Kompakt;43.955
+823;library-channels-72;Durchgänge · Seitenwechsel / Gedanken;Herausforderung;35;8;0;Kompakt;44.056
+824;library-arches-83;Lichtbögen · Funkensprung / Gedanken;Herausforderung;35;8;0;Kompakt;44.186
+825;library-ribbons-91;Bänder · Atempause / Gedanken;Herausforderung;36;8;0;Kompakt;44.216
+826;library-forks-89;Abzweigungen · Durchblick / Gedanken;Herausforderung;34;8;0;Kompakt;44.284
+827;library-fans-75;Fächerwege · Leiser Bogen / Gedanken;Herausforderung;38;7;2;Kompakt;44.286
+828;library-channels-87;Durchgänge · Gegenstrom / Gedanken;Herausforderung;35;8;0;Kompakt;44.3
+829;library-bridges-88;Verbindungen · Spurwechsel / Gedanken;Herausforderung;38;7;2;Langgezogen;44.324
+830;library-arches-79;Lichtbögen · Eckpunkt / Gedanken;Herausforderung;36;8;0;Kompakt;44.339
+831;library-terraces-57;Stufenwege · Neue Perspektive / Wege;Herausforderung;43;7;0;Kompakt;44.342
+832;library-arches-71;Lichtbögen · Morgentau / Gedanken;Herausforderung;34;8;0;Kompakt;44.36
+833;library-notches-77;Nischenwege · Kleine Reise / Gedanken;Herausforderung;36;8;0;Kompakt;44.409
+834;library-channels-47;Durchgänge · Seitenwechsel / Wege;Herausforderung;38;7;2;Kompakt;44.431
+835;library-ribbons-87;Bänder · Gegenstrom / Gedanken;Herausforderung;34;8;0;Kompakt;44.44
+836;library-forks-65;Abzweigungen · Fernweh / Wege;Herausforderung;35;8;0;Kompakt;44.444
+837;library-facets-87;Facetten · Gegenstrom / Gedanken;Herausforderung;42;7;2;Kompakt;44.498
+838;library-bridges-47;Verbindungen · Seitenwechsel / Wege;Herausforderung;45;7;0;Kompakt;44.508
+839;library-arches-76;Lichtbögen · Freier Blick / Gedanken;Herausforderung;34;8;1;Kompakt;44.572
+840;library-islands-56;Inselpfade · Windspiel / Wege;Herausforderung;34;8;0;Kompakt;44.583
+841;library-ribbons-84;Bänder · Wendepunkt / Gedanken;Herausforderung;36;8;0;Kompakt;44.604
+842;library-forks-74;Abzweigungen · Farbenspiel / Gedanken;Herausforderung;35;8;0;Kompakt;44.61
+843;library-islands-62;Inselpfade · Gegenstrom / Wege;Herausforderung;34;8;0;Kompakt;44.611
+844;library-bridges-53;Verbindungen · Gedankenfluss / Wege;Herausforderung;34;8;0;Kompakt;44.628
+845;library-ribbons-60;Bänder · Augenblick / Wege;Herausforderung;37;8;0;Kompakt;44.647
+846;library-arches-56;Lichtbögen · Windspiel / Wege;Herausforderung;42;7;0;Kompakt;44.66
+847;library-forks-82;Abzweigungen · Neue Perspektive / Gedanken;Herausforderung;34;8;0;Kompakt;44.672
+848;library-windows-51;Fensterlicht · Freier Blick / Wege;Herausforderung;35;8;0;Kompakt;44.676
+849;library-forks-86;Abzweigungen · Lichtspur / Gedanken;Herausforderung;37;8;0;Kompakt;44.764
+850;library-arches-93;Lichtbögen · Richtungswechsel / Gedanken;Herausforderung;35;7;2;Kompakt;44.797
+851;library-facets-57;Facetten · Neue Perspektive / Wege;Herausforderung;35;8;0;Kompakt;44.817
+852;library-forks-56;Abzweigungen · Windspiel / Wege;Herausforderung;36;8;0;Kompakt;44.82
+853;library-bridges-94;Verbindungen · Ruhepol / Gedanken;Herausforderung;42;7;2;Kompakt;44.854
+854;library-windows-86;Fensterlicht · Lichtspur / Gedanken;Herausforderung;36;8;0;Kompakt;44.86
+855;library-forks-94;Abzweigungen · Ruhepol / Gedanken;Herausforderung;34;8;0;Kompakt;44.884
+856;library-forks-90;Abzweigungen · Fernweh / Gedanken;Herausforderung;41;8;0;Kompakt;44.889
+857;library-ribbons-49;Bänder · Farbenspiel / Wege;Herausforderung;34;8;0;Langgezogen;44.901
+858;library-anchors-87;Ankerwege · Gegenstrom / Gedanken;Herausforderung;43;7;2;Kompakt;44.902
+859;library-notches-94;Nischenwege · Ruhepol / Gedanken;Herausforderung;35;8;0;Kompakt;44.91
+860;library-notches-85;Nischenwege · Augenblick / Gedanken;Herausforderung;35;8;0;Kompakt;44.927
+861;library-ribbons-63;Bänder · Spurwechsel / Wege;Herausforderung;35;8;0;Kompakt;44.944
+862;library-fans-58;Fächerwege · Funkensprung / Wege;Herausforderung;34;8;0;Langgezogen;44.976
+863;library-arches-61;Lichtbögen · Lichtspur / Wege;Herausforderung;36;8;0;Kompakt;44.977
+864;library-islands-60;Inselpfade · Augenblick / Wege;Herausforderung;35;8;0;Kompakt;45.001
+865;library-ribbons-69;Bänder · Ruhepol / Wege;Herausforderung;37;8;0;Kompakt;45.021
+866;library-forks-71;Abzweigungen · Morgentau / Gedanken;Herausforderung;35;8;0;Kompakt;45.044
+867;library-forks-50;Abzweigungen · Leiser Bogen / Wege;Herausforderung;38;8;0;Kompakt;45.055
+868;library-facets-60;Facetten · Augenblick / Wege;Herausforderung;35;8;0;Kompakt;45.099
+869;library-anchors-50;Ankerwege · Leiser Bogen / Wege;Herausforderung;38;7;3;Kompakt;45.102
+870;library-islands-89;Inselpfade · Durchblick / Gedanken;Herausforderung;34;8;0;Kompakt;45.123
+871;library-windows-89;Fensterlicht · Durchblick / Gedanken;Herausforderung;34;8;0;Kompakt;45.123
+872;library-forks-68;Abzweigungen · Richtungswechsel / Wege;Herausforderung;35;8;0;Kompakt;45.124
+873;library-arches-53;Lichtbögen · Gedankenfluss / Wege;Herausforderung;35;8;0;Kompakt;45.129
+874;library-forks-55;Abzweigungen · Balance / Wege;Herausforderung;35;8;0;Kompakt;45.165
+875;library-anchors-55;Ankerwege · Balance / Wege;Herausforderung;35;8;1;Kompakt;45.166
+876;library-islands-54;Inselpfade · Eckpunkt / Wege;Herausforderung;35;8;0;Kompakt;45.175
+877;library-islands-68;Inselpfade · Richtungswechsel / Wege;Herausforderung;34;8;0;Kompakt;45.183
+878;library-windows-72;Fensterlicht · Seitenwechsel / Gedanken;Herausforderung;36;8;0;Kompakt;45.203
+879;library-forks-95;Abzweigungen · Weitblick / Gedanken;Herausforderung;35;8;0;Kompakt;45.205
+880;library-channels-93;Durchgänge · Richtungswechsel / Gedanken;Herausforderung;34;8;0;Kompakt;45.272
+881;library-terraces-47;Stufenwege · Seitenwechsel / Wege;Herausforderung;38;7;2;Kompakt;45.29
+882;library-forks-64;Abzweigungen · Durchblick / Wege;Herausforderung;36;8;0;Kompakt;45.296
+883;library-windows-63;Fensterlicht · Spurwechsel / Wege;Herausforderung;35;8;0;Kompakt;45.3
+884;library-channels-91;Durchgänge · Atempause / Gedanken;Herausforderung;37;8;0;Kompakt;45.32
+885;library-channels-52;Durchgänge · Kleine Reise / Wege;Herausforderung;37;8;0;Kompakt;45.321
+886;library-arches-80;Lichtbögen · Balance / Gedanken;Herausforderung;35;8;0;Kompakt;45.343
+887;library-fans-53;Fächerwege · Gedankenfluss / Wege;Herausforderung;34;8;0;Langgezogen;45.35
+888;library-fans-49;Fächerwege · Farbenspiel / Wege;Herausforderung;35;8;0;Kompakt;45.388
+889;library-ribbons-64;Bänder · Durchblick / Wege;Herausforderung;35;8;0;Kompakt;45.399
+890;library-ribbons-78;Bänder · Gedankenfluss / Gedanken;Herausforderung;36;8;0;Kompakt;45.408
+891;library-bridges-75;Verbindungen · Leiser Bogen / Gedanken;Herausforderung;36;8;0;Kompakt;45.444
+892;library-ribbons-51;Bänder · Freier Blick / Wege;Herausforderung;36;8;0;Kompakt;45.46
+893;library-forks-58;Abzweigungen · Funkensprung / Wege;Herausforderung;35;8;0;Kompakt;45.474
+894;library-bridges-59;Verbindungen · Wendepunkt / Wege;Herausforderung;34;8;0;Langgezogen;45.474
+895;library-forks-53;Abzweigungen · Gedankenfluss / Wege;Herausforderung;38;8;0;Kompakt;45.481
+896;library-arches-73;Lichtbögen · Zwischenraum / Gedanken;Herausforderung;36;8;2;Kompakt;45.492
+897;library-terraces-85;Stufenwege · Augenblick / Gedanken;Herausforderung;35;8;0;Kompakt;45.544
+898;library-terraces-79;Stufenwege · Eckpunkt / Gedanken;Herausforderung;37;8;0;Kompakt;45.575
+899;library-islands-58;Inselpfade · Funkensprung / Wege;Herausforderung;37;7;2;Kompakt;45.581
+900;library-forks-79;Abzweigungen · Eckpunkt / Gedanken;Herausforderung;36;8;0;Kompakt;45.589
+901;library-arches-88;Lichtbögen · Spurwechsel / Gedanken;Herausforderung;34;8;2;Kompakt;45.602
+902;library-anchors-65;Ankerwege · Fernweh / Wege;Herausforderung;37;7;2;Kompakt;45.621
+903;library-channels-85;Durchgänge · Augenblick / Gedanken;Herausforderung;37;8;0;Kompakt;45.664
+904;library-bridges-71;Verbindungen · Morgentau / Gedanken;Herausforderung;37;8;0;Kompakt;45.681
+905;library-bridges-92;Verbindungen · Sternstunde / Gedanken;Herausforderung;34;8;0;Langgezogen;45.688
+906;library-fans-64;Fächerwege · Durchblick / Wege;Herausforderung;35;8;0;Kompakt;45.724
+907;library-facets-86;Facetten · Lichtspur / Gedanken;Herausforderung;35;8;0;Kompakt;45.736
+908;library-notches-74;Nischenwege · Farbenspiel / Gedanken;Herausforderung;35;8;0;Kompakt;45.765
+909;library-channels-60;Durchgänge · Augenblick / Wege;Herausforderung;35;8;0;Kompakt;45.797
+910;library-islands-69;Inselpfade · Ruhepol / Wege;Herausforderung;35;8;0;Kompakt;45.798
+911;library-fans-62;Fächerwege · Gegenstrom / Wege;Herausforderung;37;8;0;Kompakt;45.817
+912;library-islands-63;Inselpfade · Spurwechsel / Wege;Herausforderung;35;8;0;Kompakt;45.83
+913;library-ribbons-58;Bänder · Funkensprung / Wege;Herausforderung;36;8;0;Kompakt;45.86
+914;library-fans-80;Fächerwege · Balance / Gedanken;Herausforderung;34;8;0;Verzweigt;45.869
+915;library-islands-48;Inselpfade · Zwischenraum / Wege;Herausforderung;35;8;0;Kompakt;45.894
+916;library-fans-72;Fächerwege · Seitenwechsel / Gedanken;Herausforderung;36;7;2;Kompakt;45.913
+917;library-forks-59;Abzweigungen · Wendepunkt / Wege;Herausforderung;34;8;0;Kompakt;45.914
+918;library-bridges-48;Verbindungen · Zwischenraum / Wege;Herausforderung;35;8;0;Kompakt;45.921
+919;library-ribbons-53;Bänder · Gedankenfluss / Wege;Herausforderung;35;7;4;Kompakt;45.922
+920;library-facets-77;Facetten · Kleine Reise / Gedanken;Herausforderung;35;8;0;Kompakt;45.922
+921;library-channels-54;Durchgänge · Eckpunkt / Wege;Herausforderung;35;8;0;Kompakt;45.943
+922;library-fans-77;Fächerwege · Kleine Reise / Gedanken;Herausforderung;35;8;0;Kompakt;45.957
+923;library-terraces-68;Stufenwege · Richtungswechsel / Wege;Herausforderung;38;7;2;Kompakt;46.002
+924;library-fans-61;Fächerwege · Lichtspur / Wege;Herausforderung;36;8;0;Kompakt;46.026
+925;library-islands-65;Inselpfade · Fernweh / Wege;Herausforderung;35;8;0;Kompakt;46.028
+926;library-ribbons-81;Bänder · Windspiel / Gedanken;Herausforderung;37;8;0;Kompakt;46.053
+927;library-channels-73;Durchgänge · Zwischenraum / Gedanken;Herausforderung;34;8;0;Kompakt;46.062
+928;library-terraces-90;Stufenwege · Fernweh / Gedanken;Herausforderung;35;8;0;Kompakt;46.065
+929;library-arches-91;Lichtbögen · Atempause / Gedanken;Herausforderung;36;8;0;Kompakt;46.094
+930;library-ribbons-86;Bänder · Lichtspur / Gedanken;Herausforderung;40;8;0;Kompakt;46.157
+931;library-facets-84;Facetten · Wendepunkt / Gedanken;Herausforderung;37;8;0;Kompakt;46.164
+932;library-forks-77;Abzweigungen · Kleine Reise / Gedanken;Herausforderung;37;8;0;Kompakt;46.168
+933;library-anchors-83;Ankerwege · Funkensprung / Gedanken;Herausforderung;35;7;4;Kompakt;46.211
+934;library-islands-84;Inselpfade · Wendepunkt / Gedanken;Herausforderung;36;8;0;Kompakt;46.226
+935;library-windows-77;Fensterlicht · Kleine Reise / Gedanken;Herausforderung;38;8;0;Kompakt;46.254
+936;library-notches-89;Nischenwege · Durchblick / Gedanken;Herausforderung;34;8;0;Kompakt;46.288
+937;library-arches-78;Lichtbögen · Gedankenfluss / Gedanken;Herausforderung;42;8;0;Kompakt;46.295
+938;library-bridges-77;Verbindungen · Kleine Reise / Gedanken;Herausforderung;34;8;1;Kompakt;46.305
+939;library-channels-90;Durchgänge · Fernweh / Gedanken;Herausforderung;34;8;1;Kompakt;46.315
+940;library-terraces-50;Stufenwege · Leiser Bogen / Wege;Herausforderung;43;7;2;Kompakt;46.318
+941;library-windows-69;Fensterlicht · Ruhepol / Wege;Herausforderung;38;8;0;Kompakt;46.324
+942;library-bridges-51;Verbindungen · Freier Blick / Wege;Herausforderung;36;8;0;Kompakt;46.36
+943;library-notches-56;Nischenwege · Windspiel / Wege;Herausforderung;34;8;0;Kompakt;46.362
+944;library-islands-53;Inselpfade · Gedankenfluss / Wege;Herausforderung;37;8;0;Kompakt;46.43
+945;library-islands-75;Inselpfade · Leiser Bogen / Gedanken;Herausforderung;37;8;0;Kompakt;46.43
+946;library-notches-52;Nischenwege · Kleine Reise / Wege;Herausforderung;34;8;0;Verzweigt;46.457
+947;library-forks-76;Abzweigungen · Freier Blick / Gedanken;Herausforderung;34;8;0;Kompakt;46.468
+948;library-ribbons-61;Bänder · Lichtspur / Wege;Herausforderung;36;8;0;Kompakt;46.479
+949;library-notches-73;Nischenwege · Zwischenraum / Gedanken;Herausforderung;35;8;2;Kompakt;46.488
+950;library-fans-59;Fächerwege · Wendepunkt / Wege;Herausforderung;36;8;0;Kompakt;46.54
+951;library-notches-61;Nischenwege · Lichtspur / Wege;Herausforderung;38;8;0;Verzweigt;46.544
+952;library-facets-91;Facetten · Atempause / Gedanken;Herausforderung;42;8;0;Kompakt;46.548
+953;library-facets-54;Facetten · Eckpunkt / Wege;Herausforderung;36;8;0;Kompakt;46.557
+954;library-forks-91;Abzweigungen · Atempause / Gedanken;Herausforderung;36;8;0;Kompakt;46.557
+955;library-forks-46;Abzweigungen · Morgentau / Wege;Herausforderung;36;8;0;Kompakt;46.565
+956;library-windows-90;Fensterlicht · Fernweh / Gedanken;Herausforderung;37;8;0;Kompakt;46.648
+957;library-anchors-61;Ankerwege · Lichtspur / Wege;Herausforderung;42;7;3;Kompakt;46.671
+958;library-notches-88;Nischenwege · Spurwechsel / Gedanken;Herausforderung;36;8;0;Verzweigt;46.703
+959;library-ribbons-57;Bänder · Neue Perspektive / Wege;Herausforderung;34;8;2;Kompakt;46.704
+960;library-facets-80;Facetten · Balance / Gedanken;Herausforderung;35;8;0;Kompakt;46.732
+961;library-windows-82;Fensterlicht · Neue Perspektive / Gedanken;Herausforderung;45;8;0;Kompakt;46.774
+962;library-arches-46;Lichtbögen · Morgentau / Wege;Herausforderung;34;8;1;Kompakt;46.784
+963;library-bridges-69;Verbindungen · Ruhepol / Wege;Herausforderung;34;8;2;Kompakt;46.817
+964;library-bridges-82;Verbindungen · Neue Perspektive / Gedanken;Herausforderung;44;8;0;Kompakt;46.832
+965;library-forks-69;Abzweigungen · Ruhepol / Wege;Herausforderung;44;8;0;Kompakt;46.876
+966;library-anchors-63;Ankerwege · Spurwechsel / Wege;Herausforderung;34;8;2;Kompakt;46.911
+967;library-islands-83;Inselpfade · Funkensprung / Gedanken;Herausforderung;34;8;2;Kompakt;46.911
+968;library-fans-66;Fächerwege · Atempause / Wege;Herausforderung;43;8;0;Kompakt;46.914
+969;library-terraces-64;Stufenwege · Durchblick / Wege;Herausforderung;36;8;0;Kompakt;46.954
+970;library-anchors-95;Ankerwege · Weitblick / Gedanken;Herausforderung;44;7;4;Kompakt;46.985
+971;library-fans-88;Fächerwege · Spurwechsel / Gedanken;Herausforderung;34;8;2;Kompakt;47.015
+972;library-notches-78;Nischenwege · Gedankenfluss / Gedanken;Herausforderung;37;7;4;Kompakt;47.026
+973;library-islands-78;Inselpfade · Gedankenfluss / Gedanken;Herausforderung;35;8;1;Langgezogen;47.066
+974;library-arches-68;Lichtbögen · Richtungswechsel / Wege;Herausforderung;39;8;0;Kompakt;47.072
+975;library-notches-95;Nischenwege · Weitblick / Gedanken;Herausforderung;34;8;2;Kompakt;47.109
+976;library-islands-55;Inselpfade · Balance / Wege;Herausforderung;40;8;0;Kompakt;47.144
+977;library-terraces-54;Stufenwege · Eckpunkt / Wege;Herausforderung;37;8;0;Kompakt;47.187
+978;library-windows-92;Fensterlicht · Sternstunde / Gedanken;Herausforderung;34;8;2;Kompakt;47.26
+979;library-facets-63;Facetten · Spurwechsel / Wege;Herausforderung;34;8;0;Verzweigt;47.261
+980;library-channels-77;Durchgänge · Kleine Reise / Gedanken;Herausforderung;44;8;0;Kompakt;47.272
+981;library-terraces-95;Stufenwege · Weitblick / Gedanken;Herausforderung;40;8;0;Kompakt;47.294
+982;library-fans-74;Fächerwege · Farbenspiel / Gedanken;Herausforderung;34;7;4;Kompakt;47.296
+983;library-ribbons-82;Bänder · Neue Perspektive / Gedanken;Herausforderung;35;8;2;Kompakt;47.3
+984;library-terraces-70;Stufenwege · Weitblick / Wege;Herausforderung;43;7;2;Kompakt;47.323
+985;library-islands-76;Inselpfade · Freier Blick / Gedanken;Herausforderung;42;8;0;Kompakt;47.348
+986;library-bridges-85;Verbindungen · Augenblick / Gedanken;Herausforderung;36;7;4;Kompakt;47.365
+987;library-terraces-75;Stufenwege · Leiser Bogen / Gedanken;Herausforderung;37;8;0;Kompakt;47.419
+988;library-channels-94;Durchgänge · Ruhepol / Gedanken;Herausforderung;36;8;0;Kompakt;47.426
+989;library-terraces-87;Stufenwege · Gegenstrom / Gedanken;Herausforderung;36;8;2;Kompakt;47.531
+990;library-facets-46;Facetten · Morgentau / Wege;Herausforderung;43;8;0;Kompakt;47.537
+991;library-islands-81;Inselpfade · Windspiel / Gedanken;Herausforderung;34;8;2;Kompakt;47.572
+992;library-terraces-80;Stufenwege · Balance / Gedanken;Herausforderung;40;8;0;Kompakt;47.6
+993;library-islands-86;Inselpfade · Lichtspur / Gedanken;Herausforderung;35;8;2;Kompakt;47.661
+994;library-bridges-62;Verbindungen · Gegenstrom / Wege;Herausforderung;36;8;2;Kompakt;47.687
+995;library-arches-54;Lichtbögen · Eckpunkt / Wege;Herausforderung;44;8;0;Kompakt;47.768
+996;library-fans-67;Fächerwege · Sternstunde / Wege;Herausforderung;39;8;2;Kompakt;47.85
+997;library-arches-86;Lichtbögen · Lichtspur / Gedanken;Herausforderung;35;8;2;Kompakt;47.876
+998;library-channels-92;Durchgänge · Sternstunde / Gedanken;Herausforderung;41;8;0;Kompakt;47.888
+999;library-bridges-54;Verbindungen · Eckpunkt / Wege;Herausforderung;36;8;2;Kompakt;47.935
+1000;library-windows-80;Fensterlicht · Balance / Gedanken;Herausforderung;38;9;0;Kompakt;47.941
+1001;library-forks-85;Abzweigungen · Augenblick / Gedanken;Herausforderung;35;8;2;Kompakt;47.984
+1002;library-facets-75;Facetten · Leiser Bogen / Gedanken;Herausforderung;34;8;2;Kompakt;48
+1003;library-channels-46;Durchgänge · Morgentau / Wege;Herausforderung;39;8;2;Kompakt;48.019
+1004;library-fans-54;Fächerwege · Eckpunkt / Wege;Herausforderung;40;8;0;Kompakt;48.02
+1005;library-arches-75;Lichtbögen · Leiser Bogen / Gedanken;Herausforderung;43;8;0;Kompakt;48.046
+1006;library-anchors-57;Ankerwege · Neue Perspektive / Wege;Herausforderung;38;8;3;Kompakt;48.105
+1007;library-islands-66;Inselpfade · Atempause / Wege;Herausforderung;38;8;2;Kompakt;48.179
+1008;library-notches-59;Nischenwege · Wendepunkt / Wege;Herausforderung;36;8;2;Kompakt;48.238
+1009;library-anchors-54;Ankerwege · Eckpunkt / Wege;Herausforderung;35;8;2;Kompakt;48.244
+1010;library-terraces-58;Stufenwege · Funkensprung / Wege;Herausforderung;36;8;1;Kompakt;48.317
+1011;library-fans-71;Fächerwege · Morgentau / Gedanken;Herausforderung;36;8;2;Kompakt;48.361
+1012;library-anchors-72;Ankerwege · Seitenwechsel / Gedanken;Herausforderung;34;8;2;Kompakt;48.464
+1013;library-anchors-64;Ankerwege · Durchblick / Wege;Herausforderung;34;8;3;Kompakt;48.484
+1014;library-notches-48;Nischenwege · Zwischenraum / Wege;Herausforderung;45;8;0;Kompakt;48.549
+1015;library-fans-92;Fächerwege · Sternstunde / Gedanken;Herausforderung;35;8;2;Kompakt;48.561
+1016;library-fans-51;Fächerwege · Freier Blick / Wege;Herausforderung;44;8;0;Kompakt;48.568
+1017;library-bridges-74;Verbindungen · Farbenspiel / Gedanken;Herausforderung;36;8;2;Kompakt;48.643
+1018;library-terraces-88;Stufenwege · Spurwechsel / Gedanken;Herausforderung;36;8;2;Kompakt;48.643
+1019;library-notches-76;Nischenwege · Freier Blick / Gedanken;Herausforderung;37;9;0;Kompakt;48.87
+1020;library-windows-55;Fensterlicht · Balance / Wege;Herausforderung;45;8;2;Kompakt;48.911
+1021;library-windows-60;Fensterlicht · Augenblick / Wege;Herausforderung;34;8;2;Kompakt;48.962
+1022;library-anchors-62;Ankerwege · Gegenstrom / Wege;Herausforderung;41;8;3;Kompakt;49.124
+1023;library-channels-64;Durchgänge · Durchblick / Wege;Herausforderung;36;8;2;Verzweigt;49.288
+1024;library-fans-82;Fächerwege · Neue Perspektive / Gedanken;Herausforderung;36;8;2;Kompakt;49.388
+1025;library-bridges-93;Verbindungen · Richtungswechsel / Gedanken;Herausforderung;38;9;0;Kompakt;49.404
+1026;library-arches-55;Lichtbögen · Balance / Wege;Herausforderung;40;9;0;Kompakt;49.411
+1027;library-anchors-78;Ankerwege · Gedankenfluss / Gedanken;Herausforderung;35;8;3;Verzweigt;49.425
+1028;library-facets-62;Facetten · Gegenstrom / Wege;Herausforderung;39;9;0;Kompakt;49.474
+1029;library-forks-47;Abzweigungen · Seitenwechsel / Wege;Herausforderung;38;9;0;Kompakt;49.536
+1030;library-ribbons-55;Bänder · Balance / Wege;Herausforderung;37;9;0;Kompakt;49.539
+1031;library-facets-92;Facetten · Sternstunde / Gedanken;Herausforderung;49;8;0;Kompakt;49.58
+1032;library-anchors-93;Ankerwege · Richtungswechsel / Gedanken;Herausforderung;35;8;4;Kompakt;49.611
+1033;library-windows-48;Fensterlicht · Zwischenraum / Wege;Herausforderung;41;9;0;Kompakt;49.617
+1034;library-ribbons-79;Bänder · Eckpunkt / Gedanken;Herausforderung;39;9;0;Langgezogen;49.649
+1035;library-arches-49;Lichtbögen · Farbenspiel / Wege;Herausforderung;42;9;0;Kompakt;49.71
+1036;library-islands-71;Inselpfade · Morgentau / Gedanken;Herausforderung;38;8;2;Kompakt;49.713
+1037;library-arches-67;Lichtbögen · Sternstunde / Wege;Herausforderung;40;9;0;Kompakt;49.751
+1038;library-terraces-67;Stufenwege · Sternstunde / Wege;Herausforderung;39;8;0;Kompakt;49.757
+1039;library-bridges-66;Verbindungen · Atempause / Wege;Herausforderung;39;9;0;Kompakt;49.761
+1040;library-terraces-55;Stufenwege · Balance / Wege;Herausforderung;36;8;2;Kompakt;49.79
+1041;library-ribbons-76;Bänder · Freier Blick / Gedanken;Herausforderung;39;9;0;Kompakt;49.8
+1042;library-fans-83;Fächerwege · Funkensprung / Gedanken;Herausforderung;39;9;0;Kompakt;49.824
+1043;library-ribbons-90;Bänder · Fernweh / Gedanken;Herausforderung;37;9;0;Kompakt;50.011
+1044;library-forks-61;Abzweigungen · Lichtspur / Wege;Herausforderung;39;9;0;Kompakt;50.04
+1045;library-terraces-62;Stufenwege · Gegenstrom / Wege;Herausforderung;42;8;2;Kompakt;50.048
+1046;library-ribbons-73;Bänder · Zwischenraum / Gedanken;Herausforderung;39;9;0;Kompakt;50.07
+1047;library-islands-57;Inselpfade · Neue Perspektive / Wege;Herausforderung;37;9;0;Kompakt;50.087
+1048;library-bridges-90;Verbindungen · Fernweh / Gedanken;Herausforderung;40;9;0;Kompakt;50.105
+1049;library-windows-84;Fensterlicht · Wendepunkt / Gedanken;Herausforderung;38;9;0;Kompakt;50.119
+1050;library-bridges-65;Verbindungen · Fernweh / Wege;Herausforderung;39;9;0;Kompakt;50.129
+1051;library-bridges-67;Verbindungen · Sternstunde / Wege;Herausforderung;40;8;2;Langgezogen;50.132
+1052;library-ribbons-52;Bänder · Kleine Reise / Wege;Herausforderung;38;9;0;Kompakt;50.143
+1053;library-forks-73;Abzweigungen · Zwischenraum / Gedanken;Herausforderung;37;9;0;Kompakt;50.167
+1054;library-ribbons-94;Bänder · Ruhepol / Gedanken;Herausforderung;40;9;0;Kompakt;50.219
+1055;library-islands-92;Inselpfade · Sternstunde / Gedanken;Herausforderung;39;9;0;Kompakt;50.25
+1056;library-channels-78;Durchgänge · Gedankenfluss / Gedanken;Herausforderung;43;9;0;Kompakt;50.336
+1057;library-bridges-56;Verbindungen · Windspiel / Wege;Herausforderung;39;9;0;Kompakt;50.4
+1058;library-bridges-86;Verbindungen · Lichtspur / Gedanken;Herausforderung;38;9;0;Kompakt;50.419
+1059;library-ribbons-66;Bänder · Atempause / Wege;Herausforderung;39;9;0;Kompakt;50.458
+1060;library-ribbons-48;Bänder · Zwischenraum / Wege;Herausforderung;41;9;0;Kompakt;50.489
+1061;library-channels-61;Durchgänge · Lichtspur / Wege;Herausforderung;42;9;0;Kompakt;50.49
+1062;library-channels-51;Durchgänge · Freier Blick / Wege;Herausforderung;37;9;0;Kompakt;50.498
+1063;library-islands-74;Inselpfade · Farbenspiel / Gedanken;Herausforderung;41;9;0;Kompakt;50.516
+1064;library-arches-94;Lichtbögen · Ruhepol / Gedanken;Herausforderung;38;9;0;Kompakt;50.564
+1065;library-arches-89;Lichtbögen · Durchblick / Gedanken;Herausforderung;37;9;0;Kompakt;50.59
+1066;library-islands-47;Inselpfade · Seitenwechsel / Wege;Herausforderung;40;9;0;Langgezogen;50.644
+1067;library-terraces-81;Stufenwege · Windspiel / Gedanken;Herausforderung;38;9;0;Kompakt;50.75
+1068;library-channels-81;Durchgänge · Windspiel / Gedanken;Herausforderung;41;9;0;Kompakt;50.75
+1069;library-fans-85;Fächerwege · Augenblick / Gedanken;Herausforderung;41;9;0;Kompakt;50.807
+1070;library-bridges-80;Verbindungen · Balance / Gedanken;Herausforderung;42;9;0;Kompakt;50.811
+1071;library-fans-50;Fächerwege · Leiser Bogen / Wege;Herausforderung;35;8;4;Kompakt;50.844
+1072;library-facets-78;Facetten · Gedankenfluss / Gedanken;Herausforderung;38;9;0;Kompakt;50.846
+1073;library-channels-82;Durchgänge · Neue Perspektive / Gedanken;Herausforderung;40;9;0;Kompakt;50.86
+1074;library-windows-81;Fensterlicht · Windspiel / Gedanken;Herausforderung;38;9;0;Verzweigt;50.904
+1075;library-fans-46;Fächerwege · Morgentau / Wege;Herausforderung;39;9;0;Kompakt;50.933
+1076;library-fans-76;Fächerwege · Freier Blick / Gedanken;Herausforderung;40;9;0;Kompakt;50.969
+1077;library-islands-87;Inselpfade · Gegenstrom / Gedanken;Herausforderung;40;9;0;Kompakt;50.969
+1078;library-arches-65;Lichtbögen · Fernweh / Wege;Herausforderung;43;9;0;Kompakt;51.01
+1079;library-windows-87;Fensterlicht · Gegenstrom / Gedanken;Herausforderung;38;9;2;Kompakt;51.03
+1080;library-notches-86;Nischenwege · Lichtspur / Gedanken;Herausforderung;40;9;0;Kompakt;51.034
+1081;library-notches-91;Nischenwege · Atempause / Gedanken;Herausforderung;42;9;0;Kompakt;51.038
+1082;library-terraces-46;Stufenwege · Morgentau / Wege;Herausforderung;41;9;0;Kompakt;51.089
+1083;library-channels-49;Durchgänge · Farbenspiel / Wege;Herausforderung;43;9;0;Kompakt;51.128
+1084;library-notches-64;Nischenwege · Durchblick / Wege;Herausforderung;40;9;0;Kompakt;51.13
+1085;library-windows-68;Fensterlicht · Richtungswechsel / Wege;Herausforderung;40;9;0;Kompakt;51.16
+1086;library-facets-83;Facetten · Funkensprung / Gedanken;Herausforderung;40;9;0;Kompakt;51.166
+1087;library-notches-83;Nischenwege · Funkensprung / Gedanken;Herausforderung;41;9;0;Kompakt;51.196
+1088;library-terraces-61;Stufenwege · Lichtspur / Wege;Herausforderung;42;9;0;Kompakt;51.389
+1089;library-terraces-82;Stufenwege · Neue Perspektive / Gedanken;Herausforderung;41;9;0;Kompakt;51.416
+1090;library-ribbons-70;Bänder · Weitblick / Wege;Herausforderung;37;9;2;Kompakt;51.421
+1091;library-facets-69;Facetten · Ruhepol / Wege;Herausforderung;34;8;4;Kompakt;51.437
+1092;library-anchors-85;Ankerwege · Augenblick / Gedanken;Herausforderung;34;8;6;Kompakt;51.44
+1093;library-terraces-84;Stufenwege · Wendepunkt / Gedanken;Herausforderung;39;9;0;Kompakt;51.559
+1094;library-terraces-69;Stufenwege · Ruhepol / Wege;Herausforderung;41;9;0;Kompakt;51.634
+1095;library-facets-71;Facetten · Morgentau / Gedanken;Herausforderung;40;9;0;Kompakt;51.717
+1096;library-facets-50;Facetten · Leiser Bogen / Wege;Herausforderung;45;9;0;Kompakt;51.784
+1097;library-notches-62;Nischenwege · Gegenstrom / Wege;Herausforderung;40;9;1;Kompakt;51.884
+1098;library-terraces-63;Stufenwege · Spurwechsel / Wege;Herausforderung;41;9;1;Kompakt;51.899
+1099;library-anchors-80;Ankerwege · Balance / Gedanken;Herausforderung;40;8;4;Kompakt;51.944
+1100;library-anchors-52;Ankerwege · Kleine Reise / Wege;Herausforderung;40;9;2;Kompakt;51.99
+1101;library-bridges-87;Verbindungen · Gegenstrom / Gedanken;Herausforderung;40;9;1;Kompakt;52.01
+1102;library-bridges-58;Verbindungen · Funkensprung / Wege;Herausforderung;50;9;0;Kompakt;52.089
+1103;library-bridges-70;Verbindungen · Weitblick / Wege;Herausforderung;48;9;0;Kompakt;52.249
+1104;library-anchors-91;Ankerwege · Atempause / Gedanken;Herausforderung;39;9;3;Kompakt;52.258
+1105;library-fans-91;Fächerwege · Atempause / Gedanken;Herausforderung;38;9;2;Kompakt;52.269
+1106;library-arches-47;Lichtbögen · Seitenwechsel / Wege;Herausforderung;38;9;2;Kompakt;52.395
+1107;library-anchors-60;Ankerwege · Augenblick / Wege;Herausforderung;38;9;2;Kompakt;52.436
+1108;library-notches-55;Nischenwege · Balance / Wege;Herausforderung;38;9;2;Kompakt;52.468
+1109;library-notches-68;Nischenwege · Richtungswechsel / Wege;Herausforderung;38;9;2;Kompakt;52.631
+1110;library-bridges-83;Verbindungen · Funkensprung / Gedanken;Herausforderung;40;9;1;Langgezogen;52.634
+1111;library-windows-85;Fensterlicht · Augenblick / Gedanken;Herausforderung;51;9;0;Kompakt;52.779
+1112;library-forks-92;Abzweigungen · Sternstunde / Gedanken;Herausforderung;39;9;2;Kompakt;52.787
+1113;library-fans-70;Fächerwege · Weitblick / Wege;Herausforderung;38;9;2;Kompakt;52.826
+1114;library-anchors-66;Ankerwege · Atempause / Wege;Herausforderung;40;9;2;Kompakt;52.884
+1115;library-windows-46;Fensterlicht · Morgentau / Wege;Herausforderung;50;9;0;Kompakt;52.931
+1116;library-windows-53;Fensterlicht · Gedankenfluss / Wege;Herausforderung;39;9;2;Kompakt;52.94
+1117;library-bridges-57;Verbindungen · Neue Perspektive / Wege;Herausforderung;37;9;2;Kompakt;52.973
+1118;library-facets-82;Facetten · Neue Perspektive / Gedanken;Herausforderung;49;9;0;Kompakt;53.001
+1119;library-facets-72;Facetten · Seitenwechsel / Gedanken;Herausforderung;40;9;2;Kompakt;53.005
+1120;library-notches-67;Nischenwege · Sternstunde / Wege;Herausforderung;39;9;2;Kompakt;53.064
+1121;library-anchors-81;Ankerwege · Windspiel / Gedanken;Herausforderung;40;9;2;Kompakt;53.156
+1122;library-notches-60;Nischenwege · Augenblick / Wege;Herausforderung;50;9;0;Kompakt;53.244
+1123;library-facets-73;Facetten · Zwischenraum / Gedanken;Herausforderung;46;9;0;Kompakt;53.302
+1124;library-anchors-79;Ankerwege · Eckpunkt / Gedanken;Herausforderung;39;9;4;Kompakt;53.457
+1125;library-windows-59;Fensterlicht · Wendepunkt / Wege;Herausforderung;41;10;0;Kompakt;53.506
+1126;library-anchors-76;Ankerwege · Freier Blick / Gedanken;Herausforderung;40;9;3;Kompakt;53.545
+1127;library-windows-71;Fensterlicht · Morgentau / Gedanken;Herausforderung;42;10;0;Kompakt;53.586
+1128;library-facets-89;Facetten · Durchblick / Gedanken;Herausforderung;40;9;2;Kompakt;53.61
+1129;library-terraces-72;Stufenwege · Seitenwechsel / Gedanken;Herausforderung;39;9;2;Verzweigt;53.796
+1130;library-facets-49;Facetten · Farbenspiel / Wege;Herausforderung;46;9;2;Kompakt;54.022
+1131;library-bridges-95;Verbindungen · Weitblick / Gedanken;Herausforderung;41;9;2;Kompakt;54.079
+1132;library-windows-50;Fensterlicht · Leiser Bogen / Wege;Herausforderung;46;10;0;Kompakt;54.082
+1133;library-windows-58;Fensterlicht · Funkensprung / Wege;Herausforderung;46;9;2;Kompakt;54.09
+1134;library-arches-52;Lichtbögen · Kleine Reise / Wege;Herausforderung;41;10;0;Kompakt;54.181
+1135;library-anchors-71;Ankerwege · Morgentau / Gedanken;Herausforderung;49;9;2;Kompakt;54.202
+1136;library-windows-93;Fensterlicht · Richtungswechsel / Gedanken;Herausforderung;42;10;0;Kompakt;54.374
+1137;library-arches-58;Lichtbögen · Funkensprung / Wege;Herausforderung;42;10;0;Kompakt;54.433
+1138;library-channels-75;Durchgänge · Leiser Bogen / Gedanken;Herausforderung;44;10;0;Kompakt;54.446
+1139;library-bridges-84;Verbindungen · Wendepunkt / Gedanken;Herausforderung;40;9;3;Langgezogen;54.519
+1140;library-facets-65;Facetten · Fernweh / Wege;Herausforderung;38;9;2;Verzweigt;54.654
+1141;library-anchors-47;Ankerwege · Seitenwechsel / Wege;Herausforderung;47;9;2;Kompakt;54.714
+1142;library-windows-56;Fensterlicht · Windspiel / Wege;Herausforderung;43;10;0;Kompakt;54.736
+1143;library-islands-50;Inselpfade · Leiser Bogen / Wege;Herausforderung;42;10;0;Kompakt;54.75
+1144;library-windows-95;Fensterlicht · Weitblick / Gedanken;Herausforderung;42;10;0;Kompakt;54.757
+1145;library-facets-81;Facetten · Windspiel / Gedanken;Herausforderung;45;10;0;Kompakt;54.852
+1146;library-arches-92;Lichtbögen · Sternstunde / Gedanken;Herausforderung;46;10;0;Kompakt;54.981
+1147;library-channels-70;Durchgänge · Weitblick / Wege;Herausforderung;46;10;0;Kompakt;54.998
+1148;library-facets-52;Facetten · Kleine Reise / Wege;Herausforderung;46;9;2;Kompakt;55.078
+1149;library-facets-59;Facetten · Wendepunkt / Wege;Herausforderung;43;10;0;Kompakt;55.167
+1150;library-facets-56;Facetten · Windspiel / Wege;Herausforderung;43;10;0;Kompakt;55.21
+1151;library-anchors-49;Ankerwege · Farbenspiel / Wege;Herausforderung;43;9;3;Kompakt;55.299
+1152;library-facets-93;Facetten · Richtungswechsel / Gedanken;Herausforderung;40;9;4;Kompakt;55.421
+1153;library-facets-90;Facetten · Fernweh / Gedanken;Herausforderung;40;9;4;Kompakt;55.67
+1154;library-terraces-76;Stufenwege · Freier Blick / Gedanken;Herausforderung;43;10;0;Kompakt;55.739
+1155;library-terraces-49;Stufenwege · Farbenspiel / Wege;Herausforderung;42;10;0;Kompakt;55.754
+1156;library-fans-56;Fächerwege · Windspiel / Wege;Herausforderung;43;10;0;Kompakt;55.829
+1157;library-anchors-46;Ankerwege · Morgentau / Wege;Herausforderung;38;9;5;Kompakt;55.855
+1158;library-windows-54;Fensterlicht · Eckpunkt / Wege;Herausforderung;42;10;2;Kompakt;55.864
+1159;library-fans-95;Fächerwege · Weitblick / Gedanken;Herausforderung;47;10;0;Kompakt;55.918
+1160;library-fans-89;Fächerwege · Durchblick / Gedanken;Herausforderung;46;10;0;Kompakt;55.939
+1161;library-facets-47;Facetten · Seitenwechsel / Wege;Herausforderung;41;10;0;Kompakt;55.998
+1162;library-facets-68;Facetten · Richtungswechsel / Wege;Herausforderung;45;10;0;Kompakt;56.097
+1163;library-channels-66;Durchgänge · Atempause / Wege;Herausforderung;43;10;1;Kompakt;56.291
+1164;library-terraces-66;Stufenwege · Atempause / Wege;Herausforderung;44;10;0;Kompakt;56.548
+1165;library-notches-65;Nischenwege · Fernweh / Wege;Herausforderung;49;10;0;Kompakt;56.64
+1166;library-terraces-48;Stufenwege · Zwischenraum / Wege;Herausforderung;48;10;0;Kompakt;56.753
+1167;library-channels-88;Durchgänge · Spurwechsel / Gedanken;Herausforderung;45;10;2;Kompakt;56.763
+1168;library-notches-75;Nischenwege · Leiser Bogen / Gedanken;Herausforderung;51;10;0;Kompakt;57.339
+1169;library-notches-46;Nischenwege · Morgentau / Wege;Herausforderung;43;10;2;Kompakt;57.515
+1170;library-windows-74;Fensterlicht · Farbenspiel / Gedanken;Herausforderung;44;10;2;Kompakt;57.603
+1171;library-terraces-53;Stufenwege · Gedankenfluss / Wege;Herausforderung;51;10;0;Kompakt;57.851
+1172;library-anchors-51;Ankerwege · Freier Blick / Wege;Herausforderung;42;10;3;Kompakt;58.079
+1173;library-notches-80;Nischenwege · Balance / Gedanken;Herausforderung;43;10;2;Kompakt;58.214
+1174;library-terraces-51;Stufenwege · Freier Blick / Wege;Herausforderung;41;10;2;Kompakt;58.216
+1175;library-notches-49;Nischenwege · Farbenspiel / Wege;Herausforderung;45;10;2;Kompakt;58.578
+1176;library-notches-82;Nischenwege · Neue Perspektive / Gedanken;Herausforderung;47;10;2;Kompakt;58.608
+1177;library-arches-59;Lichtbögen · Wendepunkt / Wege;Herausforderung;48;10;2;Kompakt;58.778
+1178;library-arches-74;Lichtbögen · Farbenspiel / Gedanken;Herausforderung;49;11;0;Kompakt;59.037
+1179;library-notches-70;Nischenwege · Weitblick / Wege;Herausforderung;46;10;2;Kompakt;59.181
+1180;library-terraces-89;Stufenwege · Durchblick / Gedanken;Herausforderung;53;10;1;Kompakt;59.294
+1181;library-anchors-59;Ankerwege · Wendepunkt / Wege;Herausforderung;53;10;2;Kompakt;59.497
+1182;library-anchors-88;Ankerwege · Spurwechsel / Gedanken;Herausforderung;42;10;4;Kompakt;59.783
+1183;library-bridges-78;Verbindungen · Gedankenfluss / Gedanken;Herausforderung;47;11;0;Kompakt;59.859
+1184;library-notches-47;Nischenwege · Seitenwechsel / Wege;Herausforderung;46;11;0;Kompakt;60.198
+1185;library-terraces-94;Stufenwege · Ruhepol / Gedanken;Herausforderung;47;11;0;Kompakt;60.242
+1186;library-channels-69;Durchgänge · Ruhepol / Wege;Herausforderung;47;11;0;Kompakt;60.424
+1187;library-anchors-73;Ankerwege · Zwischenraum / Gedanken;Herausforderung;43;10;5;Kompakt;61.06
+1188;library-channels-67;Durchgänge · Sternstunde / Wege;Herausforderung;47;11;1;Kompakt;61.321
+1189;library-bridges-72;Verbindungen · Seitenwechsel / Gedanken;Herausforderung;48;11;2;Kompakt;61.686
+1190;library-channels-57;Durchgänge · Neue Perspektive / Wege;Herausforderung;50;11;0;Kompakt;61.771
+1191;library-channels-48;Durchgänge · Zwischenraum / Wege;Herausforderung;43;11;2;Kompakt;62.057
+1192;library-terraces-93;Stufenwege · Richtungswechsel / Gedanken;Herausforderung;52;11;0;Kompakt;62.334
+1193;library-anchors-67;Ankerwege · Sternstunde / Wege;Herausforderung;50;10;5;Kompakt;63.234
+1194;library-anchors-75;Ankerwege · Leiser Bogen / Gedanken;Herausforderung;50;11;3;Kompakt;63.464
+1195;library-anchors-84;Ankerwege · Wendepunkt / Gedanken;Herausforderung;51;11;3;Kompakt;64.466
+1196;library-windows-66;Fensterlicht · Atempause / Wege;Herausforderung;53;12;0;Kompakt;64.639
+1197;library-channels-79;Durchgänge · Eckpunkt / Gedanken;Herausforderung;54;12;0;Kompakt;65.01
+1198;library-anchors-94;Ankerwege · Ruhepol / Gedanken;Herausforderung;48;11;4;Kompakt;65.024
+1199;library-anchors-58;Ankerwege · Funkensprung / Wege;Herausforderung;50;12;2;Kompakt;66.517
+1200;library-facets-51;Facetten · Freier Blick / Wege;Herausforderung;50;12;2;Kompakt;68.105

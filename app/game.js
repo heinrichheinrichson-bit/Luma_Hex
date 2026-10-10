@@ -13,6 +13,8 @@ let sound=(saved.sound??old.sound)!==false,vibration=(saved.vibration??old.vibra
 let tutorialIndex=null,tutorialProgress=Number.isInteger(saved.tutorialProgress)?Math.max(0,Math.min(6,saved.tutorialProgress)):(done.size||introSeen?6:0);
 const records=saved.records&&typeof saved.records==='object'?saved.records:{};
 const CHAPTERS=['ERSTES LEUCHTEN','KLEINE ENTDECKUNGEN','NEUE WEGE','KLEINE WUNDER','FORMEN IM FLUSS','WEGE UND ANKER',"KRISTALLPFADE","FLUSS DER FORMEN","STILLE INSELN","WEITE BÖGEN","WABENWERK","NORDLICHT","SONNENWINKEL","KURVEN UND KANTEN","ZWISCHENWELTEN","FARBKLANG","LICHTFENSTER","UMWEGE","BRÜCKENSPIEL","MUSTERPAUSE","FORMENLABYRINTH","SILBERLINIEN","GEDANKENREISE","KLARER BLICK","RANDNOTIZEN","LICHTGEFLECHT","NEUE UFER","RUHIGE MITTE","FUNKENPFADE","WEITER HORIZONT"];
+while(CHAPTERS.length<Math.ceil(TOTAL/10)){const n=CHAPTERS.length;CHAPTERS.push(chapterNamesForExpansion(n));}
+function chapterNamesForExpansion(n){const names=["LICHTWECHSEL","ZWISCHENRÄUME","WEGGEFLECHT","NEUE FACETTEN","VERSCHLUNGENE WEGE","OFFENE FENSTER","STUFENSPIEL","ANKERPUNKTE","KLEINE UMWEGE","WEITERDENKEN"];return names[(n-30)%names.length]+' · '+String(n+1).padStart(2,'0');}
 let dragGap=Math.max(24,Math.min(100,Number(saved.dragGap)||48)),suppressBoardClickUntil=0;
 const clone=value=>JSON.parse(JSON.stringify(value));
 function persist(){if(tutorialIndex===null)attempts[index]={placements:clone(placements),hints,testUsed};try{localStorage.setItem(STORAGE,JSON.stringify({index,attempts,done:[...done],records,dragGap,sound,vibration,introSeen,tutorialProgress}));}catch{}}
@@ -171,7 +173,7 @@ function showHome(){
  leaveLesson();closeDialogs();persist();const next=frontier(),n=next??index,m=M.motifs[n%COUNT],chapter=chapterOf(n),start=chapter*10;
  const solved=chapterItems(chapter).filter(i=>done.has(i)).length;
  $('homeArt').innerHTML=motifSVG(m,false);const chapterPath=chapterItems(chapter),pathStart=Math.max(0,Math.min(5,chapterPath.indexOf(n)-1));$('homePath').innerHTML=pathMarkup(chapterPath.slice(pathStart,pathStart+5));$('homeHeading').textContent=CHAPTERS[chapter].toLocaleLowerCase('de-DE');$('homeContinue').textContent=next===undefined?'Deine Sammlung ansehen →':'Weiterspielen';
- $('homeResume').textContent=next===undefined?'Alle 300 Formen entdeckt. Schön gemacht!':'Rätsel '+numberOf(n)+' · '+m.name+(attempts[n]&&Object.keys(attempts[n].placements||{}).length?' · Angefangen':'');
+ $('homeResume').textContent=next===undefined?'Alle 1200 Formen entdeckt. Schön gemacht!':'Rätsel '+numberOf(n)+' · '+m.name+(attempts[n]&&Object.keys(attempts[n].placements||{}).length?' · Angefangen':'');
  $('homeSolved').textContent=String(done.size);$('homePercent').textContent=String(chapter+1).padStart(2,'0');
  $('homeChapterLabel').textContent='KAPITEL '+String(chapter+1).padStart(2,'0');$('homeChapterTitle').textContent=C.stages.find(s=>s.id===C.byIndex[n].stage).name+' · '+CHAPTERS[chapter].toLocaleLowerCase('de-DE');$('homeChapterProgress').textContent=solved+' von 10 Formen gesammelt';$('homeChapterBar').style.width=solved*10+'%';
  if(tutorialProgress<6){$('homeContinue').textContent='Erste Schritte '+(tutorialProgress?'fortsetzen':'starten')+' →';$('homeResume').textContent='Lerne das Spiel kennen · '+tutorialProgress+' von 6 Übungen geschafft';$('homeArt').innerHTML=motifSVG(C.lesson(tutorialProgress).motif,false);}

@@ -1,3 +1,7 @@
+# Version 0.13.0 – 1200 Rätsel
+
+900 neue unterschiedliche Konturen, darunter 600 größere Herausforderungen, ergänzen die vorhandenen 300. 120 Kapitel in sechs Reiseabschnitten. Bisherige Rätsel, Teile und Reihenfolge bleiben unverändert. Sieben Testsuiten prüfen Bibliothek, Curriculum, Navigation, Ziehen, Sicherungen und Rückwärtskompatibilität. Menschliche Schwierigkeit und Spielgefühl müssen noch mit Spieltests abgestimmt werden.
+
 # Luma Hex — Aufbau der Rätselreise (0.10)
 
 ## Spielerführung
