@@ -244,3 +244,8 @@ $('testAllSkins').onchange=e=>setSkinTest(e.target.checked);$('testOpenSkins').o
 $('winJourney').onclick=()=>{clearTimeout(winTimer);showJourney();};
 
 $('openChapterPicker').onclick=()=>{closeDialogs();$('chapterPicker').showModal();};$('closeChapterPicker').onclick=()=>{$('chapterPicker').close();$('journey').showModal();};
+
+// Decorative preference is separate from puzzle/achievement progress.
+let ambientEnabled=true;try{ambientEnabled=localStorage.getItem('lumahex-ambient-v1')!=='off';}catch{}
+function setAmbient(enabled){ambientEnabled=!!enabled;$('ambientToggle').checked=ambientEnabled;for(const id of ["ambient-game","ambient-win","ambient-menu","ambient-gallery","ambient-detail","ambient-intro","ambient-journey","ambient-backup","ambient-home","ambient-help","ambient-achievements","ambient-chapterPicker","ambient-resetDialog"])$(id).style.display=ambientEnabled?'':'none';try{localStorage.setItem('lumahex-ambient-v1',ambientEnabled?'on':'off');}catch{}}
+$('ambientToggle').onchange=e=>setAmbient(e.target.checked);setAmbient(ambientEnabled);
