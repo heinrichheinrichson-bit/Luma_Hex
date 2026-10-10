@@ -147,20 +147,21 @@ function pathMarkup(items){const first=frontier(),height=items.length*124+28,nod
 function renderJourneyChapter(){
  const start=journeyChapter*10,end=Math.min(TOTAL,start+10),solved=chapterItems(journeyChapter).filter(n=>done.has(n)).length,first=frontier(),activeChapter=chapterOf(first??ORDER[TOTAL-1]);
  $('journeyPrevious').disabled=!Array.from({length:journeyChapter},(_,i)=>i).some(chapterAccessible);$('journeyNext').disabled=!Array.from({length:CHAPTERS.length-journeyChapter-1},(_,i)=>journeyChapter+1+i).some(chapterAccessible);
- $('chapterTrail').innerHTML='<span class="eyebrow">DEIN WEG</span><div class="chapter-milestones">'+Array.from({length:CHAPTERS.length},(_,ch)=>ch).filter(ch=>ch<=activeChapter+1||chapterAccessible(ch)).map(ch=>{const count=chapterItems(ch).filter(n=>done.has(n)).length,open=chapterAccessible(ch);return '<button data-chapter="'+ch+'" '+(open?'':'disabled')+' '+(ch===journeyChapter?'aria-current="step"':'')+'><b>'+(count===10?'✓':open?String(ch+1).padStart(2,'0'):'◇')+'</b><span>Kapitel '+(ch+1)+'</span></button>';}).join('')+'</div>';
- $('journeyChapters').innerHTML='<section class="journey-chapter"><span class="eyebrow">KAPITEL '+(journeyChapter+1)+' · '+solved+' VON '+(end-start)+'</span><h3>'+C.stages.find(s=>s.id===C.byIndex[chapterItems(journeyChapter)[0]].stage).name+' · '+CHAPTERS[journeyChapter].toLocaleLowerCase('de-DE')+'</h3>'+pathMarkup(chapterItems(journeyChapter))+'</section>';
+ $('chapterCounter').textContent='Kapitel '+(journeyChapter+1)+' · '+solved+' / '+(end-start);
+ $('chapterTrail').innerHTML='<div class="chapter-milestones">'+Array.from({length:CHAPTERS.length},(_,ch)=>ch).filter(ch=>ch<=activeChapter+1||chapterAccessible(ch)).map(ch=>{const count=chapterItems(ch).filter(n=>done.has(n)).length,open=chapterAccessible(ch);return '<button data-chapter="'+ch+'" '+(open?'':'disabled')+' '+(ch===journeyChapter?'aria-current="step"':'')+'><b>'+(count===10?'✓':open?String(ch+1).padStart(2,'0'):'◇')+'</b><span>Kapitel '+(ch+1)+'</span></button>';}).join('')+'</div>';
+ $('journeyChapters').innerHTML='<section class="journey-chapter"><h3>'+CHAPTERS[journeyChapter].toLocaleLowerCase('de-DE')+'</h3>'+pathMarkup(chapterItems(journeyChapter))+'</section>';
 
 }
 function showJourney(){
  leaveLesson();closeDialogs();const next=frontier();journeyChapter=chapterOf(next??ORDER[TOTAL-1]);
  $('journeyProgress').textContent=done.size+' Formen gesammelt';$('journeyStats').textContent='Ein Rätsel nach dem anderen. In deinem Tempo.';
  $('journeyGuidance').textContent=next===undefined?'Alle Kapitel entdeckt. Deine Formen bleiben zum Wiederholen hier.':'Löse die nächste Form. Nach zehn Rätseln öffnet sich ein neues Kapitel.';
- $('journeyContinue').textContent=next===undefined?'Deine Sammlung ansehen →':tutorialProgress<6?'Erste Schritte fortsetzen →':'Rätsel '+numberOf(next)+' weiterspielen →';$('journeyContinue').onclick=()=>{if(next===undefined)showGallery();else continuePuzzle(next);};
+ $('journeyContinue').textContent=next===undefined?'Zur Sammlung':tutorialProgress<6?'Einführung fortsetzen':'Zum aktuellen Rätsel';$('journeyContinue').onclick=()=>{if(next===undefined)showGallery();else continuePuzzle(next);};
  $('courseProgress').textContent=tutorialProgress===6?'Erste Schritte · Wiederholen →':'Erste Schritte · '+tutorialProgress+' von 6 geschafft →';
  $('journeyGuidance').textContent=tutorialProgress<6?'Sechs kleine Übungen zeigen dir das Spiel. Danach beginnt deine Reise.':$('journeyGuidance').textContent;
  $('jumpNumber').max=TOTAL;$('jumpNumber').value=C.position[index]+1;renderJourneyChapter();$('journey').showModal();setTimeout(()=>{$('journeyChapters').querySelector?.('.current')?.scrollIntoView?.({block:'center'});},0);
 }
-$('chapterTrail').onclick=e=>{const b=e.target.closest('[data-chapter]');if(b&&chapterAccessible(+b.dataset.chapter)){journeyChapter=+b.dataset.chapter;renderJourneyChapter();}};
+$('chapterTrail').onclick=e=>{const b=e.target.closest('[data-chapter]');if(b&&chapterAccessible(+b.dataset.chapter)){journeyChapter=+b.dataset.chapter;renderJourneyChapter();$('chapterPicker').close();$('journey').showModal();}};
 $('journeyPrevious').onclick=()=>{for(let ch=journeyChapter-1;ch>=0;ch--)if(chapterAccessible(ch)){journeyChapter=ch;renderJourneyChapter();break;}};
 $('journeyNext').onclick=()=>{for(let ch=journeyChapter+1;ch<CHAPTERS.length;ch++)if(chapterAccessible(ch)){journeyChapter=ch;renderJourneyChapter();break;}};
 // Direct jumps are deliberately confined to development tools.
@@ -206,12 +207,12 @@ document.addEventListener('click',e=>{const button=e.target.closest?.('[data-rou
 $('gameHome').onclick=showHome;$('gameJourney').onclick=showJourney;
 $('openHelp').onclick=()=>{closeDialogs();$('help').showModal();};$('closeHelp').onclick=showMenu;
 
-function backView(){
+function backView(){if($('chapterPicker').open){$('chapterPicker').close();$('journey').showModal();return true;}
  for(const [id,parent] of [['achievements','gallery'],['resetDialog',null],['detail','gallery'],['backup','menu'],['help','menu'],['win',null],['intro','home'],['journey','home'],['gallery','home'],['menu','home']])if($(id).open){$(id).close();if(id==='intro'){introSeen=true;persist();}if(parent)routeView(parent);return true;}
  if($('home').open)return false;showHome();return true;
 }
 window.LumaBack=backView;
-for(const id of ['home','journey','gallery','menu','detail','backup','help','resetDialog','win','achievements'])$(id).addEventListener('cancel',e=>{if(id==='home')return;e.preventDefault();backView();});
+for(const id of ['home','journey','gallery','menu','detail','backup','help','resetDialog','win','achievements','chapterPicker'])$(id).addEventListener('cancel',e=>{if(id==='home')return;e.preventDefault();backView();});
 $('start').onclick=()=>{introSeen=true;persist();loadLesson(tutorialProgress<6?tutorialProgress:0);};
 if(introSeen)showHome();
 
@@ -238,3 +239,5 @@ function setSkinTest(enabled){skinTest=enabled===true;try{localStorage.setItem('
 $('testAllSkins').onchange=e=>setSkinTest(e.target.checked);$('testOpenSkins').onclick=showAchievements;
 
 $('winJourney').onclick=()=>{clearTimeout(winTimer);showJourney();};
+
+$('openChapterPicker').onclick=()=>{closeDialogs();$('chapterPicker').showModal();};$('closeChapterPicker').onclick=()=>{$('chapterPicker').close();$('journey').showModal();};
