@@ -62,7 +62,7 @@ function complete(playSound=true){
  $('winText').textContent=`Rätsel ${numberOf(index)} geschafft · ${testUsed?'Automatischer Testlauf':hints===0?'Ganz aus eigener Kraft':hints+' Hinweis'+(hints===1?'':'e')+' genutzt'}`;
  const chapterDone=chapterItems(chapterOf(index)).every(n=>done.has(n));
  if(chapterDone)$('winText').textContent+=' · Kapitel vollständig';
- const nextPuzzle=nextUnsolved(index+1);$('next').innerHTML=nextPuzzle===undefined?'Meine Rätselreise':'<span class="next-preview" aria-hidden="true">'+motifSVG(M.motifs[nextPuzzle])+'</span><span>Rätsel '+numberOf(nextPuzzle)+' spielen</span>';
+ const nextPuzzle=nextUnsolved(index+1);$('next').innerHTML=nextPuzzle===undefined?'Meine Rätselreise':'<span class="next-preview" aria-hidden="true">'+motifSVG(M.motifs[nextPuzzle],false)+'</span><span>Rätsel '+numberOf(nextPuzzle)+' spielen</span>';
  const completedIndex=index;clearTimeout(winTimer);winTimer=setTimeout(()=>{if(index===completedIndex&&E.occupied(data,placements).size===data.cells.length&&!document.querySelector('dialog[open]'))$('win').showModal();},700);
 }
 function place(id,at){const moving=!!placements[id];if(!E.fits(data,placements,id,at)){toast('Fast! Dieses Teil passt hier noch nicht.');return false;}checkpoint();placements[id]=at;selected=null;render();tone();feedback();if(tutorialIndex===2&&moving)toast('Genau – gesetzte Teile darfst du jederzeit verschieben.');complete();return true;}
@@ -170,11 +170,11 @@ $('dragGap').oninput=e=>{dragGap=Math.max(24,Math.min(100,Number(e.target.value)
 function showHome(){
  leaveLesson();closeDialogs();persist();const next=frontier(),n=next??index,m=M.motifs[n%COUNT],chapter=chapterOf(n),start=chapter*10;
  const solved=chapterItems(chapter).filter(i=>done.has(i)).length;
- $('homeArt').innerHTML=motifSVG(m);const chapterPath=chapterItems(chapter),pathStart=Math.max(0,Math.min(5,chapterPath.indexOf(n)-1));$('homePath').innerHTML=pathMarkup(chapterPath.slice(pathStart,pathStart+5));$('homeHeading').textContent=CHAPTERS[chapter].toLocaleLowerCase('de-DE');$('homeContinue').textContent=next===undefined?'Deine Sammlung ansehen →':'Weiterspielen';
+ $('homeArt').innerHTML=motifSVG(m,false);const chapterPath=chapterItems(chapter),pathStart=Math.max(0,Math.min(5,chapterPath.indexOf(n)-1));$('homePath').innerHTML=pathMarkup(chapterPath.slice(pathStart,pathStart+5));$('homeHeading').textContent=CHAPTERS[chapter].toLocaleLowerCase('de-DE');$('homeContinue').textContent=next===undefined?'Deine Sammlung ansehen →':'Weiterspielen';
  $('homeResume').textContent=next===undefined?'Alle 300 Formen entdeckt. Schön gemacht!':'Rätsel '+numberOf(n)+' · '+m.name+(attempts[n]&&Object.keys(attempts[n].placements||{}).length?' · Angefangen':'');
  $('homeSolved').textContent=String(done.size);$('homePercent').textContent=String(chapter+1).padStart(2,'0');
  $('homeChapterLabel').textContent='KAPITEL '+String(chapter+1).padStart(2,'0');$('homeChapterTitle').textContent=C.stages.find(s=>s.id===C.byIndex[n].stage).name+' · '+CHAPTERS[chapter].toLocaleLowerCase('de-DE');$('homeChapterProgress').textContent=solved+' von 10 Formen gesammelt';$('homeChapterBar').style.width=solved*10+'%';
- if(tutorialProgress<6){$('homeContinue').textContent='Erste Schritte '+(tutorialProgress?'fortsetzen':'starten')+' →';$('homeResume').textContent='Lerne das Spiel kennen · '+tutorialProgress+' von 6 Übungen geschafft';$('homeArt').innerHTML=motifSVG(C.lesson(tutorialProgress).motif);}
+ if(tutorialProgress<6){$('homeContinue').textContent='Erste Schritte '+(tutorialProgress?'fortsetzen':'starten')+' →';$('homeResume').textContent='Lerne das Spiel kennen · '+tutorialProgress+' von 6 Übungen geschafft';$('homeArt').innerHTML=motifSVG(C.lesson(tutorialProgress).motif,false);}
  const playLabel=tutorialProgress<6?'Erste Schritte':next===undefined?'Sammlung ansehen':'Weiterspielen';$('homeContinue').innerHTML='<div class="home-live-preview" aria-hidden="true">'+$('homeArt').innerHTML+'</div><span class="home-play-label">'+playLabel+'</span>';
  $('homeContinue').onclick=()=>{if(tutorialProgress<6){loadLesson(tutorialProgress);return;}if(next===undefined)showGallery();else continuePuzzle(n);};
  $('homePath').onclick=e=>{const b=e.target.closest('[data-journey]');if(b&&accessible(+b.dataset.journey)){closeDialogs();load(+b.dataset.journey);}};
