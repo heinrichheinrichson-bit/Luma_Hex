@@ -27,11 +27,11 @@ public class MainActivity extends Activity {
  private static final int SAVE_BACKUP=900,OPEN_BACKUP=901;
  @Override public void onCreate(Bundle state){
   super.onCreate(state);
-  getWindow().setStatusBarColor(Color.rgb(8,14,25));
-  getWindow().setNavigationBarColor(Color.rgb(8,14,25));
-  FrameLayout frame=new FrameLayout(this);frame.setBackgroundColor(Color.rgb(8,14,25));
+  getWindow().setStatusBarColor(Color.rgb(16,44,54));
+  getWindow().setNavigationBarColor(Color.rgb(16,44,54));
+  FrameLayout frame=new FrameLayout(this);frame.setBackgroundColor(Color.rgb(16,44,54));
   frame.setOnApplyWindowInsetsListener((v,insets)->{android.graphics.Insets bars=insets.getInsets(WindowInsets.Type.systemBars()|WindowInsets.Type.displayCutout());v.setPadding(bars.left,bars.top,bars.right,bars.bottom);return insets;});
-  web=new WebView(this);web.setBackgroundColor(Color.rgb(8,14,25));
+  web=new WebView(this);web.setBackgroundColor(Color.rgb(16,44,54));
   web.getSettings().setUseWideViewPort(true);web.getSettings().setLoadWithOverviewMode(true);
   web.getSettings().setJavaScriptEnabled(true);web.getSettings().setDomStorageEnabled(true);
   web.getSettings().setAllowFileAccess(false);web.getSettings().setAllowContentAccess(false);
