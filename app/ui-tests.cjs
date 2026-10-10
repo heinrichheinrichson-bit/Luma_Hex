@@ -34,3 +34,8 @@ assert.equal(elements.winTitle.textContent,'Geschafft!');assert.ok(elements.winQ
 const firstText=elements.winQuote.textContent;run('complete(false)');assert.equal(elements.winQuote.textContent,firstText);
 run('done=new Set(ORDER.slice(0,9));load(ORDER[9]);testAction("full")');assert.equal(elements.winTitle.textContent,'Etappe geschafft!');assert.equal(elements.winEyebrow.textContent,'TESTLAUF');assert.ok(elements.winText.textContent.includes('zehn'));assert.ok(JSON.parse(store.get('lumahex-journey-v5')).finishMemory);
 console.log('PASS: normal completion, stable text, milestone completion and persisted text history.');
+const F=ctx.HexFinish;
+for(const kind of ['fact','quote','riddle']){const l=F.active.find(x=>x.kind===kind);run('finishMemory.byPuzzle[index]='+JSON.stringify(l.id)+';complete(false)');assert.equal(elements.winQuote.textContent,l.text);if(kind==='riddle'){assert.ok(elements.winExtra.innerHTML.includes('<details'));assert.ok(elements.winExtra.innerHTML.includes('Antwort ansehen'));assert.ok(!elements.winExtra.innerHTML.includes('<details open'));}if(kind==='quote')assert.ok(elements.winExtra.innerHTML.includes(l.author));if(kind==='fact')assert.ok(elements.winExtra.innerHTML.includes(l.source.url));}
+run('loadLesson(0);testAction("full")');assert.equal(elements.winExtra.innerHTML,'');
+console.log('PASS: fact source, quote attribution, optional riddle answer and lesson isolation.');
+
