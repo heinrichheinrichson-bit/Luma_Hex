@@ -9,6 +9,7 @@
   let source;try{source=JSON.parse(text);}catch{throw Error('Das ist keine lesbare Sicherungsdatei.');}
   if(!object(source)||source.app!=='luma-hex'||source.format!==1||!object(source.save)||!Array.isArray(source.catalog))throw Error('Das ist keine unterstützte Luma-Hex-Sicherung.');
   if(source.catalog.length>M.motifs.length||!source.catalog.every((id,n)=>id===M.motifs[n].id))throw Error('Diese Sicherung gehört zu einer anderen Rätselsammlung.');
+  if('tutorialProgress' in source.save&&(!Number.isInteger(source.save.tutorialProgress)||source.save.tutorialProgress<0||source.save.tutorialProgress>6))throw Error('Der Einführungsfortschritt ist ungültig.');
   const raw=source.save,count=source.catalog.length,valid=n=>Number.isInteger(n)&&n>=0&&n<count;
   if(!valid(raw.index)||!Array.isArray(raw.done)||!raw.done.every(valid)||!object(raw.attempts))throw Error('Der Spielstand enthält ungültige Rätselnummern.');
   const attempts={};
@@ -23,7 +24,7 @@
   }
   const records={};
   if(object(raw.records))for(const [n,value] of Object.entries(raw.records))if(valid(Number(n))&&object(value)&&['own','hint','test','legacy'].includes(value.mode))records[n]={mode:value.mode,hints:Number.isInteger(value.hints)&&value.hints>=0?value.hints:0};
-  return {index:raw.index,done:[...new Set(raw.done)],attempts,records,...(Number.isFinite(raw.dragGap)?{dragGap:Math.max(24,Math.min(100,raw.dragGap))}:{}),sound:raw.sound!==false,vibration:raw.vibration!==false,introSeen:raw.introSeen===true};
+  return {index:raw.index,done:[...new Set(raw.done)],attempts,records,...(Number.isFinite(raw.dragGap)?{dragGap:Math.max(24,Math.min(100,raw.dragGap))}:{}),sound:raw.sound!==false,vibration:raw.vibration!==false,introSeen:raw.introSeen===true,...(Number.isInteger(raw.tutorialProgress)&&raw.tutorialProgress>=0&&raw.tutorialProgress<=6?{tutorialProgress:raw.tutorialProgress}:{})};
  }
  const api={encode,decode};if(typeof module!=='undefined')module.exports=api;else root.HexSave=api;
 })(typeof window!=='undefined'?window:globalThis);

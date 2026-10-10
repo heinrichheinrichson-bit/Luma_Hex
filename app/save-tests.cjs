@@ -12,3 +12,5 @@ console.log('PASS: backup roundtrip for 300 boards, invalid files, incompatible 
 bad(v=>{const id=Object.keys(v.save.attempts[0].placements)[0];v.save.attempts[0].placements['0'+id]=v.save.attempts[0].placements[id];});
 
 assert.equal(S.decode(S.encode({...save,dragGap:72})).dragGap,72,'drag clearance survives backup');
+
+assert.equal(S.decode(S.encode({...save,tutorialProgress:2})).tutorialProgress,2,'course progress survives backup');bad(v=>v.save.tutorialProgress=7);bad(v=>v.save.tutorialProgress='2');console.log('PASS: course progress roundtrip, legacy saves without course fields and invalid progress rejection.');
