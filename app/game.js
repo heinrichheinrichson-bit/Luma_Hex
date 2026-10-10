@@ -11,13 +11,15 @@ let attempts=saved.attempts&&typeof saved.attempts==='object'?saved.attempts:{};
 let done=new Set(Array.isArray(saved.done)?saved.done.filter(n=>Number.isInteger(n)&&n>=0&&n<TOTAL):[]);
 let sound=(saved.sound??old.sound)!==false,vibration=(saved.vibration??old.vibration)!==false,introSeen=(saved.introSeen??old.introSeen)===true;
 let tutorialIndex=null,tutorialProgress=Number.isInteger(saved.tutorialProgress)?Math.max(0,Math.min(6,saved.tutorialProgress)):(done.size||introSeen?6:0);
+const finishMemory=saved.finishMemory||{recent:[],byPuzzle:{}};
+function finishLine(n,m){const line=HexFinish.choose(m,finishMemory,String(n));finishMemory.byPuzzle[n]=line.id;if(!finishMemory.recent.includes(line.id))finishMemory.recent.push(line.id);finishMemory.recent=finishMemory.recent.slice(-72);return line.text;}
 const records=saved.records&&typeof saved.records==='object'?saved.records:{};
 const CHAPTERS=['ERSTES LEUCHTEN','KLEINE ENTDECKUNGEN','NEUE WEGE','KLEINE WUNDER','FORMEN IM FLUSS','WEGE UND ANKER',"KRISTALLPFADE","FLUSS DER FORMEN","STILLE INSELN","WEITE BÖGEN","WABENWERK","NORDLICHT","SONNENWINKEL","KURVEN UND KANTEN","ZWISCHENWELTEN","FARBKLANG","LICHTFENSTER","UMWEGE","BRÜCKENSPIEL","MUSTERPAUSE","FORMENLABYRINTH","SILBERLINIEN","GEDANKENREISE","KLARER BLICK","RANDNOTIZEN","LICHTGEFLECHT","NEUE UFER","RUHIGE MITTE","FUNKENPFADE","WEITER HORIZONT"];
 while(CHAPTERS.length<Math.ceil(TOTAL/10)){const n=CHAPTERS.length;CHAPTERS.push(chapterNamesForExpansion(n));}
 function chapterNamesForExpansion(n){const names=["LICHTWECHSEL","ZWISCHENRÄUME","WEGGEFLECHT","NEUE FACETTEN","VERSCHLUNGENE WEGE","OFFENE FENSTER","STUFENSPIEL","ANKERPUNKTE","KLEINE UMWEGE","WEITERDENKEN"];return names[(n-30)%names.length]+' · '+String(n+1).padStart(2,'0');}
 let dragGap=Math.max(24,Math.min(100,Number(saved.dragGap)||48)),suppressBoardClickUntil=0;
 const clone=value=>JSON.parse(JSON.stringify(value));
-function persist(){if(tutorialIndex===null)attempts[index]={placements:clone(placements),hints,testUsed};try{localStorage.setItem(STORAGE,JSON.stringify({index,attempts,done:[...done],records,dragGap,sound,vibration,introSeen,tutorialProgress}));}catch{}}
+function persist(){if(tutorialIndex===null)attempts[index]={placements:clone(placements),hints,testUsed};try{localStorage.setItem(STORAGE,JSON.stringify({index,attempts,done:[...done],records,dragGap,sound,vibration,introSeen,tutorialProgress,finishMemory}));}catch{}}
 function point(q,r,s){return [Math.sqrt(3)*s*(q+r/2),1.5*s*r];}
 function polygon(x,y,s){return Array.from({length:6},(_,i)=>{const a=(60*i-30)*Math.PI/180;return `${(x+s*Math.cos(a)).toFixed(2)},${(y+s*Math.sin(a)).toFixed(2)}`;}).join(' ');}
 function defs(){return '<defs>'+colors.map((c,i)=>`<linearGradient id="gem${i}" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="${c[0]}"/><stop offset=".48" stop-color="${c[1]}"/><stop offset="1" stop-color="${c[2]}"/></linearGradient>`).join('')+'</defs>';}
@@ -55,15 +57,14 @@ function feedback(){if(vibration){if(window.LumaFeedback)window.LumaFeedback.vib
 function complete(playSound=true){
  if(tutorialIndex!==null){completeLesson(playSound);return;}
  if(E.occupied(data,placements).size!==data.cells.length)return;
- const first=!unlocked(index%COUNT).length;done.add(index);
+ const fresh=!done.has(index);done.add(index);
  const mode=testUsed?'test':hints?'hint':'own',rank={legacy:0,test:1,hint:2,own:3},prior=records[index];
  if(!prior||rank[mode]>rank[prior.mode]||mode===prior.mode&&hints<prior.hints)records[index]={mode,hints};
  persist();$('collectionCount').textContent=M.motifs.filter((m,i)=>unlocked(i).length).length;if(playSound)tone(true);$('board').classList.add('completed');
- $('winArt').innerHTML=motifSVG(data.motif);$('winTitle').textContent=data.motif.name;$('winQuote').textContent=data.motif.quotes[data.variant];
- $('winEyebrow').textContent=testUsed?'TESTANSICHT · VOLLSTÄNDIGES MOTIV':first?'DEIN NEUES LICHTSTÜCK':'SCHÖN, DASS DU WIEDER DA BIST';
- $('winText').textContent=`Rätsel ${numberOf(index)} geschafft · ${testUsed?'Automatischer Testlauf':hints===0?'Ganz aus eigener Kraft':hints+' Hinweis'+(hints===1?'':'e')+' genutzt'}`;
- const chapterDone=chapterItems(chapterOf(index)).every(n=>done.has(n));
- if(chapterDone)$('winText').textContent+=' · Kapitel vollständig';
+ const milestone=fresh&&chapterItems(chapterOf(index)).every(n=>done.has(n));$('win').classList.toggle('milestone',milestone);
+ $('winArt').innerHTML=motifSVG(data.motif);$('winTitle').textContent=milestone?'Etappe geschafft!':'Geschafft!';$('winQuote').textContent=finishLine(index,data.motif);persist();
+ $('winEyebrow').textContent=testUsed?'TESTLAUF':milestone?'ETAPPE '+(chapterOf(index)+1)+' · 10 / 10':'RÄTSEL '+numberOf(index);
+ $('winText').textContent=milestone?'Alle zehn Rätsel dieser Etappe sind vollständig.':'';
  const nextPuzzle=nextUnsolved(index+1);$('next').innerHTML=nextPuzzle===undefined?'Meine Rätselreise':'<span class="next-preview" aria-hidden="true">'+motifSVG(M.motifs[nextPuzzle],false)+'</span><span>Rätsel '+numberOf(nextPuzzle)+' spielen</span>';
  const completedIndex=index;clearTimeout(winTimer);winTimer=setTimeout(()=>{if(index===completedIndex&&E.occupied(data,placements).size===data.cells.length&&!document.querySelector('dialog[open]'))$('win').showModal();},700);
 }
@@ -107,7 +108,7 @@ function showGallery(){closeDialogs();const collected=collectedMotifs(),pages=Ma
  $('galleryPrevious').disabled=galleryPage===0;$('galleryNext').disabled=galleryPage+1>=pages;$('galleryPage').textContent=(galleryPage+1)+' / '+pages;
  $('galleryGrid').innerHTML=collected.slice(galleryPage*20,galleryPage*20+20).map(n=>{const m=M.motifs[n];return '<button class="gallery-card unlocked" data-motif="'+n+'" aria-label="'+m.name+', gesammelt">'+motifSVG(m,true)+'<strong>'+m.name+'</strong><span>'+numberOf(n)+' · '+recordLabel(n)+'</span></button>';}).join('')||'<div class="empty-state"><p>Dein erstes Lichtstück wartet auf dich. Löse eine Form – hier bekommt sie ihren Platz.</p></div>';$('gallery').showModal();}
 $('galleryPrevious').onclick=()=>{if(galleryPage){galleryPage--;showGallery();}};$('galleryNext').onclick=()=>{if((galleryPage+1)*20<collectedMotifs().length){galleryPage++;showGallery();}};
-function showDetail(m){galleryPage=Math.floor(Math.max(0,collectedMotifs().indexOf(m))/20);detailMotif=m;const motif=M.motifs[m],levels=unlocked(m);closeDialogs();$('detailEyebrow').textContent=C.stages.find(s=>s.id===C.byIndex[m].stage).name+' · '+C.byIndex[m].form;$('detailArt').innerHTML=motifSVG(motif);$('detailTitle').textContent=motif.name;$('detailQuotes').innerHTML=Array.from({length:VARIANTS},(_,v)=>v).map(v=>`<div class="quote-card${done.has(m+v*COUNT)?' revealed':''}"><span>DEIN MOMENT</span><p>${done.has(m+v*COUNT)?motif.quotes[v]:'Hier wartet noch ein kleiner Moment auf dich.'}</p></div>`).join('');$('detail').showModal();}
+function showDetail(m){galleryPage=Math.floor(Math.max(0,collectedMotifs().indexOf(m))/20);detailMotif=m;const motif=M.motifs[m],levels=unlocked(m);closeDialogs();$('detailEyebrow').textContent=C.stages.find(s=>s.id===C.byIndex[m].stage).name+' · '+C.byIndex[m].form;$('detailArt').innerHTML=motifSVG(motif);$('detailTitle').textContent=motif.name;$('detailQuotes').innerHTML=Array.from({length:VARIANTS},(_,v)=>v).map(v=>`<div class="quote-card${done.has(m+v*COUNT)?' revealed':''}"><span>DEIN MOMENT</span><p>${done.has(m+v*COUNT)?finishLine(m+v*COUNT,motif):'Hier wartet noch ein kleiner Moment auf dich.'}</p></div>`).join('');$('detail').showModal();}
 $('collection').onclick=showGallery;$('winCollection').onclick=()=>showDetail(index%COUNT);$('closeGallery').onclick=()=>$('gallery').close();$('galleryContinue').onclick=()=>{continuePuzzle();};$('closeDetail').onclick=showGallery;$('detailBack').onclick=showGallery;
 $('galleryGrid').onclick=e=>{const card=e.target.closest('[data-motif]');if(card&&!card.disabled)showDetail(+card.dataset.motif);};
 $('detailPlay').textContent='Noch einmal spielen →';
@@ -201,7 +202,7 @@ function loadLesson(n){
  closeDialogs();persist();clearTimeout(winTimer);tutorialIndex=n;data=C.lesson(n);placements=clone(C.lessons[n].seed||{});history=[];selected=null;hints=0;testUsed=false;drag=null;$('ghost').innerHTML='';$('board').classList.remove('completed');window.scrollTo?.({top:0,behavior:'instant'});render();
 }
 function completeLesson(playSound=true){
- if(E.occupied(data,placements).size!==data.cells.length)return;const lesson=tutorialIndex;tutorialProgress=Math.max(tutorialProgress,lesson+1);persist();if(playSound)tone(true);$('board').classList.add('completed');$('winArt').innerHTML=motifSVG(data.motif);$('winEyebrow').textContent='ERSTE SCHRITTE · '+(lesson+1)+' VON 6';$('winTitle').textContent=lesson===5?'Bereit für deine Reise!':'Das passt!';$('winQuote').textContent=lesson===5?'Du kennst die Grundlagen. Jetzt wartet deine erste Entdeckung.':'Gut gemacht. Weiter geht’s mit einem kleinen neuen Schritt.';$('winText').textContent='Übungsrätsel bleiben getrennt von deiner Sammlung.';$('winCollection').hidden=true;$('next').textContent=lesson===5?'Meine Reise starten →':'Nächste Übung →';clearTimeout(winTimer);winTimer=setTimeout(()=>{if(tutorialIndex===lesson&&E.occupied(data,placements).size===data.cells.length&&!document.querySelector('dialog[open]'))$('win').showModal();},500);
+ if(E.occupied(data,placements).size!==data.cells.length)return;const lesson=tutorialIndex;$('win').classList.remove('milestone');tutorialProgress=Math.max(tutorialProgress,lesson+1);persist();if(playSound)tone(true);$('board').classList.add('completed');$('winArt').innerHTML=motifSVG(data.motif);$('winEyebrow').textContent='ERSTE SCHRITTE · '+(lesson+1)+' VON 6';$('winTitle').textContent=lesson===5?'Bereit für deine Reise!':'Das passt!';$('winQuote').textContent=lesson===5?'Du kennst die Grundlagen. Jetzt wartet deine erste Entdeckung.':'Gut gemacht. Weiter geht’s mit einem kleinen neuen Schritt.';$('winText').textContent='Übungsrätsel bleiben getrennt von deiner Sammlung.';$('winCollection').hidden=true;$('next').textContent=lesson===5?'Meine Reise starten →':'Nächste Übung →';clearTimeout(winTimer);winTimer=setTimeout(()=>{if(tutorialIndex===lesson&&E.occupied(data,placements).size===data.cells.length&&!document.querySelector('dialog[open]'))$('win').showModal();},500);
 }
 function advanceLesson(){const n=tutorialIndex;closeDialogs();if(n<5)loadLesson(n+1);else{tutorialIndex=null;load(frontier()??index);showHome();}}
 $('openCourse').onclick=()=>loadLesson(tutorialProgress<6?tutorialProgress:0);$('helpCourse').onclick=()=>loadLesson(0);

@@ -2,6 +2,7 @@
  'use strict';
  const M=typeof module!=='undefined'?require('./motifs.js'):root.HexMotifs;
  const E=typeof module!=='undefined'?require('./engine.js'):root.HexEngine;
+ const F=typeof module!=='undefined'?require('./finish.js'):root.HexFinish;
  const object=value=>value&&typeof value==='object'&&!Array.isArray(value);
  function encode(save){return JSON.stringify({app:'luma-hex',format:1,catalog:M.motifs.map(m=>m.id),savedAt:new Date().toISOString(),save},null,2);}
  function decode(text){
@@ -24,7 +25,9 @@
   }
   const records={};
   if(object(raw.records))for(const [n,value] of Object.entries(raw.records))if(valid(Number(n))&&object(value)&&['own','hint','test','legacy'].includes(value.mode))records[n]={mode:value.mode,hints:Number.isInteger(value.hints)&&value.hints>=0?value.hints:0};
-  return {index:raw.index,done:[...new Set(raw.done)],attempts,records,...(Number.isFinite(raw.dragGap)?{dragGap:Math.max(24,Math.min(100,raw.dragGap))}:{}),sound:raw.sound!==false,vibration:raw.vibration!==false,introSeen:raw.introSeen===true,...(Number.isInteger(raw.tutorialProgress)&&raw.tutorialProgress>=0&&raw.tutorialProgress<=6?{tutorialProgress:raw.tutorialProgress}:{})};
+  let finishMemory;
+  if(raw.finishMemory!==undefined){const f=raw.finishMemory;if(!object(f)||!Array.isArray(f.recent)||f.recent.length>72||!f.recent.every(id=>F.get(id))||!object(f.byPuzzle)||!Object.entries(f.byPuzzle).every(([n,id])=>String(Number(n))===n&&valid(Number(n))&&F.get(id)))throw Error('Die gespeicherten Abschlusstexte sind ungültig.');finishMemory={recent:[...f.recent],byPuzzle:{...f.byPuzzle}};}
+  return {...(finishMemory?{finishMemory}:{}),index:raw.index,done:[...new Set(raw.done)],attempts,records,...(Number.isFinite(raw.dragGap)?{dragGap:Math.max(24,Math.min(100,raw.dragGap))}:{}),sound:raw.sound!==false,vibration:raw.vibration!==false,introSeen:raw.introSeen===true,...(Number.isInteger(raw.tutorialProgress)&&raw.tutorialProgress>=0&&raw.tutorialProgress<=6?{tutorialProgress:raw.tutorialProgress}:{})};
  }
  const api={encode,decode};if(typeof module!=='undefined')module.exports=api;else root.HexSave=api;
 })(typeof window!=='undefined'?window:globalThis);
