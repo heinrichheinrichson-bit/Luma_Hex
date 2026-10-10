@@ -74,3 +74,5 @@ body,dialog.screen{background:radial-gradient(ellipse at 50% 42%,#7edbc219,trans
 #home .app-nav{flex:0 0 auto}
 @media(max-height:650px){#home .screen-body{padding-top:10px;padding-bottom:8px}#home .home-wordmark{margin-bottom:8px}#home .home-hero h2{font-size:23px!important}#home .resume-label{margin-bottom:5px}#home .chapter-card{padding-top:7px}#home .home-play-label{font-size:18px}}
 @media(orientation:landscape) and (max-height:550px){#home .screen-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);grid-template-rows:auto auto minmax(0,1fr) auto;column-gap:18px;padding:10px 20px}#home .home-wordmark{grid-column:1;grid-row:1;margin:0 0 6px}#home .home-hero{grid-column:1;grid-row:2}#homeContinue{grid-column:2;grid-row:1 / 5;margin:0;height:100%;min-height:0}#home .resume-label{grid-column:1;grid-row:3;align-self:center;margin:4px 0}#home .chapter-card{grid-column:1;grid-row:4}#home .app-nav{min-height:58px;padding-top:4px;padding-bottom:4px}#home .app-nav button{min-height:48px;gap:3px}}
+
+.completed-route{filter:drop-shadow(0 0 5px #91e5cf77)}
