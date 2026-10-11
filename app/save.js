@@ -4,6 +4,7 @@
  const E=typeof module!=='undefined'?require('./engine.js'):root.HexEngine;
  const F=typeof module!=='undefined'?require('./finish.js'):root.HexFinish;
  const T=typeof module!=='undefined'?require('./timer.js'):root.HexTimer;
+ const H=typeof module!=='undefined'?require('./hints.js'):root.HexHints;
  const object=value=>value&&typeof value==='object'&&!Array.isArray(value);
  function encode(save){return JSON.stringify({app:'luma-hex',format:1,catalog:M.motifs.map(m=>m.id),savedAt:new Date().toISOString(),save},null,2);}
  function decode(text){
@@ -32,7 +33,7 @@
    if(!object(f)||!Array.isArray(f.recent)||f.recent.length>72||!f.recent.every(id=>F.get(id))||!keys(f.byPuzzle)||!Object.values(f.byPuzzle).every(id=>F.get(id))||('seen' in f&&!ids(f.seen))||('history' in f&&(!keys(f.history)||!Object.values(f.history).every(ids))))throw Error('Die gespeicherten Abschlusstexte sind ungültig.');finishMemory=F.normalize(f);
   }
   const bestTimeHints={};if(object(raw.bestTimeHints))for(const [id,n] of Object.entries(raw.bestTimeHints))if(valid(+id)&&Number.isInteger(n)&&n>=0)bestTimeHints[id]=n;
-  return {...(raw.bestTimeHints!==undefined?{bestTimeHints}:{}),...(raw.timerEnabled!==undefined?{timerEnabled:raw.timerEnabled===true}:{}),...(raw.bestTimes!==undefined?{bestTimes:T.bests(raw.bestTimes,count)}:{}),...(finishMemory?{finishMemory}:{}),...(raw.skin!==undefined?{skin:["classic","glass","pearl","rings","ceramic","obsidian","facets","enamel","velvet","core","mosaic","chrome"].includes(raw.skin)?raw.skin:'classic'}:{}),index:raw.index,done:[...new Set(raw.done)],attempts,records,...(Number.isFinite(raw.dragGap)?{dragGap:Math.max(24,Math.min(100,raw.dragGap))}:{}),sound:raw.sound!==false,vibration:raw.vibration!==false,introSeen:raw.introSeen===true,...(Number.isInteger(raw.tutorialProgress)&&raw.tutorialProgress>=0&&raw.tutorialProgress<=6?{tutorialProgress:raw.tutorialProgress}:{})};
+  return {...(raw.hintWallet!==undefined?{hintWallet:H.normalize(raw.hintWallet)}:{}),...(raw.bestTimeHints!==undefined?{bestTimeHints}:{}),...(raw.timerEnabled!==undefined?{timerEnabled:raw.timerEnabled===true}:{}),...(raw.bestTimes!==undefined?{bestTimes:T.bests(raw.bestTimes,count)}:{}),...(finishMemory?{finishMemory}:{}),...(raw.skin!==undefined?{skin:["classic","glass","pearl","rings","ceramic","obsidian","facets","enamel","velvet","core","mosaic","chrome"].includes(raw.skin)?raw.skin:'classic'}:{}),index:raw.index,done:[...new Set(raw.done)],attempts,records,...(Number.isFinite(raw.dragGap)?{dragGap:Math.max(24,Math.min(100,raw.dragGap))}:{}),sound:raw.sound!==false,vibration:raw.vibration!==false,introSeen:raw.introSeen===true,...(Number.isInteger(raw.tutorialProgress)&&raw.tutorialProgress>=0&&raw.tutorialProgress<=6?{tutorialProgress:raw.tutorialProgress}:{})};
  }
  const api={encode,decode};if(typeof module!=='undefined')module.exports=api;else root.HexSave=api;
 })(typeof window!=='undefined'?window:globalThis);
