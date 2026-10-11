@@ -1,4 +1,9 @@
 (function(root){'use strict';const dictionary={
+"Abbrechen":"Cancel",
+"Simulierte Werbeanzeige":"Simulated ad",
+"Hier würde jetzt das Werbevideo laufen.":"The video ad would play here.",
+"Nach vollständigem Ansehen erhältst du einen Hinweis.":"Watch the full video to receive one hint.",
+"Video abschließen":"Finish video",
 "Simulation beendet. Du kannst deinen Hinweis abholen.":"Simulation finished. You can collect your hint.",
 "Werbung simulieren · +1 Hinweis":"Simulate ad · +1 hint",
 "Simuliere ein Werbevideo und erhalte einen weiteren Hinweis.":"Simulate a video ad to receive another hint.",

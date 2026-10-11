@@ -1,0 +1,3 @@
+# Hex & Joy 0.30.4
+Hinweis-Werbesimulation als eigener Anzeigenablauf: Birne bei leerem Vorrat, Werbung simulieren, separate simulierte Werbeanzeige, Video abschließen, einmalige Gutschrift eines Hinweises, Rückkehr zum Hinweisdialog und reguläres Einsetzen. Abbrechen und Android-Zurück ohne Belohnung. Kein echtes Werbenetzwerk.
+Geprüft: Anzeigenwechsel, sekündliche Aktualisierungen, Abbruch, Zurück, doppelte Abschlussereignisse, Wiederholung und Hinweisverbrauch; Varianten-, UI- und Übersetzungstests bestanden. Beide Android-Varianten gebaut und signaturgeprüft. Physischer S22-Test steht aus.

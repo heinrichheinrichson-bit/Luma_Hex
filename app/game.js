@@ -147,7 +147,7 @@ function refreshHints(){const changed=HexHints.advance(hintWallet);const full=da
  $('testUnlimitedHints').checked=unlimitedHints;$('testHintAds').checked=hintAdTest;$('hintVideo').disabled=!hintAdTest;$('hintVideo').textContent=L.t(hintAdTest?'Testvideo ansehen · +1 Hinweis':'Werbevideo noch nicht verfügbar');$('hintDialogTitle').textContent=L.t(unlimitedHints?'Testhinweis einsetzen?':hintWallet.count?'Ein Teil einsetzen?':'Deine Hinweise laden auf');$('hintDialogStatus').textContent=L.t(unlimitedHints?'Unbegrenzte Testhinweise aktiv. Dein Vorrat wird nicht verbraucht.':hintWallet.count?hintWallet.count+' Hinweise verfügbar. Ein Hinweis setzt ein Teil an seinen richtigen Platz.':'Du kannst weiterknobeln oder später einen kostenlosen Hinweis nutzen.');$('hintDialogRefill').textContent=L.t(unlimitedHints?'':hintWallet.count<3?'Nächster kostenloser Hinweis in '+HexHints.wait(HexHints.remaining(hintWallet))+'.':'Der kostenlose Vorrat ist voll.');$('confirmHint').hidden=!unlimitedHints&&!hintWallet.count;$('hintVideo').hidden=unlimitedHints||hintWallet.count>0;$('testHintBalance').textContent=L.t('Vorrat: '+hintWallet.count+(hintWallet.count<3?' · Nächster in '+HexHints.wait(HexHints.remaining(hintWallet)):''));refreshFreeHint();if(changed)persist();}
 function useHint(){const result=E.hint(data,placements);if(!result)return false;if(tutorialIndex===null&&!unlimitedHints&&!HexHints.spend(hintWallet)){refreshHints();return false;}checkpoint();if(tutorialIndex===null&&unlimitedHints){testUsed=true;puzzleTimer.assist();}placements=result.placements;selected=null;hints++;if(tutorialIndex===null)puzzleTimer.assist('hint');render();tone();toast(result.returned?'Ein Teil sitzt richtig. Überlappende Teile liegen wieder unten.':'Ein Teil sitzt richtig.');complete();return true;}
 $('hint').onclick=()=>{if(!E.hint(data,placements)){requestNext();return;}if(tutorialIndex!==null||unlimitedHints){useHint();return;}refreshHints();openDialog('hintDialog');};
-$('confirmHint').onclick=()=>{if(!$('hintDialog').open)return;closeDialog('hintDialog');useHint();refreshHints();};$('cancelHint').onclick=()=>{hintSimulationReadyAt=0;closeDialog('hintDialog');};
+$('confirmHint').onclick=()=>{if(!$('hintDialog').open)return;closeDialog('hintDialog');useHint();refreshHints();};$('cancelHint').onclick=()=>{closeDialog('hintDialog');};
 $('testHintsRefill').onclick=()=>{hintWallet.count=3;hintWallet.nextAt=null;hintWallet.lastNow=Date.now();persist();refreshHints();};$('testHintsEmpty').onclick=()=>{hintWallet.count=0;hintWallet.nextAt=Date.now()+HexHints.INTERVAL;hintWallet.lastNow=Date.now();persist();refreshHints();};$('testHintsReward').onclick=()=>{if(HexHints.reward(hintWallet,'dev-'+Date.now()+'-'+Math.random())){syncAds();HexAds.shown(adState);}persist();refreshHints();};$('testHintsAdvance').onclick=()=>{if(hintWallet.nextAt!==null)hintWallet.nextAt-=HexHints.INTERVAL;refreshHints();persist();};
 
 function closeDialogs(){for(const d of document.querySelectorAll('dialog[open]'))d.close();syncClock();}
@@ -247,6 +247,7 @@ $('gameHome').onclick=showHome;$('gameJourney').onclick=showJourney;
 $('openHelp').onclick=()=>{closeDialogs();openDialog('help');};$('closeHelp').onclick=backView;
 
 function backView(){
+ if($('hintRewardAd').open){finishHintReward(false);return true;}
  if($('adTestDialog').open){dismissTestAd();return true;}
  if($('home').open)return false;
  const current=document.querySelector('dialog[open]');
@@ -341,8 +342,11 @@ $('winAchievements').onclick=e=>{const button=e.target.closest('[data-equip]');i
 
 if(typeof HexI18n!=='undefined'){$('languageSelect').value=L.preference;$('languageSelect').onchange=e=>{persist();if(L.setPreference(e.target.value)){try{sessionStorage.setItem('lumahex-language-return','menu');}catch{}location.reload();}};try{if(sessionStorage.getItem('lumahex-language-return')==='menu'){sessionStorage.removeItem('lumahex-language-return');showMenu();}}catch{}}
 
-// Rewarded-ad simulation until the real provider is connected.
-var hintSimulationReadyAt=0;
-function refreshFreeHint(){const empty=!unlimitedHints&&hintWallet.count===0;const button=$("freeHint");button.hidden=!empty;if(!empty)hintSimulationReadyAt=0;const running=empty&&hintSimulationReadyAt>0,waiting=running&&Date.now()<hintSimulationReadyAt;button.disabled=waiting;button.textContent=L.t(running?"Simulation abschließen · +1 Hinweis":"Werbung simulieren · +1 Hinweis");if(empty){$("hintDialogTitle").textContent=L.t("Keine Hinweise mehr?");$("hintDialogStatus").textContent=L.t(running?(waiting?"Werbesimulation läuft. Nach 3 Sekunden kannst du die Belohnung abholen.":"Simulation beendet. Du kannst deinen Hinweis abholen."):"Simuliere ein Werbevideo und erhalte einen weiteren Hinweis.");}}
-$("freeHint").onclick=()=>{if(!$("hintDialog").open||unlimitedHints||hintWallet.count!==0)return;if(!hintSimulationReadyAt){hintSimulationReadyAt=Date.now()+3000;$("hintDialogStatus").textContent=L.t("Werbesimulation läuft. Nach 3 Sekunden kannst du die Belohnung abholen.");refreshFreeHint();return;}if(Date.now()<hintSimulationReadyAt)return;hintSimulationReadyAt=0;if(HexHints.reward(hintWallet,"simulated-video-"+Date.now()+"-"+Math.random())){syncAds();HexAds.shown(adState);persist();refreshHints();}};
-
+// Simulated rewarded provider: reward and close are separate lifecycle events.
+var hintRewardSession=null;
+function refreshFreeHint(){const empty=!unlimitedHints&&hintWallet.count===0;$("freeHint").hidden=!empty;$("freeHint").disabled=false;$("freeHint").textContent=L.t("Werbung simulieren · +1 Hinweis");if(empty){$("hintDialogTitle").textContent=L.t("Keine Hinweise mehr?");$("hintDialogStatus").textContent=L.t("Simuliere ein Werbevideo und erhalte einen weiteren Hinweis.");}}
+function finishHintReward(completed){if(!hintRewardSession)return;const session=hintRewardSession;hintRewardSession=null;closeDialog("hintRewardAd");if(completed&&HexHints.reward(hintWallet,session.id)){syncAds();HexAds.shown(adState);persist();}refreshHints();openDialog("hintDialog");}
+$("freeHint").onclick=()=>{if(!$("hintDialog").open||unlimitedHints||hintWallet.count!==0||hintRewardSession)return;hintRewardSession={id:"simulated-video-"+Date.now()+"-"+Math.random()};closeDialog("hintDialog");openDialog("hintRewardAd");};
+$("finishHintRewardAd").onclick=()=>finishHintReward(true);
+$("cancelHintRewardAd").onclick=()=>finishHintReward(false);
+$("hintRewardAd").addEventListener("cancel",e=>{e.preventDefault();finishHintReward(false);});
