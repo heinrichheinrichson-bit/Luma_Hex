@@ -1,3 +1,7 @@
+# Hex & Joy 0.30.0
+
+Spielversion: releases/Hex-and-Joy-0.30.0-Spielversion.apk. Entwicklerversion: releases/Hex-and-Joy-0.30.0-Entwicklerversion.apk. Beide parallel installierbar. Details: releases/Hex-and-Joy-0.30.0-Notizen.md.
+
 # Hex & Joy 0.29.3
 
 Aktuelle Testversion: releases/Hex-and-Joy-0.29.3-Test.apk. Neues Icon und freigegebener Schriftzug; Spielsteine unverändert. Details: releases/Hex-and-Joy-0.29.3-Notizen.md.
@@ -80,5 +84,6 @@ Prüfung: `node app/tests.cjs` — 100 Level erfolgreich geprüft.
 Jede neue Version wird mit Quellcode, aktualisierten Testdateien, Änderungsnotizen und einem Git-Tag gesichert und nach GitHub übertragen. Private Signierschlüssel und lokale Zugangsdaten gehören nicht ins Repository.
 
 Android-Buildhinweise stehen in `app/README.md` und `app/build-android.ps1`. Der lokale Test-Signierschlüssel ist bewusst nicht enthalten; für Updates einer bereits installierten APK wird derselbe Schlüssel benötigt.
+
 
 

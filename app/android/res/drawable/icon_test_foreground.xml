@@ -1,0 +1,1 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item android:drawable="@drawable/icon_foreground"/><item android:width="22dp" android:height="22dp" android:gravity="bottom|right" android:right="23dp" android:bottom="23dp" android:drawable="@drawable/test_badge"/></layer-list>
