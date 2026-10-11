@@ -2856,7 +2856,8 @@
     "answer": "Kelle. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Küche",
     "anagram": "KELLE",
-    "scramble": "LEKEL"
+    "scramble": "LEKEL",
+    "retired": true
   },
   {
     "id": "v3-riddle-1",
@@ -2865,7 +2866,8 @@
     "answer": "Pfanne. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Küche",
     "anagram": "PFANNE",
-    "scramble": "PENNFA"
+    "scramble": "PENNFA",
+    "retired": true
   },
   {
     "id": "v3-riddle-2",
@@ -2874,7 +2876,8 @@
     "answer": "Gabel. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Küche",
     "anagram": "GABEL",
-    "scramble": "AGEBL"
+    "scramble": "AGEBL",
+    "retired": true
   },
   {
     "id": "v3-riddle-3",
@@ -2883,7 +2886,8 @@
     "answer": "Messer. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Küche",
     "anagram": "MESSER",
-    "scramble": "EREMSS"
+    "scramble": "EREMSS",
+    "retired": true
   },
   {
     "id": "v3-riddle-4",
@@ -2892,7 +2896,8 @@
     "answer": "Teller. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Küche",
     "anagram": "TELLER",
-    "scramble": "RETELL"
+    "scramble": "RETELL",
+    "retired": true
   },
   {
     "id": "v3-riddle-5",
@@ -2901,7 +2906,8 @@
     "answer": "Schüssel. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Küche",
     "anagram": "SCHÜSSEL",
-    "scramble": "ÜSHLCSES"
+    "scramble": "ÜSHLCSES",
+    "retired": true
   },
   {
     "id": "v3-riddle-6",
@@ -2910,7 +2916,8 @@
     "answer": "Sieb. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Küche",
     "anagram": "SIEB",
-    "scramble": "ISEB"
+    "scramble": "ISEB",
+    "retired": true
   },
   {
     "id": "v3-riddle-7",
@@ -2919,7 +2926,8 @@
     "answer": "Becher. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Küche",
     "anagram": "BECHER",
-    "scramble": "REBECH"
+    "scramble": "REBECH",
+    "retired": true
   },
   {
     "id": "v3-riddle-8",
@@ -2928,7 +2936,8 @@
     "answer": "Serviette. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Küche",
     "anagram": "SERVIETTE",
-    "scramble": "ITTVERSEE"
+    "scramble": "ITTVERSEE",
+    "retired": true
   },
   {
     "id": "v3-riddle-9",
@@ -2937,7 +2946,8 @@
     "answer": "Wolke. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Natur",
     "anagram": "WOLKE",
-    "scramble": "OEKWL"
+    "scramble": "OEKWL",
+    "retired": true
   },
   {
     "id": "v3-riddle-10",
@@ -2946,7 +2956,8 @@
     "answer": "Regen. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Natur",
     "anagram": "REGEN",
-    "scramble": "ERNGE"
+    "scramble": "ERNGE",
+    "retired": true
   },
   {
     "id": "v3-riddle-11",
@@ -2955,7 +2966,8 @@
     "answer": "Wiese. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Natur",
     "anagram": "WIESE",
-    "scramble": "ISEWE"
+    "scramble": "ISEWE",
+    "retired": true
   },
   {
     "id": "v3-riddle-12",
@@ -2964,7 +2976,8 @@
     "answer": "Blüte. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Natur",
     "anagram": "BLÜTE",
-    "scramble": "ETBLÜ"
+    "scramble": "ETBLÜ",
+    "retired": true
   },
   {
     "id": "v3-riddle-13",
@@ -2973,7 +2986,8 @@
     "answer": "Blatt. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Natur",
     "anagram": "BLATT",
-    "scramble": "BTTLA"
+    "scramble": "BTTLA",
+    "retired": true
   },
   {
     "id": "v3-riddle-14",
@@ -2982,7 +2996,8 @@
     "answer": "Tulpe. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Natur",
     "anagram": "TULPE",
-    "scramble": "PETUL"
+    "scramble": "PETUL",
+    "retired": true
   },
   {
     "id": "v3-riddle-15",
@@ -2991,7 +3006,8 @@
     "answer": "Eiche. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Natur",
     "anagram": "EICHE",
-    "scramble": "HEEIC"
+    "scramble": "HEEIC",
+    "retired": true
   },
   {
     "id": "v3-riddle-16",
@@ -3000,7 +3016,8 @@
     "answer": "Ahorn. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Natur",
     "anagram": "AHORN",
-    "scramble": "ONARH"
+    "scramble": "ONARH",
+    "retired": true
   },
   {
     "id": "v3-riddle-17",
@@ -3009,7 +3026,8 @@
     "answer": "Dachs. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Tierwelt",
     "anagram": "DACHS",
-    "scramble": "HCDSA"
+    "scramble": "HCDSA",
+    "retired": true
   },
   {
     "id": "v3-riddle-18",
@@ -3018,7 +3036,8 @@
     "answer": "Fuchs. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Tierwelt",
     "anagram": "FUCHS",
-    "scramble": "HCFSU"
+    "scramble": "HCFSU",
+    "retired": true
   },
   {
     "id": "v3-riddle-19",
@@ -3027,7 +3046,8 @@
     "answer": "Igel. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Tierwelt",
     "anagram": "IGEL",
-    "scramble": "LIEG"
+    "scramble": "LIEG",
+    "retired": true
   },
   {
     "id": "v3-riddle-20",
@@ -3036,7 +3056,8 @@
     "answer": "Amsel. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Tierwelt",
     "anagram": "AMSEL",
-    "scramble": "EAMSL"
+    "scramble": "EAMSL",
+    "retired": true
   },
   {
     "id": "v3-riddle-21",
@@ -3045,7 +3066,8 @@
     "answer": "Adler. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Tierwelt",
     "anagram": "ADLER",
-    "scramble": "EDRLA"
+    "scramble": "EDRLA",
+    "retired": true
   },
   {
     "id": "v3-riddle-22",
@@ -3054,7 +3076,8 @@
     "answer": "Biene. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Tierwelt",
     "anagram": "BIENE",
-    "scramble": "IBENE"
+    "scramble": "IBENE",
+    "retired": true
   },
   {
     "id": "v3-riddle-23",
@@ -3063,7 +3086,8 @@
     "answer": "Hummel. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Tierwelt",
     "anagram": "HUMMEL",
-    "scramble": "LHUEMM"
+    "scramble": "LHUEMM",
+    "retired": true
   },
   {
     "id": "v3-riddle-24",
@@ -3072,7 +3096,8 @@
     "answer": "Otter. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Tierwelt",
     "anagram": "OTTER",
-    "scramble": "RTETO"
+    "scramble": "RTETO",
+    "retired": true
   },
   {
     "id": "v3-riddle-25",
@@ -3081,7 +3106,8 @@
     "answer": "Kissen. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Zuhause",
     "anagram": "KISSEN",
-    "scramble": "ESIKSN"
+    "scramble": "ESIKSN",
+    "retired": true
   },
   {
     "id": "v3-riddle-26",
@@ -3090,7 +3116,8 @@
     "answer": "Sofa. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Zuhause",
     "anagram": "SOFA",
-    "scramble": "OASF"
+    "scramble": "OASF",
+    "retired": true
   },
   {
     "id": "v3-riddle-27",
@@ -3099,7 +3126,8 @@
     "answer": "Decke. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Zuhause",
     "anagram": "DECKE",
-    "scramble": "EEKDC"
+    "scramble": "EEKDC",
+    "retired": true
   },
   {
     "id": "v3-riddle-28",
@@ -3108,7 +3136,8 @@
     "answer": "Teppich. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Zuhause",
     "anagram": "TEPPICH",
-    "scramble": "HCPIETP"
+    "scramble": "HCPIETP",
+    "retired": true
   },
   {
     "id": "v3-riddle-29",
@@ -3117,7 +3146,8 @@
     "answer": "Spiegel. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Zuhause",
     "anagram": "SPIEGEL",
-    "scramble": "EPSEGIL"
+    "scramble": "EPSEGIL",
+    "retired": true
   },
   {
     "id": "v3-riddle-30",
@@ -3126,7 +3156,8 @@
     "answer": "Vorhang. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Zuhause",
     "anagram": "VORHANG",
-    "scramble": "ARVGHNO"
+    "scramble": "ARVGHNO",
+    "retired": true
   },
   {
     "id": "v3-riddle-31",
@@ -3135,7 +3166,8 @@
     "answer": "Regal. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Zuhause",
     "anagram": "REGAL",
-    "scramble": "AREGL"
+    "scramble": "AREGL",
+    "retired": true
   },
   {
     "id": "v3-riddle-32",
@@ -3144,7 +3176,8 @@
     "answer": "Koffer. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Unterwegs",
     "anagram": "KOFFER",
-    "scramble": "OEKRFF"
+    "scramble": "OEKRFF",
+    "retired": true
   },
   {
     "id": "v3-riddle-33",
@@ -3153,7 +3186,8 @@
     "answer": "Karte. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Unterwegs",
     "anagram": "KARTE",
-    "scramble": "TEKAR"
+    "scramble": "TEKAR",
+    "retired": true
   },
   {
     "id": "v3-riddle-34",
@@ -3162,7 +3196,8 @@
     "answer": "Kompass. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Unterwegs",
     "anagram": "KOMPASS",
-    "scramble": "MKSOPAS"
+    "scramble": "MKSOPAS",
+    "retired": true
   },
   {
     "id": "v3-riddle-35",
@@ -3171,7 +3206,8 @@
     "answer": "Fahrrad. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Unterwegs",
     "anagram": "FAHRRAD",
-    "scramble": "ADHRFRA"
+    "scramble": "ADHRFRA",
+    "retired": true
   },
   {
     "id": "v3-riddle-36",
@@ -3180,7 +3216,8 @@
     "answer": "Brücke. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Unterwegs",
     "anagram": "BRÜCKE",
-    "scramble": "ERKBCÜ"
+    "scramble": "ERKBCÜ",
+    "retired": true
   },
   {
     "id": "v3-riddle-37",
@@ -3189,7 +3226,8 @@
     "answer": "Bahnhof. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Unterwegs",
     "anagram": "BAHNHOF",
-    "scramble": "AHHNOFB"
+    "scramble": "AHHNOFB",
+    "retired": true
   },
   {
     "id": "v3-riddle-38",
@@ -3198,7 +3236,8 @@
     "answer": "Hammer. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Werkstatt",
     "anagram": "HAMMER",
-    "scramble": "RHAEMM"
+    "scramble": "RHAEMM",
+    "retired": true
   },
   {
     "id": "v3-riddle-39",
@@ -3207,7 +3246,8 @@
     "answer": "Zange. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Werkstatt",
     "anagram": "ZANGE",
-    "scramble": "AGEZN"
+    "scramble": "AGEZN",
+    "retired": true
   },
   {
     "id": "v3-riddle-40",
@@ -3216,7 +3256,8 @@
     "answer": "Säge. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Werkstatt",
     "anagram": "SÄGE",
-    "scramble": "SEÄG"
+    "scramble": "SEÄG",
+    "retired": true
   },
   {
     "id": "v3-riddle-41",
@@ -3225,7 +3266,8 @@
     "answer": "Feile. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Werkstatt",
     "anagram": "FEILE",
-    "scramble": "LEFEI"
+    "scramble": "LEFEI",
+    "retired": true
   },
   {
     "id": "v3-riddle-42",
@@ -3234,7 +3276,8 @@
     "answer": "Schraube. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Werkstatt",
     "anagram": "SCHRAUBE",
-    "scramble": "CUHAESRB"
+    "scramble": "CUHAESRB",
+    "retired": true
   },
   {
     "id": "v3-riddle-43",
@@ -3243,7 +3286,8 @@
     "answer": "Bohrer. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Werkstatt",
     "anagram": "BOHRER",
-    "scramble": "OBERHR"
+    "scramble": "OBERHR",
+    "retired": true
   },
   {
     "id": "v3-riddle-44",
@@ -3252,7 +3296,8 @@
     "answer": "Geige. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Musik",
     "anagram": "GEIGE",
-    "scramble": "EEGGI"
+    "scramble": "EEGGI",
+    "retired": true
   },
   {
     "id": "v3-riddle-45",
@@ -3261,7 +3306,8 @@
     "answer": "Flöte. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Musik",
     "anagram": "FLÖTE",
-    "scramble": "ETFLÖ"
+    "scramble": "ETFLÖ",
+    "retired": true
   },
   {
     "id": "v3-riddle-46",
@@ -3270,7 +3316,8 @@
     "answer": "Trommel. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Musik",
     "anagram": "TROMMEL",
-    "scramble": "MRMETOL"
+    "scramble": "MRMETOL",
+    "retired": true
   },
   {
     "id": "v3-riddle-47",
@@ -3279,7 +3326,8 @@
     "answer": "Harfe. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Musik",
     "anagram": "HARFE",
-    "scramble": "AEHFR"
+    "scramble": "AEHFR",
+    "retired": true
   },
   {
     "id": "v3-riddle-48",
@@ -3288,7 +3336,8 @@
     "answer": "Klavier. Alle Buchstaben werden genau einmal verwendet.",
     "topic": "Musik",
     "anagram": "KLAVIER",
-    "scramble": "KRIVLAE"
+    "scramble": "KRIVLAE",
+    "retired": true
   },
   {
     "id": "v3-riddle-49",
@@ -8190,7 +8239,8 @@
     "answer": "Eine passende Lösung: Biber.",
     "topic": "Tierwelt",
     "anagram": "BIBER",
-    "scramble": "RBIEB"
+    "scramble": "RBIEB",
+    "retired": true
   },
   {
     "id": "v4-riddle-106",
@@ -8199,7 +8249,8 @@
     "answer": "Eine passende Lösung: Wald.",
     "topic": "Natur",
     "anagram": "WALD",
-    "scramble": "LDAW"
+    "scramble": "LDAW",
+    "retired": true
   },
   {
     "id": "v4-riddle-107",
@@ -8208,7 +8259,8 @@
     "answer": "Eine passende Lösung: Rose.",
     "topic": "Garten",
     "anagram": "ROSE",
-    "scramble": "SERO"
+    "scramble": "SERO",
+    "retired": true
   },
   {
     "id": "v4-riddle-108",
@@ -8217,7 +8269,8 @@
     "answer": "Eine passende Lösung: Schneebesen.",
     "topic": "Küche",
     "anagram": "SCHNEEBESEN",
-    "scramble": "HBCSEENESEN"
+    "scramble": "HBCSEENESEN",
+    "retired": true
   },
   {
     "id": "v4-riddle-109",
@@ -8226,7 +8279,8 @@
     "answer": "Eine passende Lösung: Fenster.",
     "topic": "Zuhause",
     "anagram": "FENSTER",
-    "scramble": "TFSERNE"
+    "scramble": "TFSERNE",
+    "retired": true
   },
   {
     "id": "v4-riddle-110",
@@ -8235,7 +8289,8 @@
     "answer": "Eine passende Lösung: Reisepass.",
     "topic": "Reise",
     "anagram": "REISEPASS",
-    "scramble": "ESPRASIES"
+    "scramble": "ESPRASIES",
+    "retired": true
   },
   {
     "id": "v4-riddle-111",
@@ -8244,7 +8299,8 @@
     "answer": "Eine passende Lösung: Schraubstock.",
     "topic": "Werkstatt",
     "anagram": "SCHRAUBSTOCK",
-    "scramble": "TBRSUSOKCCAH"
+    "scramble": "TBRSUSOKCCAH",
+    "retired": true
   },
   {
     "id": "v4-riddle-112",
@@ -8253,7 +8309,8 @@
     "answer": "Eine passende Lösung: Gitarre.",
     "topic": "Musik",
     "anagram": "GITARRE",
-    "scramble": "TRGEAIR"
+    "scramble": "TRGEAIR",
+    "retired": true
   },
   {
     "id": "v4-riddle-113",
@@ -8262,7 +8319,8 @@
     "answer": "Eine passende Lösung: Hemd.",
     "topic": "Kleidung",
     "anagram": "HEMD",
-    "scramble": "DHEM"
+    "scramble": "DHEM",
+    "retired": true
   },
   {
     "id": "v4-riddle-114",
@@ -8271,7 +8329,8 @@
     "answer": "Eine passende Lösung: Tastatur.",
     "topic": "Technik",
     "anagram": "TASTATUR",
-    "scramble": "TTRTASAU"
+    "scramble": "TTRTASAU",
+    "retired": true
   },
   {
     "id": "v4-riddle-115",
@@ -8280,7 +8339,8 @@
     "answer": "Eine passende Lösung: Tennisschläger.",
     "topic": "Sport",
     "anagram": "TENNISSCHLÄGER",
-    "scramble": "TENISRLÄEGHCNS"
+    "scramble": "TENISRLÄEGHCNS",
+    "retired": true
   },
   {
     "id": "v4-riddle-116",
@@ -8289,7 +8349,8 @@
     "answer": "Eine passende Lösung: Apfel.",
     "topic": "Essen",
     "anagram": "APFEL",
-    "scramble": "AEFLP"
+    "scramble": "AEFLP",
+    "retired": true
   },
   {
     "id": "v4-riddle-117",
@@ -8298,7 +8359,8 @@
     "answer": "Eine passende Lösung: Luchs.",
     "topic": "Tierwelt",
     "anagram": "LUCHS",
-    "scramble": "UHCLS"
+    "scramble": "UHCLS",
+    "retired": true
   },
   {
     "id": "v4-riddle-118",
@@ -8307,7 +8369,8 @@
     "answer": "Eine passende Lösung: Bach.",
     "topic": "Natur",
     "anagram": "BACH",
-    "scramble": "HBAC"
+    "scramble": "HBAC",
+    "retired": true
   },
   {
     "id": "v4-riddle-119",
@@ -8316,7 +8379,8 @@
     "answer": "Eine passende Lösung: Nelke.",
     "topic": "Garten",
     "anagram": "NELKE",
-    "scramble": "EKNEL"
+    "scramble": "EKNEL",
+    "retired": true
   },
   {
     "id": "v4-riddle-120",
@@ -8325,7 +8389,8 @@
     "answer": "Eine passende Lösung: Reibe.",
     "topic": "Küche",
     "anagram": "REIBE",
-    "scramble": "EIBER"
+    "scramble": "EIBER",
+    "retired": true
   },
   {
     "id": "v4-riddle-121",
@@ -8334,7 +8399,8 @@
     "answer": "Eine passende Lösung: Türklinke.",
     "topic": "Zuhause",
     "anagram": "TÜRKLINKE",
-    "scramble": "RETINKLKÜ"
+    "scramble": "RETINKLKÜ",
+    "retired": true
   },
   {
     "id": "v4-riddle-122",
@@ -8343,7 +8409,8 @@
     "answer": "Eine passende Lösung: Fahrkarte.",
     "topic": "Reise",
     "anagram": "FAHRKARTE",
-    "scramble": "FEHRTRAAK"
+    "scramble": "FEHRTRAAK",
+    "retired": true
   },
   {
     "id": "v4-riddle-123",
@@ -8352,7 +8419,8 @@
     "answer": "Eine passende Lösung: Werkbank.",
     "topic": "Werkstatt",
     "anagram": "WERKBANK",
-    "scramble": "REWKBANK"
+    "scramble": "REWKBANK",
+    "retired": true
   },
   {
     "id": "v4-riddle-124",
@@ -8361,7 +8429,8 @@
     "answer": "Eine passende Lösung: Ukulele.",
     "topic": "Musik",
     "anagram": "UKULELE",
-    "scramble": "ELLUKUE"
+    "scramble": "ELLUKUE",
+    "retired": true
   },
   {
     "id": "v4-riddle-125",
@@ -8370,7 +8439,8 @@
     "answer": "Eine passende Lösung: Bluse.",
     "topic": "Kleidung",
     "anagram": "BLUSE",
-    "scramble": "EUSBL"
+    "scramble": "EUSBL",
+    "retired": true
   },
   {
     "id": "v4-riddle-126",
@@ -8379,7 +8449,8 @@
     "answer": "Eine passende Lösung: Bildschirm.",
     "topic": "Technik",
     "anagram": "BILDSCHIRM",
-    "scramble": "BSLMDHRICI"
+    "scramble": "BSLMDHRICI",
+    "retired": true
   },
   {
     "id": "v4-riddle-127",
@@ -8388,7 +8459,8 @@
     "answer": "Eine passende Lösung: Fussball.",
     "topic": "Sport",
     "anagram": "FUSSBALL",
-    "scramble": "UFSALBSL"
+    "scramble": "UFSALBSL",
+    "retired": true
   },
   {
     "id": "v4-riddle-128",
@@ -8397,7 +8469,8 @@
     "answer": "Eine passende Lösung: Birne.",
     "topic": "Essen",
     "anagram": "BIRNE",
-    "scramble": "BNEIR"
+    "scramble": "BNEIR",
+    "retired": true
   },
   {
     "id": "v4-riddle-129",
@@ -8406,7 +8479,8 @@
     "answer": "Eine passende Lösung: Marder.",
     "topic": "Tierwelt",
     "anagram": "MARDER",
-    "scramble": "REMDRA"
+    "scramble": "REMDRA",
+    "retired": true
   },
   {
     "id": "v4-riddle-130",
@@ -8415,7 +8489,8 @@
     "answer": "Eine passende Lösung: Fluss.",
     "topic": "Natur",
     "anagram": "FLUSS",
-    "scramble": "LSFUS"
+    "scramble": "LSFUS",
+    "retired": true
   },
   {
     "id": "v4-riddle-131",
@@ -8424,7 +8499,8 @@
     "answer": "Eine passende Lösung: Veilchen.",
     "topic": "Garten",
     "anagram": "VEILCHEN",
-    "scramble": "IHEVLNEC"
+    "scramble": "IHEVLNEC",
+    "retired": true
   },
   {
     "id": "v4-riddle-132",
@@ -8433,7 +8509,8 @@
     "answer": "Eine passende Lösung: Schneidebrett.",
     "topic": "Küche",
     "anagram": "SCHNEIDEBRETT",
-    "scramble": "SETDERBCENHIT"
+    "scramble": "SETDERBCENHIT",
+    "retired": true
   },
   {
     "id": "v4-riddle-133",
@@ -8442,7 +8519,8 @@
     "answer": "Eine passende Lösung: Fussmatte.",
     "topic": "Zuhause",
     "anagram": "FUSSMATTE",
-    "scramble": "FSSMTUEAT"
+    "scramble": "FSSMTUEAT",
+    "retired": true
   },
   {
     "id": "v4-riddle-134",
@@ -8451,7 +8529,8 @@
     "answer": "Eine passende Lösung: Bordkarte.",
     "topic": "Reise",
     "anagram": "BORDKARTE",
-    "scramble": "KRREBAODT"
+    "scramble": "KRREBAODT",
+    "retired": true
   },
   {
     "id": "v4-riddle-135",
@@ -8460,7 +8539,8 @@
     "answer": "Eine passende Lösung: Wasserwaage.",
     "topic": "Werkstatt",
     "anagram": "WASSERWAAGE",
-    "scramble": "AEEAWRWGSSA"
+    "scramble": "AEEAWRWGSSA",
+    "retired": true
   },
   {
     "id": "v4-riddle-136",
@@ -8469,7 +8549,8 @@
     "answer": "Eine passende Lösung: Violine.",
     "topic": "Musik",
     "anagram": "VIOLINE",
-    "scramble": "IIELVNO"
+    "scramble": "IIELVNO",
+    "retired": true
   },
   {
     "id": "v4-riddle-137",
@@ -8478,7 +8559,8 @@
     "answer": "Eine passende Lösung: Pullover.",
     "topic": "Kleidung",
     "anagram": "PULLOVER",
-    "scramble": "POVRLEUL"
+    "scramble": "POVRLEUL",
+    "retired": true
   },
   {
     "id": "v4-riddle-138",
@@ -8487,7 +8569,8 @@
     "answer": "Eine passende Lösung: Lautsprecher.",
     "topic": "Technik",
     "anagram": "LAUTSPRECHER",
-    "scramble": "HTUPEERLARSC"
+    "scramble": "HTUPEERLARSC",
+    "retired": true
   },
   {
     "id": "v4-riddle-139",
@@ -8496,7 +8579,8 @@
     "answer": "Eine passende Lösung: Handball.",
     "topic": "Sport",
     "anagram": "HANDBALL",
-    "scramble": "AALBLNDH"
+    "scramble": "AALBLNDH",
+    "retired": true
   },
   {
     "id": "v4-riddle-140",
@@ -8505,7 +8589,8 @@
     "answer": "Eine passende Lösung: Pflaume.",
     "topic": "Essen",
     "anagram": "PFLAUME",
-    "scramble": "PUEFAML"
+    "scramble": "PUEFAML",
+    "retired": true
   },
   {
     "id": "v4-riddle-141",
@@ -8514,7 +8599,8 @@
     "answer": "Eine passende Lösung: Wiesel.",
     "topic": "Tierwelt",
     "anagram": "WIESEL",
-    "scramble": "EEWLSI"
+    "scramble": "EEWLSI",
+    "retired": true
   },
   {
     "id": "v4-riddle-142",
@@ -8523,7 +8609,8 @@
     "answer": "Eine passende Lösung: Quelle.",
     "topic": "Natur",
     "anagram": "QUELLE",
-    "scramble": "UQLELE"
+    "scramble": "UQLELE",
+    "retired": true
   },
   {
     "id": "v4-riddle-143",
@@ -8532,7 +8619,8 @@
     "answer": "Eine passende Lösung: Lilie.",
     "topic": "Garten",
     "anagram": "LILIE",
-    "scramble": "IILEL"
+    "scramble": "IILEL",
+    "retired": true
   },
   {
     "id": "v4-riddle-144",
@@ -8541,7 +8629,8 @@
     "answer": "Eine passende Lösung: Topflappen.",
     "topic": "Küche",
     "anagram": "TOPFLAPPEN",
-    "scramble": "PLENOPPFTA"
+    "scramble": "PLENOPPFTA",
+    "retired": true
   },
   {
     "id": "v4-riddle-145",
@@ -8550,7 +8639,8 @@
     "answer": "Eine passende Lösung: Briefkasten.",
     "topic": "Zuhause",
     "anagram": "BRIEFKASTEN",
-    "scramble": "NAFTIKRSEEB"
+    "scramble": "NAFTIKRSEEB",
+    "retired": true
   },
   {
     "id": "v4-riddle-146",
@@ -8559,7 +8649,8 @@
     "answer": "Eine passende Lösung: Fahrplan.",
     "topic": "Reise",
     "anagram": "FAHRPLAN",
-    "scramble": "LRANAPHF"
+    "scramble": "LRANAPHF",
+    "retired": true
   },
   {
     "id": "v4-riddle-147",
@@ -8568,7 +8659,8 @@
     "answer": "Eine passende Lösung: Zollstock.",
     "topic": "Werkstatt",
     "anagram": "ZOLLSTOCK",
-    "scramble": "OLKTSOCLZ"
+    "scramble": "OLKTSOCLZ",
+    "retired": true
   },
   {
     "id": "v4-riddle-148",
@@ -8577,7 +8669,8 @@
     "answer": "Eine passende Lösung: Bratsche.",
     "topic": "Musik",
     "anagram": "BRATSCHE",
-    "scramble": "RCTEASHB"
+    "scramble": "RCTEASHB",
+    "retired": true
   },
   {
     "id": "v4-riddle-149",
@@ -8586,7 +8679,8 @@
     "answer": "Eine passende Lösung: Strickjacke.",
     "topic": "Kleidung",
     "anagram": "STRICKJACKE",
-    "scramble": "JICACKRESTK"
+    "scramble": "JICACKRESTK",
+    "retired": true
   },
   {
     "id": "v4-riddle-150",
@@ -8595,7 +8689,8 @@
     "answer": "Eine passende Lösung: Kopfhörer.",
     "topic": "Technik",
     "anagram": "KOPFHÖRER",
-    "scramble": "EKFRHPORÖ"
+    "scramble": "EKFRHPORÖ",
+    "retired": true
   },
   {
     "id": "v4-riddle-151",
@@ -8604,7 +8699,8 @@
     "answer": "Eine passende Lösung: Volleyball.",
     "topic": "Sport",
     "anagram": "VOLLEYBALL",
-    "scramble": "EVAYLLOBLL"
+    "scramble": "EVAYLLOBLL",
+    "retired": true
   },
   {
     "id": "v4-riddle-152",
@@ -8613,7 +8709,8 @@
     "answer": "Eine passende Lösung: Kirsche.",
     "topic": "Essen",
     "anagram": "KIRSCHE",
-    "scramble": "HSIKRCE"
+    "scramble": "HSIKRCE",
+    "retired": true
   },
   {
     "id": "v4-riddle-153",
@@ -8622,7 +8719,8 @@
     "answer": "Eine passende Lösung: Hamster.",
     "topic": "Tierwelt",
     "anagram": "HAMSTER",
-    "scramble": "HSMTAER"
+    "scramble": "HSMTAER",
+    "retired": true
   },
   {
     "id": "v4-riddle-154",
@@ -8631,7 +8729,8 @@
     "answer": "Eine passende Lösung: Ufer.",
     "topic": "Natur",
     "anagram": "UFER",
-    "scramble": "FREU"
+    "scramble": "FREU",
+    "retired": true
   },
   {
     "id": "v4-riddle-155",
@@ -8640,7 +8739,8 @@
     "answer": "Eine passende Lösung: Narzisse.",
     "topic": "Garten",
     "anagram": "NARZISSE",
-    "scramble": "NRISAZSE"
+    "scramble": "NRISAZSE",
+    "retired": true
   },
   {
     "id": "v4-riddle-156",
@@ -8649,7 +8749,8 @@
     "answer": "Eine passende Lösung: Schöpfkelle.",
     "topic": "Küche",
     "anagram": "SCHÖPFKELLE",
-    "scramble": "CÖLLEESHPKF"
+    "scramble": "CÖLLEESHPKF",
+    "retired": true
   },
   {
     "id": "v4-riddle-157",
@@ -8658,7 +8759,8 @@
     "answer": "Eine passende Lösung: Klingel.",
     "topic": "Zuhause",
     "anagram": "KLINGEL",
-    "scramble": "IELNGLK"
+    "scramble": "IELNGLK",
+    "retired": true
   },
   {
     "id": "v4-riddle-158",
@@ -8667,7 +8769,8 @@
     "answer": "Eine passende Lösung: Gleis.",
     "topic": "Reise",
     "anagram": "GLEIS",
-    "scramble": "GLSIE"
+    "scramble": "GLSIE",
+    "retired": true
   },
   {
     "id": "v4-riddle-159",
@@ -8676,7 +8779,8 @@
     "answer": "Eine passende Lösung: Massband.",
     "topic": "Werkstatt",
     "anagram": "MASSBAND",
-    "scramble": "BAMDSSNA"
+    "scramble": "BAMDSSNA",
+    "retired": true
   },
   {
     "id": "v4-riddle-160",
@@ -8685,7 +8789,8 @@
     "answer": "Eine passende Lösung: Cello.",
     "topic": "Musik",
     "anagram": "CELLO",
-    "scramble": "OLECL"
+    "scramble": "OLECL",
+    "retired": true
   },
   {
     "id": "v4-riddle-161",
@@ -8694,7 +8799,8 @@
     "answer": "Eine passende Lösung: Weste.",
     "topic": "Kleidung",
     "anagram": "WESTE",
-    "scramble": "EESTW"
+    "scramble": "EESTW",
+    "retired": true
   },
   {
     "id": "v4-riddle-162",
@@ -8703,7 +8809,8 @@
     "answer": "Eine passende Lösung: Mikrofon.",
     "topic": "Technik",
     "anagram": "MIKROFON",
-    "scramble": "MOONKRFI"
+    "scramble": "MOONKRFI",
+    "retired": true
   },
   {
     "id": "v4-riddle-163",
@@ -8712,7 +8819,8 @@
     "answer": "Eine passende Lösung: Basketball.",
     "topic": "Sport",
     "anagram": "BASKETBALL",
-    "scramble": "LTBBKAEASL"
+    "scramble": "LTBBKAEASL",
+    "retired": true
   },
   {
     "id": "v4-riddle-164",
@@ -8721,7 +8829,8 @@
     "answer": "Eine passende Lösung: Pfirsich.",
     "topic": "Essen",
     "anagram": "PFIRSICH",
-    "scramble": "RSCIPHFI"
+    "scramble": "RSCIPHFI",
+    "retired": true
   },
   {
     "id": "v4-riddle-165",
@@ -8730,7 +8839,8 @@
     "answer": "Eine passende Lösung: Eichhörnchen.",
     "topic": "Tierwelt",
     "anagram": "EICHHÖRNCHEN",
-    "scramble": "EHRCÖHCENINH"
+    "scramble": "EHRCÖHCENINH",
+    "retired": true
   },
   {
     "id": "v4-riddle-166",
@@ -8739,7 +8849,8 @@
     "answer": "Eine passende Lösung: Insel.",
     "topic": "Natur",
     "anagram": "INSEL",
-    "scramble": "SLNIE"
+    "scramble": "SLNIE",
+    "retired": true
   },
   {
     "id": "v4-riddle-167",
@@ -8748,7 +8859,8 @@
     "answer": "Eine passende Lösung: Krokus.",
     "topic": "Garten",
     "anagram": "KROKUS",
-    "scramble": "UORSKK"
+    "scramble": "UORSKK",
+    "retired": true
   },
   {
     "id": "v4-riddle-168",
@@ -8757,7 +8869,8 @@
     "answer": "Eine passende Lösung: Nudelholz.",
     "topic": "Küche",
     "anagram": "NUDELHOLZ",
-    "scramble": "LEDZOLUNH"
+    "scramble": "LEDZOLUNH",
+    "retired": true
   },
   {
     "id": "v4-riddle-169",
@@ -8766,7 +8879,8 @@
     "answer": "Eine passende Lösung: Flur.",
     "topic": "Zuhause",
     "anagram": "FLUR",
-    "scramble": "ULFR"
+    "scramble": "ULFR",
+    "retired": true
   },
   {
     "id": "v4-riddle-170",
@@ -8775,7 +8889,8 @@
     "answer": "Eine passende Lösung: Bahnsteig.",
     "topic": "Reise",
     "anagram": "BAHNSTEIG",
-    "scramble": "ENSTBIGHA"
+    "scramble": "ENSTBIGHA",
+    "retired": true
   },
   {
     "id": "v4-riddle-171",
@@ -8784,7 +8899,8 @@
     "answer": "Eine passende Lösung: Bleistift.",
     "topic": "Werkstatt",
     "anagram": "BLEISTIFT",
-    "scramble": "BISFTITLE"
+    "scramble": "BISFTITLE",
+    "retired": true
   },
   {
     "id": "v4-riddle-172",
@@ -8793,7 +8909,8 @@
     "answer": "Eine passende Lösung: Kontrabass.",
     "topic": "Musik",
     "anagram": "KONTRABASS",
-    "scramble": "OTNBKSARAS"
+    "scramble": "OTNBKSARAS",
+    "retired": true
   },
   {
     "id": "v4-riddle-173",
@@ -8802,7 +8919,8 @@
     "answer": "Eine passende Lösung: Mantel.",
     "topic": "Kleidung",
     "anagram": "MANTEL",
-    "scramble": "ETMANL"
+    "scramble": "ETMANL",
+    "retired": true
   },
   {
     "id": "v4-riddle-174",
@@ -8811,7 +8929,8 @@
     "answer": "Eine passende Lösung: Drucker.",
     "topic": "Technik",
     "anagram": "DRUCKER",
-    "scramble": "DEKRURC"
+    "scramble": "DEKRURC",
+    "retired": true
   },
   {
     "id": "v4-riddle-175",
@@ -8820,7 +8939,8 @@
     "answer": "Eine passende Lösung: Golfball.",
     "topic": "Sport",
     "anagram": "GOLFBALL",
-    "scramble": "LOLBAFGL"
+    "scramble": "LOLBAFGL",
+    "retired": true
   },
   {
     "id": "v4-riddle-176",
@@ -8829,7 +8949,8 @@
     "answer": "Eine passende Lösung: Aprikose.",
     "topic": "Essen",
     "anagram": "APRIKOSE",
-    "scramble": "IKPEOSAR"
+    "scramble": "IKPEOSAR",
+    "retired": true
   },
   {
     "id": "v4-riddle-177",
@@ -8838,7 +8959,8 @@
     "answer": "Eine passende Lösung: Kaninchen.",
     "topic": "Tierwelt",
     "anagram": "KANINCHEN",
-    "scramble": "NIANCHENK"
+    "scramble": "NIANCHENK",
+    "retired": true
   },
   {
     "id": "v4-riddle-178",
@@ -8847,7 +8969,8 @@
     "answer": "Eine passende Lösung: Küste.",
     "topic": "Natur",
     "anagram": "KÜSTE",
-    "scramble": "ÜETSK"
+    "scramble": "ÜETSK",
+    "retired": true
   },
   {
     "id": "v4-riddle-179",
@@ -8856,7 +8979,8 @@
     "answer": "Eine passende Lösung: Margerite.",
     "topic": "Garten",
     "anagram": "MARGERITE",
-    "scramble": "IERTEAMGR"
+    "scramble": "IERTEAMGR",
+    "retired": true
   },
   {
     "id": "v4-riddle-180",
@@ -8865,7 +8989,8 @@
     "answer": "Eine passende Lösung: Backblech.",
     "topic": "Küche",
     "anagram": "BACKBLECH",
-    "scramble": "BKLCHEBCA"
+    "scramble": "BKLCHEBCA",
+    "retired": true
   },
   {
     "id": "v4-riddle-181",
@@ -8874,7 +8999,8 @@
     "answer": "Eine passende Lösung: Treppe.",
     "topic": "Zuhause",
     "anagram": "TREPPE",
-    "scramble": "RTPEPE"
+    "scramble": "RTPEPE",
+    "retired": true
   },
   {
     "id": "v4-riddle-182",
@@ -8883,7 +9009,8 @@
     "answer": "Eine passende Lösung: Haltestelle.",
     "topic": "Reise",
     "anagram": "HALTESTELLE",
-    "scramble": "TSLHEEAETLL"
+    "scramble": "TSLHEEAETLL",
+    "retired": true
   },
   {
     "id": "v4-riddle-183",
@@ -8892,7 +9019,8 @@
     "answer": "Eine passende Lösung: Spitzer.",
     "topic": "Werkstatt",
     "anagram": "SPITZER",
-    "scramble": "REPSTZI"
+    "scramble": "REPSTZI",
+    "retired": true
   },
   {
     "id": "v4-riddle-184",
@@ -8901,7 +9029,8 @@
     "answer": "Eine passende Lösung: Fagott.",
     "topic": "Musik",
     "anagram": "FAGOTT",
-    "scramble": "FTGTOA"
+    "scramble": "FTGTOA",
+    "retired": true
   },
   {
     "id": "v4-riddle-185",
@@ -8910,7 +9039,8 @@
     "answer": "Eine passende Lösung: Parka.",
     "topic": "Kleidung",
     "anagram": "PARKA",
-    "scramble": "KPARA"
+    "scramble": "KPARA",
+    "retired": true
   },
   {
     "id": "v4-riddle-186",
@@ -8919,7 +9049,8 @@
     "answer": "Eine passende Lösung: Scanner.",
     "topic": "Technik",
     "anagram": "SCANNER",
-    "scramble": "SEARNNC"
+    "scramble": "SEARNNC",
+    "retired": true
   },
   {
     "id": "v4-riddle-187",
@@ -8928,7 +9059,8 @@
     "answer": "Eine passende Lösung: Tischtennisball.",
     "topic": "Sport",
     "anagram": "TISCHTENNISBALL",
-    "scramble": "CIITNSTBLLNEAHS"
+    "scramble": "CIITNSTBLLNEAHS",
+    "retired": true
   },
   {
     "id": "v4-riddle-188",
@@ -8937,7 +9069,8 @@
     "answer": "Eine passende Lösung: Nektarine.",
     "topic": "Essen",
     "anagram": "NEKTARINE",
-    "scramble": "EETRINNAK"
+    "scramble": "EETRINNAK",
+    "retired": true
   },
   {
     "id": "v4-riddle-189",
@@ -8946,7 +9079,8 @@
     "answer": "Eine passende Lösung: Meerschweinchen.",
     "topic": "Tierwelt",
     "anagram": "MEERSCHWEINCHEN",
-    "scramble": "NNWEHRHESCMIECE"
+    "scramble": "NNWEHRHESCMIECE",
+    "retired": true
   },
   {
     "id": "v4-riddle-190",
@@ -8955,7 +9089,8 @@
     "answer": "Eine passende Lösung: Strand.",
     "topic": "Natur",
     "anagram": "STRAND",
-    "scramble": "ADTNRS"
+    "scramble": "ADTNRS",
+    "retired": true
   },
   {
     "id": "v4-riddle-191",
@@ -8964,7 +9099,8 @@
     "answer": "Eine passende Lösung: Sonnenblume.",
     "topic": "Garten",
     "anagram": "SONNENBLUME",
-    "scramble": "ENBNUNOLEMS"
+    "scramble": "ENBNUNOLEMS",
+    "retired": true
   },
   {
     "id": "v4-riddle-192",
@@ -8973,7 +9109,8 @@
     "answer": "Eine passende Lösung: Springform.",
     "topic": "Küche",
     "anagram": "SPRINGFORM",
-    "scramble": "SMRGFONIRP"
+    "scramble": "SMRGFONIRP",
+    "retired": true
   },
   {
     "id": "v4-riddle-193",
@@ -8982,7 +9119,8 @@
     "answer": "Eine passende Lösung: Geländer.",
     "topic": "Zuhause",
     "anagram": "GELÄNDER",
-    "scramble": "GDNÄLEER"
+    "scramble": "GDNÄLEER",
+    "retired": true
   },
   {
     "id": "v4-riddle-194",
@@ -8991,7 +9129,8 @@
     "answer": "Eine passende Lösung: Kojen.",
     "topic": "Reise",
     "anagram": "KOJEN",
-    "scramble": "NEKJO"
+    "scramble": "NEKJO",
+    "retired": true
   },
   {
     "id": "v4-riddle-195",
@@ -9000,7 +9139,8 @@
     "answer": "Eine passende Lösung: Schraubenzieher.",
     "topic": "Werkstatt",
     "anagram": "SCHRAUBENZIEHER",
-    "scramble": "SUHAEIBENZHRCER"
+    "scramble": "SUHAEIBENZHRCER",
+    "retired": true
   },
   {
     "id": "v4-riddle-196",
@@ -9009,7 +9149,8 @@
     "answer": "Eine passende Lösung: Oboe.",
     "topic": "Musik",
     "anagram": "OBOE",
-    "scramble": "OOBE"
+    "scramble": "OOBE",
+    "retired": true
   },
   {
     "id": "v4-riddle-197",
@@ -9018,7 +9159,8 @@
     "answer": "Eine passende Lösung: Regenjacke.",
     "topic": "Kleidung",
     "anagram": "REGENJACKE",
-    "scramble": "RNKECEAJGE"
+    "scramble": "RNKECEAJGE",
+    "retired": true
   },
   {
     "id": "v4-riddle-198",
@@ -9027,7 +9169,8 @@
     "answer": "Eine passende Lösung: Festplatte.",
     "topic": "Technik",
     "anagram": "FESTPLATTE",
-    "scramble": "ELTTEAPTSF"
+    "scramble": "ELTTEAPTSF",
+    "retired": true
   },
   {
     "id": "v4-riddle-199",
@@ -9036,7 +9179,8 @@
     "answer": "Eine passende Lösung: Federball.",
     "topic": "Sport",
     "anagram": "FEDERBALL",
-    "scramble": "LEEBDAFLR"
+    "scramble": "LEEBDAFLR",
+    "retired": true
   },
   {
     "id": "v4-riddle-200",
@@ -9045,7 +9189,8 @@
     "answer": "Eine passende Lösung: Mango.",
     "topic": "Essen",
     "anagram": "MANGO",
-    "scramble": "MNAGO"
+    "scramble": "MNAGO",
+    "retired": true
   },
   {
     "id": "v4-riddle-201",
@@ -9054,7 +9199,8 @@
     "answer": "Eine passende Lösung: Pferd.",
     "topic": "Tierwelt",
     "anagram": "PFERD",
-    "scramble": "FRPED"
+    "scramble": "FRPED",
+    "retired": true
   },
   {
     "id": "v4-riddle-202",
@@ -9063,7 +9209,8 @@
     "answer": "Eine passende Lösung: Düne.",
     "topic": "Natur",
     "anagram": "DÜNE",
-    "scramble": "NÜDE"
+    "scramble": "NÜDE",
+    "retired": true
   },
   {
     "id": "v4-riddle-203",
@@ -9072,7 +9219,8 @@
     "answer": "Eine passende Lösung: Lavendel.",
     "topic": "Garten",
     "anagram": "LAVENDEL",
-    "scramble": "EVNLADLE"
+    "scramble": "EVNLADLE",
+    "retired": true
   },
   {
     "id": "v4-riddle-204",
@@ -9081,7 +9229,8 @@
     "answer": "Eine passende Lösung: Teigschaber.",
     "topic": "Küche",
     "anagram": "TEIGSCHABER",
-    "scramble": "EBGACHTEIRS"
+    "scramble": "EBGACHTEIRS",
+    "retired": true
   },
   {
     "id": "v4-riddle-205",
@@ -9090,7 +9239,8 @@
     "answer": "Eine passende Lösung: Handlauf.",
     "topic": "Zuhause",
     "anagram": "HANDLAUF",
-    "scramble": "HNALUDAF"
+    "scramble": "HNALUDAF",
+    "retired": true
   },
   {
     "id": "v4-riddle-206",
@@ -9099,7 +9249,8 @@
     "answer": "Eine passende Lösung: Zelt.",
     "topic": "Reise",
     "anagram": "ZELT",
-    "scramble": "LEZT"
+    "scramble": "LEZT",
+    "retired": true
   },
   {
     "id": "v4-riddle-207",
@@ -9108,7 +9259,8 @@
     "answer": "Eine passende Lösung: Inbusschlüssel.",
     "topic": "Werkstatt",
     "anagram": "INBUSSCHLÜSSEL",
-    "scramble": "EISSÜHNSLSCBUL"
+    "scramble": "EISSÜHNSLSCBUL",
+    "retired": true
   },
   {
     "id": "v4-riddle-208",
@@ -9117,7 +9269,8 @@
     "answer": "Eine passende Lösung: Klarinette.",
     "topic": "Musik",
     "anagram": "KLARINETTE",
-    "scramble": "ARKTTNEEIL"
+    "scramble": "ARKTTNEEIL",
+    "retired": true
   },
   {
     "id": "v4-riddle-209",
@@ -9126,7 +9279,8 @@
     "answer": "Eine passende Lösung: Hose.",
     "topic": "Kleidung",
     "anagram": "HOSE",
-    "scramble": "HSOE"
+    "scramble": "HSOE",
+    "retired": true
   },
   {
     "id": "v4-riddle-210",
@@ -9135,7 +9289,8 @@
     "answer": "Eine passende Lösung: Speicherkarte.",
     "topic": "Technik",
     "anagram": "SPEICHERKARTE",
-    "scramble": "SPRKEEAREICTH"
+    "scramble": "SPRKEEAREICTH",
+    "retired": true
   },
   {
     "id": "v4-riddle-211",
@@ -9144,7 +9299,8 @@
     "answer": "Eine passende Lösung: Hantel.",
     "topic": "Sport",
     "anagram": "HANTEL",
-    "scramble": "AEHLTN"
+    "scramble": "AEHLTN",
+    "retired": true
   },
   {
     "id": "v4-riddle-212",
@@ -9153,7 +9309,8 @@
     "answer": "Eine passende Lösung: Papaya.",
     "topic": "Essen",
     "anagram": "PAPAYA",
-    "scramble": "AAAPPY"
+    "scramble": "AAAPPY",
+    "retired": true
   },
   {
     "id": "v4-riddle-213",
@@ -9162,7 +9319,8 @@
     "answer": "Eine passende Lösung: Esel.",
     "topic": "Tierwelt",
     "anagram": "ESEL",
-    "scramble": "SELE"
+    "scramble": "SELE",
+    "retired": true
   },
   {
     "id": "v4-riddle-214",
@@ -9171,7 +9329,8 @@
     "answer": "Eine passende Lösung: Klippe.",
     "topic": "Natur",
     "anagram": "KLIPPE",
-    "scramble": "IPKLPE"
+    "scramble": "IPKLPE",
+    "retired": true
   },
   {
     "id": "v4-riddle-215",
@@ -9180,7 +9339,8 @@
     "answer": "Eine passende Lösung: Minze.",
     "topic": "Garten",
     "anagram": "MINZE",
-    "scramble": "ENZMI"
+    "scramble": "ENZMI",
+    "retired": true
   },
   {
     "id": "v4-riddle-216",
@@ -9189,7 +9349,8 @@
     "answer": "Eine passende Lösung: Dosenöffner.",
     "topic": "Küche",
     "anagram": "DOSENÖFFNER",
-    "scramble": "DSENNFEORÖF"
+    "scramble": "DSENNFEORÖF",
+    "retired": true
   },
   {
     "id": "v4-riddle-217",
@@ -9198,7 +9359,8 @@
     "answer": "Eine passende Lösung: Fensterbank.",
     "topic": "Zuhause",
     "anagram": "FENSTERBANK",
-    "scramble": "ESKENNTFBAR"
+    "scramble": "ESKENNTFBAR",
+    "retired": true
   },
   {
     "id": "v4-riddle-218",
@@ -9207,7 +9369,8 @@
     "answer": "Eine passende Lösung: Schlafsack.",
     "topic": "Reise",
     "anagram": "SCHLAFSACK",
-    "scramble": "SHSACCFKAL"
+    "scramble": "SHSACCFKAL",
+    "retired": true
   },
   {
     "id": "v4-riddle-219",
@@ -9216,7 +9379,8 @@
     "answer": "Eine passende Lösung: Ringschlüssel.",
     "topic": "Werkstatt",
     "anagram": "RINGSCHLÜSSEL",
-    "scramble": "ILRCGESHSÜLNS"
+    "scramble": "ILRCGESHSÜLNS",
+    "retired": true
   },
   {
     "id": "v4-riddle-220",
@@ -9225,7 +9389,8 @@
     "answer": "Eine passende Lösung: Saxofon.",
     "topic": "Musik",
     "anagram": "SAXOFON",
-    "scramble": "FANOSOX"
+    "scramble": "FANOSOX",
+    "retired": true
   },
   {
     "id": "v4-riddle-221",
@@ -9234,7 +9399,8 @@
     "answer": "Eine passende Lösung: Rock.",
     "topic": "Kleidung",
     "anagram": "ROCK",
-    "scramble": "CORK"
+    "scramble": "CORK",
+    "retired": true
   },
   {
     "id": "v4-riddle-222",
@@ -9243,7 +9409,8 @@
     "answer": "Eine passende Lösung: Ladegerät.",
     "topic": "Technik",
     "anagram": "LADEGERÄT",
-    "scramble": "LRAGEEDÄT"
+    "scramble": "LRAGEEDÄT",
+    "retired": true
   },
   {
     "id": "v4-riddle-223",
@@ -9252,7 +9419,8 @@
     "answer": "Eine passende Lösung: Springseil.",
     "topic": "Sport",
     "anagram": "SPRINGSEIL",
-    "scramble": "ILSNGEIRPS"
+    "scramble": "ILSNGEIRPS",
+    "retired": true
   },
   {
     "id": "v4-riddle-224",
@@ -9261,7 +9429,8 @@
     "answer": "Eine passende Lösung: Ananas.",
     "topic": "Essen",
     "anagram": "ANANAS",
-    "scramble": "NAASNA"
+    "scramble": "NAASNA",
+    "retired": true
   },
   {
     "id": "v4-riddle-225",
@@ -9270,7 +9439,8 @@
     "answer": "Eine passende Lösung: Zebra.",
     "topic": "Tierwelt",
     "anagram": "ZEBRA",
-    "scramble": "ZABER"
+    "scramble": "ZABER",
+    "retired": true
   },
   {
     "id": "v4-riddle-226",
@@ -9279,7 +9449,8 @@
     "answer": "Eine passende Lösung: Höhle.",
     "topic": "Natur",
     "anagram": "HÖHLE",
-    "scramble": "HLEHÖ"
+    "scramble": "HLEHÖ",
+    "retired": true
   },
   {
     "id": "v4-riddle-227",
@@ -9288,7 +9459,8 @@
     "answer": "Eine passende Lösung: Salbei.",
     "topic": "Garten",
     "anagram": "SALBEI",
-    "scramble": "AEILBS"
+    "scramble": "AEILBS",
+    "retired": true
   },
   {
     "id": "v4-riddle-228",
@@ -9297,7 +9469,8 @@
     "answer": "Eine passende Lösung: Flaschenöffner.",
     "topic": "Küche",
     "anagram": "FLASCHENÖFFNER",
-    "scramble": "FNCLEÖANSFFHER"
+    "scramble": "FNCLEÖANSFFHER",
+    "retired": true
   },
   {
     "id": "v4-riddle-229",
@@ -9306,7 +9479,8 @@
     "answer": "Eine passende Lösung: Heizkörper.",
     "topic": "Zuhause",
     "anagram": "HEIZKÖRPER",
-    "scramble": "ZÖPIKHEERR"
+    "scramble": "ZÖPIKHEERR",
+    "retired": true
   },
   {
     "id": "v4-riddle-230",
@@ -9315,7 +9489,8 @@
     "answer": "Eine passende Lösung: Isomatte.",
     "topic": "Reise",
     "anagram": "ISOMATTE",
-    "scramble": "MATETISO"
+    "scramble": "MATETISO",
+    "retired": true
   },
   {
     "id": "v4-riddle-231",
@@ -9324,7 +9499,8 @@
     "answer": "Eine passende Lösung: Maulschlüssel.",
     "topic": "Werkstatt",
     "anagram": "MAULSCHLÜSSEL",
-    "scramble": "SLUSMLSCHLEAÜ"
+    "scramble": "SLUSMLSCHLEAÜ",
+    "retired": true
   },
   {
     "id": "v4-riddle-232",
@@ -9333,7 +9509,8 @@
     "answer": "Eine passende Lösung: Trompete.",
     "topic": "Musik",
     "anagram": "TROMPETE",
-    "scramble": "REMTPTEO"
+    "scramble": "REMTPTEO",
+    "retired": true
   },
   {
     "id": "v4-riddle-233",
@@ -9342,7 +9519,8 @@
     "answer": "Eine passende Lösung: Kleid.",
     "topic": "Kleidung",
     "anagram": "KLEID",
-    "scramble": "IKLDE"
+    "scramble": "IKLDE",
+    "retired": true
   },
   {
     "id": "v4-riddle-234",
@@ -9351,7 +9529,8 @@
     "answer": "Eine passende Lösung: Steckdose.",
     "topic": "Technik",
     "anagram": "STECKDOSE",
-    "scramble": "EETDSKCSO"
+    "scramble": "EETDSKCSO",
+    "retired": true
   },
   {
     "id": "v4-riddle-235",
@@ -9360,7 +9539,8 @@
     "answer": "Eine passende Lösung: Turnmatte.",
     "topic": "Sport",
     "anagram": "TURNMATTE",
-    "scramble": "TTTUMNREA"
+    "scramble": "TTTUMNREA",
+    "retired": true
   },
   {
     "id": "v4-riddle-236",
@@ -9369,7 +9549,8 @@
     "answer": "Eine passende Lösung: Melone.",
     "topic": "Essen",
     "anagram": "MELONE",
-    "scramble": "LEEMON"
+    "scramble": "LEEMON",
+    "retired": true
   },
   {
     "id": "v4-riddle-237",
@@ -9378,7 +9559,8 @@
     "answer": "Eine passende Lösung: Giraffe.",
     "topic": "Tierwelt",
     "anagram": "GIRAFFE",
-    "scramble": "GFEARIF"
+    "scramble": "GFEARIF",
+    "retired": true
   },
   {
     "id": "v4-riddle-238",
@@ -9387,7 +9569,8 @@
     "answer": "Eine passende Lösung: Gletscher.",
     "topic": "Natur",
     "anagram": "GLETSCHER",
-    "scramble": "LGSCTEEHR"
+    "scramble": "LGSCTEEHR",
+    "retired": true
   },
   {
     "id": "v4-riddle-239",
@@ -9396,7 +9579,8 @@
     "answer": "Eine passende Lösung: Thymian.",
     "topic": "Garten",
     "anagram": "THYMIAN",
-    "scramble": "YMTAINH"
+    "scramble": "YMTAINH",
+    "retired": true
   },
   {
     "id": "v4-riddle-240",
@@ -9405,7 +9589,8 @@
     "answer": "Eine passende Lösung: Korkenzieher.",
     "topic": "Küche",
     "anagram": "KORKENZIEHER",
-    "scramble": "KOZHRNEEIKER"
+    "scramble": "KOZHRNEEIKER",
+    "retired": true
   },
   {
     "id": "v4-riddle-241",
@@ -9414,7 +9599,8 @@
     "answer": "Eine passende Lösung: Stehlampe.",
     "topic": "Zuhause",
     "anagram": "STEHLAMPE",
-    "scramble": "HLMASPEET"
+    "scramble": "HLMASPEET",
+    "retired": true
   },
   {
     "id": "v4-riddle-242",
@@ -9423,7 +9609,8 @@
     "answer": "Eine passende Lösung: Wanderstock.",
     "topic": "Reise",
     "anagram": "WANDERSTOCK",
-    "scramble": "KWDRTENSCOA"
+    "scramble": "KWDRTENSCOA",
+    "retired": true
   },
   {
     "id": "v4-riddle-243",
@@ -9432,7 +9619,8 @@
     "answer": "Eine passende Lösung: Beisszange.",
     "topic": "Werkstatt",
     "anagram": "BEISSZANGE",
-    "scramble": "IEBGSEZNAS"
+    "scramble": "IEBGSEZNAS",
+    "retired": true
   },
   {
     "id": "v4-riddle-244",
@@ -9441,7 +9629,8 @@
     "answer": "Eine passende Lösung: Posaune.",
     "topic": "Musik",
     "anagram": "POSAUNE",
-    "scramble": "OUASNPE"
+    "scramble": "OUASNPE",
+    "retired": true
   },
   {
     "id": "v4-riddle-245",
@@ -9450,7 +9639,8 @@
     "answer": "Eine passende Lösung: Leggings.",
     "topic": "Kleidung",
     "anagram": "LEGGINGS",
-    "scramble": "EGGLGSNI"
+    "scramble": "EGGLGSNI",
+    "retired": true
   },
   {
     "id": "v4-riddle-246",
@@ -9459,7 +9649,8 @@
     "answer": "Eine passende Lösung: Verlängerungskabel.",
     "topic": "Technik",
     "anagram": "VERLÄNGERUNGSKABEL",
-    "scramble": "VSUGÄKNLRNBERALGEE"
+    "scramble": "VSUGÄKNLRNBERALGEE",
+    "retired": true
   },
   {
     "id": "v4-riddle-247",
@@ -9468,7 +9659,8 @@
     "answer": "Eine passende Lösung: Reck.",
     "topic": "Sport",
     "anagram": "RECK",
-    "scramble": "CKRE"
+    "scramble": "CKRE",
+    "retired": true
   },
   {
     "id": "v4-riddle-248",
@@ -9477,7 +9669,8 @@
     "answer": "Eine passende Lösung: Zitrone.",
     "topic": "Essen",
     "anagram": "ZITRONE",
-    "scramble": "RZONITE"
+    "scramble": "RZONITE",
+    "retired": true
   },
   {
     "id": "v4-riddle-249",
@@ -9486,7 +9679,8 @@
     "answer": "Eine passende Lösung: Elefant.",
     "topic": "Tierwelt",
     "anagram": "ELEFANT",
-    "scramble": "LTAENEF"
+    "scramble": "LTAENEF",
+    "retired": true
   },
   {
     "id": "v4-riddle-250",
@@ -9495,7 +9689,8 @@
     "answer": "Eine passende Lösung: Tal.",
     "topic": "Natur",
     "anagram": "TAL",
-    "scramble": "LTA"
+    "scramble": "LTA",
+    "retired": true
   },
   {
     "id": "v4-riddle-251",
@@ -9504,7 +9699,8 @@
     "answer": "Eine passende Lösung: Rosmarin.",
     "topic": "Garten",
     "anagram": "ROSMARIN",
-    "scramble": "AISNROMR"
+    "scramble": "AISNROMR",
+    "retired": true
   },
   {
     "id": "v4-riddle-252",
@@ -9513,7 +9709,8 @@
     "answer": "Eine passende Lösung: Zuckerdosen.",
     "topic": "Küche",
     "anagram": "ZUCKERDOSEN",
-    "scramble": "UKNORDEEZCS"
+    "scramble": "UKNORDEEZCS",
+    "retired": true
   },
   {
     "id": "v4-riddle-253",
@@ -9522,7 +9719,8 @@
     "answer": "Eine passende Lösung: Wandleuchte.",
     "topic": "Zuhause",
     "anagram": "WANDLEUCHTE",
-    "scramble": "ENLDUTACHEW"
+    "scramble": "ENLDUTACHEW",
+    "retired": true
   },
   {
     "id": "v4-riddle-254",
@@ -9531,7 +9729,8 @@
     "answer": "Eine passende Lösung: Trinkflasche.",
     "topic": "Reise",
     "anagram": "TRINKFLASCHE",
-    "scramble": "ECRHASNIKTFL"
+    "scramble": "ECRHASNIKTFL",
+    "retired": true
   },
   {
     "id": "v4-riddle-255",
@@ -9540,7 +9739,8 @@
     "answer": "Eine passende Lösung: Kombizange.",
     "topic": "Werkstatt",
     "anagram": "KOMBIZANGE",
-    "scramble": "KBIOMAGZEN"
+    "scramble": "KBIOMAGZEN",
+    "retired": true
   },
   {
     "id": "v4-riddle-256",
@@ -9549,7 +9749,8 @@
     "answer": "Eine passende Lösung: Tuba.",
     "topic": "Musik",
     "anagram": "TUBA",
-    "scramble": "UTAB"
+    "scramble": "UTAB",
+    "retired": true
   },
   {
     "id": "v4-riddle-257",
@@ -9558,7 +9759,8 @@
     "answer": "Eine passende Lösung: Strumpf.",
     "topic": "Kleidung",
     "anagram": "STRUMPF",
-    "scramble": "TUPMFRS"
+    "scramble": "TUPMFRS",
+    "retired": true
   },
   {
     "id": "v4-riddle-258",
@@ -9567,7 +9769,8 @@
     "answer": "Eine passende Lösung: Schalter.",
     "topic": "Technik",
     "anagram": "SCHALTER",
-    "scramble": "CSALTREH"
+    "scramble": "CSALTREH",
+    "retired": true
   },
   {
     "id": "v4-riddle-259",
@@ -9576,7 +9779,8 @@
     "answer": "Eine passende Lösung: Barren.",
     "topic": "Sport",
     "anagram": "BARREN",
-    "scramble": "ERANRB"
+    "scramble": "ERANRB",
+    "retired": true
   },
   {
     "id": "v4-riddle-260",
@@ -9585,7 +9789,8 @@
     "answer": "Eine passende Lösung: Limette.",
     "topic": "Essen",
     "anagram": "LIMETTE",
-    "scramble": "LTMETEI"
+    "scramble": "LTMETEI",
+    "retired": true
   },
   {
     "id": "v4-riddle-261",
@@ -9594,7 +9799,8 @@
     "answer": "Eine passende Lösung: Nashorn.",
     "topic": "Tierwelt",
     "anagram": "NASHORN",
-    "scramble": "SNARONH"
+    "scramble": "SNARONH",
+    "retired": true
   },
   {
     "id": "v4-riddle-262",
@@ -9603,7 +9809,8 @@
     "answer": "Eine passende Lösung: Gipfel.",
     "topic": "Natur",
     "anagram": "GIPFEL",
-    "scramble": "PIGELF"
+    "scramble": "PIGELF",
+    "retired": true
   },
   {
     "id": "v4-riddle-263",
@@ -9612,7 +9819,8 @@
     "answer": "Eine passende Lösung: Basilikum.",
     "topic": "Garten",
     "anagram": "BASILIKUM",
-    "scramble": "KIALMSIBU"
+    "scramble": "KIALMSIBU",
+    "retired": true
   },
   {
     "id": "v4-riddle-264",
@@ -9621,7 +9829,8 @@
     "answer": "Eine passende Lösung: Salzstreuer.",
     "topic": "Küche",
     "anagram": "SALZSTREUER",
-    "scramble": "SARTSZLEUER"
+    "scramble": "SARTSZLEUER",
+    "retired": true
   },
   {
     "id": "v4-riddle-265",
@@ -9630,7 +9839,8 @@
     "answer": "Eine passende Lösung: Nachttisch.",
     "topic": "Zuhause",
     "anagram": "NACHTTISCH",
-    "scramble": "NTCIHSACTH"
+    "scramble": "NTCIHSACTH",
+    "retired": true
   },
   {
     "id": "v4-riddle-266",
@@ -9639,7 +9849,8 @@
     "answer": "Eine passende Lösung: Rucksack.",
     "topic": "Reise",
     "anagram": "RUCKSACK",
-    "scramble": "CARKSUCK"
+    "scramble": "CARKSUCK",
+    "retired": true
   },
   {
     "id": "v4-riddle-267",
@@ -9648,7 +9859,8 @@
     "answer": "Eine passende Lösung: Pinzette.",
     "topic": "Werkstatt",
     "anagram": "PINZETTE",
-    "scramble": "NEPZTITE"
+    "scramble": "NEPZTITE",
+    "retired": true
   },
   {
     "id": "v4-riddle-268",
@@ -9657,7 +9869,8 @@
     "answer": "Eine passende Lösung: Waldhorn.",
     "topic": "Musik",
     "anagram": "WALDHORN",
-    "scramble": "LHRDOAWN"
+    "scramble": "LHRDOAWN",
+    "retired": true
   },
   {
     "id": "v4-riddle-269",
@@ -9666,7 +9879,8 @@
     "answer": "Eine passende Lösung: Socke.",
     "topic": "Kleidung",
     "anagram": "SOCKE",
-    "scramble": "OSKEC"
+    "scramble": "OSKEC",
+    "retired": true
   },
   {
     "id": "v4-riddle-270",
@@ -9675,7 +9889,8 @@
     "answer": "Eine passende Lösung: Sicherung.",
     "topic": "Technik",
     "anagram": "SICHERUNG",
-    "scramble": "EUGRCNHIS"
+    "scramble": "EUGRCNHIS",
+    "retired": true
   },
   {
     "id": "v4-riddle-271",
@@ -9684,7 +9899,8 @@
     "answer": "Eine passende Lösung: Ringe.",
     "topic": "Sport",
     "anagram": "RINGE",
-    "scramble": "IGNRE"
+    "scramble": "IGNRE",
+    "retired": true
   },
   {
     "id": "v4-riddle-272",
@@ -9693,7 +9909,8 @@
     "answer": "Eine passende Lösung: Orange.",
     "topic": "Essen",
     "anagram": "ORANGE",
-    "scramble": "RANOEG"
+    "scramble": "RANOEG",
+    "retired": true
   },
   {
     "id": "v4-riddle-273",
@@ -9702,7 +9919,8 @@
     "answer": "Eine passende Lösung: Flusspferd.",
     "topic": "Tierwelt",
     "anagram": "FLUSSPFERD",
-    "scramble": "LFUPSFRDES"
+    "scramble": "LFUPSFRDES",
+    "retired": true
   },
   {
     "id": "v4-riddle-274",
@@ -9711,7 +9929,8 @@
     "answer": "Eine passende Lösung: Hügel.",
     "topic": "Natur",
     "anagram": "HÜGEL",
-    "scramble": "GLHÜE"
+    "scramble": "GLHÜE",
+    "retired": true
   },
   {
     "id": "v4-riddle-275",
@@ -9720,7 +9939,8 @@
     "answer": "Eine passende Lösung: Petersilie.",
     "topic": "Garten",
     "anagram": "PETERSILIE",
-    "scramble": "IEESRTEILP"
+    "scramble": "IEESRTEILP",
+    "retired": true
   },
   {
     "id": "v4-riddle-276",
@@ -9729,7 +9949,8 @@
     "answer": "Eine passende Lösung: Pfeffermühle.",
     "topic": "Küche",
     "anagram": "PFEFFERMÜHLE",
-    "scramble": "FÜFERMPEFEHL"
+    "scramble": "FÜFERMPEFEHL",
+    "retired": true
   },
   {
     "id": "v4-riddle-277",
@@ -9738,7 +9959,8 @@
     "answer": "Eine passende Lösung: Wecker.",
     "topic": "Zuhause",
     "anagram": "WECKER",
-    "scramble": "WERECK"
+    "scramble": "WERECK",
+    "retired": true
   },
   {
     "id": "v4-riddle-278",
@@ -9747,7 +9969,8 @@
     "answer": "Eine passende Lösung: Wanderschuh.",
     "topic": "Reise",
     "anagram": "WANDERSCHUH",
-    "scramble": "WANHEURHCDS"
+    "scramble": "WANHEURHCDS",
+    "retired": true
   },
   {
     "id": "v4-riddle-279",
@@ -9756,7 +9979,8 @@
     "answer": "Eine passende Lösung: Schleifpapier.",
     "topic": "Werkstatt",
     "anagram": "SCHLEIFPAPIER",
-    "scramble": "IACPEFPELHIRS"
+    "scramble": "IACPEFPELHIRS",
+    "retired": true
   },
   {
     "id": "v4-riddle-280",
@@ -9765,7 +9989,8 @@
     "answer": "Eine passende Lösung: Akkordeon.",
     "topic": "Musik",
     "anagram": "AKKORDEON",
-    "scramble": "ARKDEONOK"
+    "scramble": "ARKDEONOK",
+    "retired": true
   },
   {
     "id": "v4-riddle-281",
@@ -9774,7 +9999,8 @@
     "answer": "Eine passende Lösung: Handschuh.",
     "topic": "Kleidung",
     "anagram": "HANDSCHUH",
-    "scramble": "HSHCDUHAN"
+    "scramble": "HSHCDUHAN",
+    "retired": true
   },
   {
     "id": "v4-riddle-282",
@@ -9783,7 +10009,8 @@
     "answer": "Eine passende Lösung: Glühlampe.",
     "topic": "Technik",
     "anagram": "GLÜHLAMPE",
-    "scramble": "LPGLÜHEAM"
+    "scramble": "LPGLÜHEAM",
+    "retired": true
   },
   {
     "id": "v4-riddle-283",
@@ -9792,7 +10019,8 @@
     "answer": "Eine passende Lösung: Trampolin.",
     "topic": "Sport",
     "anagram": "TRAMPOLIN",
-    "scramble": "ANTPLIORM"
+    "scramble": "ANTPLIORM",
+    "retired": true
   },
   {
     "id": "v4-riddle-284",
@@ -9801,7 +10029,8 @@
     "answer": "Eine passende Lösung: Mandarine.",
     "topic": "Essen",
     "anagram": "MANDARINE",
-    "scramble": "AMERANDIN"
+    "scramble": "AMERANDIN",
+    "retired": true
   },
   {
     "id": "v4-riddle-285",
@@ -9810,7 +10039,8 @@
     "answer": "Eine passende Lösung: Antelope.",
     "topic": "Tierwelt",
     "anagram": "ANTELOPE",
-    "scramble": "NEPOAELT"
+    "scramble": "NEPOAELT",
+    "retired": true
   },
   {
     "id": "v4-riddle-286",
@@ -9819,7 +10049,8 @@
     "answer": "Eine passende Lösung: Wüste.",
     "topic": "Natur",
     "anagram": "WÜSTE",
-    "scramble": "TWÜES"
+    "scramble": "TWÜES",
+    "retired": true
   },
   {
     "id": "v4-riddle-287",
@@ -9828,7 +10059,8 @@
     "answer": "Eine passende Lösung: Dill.",
     "topic": "Garten",
     "anagram": "DILL",
-    "scramble": "DLLI"
+    "scramble": "DLLI",
+    "retired": true
   },
   {
     "id": "v4-riddle-288",
@@ -9837,7 +10069,8 @@
     "answer": "Eine passende Lösung: Tassenuntersetzer.",
     "topic": "Küche",
     "anagram": "TASSENUNTERSETZER",
-    "scramble": "TRNESNATSRZEEUTES"
+    "scramble": "TRNESNATSRZEEUTES",
+    "retired": true
   },
   {
     "id": "v4-riddle-289",
@@ -9846,7 +10079,8 @@
     "answer": "Eine passende Lösung: Matratze.",
     "topic": "Zuhause",
     "anagram": "MATRATZE",
-    "scramble": "ATTZREMA"
+    "scramble": "ATTZREMA",
+    "retired": true
   },
   {
     "id": "v4-riddle-290",
@@ -9855,7 +10089,8 @@
     "answer": "Eine passende Lösung: Kartenmappe.",
     "topic": "Reise",
     "anagram": "KARTENMAPPE",
-    "scramble": "RTKPEEPAMAN"
+    "scramble": "RTKPEEPAMAN",
+    "retired": true
   },
   {
     "id": "v4-riddle-291",
@@ -9864,7 +10099,8 @@
     "answer": "Eine passende Lösung: Hobel.",
     "topic": "Werkstatt",
     "anagram": "HOBEL",
-    "scramble": "HBEOL"
+    "scramble": "HBEOL",
+    "retired": true
   },
   {
     "id": "v4-riddle-292",
@@ -9873,7 +10109,8 @@
     "answer": "Eine passende Lösung: Mundharmonika.",
     "topic": "Musik",
     "anagram": "MUNDHARMONIKA",
-    "scramble": "NRMNUIAODAKMH"
+    "scramble": "NRMNUIAODAKMH",
+    "retired": true
   },
   {
     "id": "v4-riddle-293",
@@ -9882,7 +10119,8 @@
     "answer": "Eine passende Lösung: Fäustling.",
     "topic": "Kleidung",
     "anagram": "FÄUSTLING",
-    "scramble": "TIUNFLÄGS"
+    "scramble": "TIUNFLÄGS",
+    "retired": true
   },
   {
     "id": "v4-riddle-294",
@@ -9891,7 +10129,8 @@
     "answer": "Eine passende Lösung: Leuchtdiode.",
     "topic": "Technik",
     "anagram": "LEUCHTDIODE",
-    "scramble": "LHUEDDOTCEI"
+    "scramble": "LHUEDDOTCEI",
+    "retired": true
   },
   {
     "id": "v4-riddle-295",
@@ -9900,7 +10139,8 @@
     "answer": "Eine passende Lösung: Kletterseil.",
     "topic": "Sport",
     "anagram": "KLETTERSEIL",
-    "scramble": "KLETTIESREL"
+    "scramble": "KLETTIESREL",
+    "retired": true
   },
   {
     "id": "v4-riddle-296",
@@ -9909,7 +10149,8 @@
     "answer": "Eine passende Lösung: Pomelo.",
     "topic": "Essen",
     "anagram": "POMELO",
-    "scramble": "OEMPOL"
+    "scramble": "OEMPOL",
+    "retired": true
   },
   {
     "id": "v4-riddle-297",
@@ -9918,7 +10159,8 @@
     "answer": "Eine passende Lösung: Gazelle.",
     "topic": "Tierwelt",
     "anagram": "GAZELLE",
-    "scramble": "LZAEGEL"
+    "scramble": "LZAEGEL",
+    "retired": true
   },
   {
     "id": "v4-riddle-298",
@@ -9927,7 +10169,8 @@
     "answer": "Eine passende Lösung: Steppe.",
     "topic": "Natur",
     "anagram": "STEPPE",
-    "scramble": "SEEPTP"
+    "scramble": "SEEPTP",
+    "retired": true
   },
   {
     "id": "v4-riddle-299",
@@ -9936,7 +10179,8 @@
     "answer": "Eine passende Lösung: Schnittlauch.",
     "topic": "Garten",
     "anagram": "SCHNITTLAUCH",
-    "scramble": "CAUTNLCHHITS"
+    "scramble": "CAUTNLCHHITS",
+    "retired": true
   },
   {
     "id": "v4-riddle-300",
@@ -9945,7 +10189,8 @@
     "answer": "Eine passende Lösung: Küchenwaage.",
     "topic": "Küche",
     "anagram": "KÜCHENWAAGE",
-    "scramble": "KAWGHACNEEÜ"
+    "scramble": "KAWGHACNEEÜ",
+    "retired": true
   },
   {
     "id": "v4-riddle-301",
@@ -9954,7 +10199,8 @@
     "answer": "Eine passende Lösung: Bettlaken.",
     "topic": "Zuhause",
     "anagram": "BETTLAKEN",
-    "scramble": "BKTLEATNE"
+    "scramble": "BKTLEATNE",
+    "retired": true
   },
   {
     "id": "v4-riddle-302",
@@ -9963,7 +10209,8 @@
     "answer": "Eine passende Lösung: Reiseführer.",
     "topic": "Reise",
     "anagram": "REISEFÜHRER",
-    "scramble": "FESÜEERRHRI"
+    "scramble": "FESÜEERRHRI",
+    "retired": true
   },
   {
     "id": "v4-riddle-303",
@@ -9972,7 +10219,8 @@
     "answer": "Eine passende Lösung: Raspel.",
     "topic": "Werkstatt",
     "anagram": "RASPEL",
-    "scramble": "RASELP"
+    "scramble": "RASELP",
+    "retired": true
   },
   {
     "id": "v4-riddle-304",
@@ -9981,7 +10229,8 @@
     "answer": "Eine passende Lösung: Triangel.",
     "topic": "Musik",
     "anagram": "TRIANGEL",
-    "scramble": "RATGNLIE"
+    "scramble": "RATGNLIE",
+    "retired": true
   },
   {
     "id": "v4-riddle-305",
@@ -9990,7 +10239,8 @@
     "answer": "Eine passende Lösung: Schal.",
     "topic": "Kleidung",
     "anagram": "SCHAL",
-    "scramble": "ALCHS"
+    "scramble": "ALCHS",
+    "retired": true
   },
   {
     "id": "v4-riddle-306",
@@ -9999,7 +10249,8 @@
     "answer": "Eine passende Lösung: Batterie.",
     "topic": "Technik",
     "anagram": "BATTERIE",
-    "scramble": "AITEBTRE"
+    "scramble": "AITEBTRE",
+    "retired": true
   },
   {
     "id": "v4-riddle-307",
@@ -10008,7 +10259,8 @@
     "answer": "Eine passende Lösung: Karabiner.",
     "topic": "Sport",
     "anagram": "KARABINER",
-    "scramble": "NAIKERABR"
+    "scramble": "NAIKERABR",
+    "retired": true
   },
   {
     "id": "v4-riddle-308",
@@ -10017,7 +10269,8 @@
     "answer": "Eine passende Lösung: Kiwi.",
     "topic": "Essen",
     "anagram": "KIWI",
-    "scramble": "WIIK"
+    "scramble": "WIIK",
+    "retired": true
   },
   {
     "id": "v4-riddle-309",
@@ -10026,7 +10279,8 @@
     "answer": "Eine passende Lösung: Kamel.",
     "topic": "Tierwelt",
     "anagram": "KAMEL",
-    "scramble": "KMALE"
+    "scramble": "KMALE",
+    "retired": true
   },
   {
     "id": "v4-riddle-310",
@@ -10035,7 +10289,8 @@
     "answer": "Eine passende Lösung: Moor.",
     "topic": "Natur",
     "anagram": "MOOR",
-    "scramble": "OORM"
+    "scramble": "OORM",
+    "retired": true
   },
   {
     "id": "v4-riddle-311",
@@ -10044,7 +10299,8 @@
     "answer": "Eine passende Lösung: Fenchel.",
     "topic": "Garten",
     "anagram": "FENCHEL",
-    "scramble": "ENCLEHF"
+    "scramble": "ENCLEHF",
+    "retired": true
   },
   {
     "id": "v4-riddle-312",
@@ -10053,7 +10309,8 @@
     "answer": "Eine passende Lösung: Wasserkocher.",
     "topic": "Küche",
     "anagram": "WASSERKOCHER",
-    "scramble": "SSEOCKHEWARR"
+    "scramble": "SSEOCKHEWARR",
+    "retired": true
   },
   {
     "id": "v4-riddle-313",
@@ -10062,7 +10319,8 @@
     "answer": "Eine passende Lösung: Kopfkissen.",
     "topic": "Zuhause",
     "anagram": "KOPFKISSEN",
-    "scramble": "PNSOKSEIKF"
+    "scramble": "PNSOKSEIKF",
+    "retired": true
   },
   {
     "id": "v4-riddle-314",
@@ -10071,7 +10329,8 @@
     "answer": "Eine passende Lösung: Stadtplan.",
     "topic": "Reise",
     "anagram": "STADTPLAN",
-    "scramble": "LADPTATSN"
+    "scramble": "LADPTATSN",
+    "retired": true
   },
   {
     "id": "v4-riddle-315",
@@ -10080,7 +10339,8 @@
     "answer": "Eine passende Lösung: Stemmeisen.",
     "topic": "Werkstatt",
     "anagram": "STEMMEISEN",
-    "scramble": "MEMNTSSIEE"
+    "scramble": "MEMNTSSIEE",
+    "retired": true
   },
   {
     "id": "v4-riddle-316",
@@ -10089,7 +10349,8 @@
     "answer": "Eine passende Lösung: Pauke.",
     "topic": "Musik",
     "anagram": "PAUKE",
-    "scramble": "PUAKE"
+    "scramble": "PUAKE",
+    "retired": true
   },
   {
     "id": "v4-riddle-317",
@@ -10098,7 +10359,8 @@
     "answer": "Eine passende Lösung: Halstuch.",
     "topic": "Kleidung",
     "anagram": "HALSTUCH",
-    "scramble": "ASHLTHUC"
+    "scramble": "ASHLTHUC",
+    "retired": true
   },
   {
     "id": "v4-riddle-318",
@@ -10107,7 +10369,8 @@
     "answer": "Eine passende Lösung: Akku.",
     "topic": "Technik",
     "anagram": "AKKU",
-    "scramble": "KKUA"
+    "scramble": "KKUA",
+    "retired": true
   },
   {
     "id": "v4-riddle-319",
@@ -10116,7 +10379,8 @@
     "answer": "Eine passende Lösung: Klettergurt.",
     "topic": "Sport",
     "anagram": "KLETTERGURT",
-    "scramble": "RTTGTEERUKL"
+    "scramble": "RTTGTEERUKL",
+    "retired": true
   },
   {
     "id": "v4-riddle-320",
@@ -10125,7 +10389,8 @@
     "answer": "Eine passende Lösung: Feige.",
     "topic": "Essen",
     "anagram": "FEIGE",
-    "scramble": "FGEEI"
+    "scramble": "FGEEI",
+    "retired": true
   },
   {
     "id": "v4-riddle-321",
@@ -10134,7 +10399,8 @@
     "answer": "Eine passende Lösung: Alpaka.",
     "topic": "Tierwelt",
     "anagram": "ALPAKA",
-    "scramble": "LAAKAP"
+    "scramble": "LAAKAP",
+    "retired": true
   },
   {
     "id": "v4-riddle-322",
@@ -10143,7 +10409,8 @@
     "answer": "Eine passende Lösung: Sumpf.",
     "topic": "Natur",
     "anagram": "SUMPF",
-    "scramble": "MPFSU"
+    "scramble": "MPFSU",
+    "retired": true
   },
   {
     "id": "v4-riddle-323",
@@ -10152,7 +10419,8 @@
     "answer": "Eine passende Lösung: Holunder.",
     "topic": "Garten",
     "anagram": "HOLUNDER",
-    "scramble": "HLERDUNO"
+    "scramble": "HLERDUNO",
+    "retired": true
   },
   {
     "id": "v4-riddle-324",
@@ -10161,7 +10429,8 @@
     "answer": "Eine passende Lösung: Toaster.",
     "topic": "Küche",
     "anagram": "TOASTER",
-    "scramble": "ATRSOET"
+    "scramble": "ATRSOET",
+    "retired": true
   },
   {
     "id": "v4-riddle-325",
@@ -10170,7 +10439,8 @@
     "answer": "Eine passende Lösung: Kleiderschrank.",
     "topic": "Zuhause",
     "anagram": "KLEIDERSCHRANK",
-    "scramble": "ICSDKHANEKLRRE"
+    "scramble": "ICSDKHANEKLRRE",
+    "retired": true
   },
   {
     "id": "v4-riddle-326",
@@ -10179,7 +10449,8 @@
     "answer": "Eine passende Lösung: Fähre.",
     "topic": "Reise",
     "anagram": "FÄHRE",
-    "scramble": "RFÄEH"
+    "scramble": "RFÄEH",
+    "retired": true
   },
   {
     "id": "v4-riddle-327",
@@ -10188,7 +10459,8 @@
     "answer": "Eine passende Lösung: Meissel.",
     "topic": "Werkstatt",
     "anagram": "MEISSEL",
-    "scramble": "MSIESLE"
+    "scramble": "MSIESLE",
+    "retired": true
   },
   {
     "id": "v4-riddle-328",
@@ -10197,7 +10469,8 @@
     "answer": "Eine passende Lösung: Becken.",
     "topic": "Musik",
     "anagram": "BECKEN",
-    "scramble": "NKBCEE"
+    "scramble": "NKBCEE",
+    "retired": true
   },
   {
     "id": "v4-riddle-329",
@@ -10206,7 +10479,8 @@
     "answer": "Eine passende Lösung: Mütze.",
     "topic": "Kleidung",
     "anagram": "MÜTZE",
-    "scramble": "EÜMZT"
+    "scramble": "EÜMZT",
+    "retired": true
   },
   {
     "id": "v4-riddle-330",
@@ -10215,7 +10489,8 @@
     "answer": "Eine passende Lösung: Antenne.",
     "topic": "Technik",
     "anagram": "ANTENNE",
-    "scramble": "ENNNEAT"
+    "scramble": "ENNNEAT",
+    "retired": true
   },
   {
     "id": "v4-riddle-331",
@@ -10224,7 +10499,8 @@
     "answer": "Eine passende Lösung: Taucherbrille.",
     "topic": "Sport",
     "anagram": "TAUCHERBRILLE",
-    "scramble": "LRUBECRLIEHAT"
+    "scramble": "LRUBECRLIEHAT",
+    "retired": true
   },
   {
     "id": "v4-riddle-332",
@@ -10233,7 +10509,8 @@
     "answer": "Eine passende Lösung: Dattel.",
     "topic": "Essen",
     "anagram": "DATTEL",
-    "scramble": "LTEDAT"
+    "scramble": "LTEDAT",
+    "retired": true
   },
   {
     "id": "v4-riddle-333",
@@ -10242,7 +10519,8 @@
     "answer": "Eine passende Lösung: Lama.",
     "topic": "Tierwelt",
     "anagram": "LAMA",
-    "scramble": "AMAL"
+    "scramble": "AMAL",
+    "retired": true
   },
   {
     "id": "v4-riddle-334",
@@ -10251,7 +10529,8 @@
     "answer": "Eine passende Lösung: Heide.",
     "topic": "Natur",
     "anagram": "HEIDE",
-    "scramble": "EDIEH"
+    "scramble": "EDIEH",
+    "retired": true
   },
   {
     "id": "v4-riddle-335",
@@ -10260,7 +10539,8 @@
     "answer": "Eine passende Lösung: Haselnuss.",
     "topic": "Garten",
     "anagram": "HASELNUSS",
-    "scramble": "HSNSSALEU"
+    "scramble": "HSNSSALEU",
+    "retired": true
   },
   {
     "id": "v4-riddle-336",
@@ -10269,7 +10549,8 @@
     "answer": "Eine passende Lösung: Kühlschrank.",
     "topic": "Küche",
     "anagram": "KÜHLSCHRANK",
-    "scramble": "RLCHKKÜHASN"
+    "scramble": "RLCHKKÜHASN",
+    "retired": true
   },
   {
     "id": "v4-riddle-337",
@@ -10278,7 +10559,8 @@
     "answer": "Eine passende Lösung: Kommode.",
     "topic": "Zuhause",
     "anagram": "KOMMODE",
-    "scramble": "KMDOEMO"
+    "scramble": "KMDOEMO",
+    "retired": true
   },
   {
     "id": "v4-riddle-338",
@@ -10287,7 +10569,8 @@
     "answer": "Eine passende Lösung: Segelboot.",
     "topic": "Reise",
     "anagram": "SEGELBOOT",
-    "scramble": "GLSOEOTBE"
+    "scramble": "GLSOEOTBE",
+    "retired": true
   },
   {
     "id": "v4-riddle-339",
@@ -10296,7 +10579,8 @@
     "answer": "Eine passende Lösung: Lötkolben.",
     "topic": "Werkstatt",
     "anagram": "LÖTKOLBEN",
-    "scramble": "ÖKNLELBOT"
+    "scramble": "ÖKNLELBOT",
+    "retired": true
   },
   {
     "id": "v4-riddle-340",
@@ -10305,7 +10589,8 @@
     "answer": "Eine passende Lösung: Glockenspiel.",
     "topic": "Musik",
     "anagram": "GLOCKENSPIEL",
-    "scramble": "SCEGEPLLIONK"
+    "scramble": "SCEGEPLLIONK",
+    "retired": true
   },
   {
     "id": "v4-riddle-341",
@@ -10314,7 +10599,8 @@
     "answer": "Eine passende Lösung: Hut.",
     "topic": "Kleidung",
     "anagram": "HUT",
-    "scramble": "UTH"
+    "scramble": "UTH",
+    "retired": true
   },
   {
     "id": "v4-riddle-342",
@@ -10323,7 +10609,8 @@
     "answer": "Eine passende Lösung: Fernbedienung.",
     "topic": "Technik",
     "anagram": "FERNBEDIENUNG",
-    "scramble": "RNBDFUNEINEEG"
+    "scramble": "RNBDFUNEINEEG",
+    "retired": true
   },
   {
     "id": "v4-riddle-343",
@@ -10332,7 +10619,8 @@
     "answer": "Eine passende Lösung: Schwimmflosse.",
     "topic": "Sport",
     "anagram": "SCHWIMMFLOSSE",
-    "scramble": "HISELSWOMSCMF"
+    "scramble": "HISELSWOMSCMF",
+    "retired": true
   },
   {
     "id": "v4-riddle-344",
@@ -10341,7 +10629,8 @@
     "answer": "Eine passende Lösung: Granatapfel.",
     "topic": "Essen",
     "anagram": "GRANATAPFEL",
-    "scramble": "RTNAPGAELFA"
+    "scramble": "RTNAPGAELFA",
+    "retired": true
   },
   {
     "id": "v4-riddle-345",
@@ -10350,7 +10639,8 @@
     "answer": "Eine passende Lösung: Pinguin.",
     "topic": "Tierwelt",
     "anagram": "PINGUIN",
-    "scramble": "UIPGNIN"
+    "scramble": "UIPGNIN",
+    "retired": true
   },
   {
     "id": "v4-riddle-346",
@@ -10359,7 +10649,8 @@
     "answer": "Eine passende Lösung: Tau.",
     "topic": "Natur",
     "anagram": "TAU",
-    "scramble": "AUT"
+    "scramble": "AUT",
+    "retired": true
   },
   {
     "id": "v4-riddle-347",
@@ -10368,7 +10659,8 @@
     "answer": "Eine passende Lösung: Walnuss.",
     "topic": "Garten",
     "anagram": "WALNUSS",
-    "scramble": "ASNSUWL"
+    "scramble": "ASNSUWL",
+    "retired": true
   },
   {
     "id": "v4-riddle-348",
@@ -10377,7 +10669,8 @@
     "answer": "Eine passende Lösung: Gefrierschrank.",
     "topic": "Küche",
     "anagram": "GEFRIERSCHRANK",
-    "scramble": "ERESIKRAGRHNFC"
+    "scramble": "ERESIKRAGRHNFC",
+    "retired": true
   },
   {
     "id": "v4-riddle-349",
@@ -10386,7 +10679,8 @@
     "answer": "Eine passende Lösung: Bücherregal.",
     "topic": "Zuhause",
     "anagram": "BÜCHERREGAL",
-    "scramble": "GAREÜEBCHLR"
+    "scramble": "GAREÜEBCHLR",
+    "retired": true
   },
   {
     "id": "v4-riddle-350",
@@ -10395,7 +10689,8 @@
     "answer": "Eine passende Lösung: Kajak.",
     "topic": "Reise",
     "anagram": "KAJAK",
-    "scramble": "KJAKA"
+    "scramble": "KJAKA",
+    "retired": true
   },
   {
     "id": "v4-riddle-351",
@@ -10404,7 +10699,8 @@
     "answer": "Eine passende Lösung: Klebepistole.",
     "topic": "Werkstatt",
     "anagram": "KLEBEPISTOLE",
-    "scramble": "EBKPELTESLIO"
+    "scramble": "EBKPELTESLIO",
+    "retired": true
   },
   {
     "id": "v4-riddle-352",
@@ -10413,7 +10709,8 @@
     "answer": "Eine passende Lösung: Xylofon.",
     "topic": "Musik",
     "anagram": "XYLOFON",
-    "scramble": "NOOFLXY"
+    "scramble": "NOOFLXY",
+    "retired": true
   },
   {
     "id": "v4-riddle-353",
@@ -10422,7 +10719,8 @@
     "answer": "Eine passende Lösung: Kappe.",
     "topic": "Kleidung",
     "anagram": "KAPPE",
-    "scramble": "PKEPA"
+    "scramble": "PKEPA",
+    "retired": true
   },
   {
     "id": "v4-riddle-354",
@@ -10431,7 +10729,8 @@
     "answer": "Eine passende Lösung: Kamera.",
     "topic": "Technik",
     "anagram": "KAMERA",
-    "scramble": "KRMEAA"
+    "scramble": "KRMEAA",
+    "retired": true
   },
   {
     "id": "v4-riddle-355",
@@ -10674,6 +10973,2087 @@
       "label": "Yamaha · Musical Instrument Guide"
     },
     "checked": "2026-10-10"
+  },
+  {
+    "id": "v6-thought-0",
+    "kind": "thought",
+    "text": "Du darfst stolz sein, auch wenn es niemand sonst bemerkt."
+  },
+  {
+    "id": "v6-thought-1",
+    "kind": "thought",
+    "text": "Ein kleiner Schritt bleibt ein Schritt."
+  },
+  {
+    "id": "v6-thought-2",
+    "kind": "thought",
+    "text": "Nicht jeder Tag muss dein bester sein."
+  },
+  {
+    "id": "v6-thought-3",
+    "kind": "thought",
+    "text": "Du musst nicht alles heute schaffen."
+  },
+  {
+    "id": "v6-thought-4",
+    "kind": "thought",
+    "text": "Eine Pause ist kein verlorener Fortschritt."
+  },
+  {
+    "id": "v6-thought-5",
+    "kind": "thought",
+    "text": "Manchmal braucht eine gute Idee erst ein wenig Ruhe."
+  },
+  {
+    "id": "v6-thought-6",
+    "kind": "thought",
+    "text": "Was dir heute schwerfällt, kann morgen vertraut sein."
+  },
+  {
+    "id": "v6-thought-7",
+    "kind": "thought",
+    "text": "Du darfst etwas nur deshalb tun, weil es dir Freude macht."
+  },
+  {
+    "id": "v6-thought-8",
+    "kind": "thought",
+    "text": "Auch ein Umweg kann dir zeigen, was du gesucht hast."
+  },
+  {
+    "id": "v6-thought-9",
+    "kind": "thought",
+    "text": "Du brauchst keinen perfekten Tag für einen schönen Moment."
+  },
+  {
+    "id": "v6-thought-10",
+    "kind": "thought",
+    "text": "Lass dir von einem schlechten Moment nicht den ganzen Tag erzählen."
+  },
+  {
+    "id": "v6-thought-11",
+    "kind": "thought",
+    "text": "Geduld heißt auch, freundlich mit dir selbst zu bleiben."
+  },
+  {
+    "id": "v6-thought-12",
+    "kind": "thought",
+    "text": "Du darfst deine Meinung ändern, wenn du etwas Neues lernst."
+  },
+  {
+    "id": "v6-thought-13",
+    "kind": "thought",
+    "text": "Für einen Neuanfang muss nicht Montag sein."
+  },
+  {
+    "id": "v6-thought-14",
+    "kind": "thought",
+    "text": "Ein bisschen Neugier kann mehr bewegen als ein großer Plan."
+  },
+  {
+    "id": "v6-thought-15",
+    "kind": "thought",
+    "text": "Es gibt Tage zum Wachsen und Tage zum Durchatmen."
+  },
+  {
+    "id": "v6-thought-16",
+    "kind": "thought",
+    "text": "Du musst deine Freude nicht erst verdienen."
+  },
+  {
+    "id": "v6-thought-17",
+    "kind": "thought",
+    "text": "Dein Tempo darf zu deinem Leben passen."
+  },
+  {
+    "id": "v6-thought-18",
+    "kind": "thought",
+    "text": "Etwas zum ersten Mal zu versuchen ist schon mutig."
+  },
+  {
+    "id": "v6-thought-19",
+    "kind": "thought",
+    "text": "Nicht alles, was wichtig ist, lässt sich zählen."
+  },
+  {
+    "id": "v6-thought-20",
+    "kind": "thought",
+    "text": "Heute darf auch etwas leicht sein."
+  },
+  {
+    "id": "v6-thought-21",
+    "kind": "thought",
+    "text": "Du kannst etwas ernst nehmen und trotzdem darüber lachen."
+  },
+  {
+    "id": "v6-thought-22",
+    "kind": "thought",
+    "text": "Eine freundliche Nachricht braucht keinen besonderen Anlass."
+  },
+  {
+    "id": "v6-thought-23",
+    "kind": "thought",
+    "text": "Du darfst zufrieden sein, bevor alles fertig ist."
+  },
+  {
+    "id": "v6-thought-24",
+    "kind": "thought",
+    "text": "Ein guter Gedanke darf klein anfangen."
+  },
+  {
+    "id": "v6-thought-25",
+    "kind": "thought",
+    "text": "Du bist mehr als das, was du an einem Tag erledigst."
+  },
+  {
+    "id": "v6-thought-26",
+    "kind": "thought",
+    "text": "Manchmal ist Weitermachen mutig. Manchmal ist Aufhören klug."
+  },
+  {
+    "id": "v6-thought-27",
+    "kind": "thought",
+    "text": "Ein ruhiger Moment muss nichts leisten."
+  },
+  {
+    "id": "v6-thought-28",
+    "kind": "thought",
+    "text": "Vielleicht verdient heute etwas Kleines deine ganze Aufmerksamkeit."
+  },
+  {
+    "id": "v6-thought-29",
+    "kind": "thought",
+    "text": "Du darfst einen schönen Moment genießen, ohne ihn festzuhalten."
+  },
+  {
+    "id": "v6-extra-0",
+    "kind": "thought",
+    "text": "Ein Gespräch muss nicht mit einer Lösung enden, um gutzutun."
+  },
+  {
+    "id": "v6-extra-1",
+    "kind": "thought",
+    "text": "Was würdest du ausprobieren, wenn niemand es bewerten würde?"
+  },
+  {
+    "id": "v6-extra-2",
+    "kind": "thought",
+    "text": "Vielleicht ist die richtige Frage wichtiger als die schnelle Antwort."
+  },
+  {
+    "id": "v6-extra-3",
+    "kind": "thought",
+    "text": "Du kannst zuhören, ohne die ganze Last für jemanden zu tragen."
+  },
+  {
+    "id": "v6-extra-4",
+    "kind": "thought",
+    "text": "Ein Lieblingsort darf ganz unspektakulär sein."
+  },
+  {
+    "id": "v6-extra-5",
+    "kind": "thought",
+    "text": "Es ist schön, wenn jemand deinen Namen mit Freude sagt."
+  },
+  {
+    "id": "v6-extra-6",
+    "kind": "thought",
+    "text": "Manche Erinnerungen passen in einen einzigen Geruch."
+  },
+  {
+    "id": "v6-extra-7",
+    "kind": "thought",
+    "text": "Welches Lied würdest du jemandem zeigen, der dich kennenlernen möchte?"
+  },
+  {
+    "id": "v6-extra-8",
+    "kind": "thought",
+    "text": "Du musst nicht jede Einladung annehmen, um dazuzugehören."
+  },
+  {
+    "id": "v6-extra-9",
+    "kind": "thought",
+    "text": "Bei manchen Menschen muss Schweigen nicht gefüllt werden."
+  },
+  {
+    "id": "v6-extra-10",
+    "kind": "thought",
+    "text": "Was hat dich überrascht, obwohl du es schon oft gesehen hast?"
+  },
+  {
+    "id": "v6-extra-11",
+    "kind": "thought",
+    "text": "Etwas Altes zu reparieren kann sich besser anfühlen, als etwas Neues zu kaufen."
+  },
+  {
+    "id": "v6-extra-12",
+    "kind": "thought",
+    "text": "Ein handgeschriebener Zettel hat seine eigene Stimme."
+  },
+  {
+    "id": "v6-extra-13",
+    "kind": "thought",
+    "text": "Vielleicht wartet eine schöne Erinnerung noch darauf, dass du sie machst."
+  },
+  {
+    "id": "v6-extra-14",
+    "kind": "thought",
+    "text": "Was wäre ein guter Name für deinen heutigen Tag?"
+  },
+  {
+    "id": "v6-extra-15",
+    "kind": "thought",
+    "text": "Auch Erwachsene dürfen Anfänger sein."
+  },
+  {
+    "id": "v6-extra-16",
+    "kind": "thought",
+    "text": "Ein Fenster hat denselben Rahmen und jeden Tag ein anderes Bild."
+  },
+  {
+    "id": "v6-extra-17",
+    "kind": "thought",
+    "text": "Vielleicht brauchst du gerade weniger Antworten und mehr frische Luft."
+  },
+  {
+    "id": "v6-extra-18",
+    "kind": "thought",
+    "text": "Nicht jede freie Minute muss gefüllt werden."
+  },
+  {
+    "id": "v6-extra-19",
+    "kind": "thought",
+    "text": "Ein Danke verliert seinen Wert nicht durch Gebrauch."
+  },
+  {
+    "id": "v6-extra-20",
+    "kind": "thought",
+    "text": "Ein ehrliches „Wie geht es dir?“ kann einen Abend verändern."
+  },
+  {
+    "id": "v6-extra-21",
+    "kind": "thought",
+    "text": "Welche Kleinigkeit würde deinem morgigen Ich Freude machen?"
+  },
+  {
+    "id": "v6-extra-22",
+    "kind": "thought",
+    "text": "Ein guter Zuhörer lässt auch unfertige Gedanken gelten."
+  },
+  {
+    "id": "v6-extra-23",
+    "kind": "thought",
+    "text": "Du kannst etwas vermissen und trotzdem froh sein, wo du jetzt bist."
+  },
+  {
+    "id": "v6-extra-24",
+    "kind": "thought",
+    "text": "Nicht jede schöne Sache muss ein Hobby werden."
+  },
+  {
+    "id": "v6-extra-25",
+    "kind": "thought",
+    "text": "Es darf Bücher geben, die du nie zu Ende liest."
+  },
+  {
+    "id": "v6-extra-26",
+    "kind": "thought",
+    "text": "Ein Spaziergang braucht kein Ziel."
+  },
+  {
+    "id": "v6-extra-27",
+    "kind": "thought",
+    "text": "Welche Farbe hätte dein Lieblingsgeräusch?"
+  },
+  {
+    "id": "v6-extra-28",
+    "kind": "thought",
+    "text": "Manche Freundschaften gehen nach langer Pause mitten im Satz weiter."
+  },
+  {
+    "id": "v6-extra-29",
+    "kind": "thought",
+    "text": "Manchmal ist ein leerer Kalender eine gute Nachricht."
+  },
+  {
+    "id": "v6-extra-30",
+    "kind": "thought",
+    "text": "Was du liebst, muss nicht allen gefallen."
+  },
+  {
+    "id": "v6-extra-31",
+    "kind": "thought",
+    "text": "Eine ehrliche Entschuldigung braucht kein „aber“."
+  },
+  {
+    "id": "v6-extra-32",
+    "kind": "thought",
+    "text": "Du musst nicht aus jedem Erlebnis eine Lektion machen."
+  },
+  {
+    "id": "v6-extra-33",
+    "kind": "thought",
+    "text": "Manches versteht man erst, wenn man jemandem davon erzählt."
+  },
+  {
+    "id": "v6-extra-34",
+    "kind": "thought",
+    "text": "Welche Gewohnheit würdest du behalten, wenn niemand sie bemerkt?"
+  },
+  {
+    "id": "v6-extra-35",
+    "kind": "thought",
+    "text": "Zuhause kann die Art sein, wie dich jemand begrüßt."
+  },
+  {
+    "id": "v6-extra-36",
+    "kind": "thought",
+    "text": "Ein vertrauter Weg sieht im Regen plötzlich anders aus."
+  },
+  {
+    "id": "v6-extra-37",
+    "kind": "thought",
+    "text": "Du darfst eine Grenze setzen, ohne einen Vortrag darüber zu halten."
+  },
+  {
+    "id": "v6-extra-38",
+    "kind": "thought",
+    "text": "Dankbarkeit und der Wunsch nach Veränderung dürfen nebeneinander existieren."
+  },
+  {
+    "id": "v6-extra-39",
+    "kind": "thought",
+    "text": "Was würdest du gern mit eigenen Händen herstellen?"
+  },
+  {
+    "id": "v6-extra-40",
+    "kind": "thought",
+    "text": "Ein guter Rat lässt dir die Entscheidung."
+  },
+  {
+    "id": "v6-extra-41",
+    "kind": "thought",
+    "text": "Manchmal braucht jemand Gesellschaft statt Verbesserungsvorschläge."
+  },
+  {
+    "id": "v6-extra-42",
+    "kind": "thought",
+    "text": "Manche Abende werden besser, sobald das große Licht aus ist."
+  },
+  {
+    "id": "v6-extra-43",
+    "kind": "thought",
+    "text": "Ein Lieblingsbecher ist selten nur ein Becher."
+  },
+  {
+    "id": "v6-extra-44",
+    "kind": "thought",
+    "text": "Du darfst etwas schön finden, ohne erklären zu können, warum."
+  },
+  {
+    "id": "v6-extra-45",
+    "kind": "thought",
+    "text": "Welche Erinnerung würdest du gern für eine Minute besuchen?"
+  },
+  {
+    "id": "v6-extra-46",
+    "kind": "thought",
+    "text": "Ein gutes Gespräch kann auf einer Parkbank beginnen."
+  },
+  {
+    "id": "v6-extra-47",
+    "kind": "thought",
+    "text": "Was leicht aussieht, hat manchmal lange Übung hinter sich."
+  },
+  {
+    "id": "v6-extra-48",
+    "kind": "thought",
+    "text": "Du kannst eine Meinung haben und trotzdem neugierig bleiben."
+  },
+  {
+    "id": "v6-extra-49",
+    "kind": "thought",
+    "text": "Es lohnt sich, Menschen gelegentlich neu kennenzulernen."
+  },
+  {
+    "id": "v6-extra-50",
+    "kind": "thought",
+    "text": "Ein Kompliment darf konkret sein: „Das hast du aufmerksam gemacht.“"
+  },
+  {
+    "id": "v6-extra-51",
+    "kind": "thought",
+    "text": "Welche kleine Tradition möchtest du erfinden?"
+  },
+  {
+    "id": "v6-extra-52",
+    "kind": "thought",
+    "text": "Ein Tisch voller Krümel kann von einem schönen Nachmittag erzählen."
+  },
+  {
+    "id": "v6-extra-53",
+    "kind": "thought",
+    "text": "Manchmal ist das Beste an einem Ausflug der gemeinsame Heimweg."
+  },
+  {
+    "id": "v6-extra-54",
+    "kind": "thought",
+    "text": "Du musst nicht überall erreichbar sein, um für jemanden da zu sein."
+  },
+  {
+    "id": "v6-extra-55",
+    "kind": "thought",
+    "text": "Etwas zu verschenken kann ihm eine neue Geschichte geben."
+  },
+  {
+    "id": "v6-extra-56",
+    "kind": "thought",
+    "text": "Welche Frage würdest du einem Menschen aus deiner Kindheit gern stellen?"
+  },
+  {
+    "id": "v6-extra-57",
+    "kind": "thought",
+    "text": "Ein Morgen darf gut sein, auch wenn der Plan nicht aufgeht."
+  },
+  {
+    "id": "v6-extra-58",
+    "kind": "thought",
+    "text": "Vielleicht ist dein Lieblingsplatz näher, als du denkst."
+  },
+  {
+    "id": "v6-extra-59",
+    "kind": "thought",
+    "text": "Ein Gedanke kann sich verändern, während du ihn aufschreibst."
+  },
+  {
+    "id": "v6-extra-60",
+    "kind": "thought",
+    "text": "Du darfst etwas behalten, weil es dich an jemanden erinnert."
+  },
+  {
+    "id": "v6-extra-61",
+    "kind": "thought",
+    "text": "Wem würdest du gern sagen, dass du noch an ihn denkst?"
+  },
+  {
+    "id": "v6-extra-62",
+    "kind": "thought",
+    "text": "Ein Fehler ist leichter zu besprechen, wenn niemand daraus deine ganze Person macht."
+  },
+  {
+    "id": "v6-extra-63",
+    "kind": "thought",
+    "text": "Manchmal zeigt sich Mut darin, eine Frage zu stellen."
+  },
+  {
+    "id": "v6-extra-64",
+    "kind": "thought",
+    "text": "Du kannst ein Nein freundlich sagen und es trotzdem ernst meinen."
+  },
+  {
+    "id": "v6-extra-65",
+    "kind": "thought",
+    "text": "Welche Aussicht würdest du gern mit jemandem teilen?"
+  },
+  {
+    "id": "v6-extra-66",
+    "kind": "thought",
+    "text": "Eine Küche kann nach Zuhause riechen, bevor jemand ein Wort sagt."
+  },
+  {
+    "id": "v6-extra-67",
+    "kind": "thought",
+    "text": "Es ist schön, wenn jemand weiß, wie du deinen Tee magst."
+  },
+  {
+    "id": "v6-extra-68",
+    "kind": "thought",
+    "text": "„Das weiß ich nicht“ kann ein interessantes Gespräch eröffnen."
+  },
+  {
+    "id": "v6-extra-69",
+    "kind": "thought",
+    "text": "Nicht jede Abweichung vom Plan ist ein Problem."
+  },
+  {
+    "id": "v6-extra-70",
+    "kind": "thought",
+    "text": "Du darfst ein Foto machen. Du darfst den Moment auch einfach ansehen."
+  },
+  {
+    "id": "v6-extra-71",
+    "kind": "thought",
+    "text": "Was würdest du einem Besucher an deinem Wohnort zuerst zeigen?"
+  },
+  {
+    "id": "v6-extra-72",
+    "kind": "thought",
+    "text": "Manches ist gerade deshalb kostbar, weil es alltäglich ist."
+  },
+  {
+    "id": "v6-extra-73",
+    "kind": "thought",
+    "text": "Ein freundlicher Blick ist eine kleine Form von Gastfreundschaft."
+  },
+  {
+    "id": "v6-extra-74",
+    "kind": "thought",
+    "text": "Du musst nicht jeden Streit gewinnen, um dir treu zu bleiben."
+  },
+  {
+    "id": "v6-extra-75",
+    "kind": "thought",
+    "text": "Welche Tätigkeit kannst du heute bewusst langsamer machen?"
+  },
+  {
+    "id": "v6-extra-76",
+    "kind": "thought",
+    "text": "Manche Geschenke bekommen erst Jahre später ihre Bedeutung."
+  },
+  {
+    "id": "v6-extra-77",
+    "kind": "thought",
+    "text": "Ein neuer Blickwinkel kostet manchmal nur einen anderen Sitzplatz."
+  },
+  {
+    "id": "v6-extra-78",
+    "kind": "thought",
+    "text": "Du darfst Freude an Dingen haben, in denen du nicht besonders gut bist."
+  },
+  {
+    "id": "v6-extra-79",
+    "kind": "thought",
+    "text": "Was hast du als Kind gesammelt, und warum gerade das?"
+  },
+  {
+    "id": "v6-extra-80",
+    "kind": "thought",
+    "text": "Ein gutes Ende muss nicht laut sein."
+  },
+  {
+    "id": "v6-extra-81",
+    "kind": "thought",
+    "text": "Manchmal ist das schönste Wort in einer Nachricht „wir“."
+  },
+  {
+    "id": "v6-extra-82",
+    "kind": "thought",
+    "text": "Du kannst jemanden bewundern, ohne sein Leben führen zu wollen."
+  },
+  {
+    "id": "v6-extra-83",
+    "kind": "thought",
+    "text": "Welche alltägliche Sache würdest du vermissen, wenn sie morgen fehlte?"
+  },
+  {
+    "id": "v6-extra-84",
+    "kind": "thought",
+    "text": "Ein reparierter Gegenstand darf seine Geschichte zeigen."
+  },
+  {
+    "id": "v6-extra-85",
+    "kind": "thought",
+    "text": "Es gibt Lieder, die einen Ort mitbringen, sobald sie anfangen."
+  },
+  {
+    "id": "v6-extra-86",
+    "kind": "thought",
+    "text": "Du darfst etwas ausprobieren und feststellen, dass es nichts für dich ist."
+  },
+  {
+    "id": "v6-extra-87",
+    "kind": "thought",
+    "text": "Was würde deinen Heimweg ein wenig schöner machen?"
+  },
+  {
+    "id": "v6-extra-88",
+    "kind": "thought",
+    "text": "Die beste Gesellschaft lässt dich sein, wie du bist."
+  },
+  {
+    "id": "v6-extra-89",
+    "kind": "thought",
+    "text": "Eine geschlossene Tür darf auch eine nötige Ruhepause bedeuten."
+  },
+  {
+    "id": "v6-extra-90",
+    "kind": "thought",
+    "text": "Du musst nicht sofort wissen, was du von etwas hältst."
+  },
+  {
+    "id": "v6-extra-91",
+    "kind": "thought",
+    "text": "Welche Fähigkeit bewunderst du, die selten Applaus bekommt?"
+  },
+  {
+    "id": "v6-extra-92",
+    "kind": "thought",
+    "text": "Ein gemütlicher Abend ist ein vollwertiger Plan."
+  },
+  {
+    "id": "v6-extra-93",
+    "kind": "thought",
+    "text": "Etwas wiederzufinden kann sich anfühlen, als bekäme man es zweimal geschenkt."
+  },
+  {
+    "id": "v6-extra-94",
+    "kind": "thought",
+    "text": "Manche Menschen schenken einem das Gefühl, nicht zu spät zu sein."
+  },
+  {
+    "id": "v6-extra-95",
+    "kind": "thought",
+    "text": "Du darfst um Hilfe bitten, bevor alles zu viel wird."
+  },
+  {
+    "id": "v6-extra-96",
+    "kind": "thought",
+    "text": "Welcher Satz hat dir einmal unerwartet gutgetan?"
+  },
+  {
+    "id": "v6-extra-97",
+    "kind": "thought",
+    "text": "Ein Garten muss nicht ordentlich sein, um lebendig zu wirken."
+  },
+  {
+    "id": "v6-extra-98",
+    "kind": "thought",
+    "text": "Gemeinsames Aufräumen kann auch einfach gemeinsame Zeit sein."
+  },
+  {
+    "id": "v6-extra-99",
+    "kind": "thought",
+    "text": "Du kannst eine Erinnerung ehren, ohne jedes Detail festzuhalten."
+  },
+  {
+    "id": "v6-extra-100",
+    "kind": "thought",
+    "text": "Welche Geräusche machen für dich einen Sonntag aus?"
+  },
+  {
+    "id": "v6-extra-101",
+    "kind": "thought",
+    "text": "Ein alter Witz kann schön sein, weil alle ihn schon kennen."
+  },
+  {
+    "id": "v6-extra-102",
+    "kind": "thought",
+    "text": "Du darfst bei einem schönen Satz kurz stehenbleiben."
+  },
+  {
+    "id": "v6-extra-103",
+    "kind": "thought",
+    "text": "Vielleicht hat jemand etwas von dir gelernt, ohne dass du es weißt."
+  },
+  {
+    "id": "v6-extra-104",
+    "kind": "thought",
+    "text": "Was möchtest du einmal sehen, ohne es durch eine Kamera zu betrachten?"
+  },
+  {
+    "id": "v6-extra-105",
+    "kind": "thought",
+    "text": "Ein gemeinsames Essen beginnt manchmal beim Gemüseschneiden."
+  },
+  {
+    "id": "v6-extra-106",
+    "kind": "thought",
+    "text": "Du darfst einen Erfolg feiern, bevor das nächste Ziel feststeht."
+  },
+  {
+    "id": "v6-extra-107",
+    "kind": "thought",
+    "text": "Manchmal ist ein Umzug innerhalb der eigenen Gedanken möglich."
+  },
+  {
+    "id": "v6-extra-108",
+    "kind": "thought",
+    "text": "Welche freundliche Eigenheit magst du an jemandem besonders?"
+  },
+  {
+    "id": "v6-extra-109",
+    "kind": "thought",
+    "text": "Ein Zuhause braucht Platz für echte Menschen, nicht nur für schöne Fotos."
+  },
+  {
+    "id": "v6-extra-110",
+    "kind": "thought",
+    "text": "Du kannst einen Weg verlassen, auch wenn du lange darauf gegangen bist."
+  },
+  {
+    "id": "v6-extra-111",
+    "kind": "thought",
+    "text": "Ein ungeplanter Nachmittag kann eine sehr gute Erinnerung werden."
+  },
+  {
+    "id": "v6-extra-112",
+    "kind": "thought",
+    "text": "Was würdest du gern wieder tun, obwohl du längst erwachsen bist?"
+  },
+  {
+    "id": "v6-extra-113",
+    "kind": "thought",
+    "text": "Manche Antworten werden erst nach einer Nacht Schlaf freundlich genug."
+  },
+  {
+    "id": "v6-extra-114",
+    "kind": "thought",
+    "text": "Du darfst sagen: „Ich muss darüber nachdenken.“"
+  },
+  {
+    "id": "v6-extra-115",
+    "kind": "thought",
+    "text": "Ein Lieblingsrezept enthält manchmal mehr Erinnerung als Zutaten."
+  },
+  {
+    "id": "v6-extra-116",
+    "kind": "thought",
+    "text": "Wessen Lachen würdest du sofort erkennen?"
+  },
+  {
+    "id": "v6-extra-117",
+    "kind": "thought",
+    "text": "Ein kleiner Besuch kann mehr bedeuten als eine perfekt formulierte Nachricht."
+  },
+  {
+    "id": "v6-extra-118",
+    "kind": "thought",
+    "text": "Du kannst eine schöne Idee aufheben, ohne sie heute umzusetzen."
+  },
+  {
+    "id": "v6-extra-119",
+    "kind": "thought",
+    "text": "Ein guter Gastgeber lässt dich auch früher gehen."
+  },
+  {
+    "id": "v6-extra-120",
+    "kind": "thought",
+    "text": "Welche Jahreszeit passt zu deiner Lieblingsmusik?"
+  },
+  {
+    "id": "v6-extra-121",
+    "kind": "thought",
+    "text": "Vorfreude ist eine der Sachen, die beim Teilen größer werden können."
+  },
+  {
+    "id": "v6-extra-122",
+    "kind": "thought",
+    "text": "Du darfst etwas albern finden und trotzdem mitmachen."
+  },
+  {
+    "id": "v6-extra-123",
+    "kind": "thought",
+    "text": "Ein vertrautes Gesicht kann einen fremden Ort verändern.",
+    "retired": true
+  },
+  {
+    "id": "v6-extra-124",
+    "kind": "thought",
+    "text": "Was würdest du gern können, auch wenn es völlig unpraktisch wäre?"
+  },
+  {
+    "id": "v6-extra-125",
+    "kind": "thought",
+    "text": "Ein leerer Stuhl kann eine Erinnerung sein oder eine Einladung."
+  },
+  {
+    "id": "v6-extra-126",
+    "kind": "thought",
+    "text": "Du darfst eine Tradition ändern, damit sie wieder zu dir passt."
+  },
+  {
+    "id": "v6-extra-127",
+    "kind": "thought",
+    "text": "Ein guter Freund merkt, wenn dein „Passt schon“ noch eine Frage braucht."
+  },
+  {
+    "id": "v6-extra-128",
+    "kind": "thought",
+    "text": "Welche Kleinigkeit würdest du in eine Zeitkapsel legen?"
+  },
+  {
+    "id": "v6-extra-129",
+    "kind": "thought",
+    "text": "Gemeinsames Warten kann sich weniger nach Warten anfühlen."
+  },
+  {
+    "id": "v6-extra-130",
+    "kind": "thought",
+    "text": "Du musst nicht alles empfehlen, was du magst."
+  },
+  {
+    "id": "v6-extra-131",
+    "kind": "thought",
+    "text": "Ein Lob hinter dem Rücken kann auch etwas Gutes sein."
+  },
+  {
+    "id": "v6-extra-132",
+    "kind": "thought",
+    "text": "Welche Straße würdest du gern ohne Eile entlanggehen?"
+  },
+  {
+    "id": "v6-extra-133",
+    "kind": "thought",
+    "text": "Es ist schön, etwas zu haben, das man niemandem beweisen muss."
+  },
+  {
+    "id": "v6-extra-134",
+    "kind": "thought",
+    "text": "Manchmal rettet man einen Tag, indem man aufhört, ihn retten zu wollen."
+  },
+  {
+    "id": "v6-extra-135",
+    "kind": "thought",
+    "text": "Ein Balkon kann groß genug für einen kleinen Urlaub sein."
+  },
+  {
+    "id": "v6-extra-136",
+    "kind": "thought",
+    "text": "Welche Blume würdest du zeichnen, wenn Ähnlichkeit keine Rolle spielte?"
+  },
+  {
+    "id": "v6-extra-137",
+    "kind": "thought",
+    "text": "„Komm, wir gehen“ kann der schönste Vorschlag sein."
+  },
+  {
+    "id": "v6-extra-138",
+    "kind": "thought",
+    "text": "Du darfst das gleiche Lied noch einmal hören. Und noch einmal."
+  },
+  {
+    "id": "v6-extra-139",
+    "kind": "thought",
+    "text": "Ein Insiderwitz ist eine kleine Sprache für zwei."
+  },
+  {
+    "id": "v6-extra-140",
+    "kind": "thought",
+    "text": "Was hat dir zuletzt jemand beigebracht, der jünger ist als du?"
+  },
+  {
+    "id": "v6-extra-141",
+    "kind": "thought",
+    "text": "Manchmal findet man ein gutes Buch, weil es im falschen Regal steht."
+  },
+  {
+    "id": "v6-extra-142",
+    "kind": "thought",
+    "text": "Du kannst großzügig sein, ohne dich selbst zu vergessen."
+  },
+  {
+    "id": "v6-extra-143",
+    "kind": "thought",
+    "text": "Ein Ausflug darf nach einer halben Stunde vorbei sein und trotzdem zählen."
+  },
+  {
+    "id": "v6-extra-144",
+    "kind": "thought",
+    "text": "Welche Kindheitsregel würdest du heute gern freundlich abschaffen?"
+  },
+  {
+    "id": "v6-extra-145",
+    "kind": "thought",
+    "text": "In „Ich hab dir etwas mitgebracht“ steckt oft „Ich dachte an dich“."
+  },
+  {
+    "id": "v6-extra-146",
+    "kind": "thought",
+    "text": "Du darfst nachfragen, wenn du etwas nicht verstanden hast. Auch ein zweites Mal."
+  },
+  {
+    "id": "v6-extra-147",
+    "kind": "thought",
+    "text": "Ein unperfektes Geschenk kann genau zu jemandem passen."
+  },
+  {
+    "id": "v6-extra-148",
+    "kind": "thought",
+    "text": "Was würdest du jemandem zeigen, der noch nie Schnee gesehen hat?"
+  },
+  {
+    "id": "v6-extra-149",
+    "kind": "thought",
+    "text": "Manchmal ist das freundlichste Urteil über einen Tag: „Er war.“"
+  },
+  {
+    "id": "v6-extra-150",
+    "kind": "thought",
+    "text": "Du musst deine Lieblingsdinge nicht nach Wichtigkeit sortieren."
+  },
+  {
+    "id": "v6-extra-151",
+    "kind": "thought",
+    "text": "Ein heller Fleck auf dem Boden kann einen ganzen Raum gemütlich machen."
+  },
+  {
+    "id": "v6-extra-152",
+    "kind": "thought",
+    "text": "Welche einfache Tätigkeit bringt deine Gedanken zur Ruhe?"
+  },
+  {
+    "id": "v6-extra-153",
+    "kind": "thought",
+    "text": "Nähe kann heißen, jemanden seinen Satz selbst beenden zu lassen."
+  },
+  {
+    "id": "v6-extra-154",
+    "kind": "thought",
+    "text": "Du darfst dir Zeit nehmen, jemanden richtig zu verabschieden."
+  },
+  {
+    "id": "v6-extra-155",
+    "kind": "thought",
+    "text": "Ein alter Mantel kann sich nach Sicherheit anfühlen."
+  },
+  {
+    "id": "v6-extra-156",
+    "kind": "thought",
+    "text": "Was möchtest du beim nächsten Spaziergang genauer ansehen?"
+  },
+  {
+    "id": "v6-extra-157",
+    "kind": "thought",
+    "text": "Ein Treffen ist gelungen, wenn niemand merkt, wie spät es geworden ist."
+  },
+  {
+    "id": "v6-extra-158",
+    "kind": "thought",
+    "text": "Du darfst etwas anders machen, weil es sich für dich besser anfühlt."
+  },
+  {
+    "id": "v6-extra-159",
+    "kind": "thought",
+    "text": "Ein freundlicher Abschied kann schon Lust aufs Wiedersehen machen."
+  },
+  {
+    "id": "v6-extra-160",
+    "kind": "thought",
+    "text": "Welche Erinnerung würdest du gern in einem Glas aufbewahren?"
+  },
+  {
+    "id": "v6-extra-161",
+    "kind": "thought",
+    "text": "Manchmal braucht jemand keine Aufmunterung, sondern jemanden, der bleibt."
+  },
+  {
+    "id": "v6-extra-162",
+    "kind": "thought",
+    "text": "Du kannst jemandem etwas zutrauen, ohne etwas von ihm zu erwarten."
+  },
+  {
+    "id": "v6-extra-163",
+    "kind": "thought",
+    "text": "Ein neues Wort kann einer alten Empfindung einen Namen geben."
+  },
+  {
+    "id": "v6-extra-164",
+    "kind": "thought",
+    "text": "Was möchtest du beim nächsten Essen wirklich schmecken, statt es nebenbei zu essen?"
+  },
+  {
+    "id": "v6-extra-165",
+    "kind": "thought",
+    "text": "„Das war schön“ kann eine vollständige Beschreibung sein."
+  },
+  {
+    "id": "v6-extra-166",
+    "kind": "thought",
+    "text": "Du darfst jemanden gernhaben und trotzdem Ruhe vor ihm brauchen."
+  },
+  {
+    "id": "v6-extra-167",
+    "kind": "thought",
+    "text": "Ein selbst gewählter Umweg kann der eigentliche Ausflug sein."
+  },
+  {
+    "id": "v6-extra-168",
+    "kind": "thought",
+    "text": "Wer hat dir einmal das Gefühl gegeben, wirklich willkommen zu sein?"
+  },
+  {
+    "id": "v6-extra-169",
+    "kind": "thought",
+    "text": "Das Beste am Lernen kann sein, wieder neugierig zu werden."
+  },
+  {
+    "id": "v6-extra-170",
+    "kind": "thought",
+    "text": "Du darfst Dinge langsam mögen lernen."
+  },
+  {
+    "id": "v6-extra-171",
+    "kind": "thought",
+    "text": "Ein Abend ohne Geschichte kann trotzdem ein guter Abend sein."
+  },
+  {
+    "id": "v6-extra-172",
+    "kind": "thought",
+    "text": "Was würdest du heute gern zum ersten Mal bemerken?"
+  },
+  {
+    "id": "v6-extra-173",
+    "kind": "humor",
+    "text": "Mein Einkaufszettel hat mehr Reiseerfahrung als meine Wanderschuhe."
+  },
+  {
+    "id": "v6-extra-174",
+    "kind": "humor",
+    "text": "Ich gieße meine Pflanzen nach Gefühl. Die Pflanzen hätten lieber einen Kalender."
+  },
+  {
+    "id": "v6-extra-175",
+    "kind": "humor",
+    "text": "Mein Kleiderschrank enthält drei Größen: passt, passte und optimistisch."
+  },
+  {
+    "id": "v6-extra-176",
+    "kind": "humor",
+    "text": "Der Staubsauger und ich stoßen beide ständig irgendwo an."
+  },
+  {
+    "id": "v6-extra-177",
+    "kind": "humor",
+    "text": "Ich habe heute sehr konsequent inkonsequent gehandelt."
+  },
+  {
+    "id": "v6-extra-178",
+    "kind": "humor",
+    "text": "Mein Tee hat genau die richtige Temperatur. Leider seit zehn Minuten nicht mehr."
+  },
+  {
+    "id": "v6-extra-179",
+    "kind": "humor",
+    "text": "Ich kann Geheimnisse bewahren. Vor allem meine Passwörter vor mir selbst."
+  },
+  {
+    "id": "v6-extra-180",
+    "kind": "humor",
+    "text": "Die letzte Scheibe Brot ist dünner als meine Hoffnung auf Frühstück."
+  },
+  {
+    "id": "v6-extra-181",
+    "kind": "humor",
+    "text": "Meine Tasche hat ein Hauptfach und ein Paralleluniversum."
+  },
+  {
+    "id": "v6-extra-182",
+    "kind": "humor",
+    "text": "Ich habe die Fernbedienung gefunden. Das Sofa bestreitet jede Beteiligung."
+  },
+  {
+    "id": "v6-extra-183",
+    "kind": "humor",
+    "text": "Mein Wecker ist der einzige, der morgens wirklich etwas von mir erwartet."
+  },
+  {
+    "id": "v6-extra-184",
+    "kind": "humor",
+    "text": "Ich habe Sport gemacht: den Gedanken daran mehrfach bewegt."
+  },
+  {
+    "id": "v6-extra-185",
+    "kind": "humor",
+    "text": "Die Bedienungsanleitung und ich begegnen uns meistens erst nach dem Problem."
+  },
+  {
+    "id": "v6-extra-186",
+    "kind": "humor",
+    "text": "Mein Kühlschrank ist ein Museum für gute Absichten."
+  },
+  {
+    "id": "v6-extra-187",
+    "kind": "humor",
+    "text": "Ich falte Spannbettlaken nach einem geheimen Verfahren. Es heißt Aufgeben."
+  },
+  {
+    "id": "v6-extra-188",
+    "kind": "humor",
+    "text": "Der Regenschirm wartet zuverlässig dort, wo es gerade nicht regnet."
+  },
+  {
+    "id": "v6-extra-189",
+    "kind": "humor",
+    "text": "Ich bin pünktlich. Meine Schuhe mussten nur noch einmal verschwinden."
+  },
+  {
+    "id": "v6-extra-190",
+    "kind": "humor",
+    "text": "Mein Notizbuch sagt „Ideen“. Die erste Seite sagt „Milch“."
+  },
+  {
+    "id": "v6-extra-191",
+    "kind": "humor",
+    "text": "Die Schublade heißt Krimskrams, damit niemand nach einem System fragt."
+  },
+  {
+    "id": "v6-extra-192",
+    "kind": "humor",
+    "text": "Ich habe ein gutes Gedächtnis für Dinge, die ich nicht wissen wollte."
+  },
+  {
+    "id": "v6-extra-193",
+    "kind": "humor",
+    "text": "Meine Zimmerpflanze lehnt Kritik ab. Sie lässt einfach ein Blatt fallen."
+  },
+  {
+    "id": "v6-extra-194",
+    "kind": "humor",
+    "text": "Ich wollte ordentlich kochen. Jetzt ist alles gleichmäßig mit Mehl bedeckt."
+  },
+  {
+    "id": "v6-extra-195",
+    "kind": "humor",
+    "text": "Der freie Platz auf dem Tisch war ein sehr kurzer historischer Moment."
+  },
+  {
+    "id": "v6-extra-196",
+    "kind": "humor",
+    "text": "Meine Einkaufstasche kann alles tragen. Wenn ich sie dabei habe."
+  },
+  {
+    "id": "v6-extra-197",
+    "kind": "humor",
+    "text": "Ich suche etwas Bestimmtes. Mein Gehirn bietet einen alten Werbejingle an."
+  },
+  {
+    "id": "v6-extra-198",
+    "kind": "humor",
+    "text": "Die Kekse waren für Besuch gedacht. Ich war kurz zu Besuch in der Küche."
+  },
+  {
+    "id": "v6-extra-199",
+    "kind": "humor",
+    "text": "Mein Schreibtisch hat eine klare Struktur: unten Tisch, oben alles."
+  },
+  {
+    "id": "v6-extra-200",
+    "kind": "humor",
+    "text": "Ich wollte nur lüften. Jetzt haben alle Zettel neue Wohnorte."
+  },
+  {
+    "id": "v6-extra-201",
+    "kind": "humor",
+    "text": "Die Nudeln brauchen noch eine Minute. Seit vier Minuten."
+  },
+  {
+    "id": "v6-extra-202",
+    "kind": "humor",
+    "text": "Mein Lieblingswerkzeug ist jemand, der weiß, wo das richtige Werkzeug liegt."
+  },
+  {
+    "id": "v6-extra-203",
+    "kind": "humor",
+    "text": "Ich habe den Tag gut geplant. Der Tag hat nicht zugesagt."
+  },
+  {
+    "id": "v6-extra-204",
+    "kind": "humor",
+    "text": "Die Socke hinter der Waschmaschine lebt offenbar sehr zurückgezogen."
+  },
+  {
+    "id": "v6-extra-205",
+    "kind": "humor",
+    "text": "Meine Lesebrille hilft beim Lesen. Beim Finden hilft sie weniger."
+  },
+  {
+    "id": "v6-extra-206",
+    "kind": "humor",
+    "text": "Die Einkaufsliste liegt zu Hause und bewacht den leeren Kühlschrank."
+  },
+  {
+    "id": "v6-extra-207",
+    "kind": "humor",
+    "text": "Mein Fahrrad quietscht nicht. Es kommentiert."
+  },
+  {
+    "id": "v6-extra-208",
+    "kind": "humor",
+    "text": "Ich habe aus den Resten gekocht. Jetzt haben wir neue Reste."
+  },
+  {
+    "id": "v6-extra-209",
+    "kind": "humor",
+    "text": "Mein Kalender ist voll. Ich hätte gerne die Kurzfassung."
+  },
+  {
+    "id": "v6-extra-210",
+    "kind": "humor",
+    "text": "Ich habe eine Schublade aufgeräumt. Der Rest der Wohnung reagiert abwartend."
+  },
+  {
+    "id": "v6-extra-211",
+    "kind": "humor",
+    "text": "Die Banane war noch grün. Ich habe kurz weggesehen. Jetzt ist sie Backzutat."
+  },
+  {
+    "id": "v6-extra-212",
+    "kind": "humor",
+    "text": "Ich kann sehr gut improvisieren, sobald der ursprüngliche Plan gescheitert ist."
+  },
+  {
+    "id": "v6-extra-213",
+    "kind": "humor",
+    "text": "Mein Ofen kennt zwei Zustände: dauert noch und zu spät."
+  },
+  {
+    "id": "v6-extra-214",
+    "kind": "humor",
+    "text": "Die Seife riecht nach Wald. Der Wald zum Glück nicht nach Badezimmer."
+  },
+  {
+    "id": "v6-extra-215",
+    "kind": "humor",
+    "text": "Beim Aufräumen finde ich Dinge, die ich nicht suche. Das motiviert mehr als Ordnung."
+  },
+  {
+    "id": "v6-extra-216",
+    "kind": "humor",
+    "text": "Meine Handschuhe sind ein Paar mit Fernbeziehung."
+  },
+  {
+    "id": "v6-extra-217",
+    "kind": "humor",
+    "text": "Ich habe mir eine Eselsbrücke gebaut. Jetzt suche ich den Fluss."
+  },
+  {
+    "id": "v6-extra-218",
+    "kind": "humor",
+    "text": "Der Brotkorb ist leer. Die Krümel präsentieren noch eine kleine Ausstellung."
+  },
+  {
+    "id": "v6-extra-219",
+    "kind": "humor",
+    "text": "Ich bin nicht schlecht im Einpacken. Das Geschenk sieht nur aus, als hätte es eine Geschichte."
+  },
+  {
+    "id": "v6-extra-220",
+    "kind": "humor",
+    "text": "Mein Pflanzenratgeber sagt „pflegeleicht“. Die Pflanze sagt nichts mehr."
+  },
+  {
+    "id": "v6-extra-221",
+    "kind": "humor",
+    "text": "Die Kaffeemaschine hat heute mehr Einsatz gezeigt als ich."
+  },
+  {
+    "id": "v6-extra-222",
+    "kind": "humor",
+    "text": "Ich habe mein Ladekabel ordentlich aufgewickelt. Es hat sich nachts anders entschieden."
+  },
+  {
+    "id": "v6-extra-223",
+    "kind": "humor",
+    "text": "Der Paketbote kommt, wenn ich gerade kurz kein Mensch für Türen bin."
+  },
+  {
+    "id": "v6-extra-224",
+    "kind": "humor",
+    "text": "Meine Küche ist klein. Trotzdem muss ich jeden Löffel suchen."
+  },
+  {
+    "id": "v6-extra-225",
+    "kind": "humor",
+    "text": "Ich habe das Rezept halbiert. Das Chaos blieb in Originalgröße."
+  },
+  {
+    "id": "v6-extra-226",
+    "kind": "humor",
+    "text": "Der Klebestreifen hat seinen Anfang verloren. Ich langsam meine Geduld."
+  },
+  {
+    "id": "v6-extra-227",
+    "kind": "humor",
+    "text": "Meine Zimmeruhr geht vor. Wenigstens einer von uns."
+  },
+  {
+    "id": "v6-extra-228",
+    "kind": "humor",
+    "text": "Ich habe den Karton behalten. Für den wichtigen Tag, an dem ich einen Karton brauche."
+  },
+  {
+    "id": "v6-extra-229",
+    "kind": "humor",
+    "text": "Der Abwasch erledigt sich nicht selbst. Ich habe es lange beobachtet."
+  },
+  {
+    "id": "v6-extra-230",
+    "kind": "humor",
+    "text": "Ich bin beim Einkaufen sehr vernünftig. Bis zur Käsetheke."
+  },
+  {
+    "id": "v6-extra-231",
+    "kind": "humor",
+    "text": "Meine Jackentasche enthält einen Bon, einen Knopf und ein Rätsel über den Knopf."
+  },
+  {
+    "id": "v6-extra-232",
+    "kind": "humor",
+    "text": "Ich wollte früher schlafen gehen. Leider wurde es vorher später."
+  },
+  {
+    "id": "v6-extra-233",
+    "kind": "humor",
+    "text": "Der Teebeutel ist gerissen. Jetzt gibt es Tee mit Landschaft."
+  },
+  {
+    "id": "v6-extra-234",
+    "kind": "humor",
+    "text": "Meine To-do-Liste hat Nachwuchs bekommen."
+  },
+  {
+    "id": "v6-extra-235",
+    "kind": "humor",
+    "text": "Ich habe den Teppich ausgeschüttelt. Der Balkon hat jetzt einen Teppich."
+  },
+  {
+    "id": "v6-extra-236",
+    "kind": "humor",
+    "text": "Das Fenster ist frisch geputzt. Ein Vogel prüft bereits die Qualität."
+  },
+  {
+    "id": "v6-extra-237",
+    "kind": "humor",
+    "text": "Ich habe spontan nichts vor. Das war lange geplant."
+  },
+  {
+    "id": "v6-extra-238",
+    "kind": "humor",
+    "text": "Mein Koffer schließt. Wenn niemand mehr atmet."
+  },
+  {
+    "id": "v6-extra-239",
+    "kind": "humor",
+    "text": "Der Löffel ist in die Suppe gerutscht. Er nimmt das Eintauchen ernst."
+  },
+  {
+    "id": "v6-extra-240",
+    "kind": "humor",
+    "text": "Ich habe die Schuhe imprägniert. Die Pfütze wirkte unbeeindruckt."
+  },
+  {
+    "id": "v6-extra-241",
+    "kind": "humor",
+    "text": "Mein Handy kennt den Weg. Ich kenne immerhin den Akkuverlust."
+  },
+  {
+    "id": "v6-extra-242",
+    "kind": "humor",
+    "text": "Der Stift schreibt wieder. Genau auf dem Finger, der ihn repariert hat."
+  },
+  {
+    "id": "v6-extra-243",
+    "kind": "humor",
+    "text": "Ich habe die Kissen aufgeschüttelt. Das Sofa sieht beschäftigter aus als ich."
+  },
+  {
+    "id": "v6-extra-244",
+    "kind": "humor",
+    "text": "Meine Lieblingssportart ist, knapp noch die grüne Ampel zu schaffen."
+  },
+  {
+    "id": "v6-extra-245",
+    "kind": "humor",
+    "text": "Der Kühlschrank brummt. Er denkt wohl über das Abendessen nach."
+  },
+  {
+    "id": "v6-extra-246",
+    "kind": "humor",
+    "text": "Ich habe Ordnung in meine Kabel gebracht. Sie organisieren bereits Widerstand."
+  },
+  {
+    "id": "v6-extra-247",
+    "kind": "humor",
+    "text": "Das Handtuch fällt immer vom gleichen Haken. Sehr konsequentes Textil."
+  },
+  {
+    "id": "v6-extra-248",
+    "kind": "humor",
+    "text": "Meine Pflanze wächst schief. Sie hat eine klare Meinung zum Licht."
+  },
+  {
+    "id": "v6-extra-249",
+    "kind": "humor",
+    "text": "Ich habe die falsche Abzweigung genommen. Jetzt kenne ich eine schöne Tankstelle."
+  },
+  {
+    "id": "v6-extra-250",
+    "kind": "humor",
+    "text": "Der erste Pfannkuchen ist ein Entwurf."
+  },
+  {
+    "id": "v6-extra-251",
+    "kind": "humor",
+    "text": "Ich habe den Schrank ausgemistet. Die Nostalgie hängt auf einem eigenen Bügel."
+  },
+  {
+    "id": "v6-extra-252",
+    "kind": "humor",
+    "text": "Mein Reis ist angebrannt. Die Küche hat ein sehr eindeutiges Thema."
+  },
+  {
+    "id": "v6-extra-253",
+    "kind": "humor",
+    "text": "Der Einkaufswagen zieht nach links. Politisch möchte ich das nicht bewerten."
+  },
+  {
+    "id": "v6-extra-254",
+    "kind": "humor",
+    "text": "Ich habe das Geschenk versteckt. Es ist auch vor mir sicher."
+  },
+  {
+    "id": "v6-extra-255",
+    "kind": "humor",
+    "text": "Mein Buch hat ein Lesezeichen. Ich habe trotzdem vergessen, wer alle sind."
+  },
+  {
+    "id": "v6-extra-256",
+    "kind": "humor",
+    "text": "Die Tischdecke ist knitterfrei. Zwischen den Falten."
+  },
+  {
+    "id": "v6-extra-257",
+    "kind": "humor",
+    "text": "Ich habe das Fenster zugemacht. Die Fliege möchte die Geschäftsleitung sprechen."
+  },
+  {
+    "id": "v6-extra-258",
+    "kind": "humor",
+    "text": "Mein Rucksack ist leicht. Bis ich einpacke, was ich vielleicht nicht brauche."
+  },
+  {
+    "id": "v6-extra-259",
+    "kind": "humor",
+    "text": "Der Drucker braucht Papier. Auf dem Boden liegt genug, aber er besteht auf Service."
+  },
+  {
+    "id": "v6-extra-260",
+    "kind": "humor",
+    "text": "Ich habe die Schokolade geteilt. Zwischen jetzt und gleich."
+  },
+  {
+    "id": "v6-extra-261",
+    "kind": "humor",
+    "text": "Mein Spaziergang hatte kein Ziel. Die Bäckerei hat sich angeboten."
+  },
+  {
+    "id": "v6-extra-262",
+    "kind": "humor",
+    "text": "Der Wollpullover kratzt. Er möchte, dass ich seine Anwesenheit würdige."
+  },
+  {
+    "id": "v6-extra-263",
+    "kind": "humor",
+    "text": "Ich habe das Essen abgeschmeckt. Dann noch einmal. Jetzt fehlt eine Portion."
+  },
+  {
+    "id": "v6-extra-264",
+    "kind": "humor",
+    "text": "Mein Haustürschlüssel versteckt sich nicht. Er bietet Suchspiele an."
+  },
+  {
+    "id": "v6-extra-265",
+    "kind": "humor",
+    "text": "Die Tapete hält seit Jahren. Das Poster seit zwölf Minuten."
+  },
+  {
+    "id": "v6-extra-266",
+    "kind": "humor",
+    "text": "Ich habe den Wecker leiser gestellt. Er war anderer Meinung."
+  },
+  {
+    "id": "v6-extra-267",
+    "kind": "humor",
+    "text": "Der Wasserkocher ist fertig. Ich war noch mitten im Vergessen."
+  },
+  {
+    "id": "v6-extra-268",
+    "kind": "humor",
+    "text": "Ich fand eine Münze unter dem Sofa. Die Reinigungsprämie fällt bescheiden aus."
+  },
+  {
+    "id": "v6-extra-269",
+    "kind": "humor",
+    "text": "Mein Pizzateig geht auf. Wenigstens jemand hat heute einen Aufstieg."
+  },
+  {
+    "id": "v6-extra-270",
+    "kind": "humor",
+    "text": "Die Tasse ist spülmaschinenfest. Meine Begeisterung fürs Ausräumen nicht."
+  },
+  {
+    "id": "v6-extra-271",
+    "kind": "humor",
+    "text": "Ich habe das Passwort geändert. Auf etwas, das ich frisch vergessen kann."
+  },
+  {
+    "id": "v6-extra-272",
+    "kind": "humor",
+    "text": "Mein Blumentopf hat ein Loch. Der Untersetzer hat es persönlich genommen."
+  },
+  {
+    "id": "v6-extra-273",
+    "kind": "humor",
+    "text": "Der letzte Parkplatz ist für jemanden reserviert, der offenbar nie kommt."
+  },
+  {
+    "id": "v6-extra-274",
+    "kind": "humor",
+    "text": "Ich habe das Marmeladenglas aufbekommen. Mein Handgelenk erwartet einen Orden."
+  },
+  {
+    "id": "v6-extra-275",
+    "kind": "humor",
+    "text": "Mein Schirm öffnet automatisch. Das Schließen ist ein persönliches Projekt."
+  },
+  {
+    "id": "v6-extra-276",
+    "kind": "humor",
+    "text": "Die Wäsche ist sortiert. Ein roter Socken führt Gespräche mit den weißen Hemden."
+  },
+  {
+    "id": "v6-extra-277",
+    "kind": "humor",
+    "text": "Ich habe das Essen schön angerichtet. Der Hunger hat die Ausstellung beendet."
+  },
+  {
+    "id": "v6-extra-278",
+    "kind": "humor",
+    "text": "Mein Stuhl knarrt beim Aufstehen. Er kommentiert meine Abgänge."
+  },
+  {
+    "id": "v6-extra-279",
+    "kind": "humor",
+    "text": "Der Faden passt durchs Nadelöhr. Ich arbeite noch am praktischen Beweis."
+  },
+  {
+    "id": "v6-extra-280",
+    "kind": "humor",
+    "text": "Ich habe eine Liste meiner Listen angefangen. Das fühlt sich gefährlich an."
+  },
+  {
+    "id": "v6-extra-281",
+    "kind": "humor",
+    "text": "Mein Kräutertopf liefert Basilikum für einen sehr kleinen Italienurlaub."
+  },
+  {
+    "id": "v6-extra-282",
+    "kind": "humor",
+    "text": "Der Paketkarton ist leer. Die Katze hat ihn bereits möbliert."
+  },
+  {
+    "id": "v6-extra-283",
+    "kind": "humor",
+    "text": "Ich habe Staub gewischt. Er ist kurz woanders hingezogen."
+  },
+  {
+    "id": "v6-extra-284",
+    "kind": "humor",
+    "text": "Mein Gemüsefach ist der Ort, an dem Gurken philosophisch werden."
+  },
+  {
+    "id": "v6-extra-285",
+    "kind": "humor",
+    "text": "Der Aufzug ist langsam. Dafür ist die Fahrt sehr überschaubar."
+  },
+  {
+    "id": "v6-extra-286",
+    "kind": "humor",
+    "text": "Ich habe den falschen Deckel auf den Topf gelegt. Jetzt trägt er einen Hut."
+  },
+  {
+    "id": "v6-extra-287",
+    "kind": "humor",
+    "text": "Mein Schal ist lang genug, um meine Entscheidungen einzuwickeln."
+  },
+  {
+    "id": "v6-extra-288",
+    "kind": "humor",
+    "text": "Die Butter ist streichzart. Leider nur in der Werbung."
+  },
+  {
+    "id": "v6-extra-289",
+    "kind": "humor",
+    "text": "Ich habe die Tischlampe verstellt. Jetzt sehe ich genau, wo der Staub ist."
+  },
+  {
+    "id": "v6-extra-290",
+    "kind": "humor",
+    "text": "Mein Einkaufszettel endet mit „und irgendwas Gutes“. Endlich eine klare Vorgabe."
+  },
+  {
+    "id": "v6-extra-291",
+    "kind": "humor",
+    "text": "Der neue Besen kehrt gut. Der alte hatte mehr Verständnis für Pausen."
+  },
+  {
+    "id": "v6-extra-292",
+    "kind": "humor",
+    "text": "Ich habe den Kuchen angeschnitten. Aus Gründen der Qualitätskontrolle."
+  },
+  {
+    "id": "v6-extra-293",
+    "kind": "humor",
+    "text": "Mein Laptop wird warm. Er denkt offenbar mit vollem Körpereinsatz."
+  },
+  {
+    "id": "v6-extra-294",
+    "kind": "humor",
+    "text": "Der Reißverschluss klemmt. Er hält an seiner Position fest."
+  },
+  {
+    "id": "v6-extra-295",
+    "kind": "humor",
+    "text": "Ich habe den Tisch gedeckt. Die Katze bewertet das Arrangement aus nächster Nähe."
+  },
+  {
+    "id": "v6-extra-296",
+    "kind": "humor",
+    "text": "Mein Mülleimer ist voll. Die nächste Verpackung glaubt trotzdem an sich."
+  },
+  {
+    "id": "v6-extra-297",
+    "kind": "humor",
+    "text": "Der Kugelschreiber fehlt. Der Fleck auf meinem Ärmel ist ein erster Hinweis."
+  },
+  {
+    "id": "v6-extra-298",
+    "kind": "humor",
+    "text": "Ich habe mir etwas gemerkt. Nur nicht, was daran wichtig war."
+  },
+  {
+    "id": "v6-extra-299",
+    "kind": "humor",
+    "text": "Mein Trockengestell ist ein Hindernisparcours mit Hemden."
+  },
+  {
+    "id": "v6-extra-300",
+    "kind": "humor",
+    "text": "Der Honig tropft. Langsam, entschlossen, genau daneben."
+  },
+  {
+    "id": "v6-extra-301",
+    "kind": "humor",
+    "text": "Ich habe meine Schuhe geputzt. Die Straße wartet mit neuen Ideen."
+  },
+  {
+    "id": "v6-extra-302",
+    "kind": "humor",
+    "text": "Mein Kissen hat zwei Seiten: kühl und eben noch kühl."
+  },
+  {
+    "id": "v6-extra-303",
+    "kind": "humor",
+    "text": "Der Backofen piept. Endlich jemand, der an mein Essen denkt."
+  },
+  {
+    "id": "v6-extra-304",
+    "kind": "humor",
+    "text": "Ich habe das Fenster geöffnet. Ein Vorhang hat sofort mitgemacht."
+  },
+  {
+    "id": "v6-extra-305",
+    "kind": "humor",
+    "text": "Mein Werkzeugkasten enthält alles. Ich brauche bloß etwas anderes."
+  },
+  {
+    "id": "v6-extra-306",
+    "kind": "humor",
+    "text": "Der letzte Keks lag ganz allein da. Das konnte ich nicht verantworten."
+  },
+  {
+    "id": "v6-extra-307",
+    "kind": "humor",
+    "text": "Ich habe eine Abkürzung genommen. Sie war landschaftlich sehr ausführlich."
+  },
+  {
+    "id": "v6-extra-308",
+    "kind": "humor",
+    "text": "Mein Schlafanzug folgt einer klaren Stilentscheidung: weich."
+  },
+  {
+    "id": "v6-extra-309",
+    "kind": "humor",
+    "text": "Der Topflappen liegt genau dort, wo ich ihn mit der heißen Pfanne nicht brauche."
+  },
+  {
+    "id": "v6-extra-310",
+    "kind": "humor",
+    "text": "Ich öffnete den Kühlschrank und vergaß den Auftrag. Klassischer Ortstermin."
+  },
+  {
+    "id": "v6-extra-311",
+    "kind": "humor",
+    "text": "Mein Teppich hat ein Muster. Seit dem Kaffee ein sehr individuelles."
+  },
+  {
+    "id": "v6-extra-312",
+    "kind": "humor",
+    "text": "Der Kalender sagt Frühling. Meine Füße beantragen Wintersocken."
+  },
+  {
+    "id": "v6-extra-313",
+    "kind": "humor",
+    "text": "Ich habe den Brief abgeschickt. Jetzt fällt mir ein schönerer erster Satz ein."
+  },
+  {
+    "id": "v6-extra-314",
+    "kind": "humor",
+    "text": "Mein Bücherstapel ist keine Unordnung. Er ist eine Warteschlange."
+  },
+  {
+    "id": "v6-extra-315",
+    "kind": "humor",
+    "text": "Der Pinsel verliert Haare. Mein Bild bekommt Fell."
+  },
+  {
+    "id": "v6-extra-316",
+    "kind": "humor",
+    "text": "Ich habe das Licht ausgemacht und etwas Wichtiges gesehen: nichts."
+  },
+  {
+    "id": "v6-extra-317",
+    "kind": "humor",
+    "text": "Mein Wäschekorb führt eine langfristige Beziehung mit Überstunden."
+  },
+  {
+    "id": "v6-extra-318",
+    "kind": "humor",
+    "text": "Der Schraubdeckel sitzt fest. Offenbar war er beim Krafttraining."
+  },
+  {
+    "id": "v6-extra-319",
+    "kind": "humor",
+    "text": "Ich habe meine Notizen geordnet. Jetzt muss ich die Handschrift entschlüsseln."
+  },
+  {
+    "id": "v6-extra-320",
+    "kind": "humor",
+    "text": "Mein Brot ist getoastet. Eine Ecke ist schon ein historischer Fund."
+  },
+  {
+    "id": "v6-extra-321",
+    "kind": "humor",
+    "text": "Der Einkaufswagen rollt von allein. In eine andere Zukunft."
+  },
+  {
+    "id": "v6-extra-322",
+    "kind": "humor",
+    "text": "Ich habe das Bett gemacht. Es wirkt unbenutzt und etwas beleidigt."
+  },
+  {
+    "id": "v6-extra-323",
+    "kind": "humor",
+    "text": "Mein Zitronenbaum hat drei Blätter und große Ambitionen."
+  },
+  {
+    "id": "v6-extra-324",
+    "kind": "humor",
+    "text": "Der Löffel passt nicht ins Glas. Der Nachtisch fordert Werkzeugkunde."
+  },
+  {
+    "id": "v6-extra-325",
+    "kind": "humor",
+    "text": "Ich habe die Einkaufstaschen verteilt. Die Kartoffeln übernahmen die Führungsrolle."
+  },
+  {
+    "id": "v6-extra-326",
+    "kind": "humor",
+    "text": "Mein Radio rauscht. Es spielt die lange Version vom Meer."
+  },
+  {
+    "id": "v6-extra-327",
+    "kind": "humor",
+    "text": "Der Gartenschlauch hat einen Knick. Er übt wohl Yoga."
+  },
+  {
+    "id": "v6-extra-328",
+    "kind": "humor",
+    "text": "Ich habe das Handtuch ordentlich aufgehängt. Es ist dekorativ schief."
+  },
+  {
+    "id": "v6-extra-329",
+    "kind": "humor",
+    "text": "Mein Einkauf passt in eine Tasche. Die Lauchstange hat andere Vorstellungen."
+  },
+  {
+    "id": "v6-extra-330",
+    "kind": "humor",
+    "text": "Der Karton sagt „Vorsicht Glas“. Drin sind Socken. Die Warnung ist überqualifiziert."
+  },
+  {
+    "id": "v6-extra-331",
+    "kind": "humor",
+    "text": "Ich habe den Berg bestiegen. Gemeint ist die Bügelwäsche."
+  },
+  {
+    "id": "v6-extra-332",
+    "kind": "humor",
+    "text": "Mein Pullover ist eingelaufen. Er strebt eine Karriere als Geschenk an."
+  },
+  {
+    "id": "v6-extra-333",
+    "kind": "humor",
+    "text": "Der Blumentopf steht gerade. Die Pflanze findet das zu einfach."
+  },
+  {
+    "id": "v6-extra-334",
+    "kind": "humor",
+    "text": "Ich habe das Maßband verlegt. Die Entfernung zum Fundort ist unbekannt."
+  },
+  {
+    "id": "v6-extra-335",
+    "kind": "humor",
+    "text": "Mein Suppenteller ist tief. Meine Vorsicht war es nicht."
+  },
+  {
+    "id": "v6-extra-336",
+    "kind": "humor",
+    "text": "Der Timer klingelt. Ich erinnere mich ans Stellen, nicht an den Anlass."
+  },
+  {
+    "id": "v6-extra-337",
+    "kind": "humor",
+    "text": "Ich habe die Decke zusammengelegt. Das Sofa vermisst ihren natürlichen Zustand."
+  },
+  {
+    "id": "v6-extra-338",
+    "kind": "humor",
+    "text": "Mein Briefkasten bekommt mehr Werbung als Besuch. Er ist sehr beliebt."
+  },
+  {
+    "id": "v6-extra-339",
+    "kind": "humor",
+    "text": "Der Blumenstrauß braucht eine Vase. Meine Gießkanne sieht plötzlich elegant aus."
+  },
+  {
+    "id": "v6-extra-340",
+    "kind": "humor",
+    "text": "Ich habe alles für den Ausflug eingepackt. Jetzt suche ich Platz für den Ausflug."
+  },
+  {
+    "id": "v6-extra-341",
+    "kind": "humor",
+    "text": "Mein Flur hat eine Schuhsammlung. Kuratiert wird sie durch Stolpern."
+  },
+  {
+    "id": "v6-extra-342",
+    "kind": "humor",
+    "text": "Der Vorhang hängt endlich. Ich auch, ein bisschen."
+  },
+  {
+    "id": "v6-extra-343",
+    "kind": "humor",
+    "text": "Ich habe den Kuchen dekoriert. Man erkennt, dass ein Mensch beteiligt war."
+  },
+  {
+    "id": "v6-extra-344",
+    "kind": "humor",
+    "text": "Mein Kugelschreiber schreibt nur, wenn ich ihm gut zurede."
+  },
+  {
+    "id": "v6-extra-345",
+    "kind": "humor",
+    "text": "Der Sand vom Urlaub bleibt länger als die Erholung."
+  },
+  {
+    "id": "v6-extra-346",
+    "kind": "humor",
+    "text": "Ich habe den Schlüsselbund vereinfacht. Jetzt fehlen nur die richtigen Schlüssel."
+  },
+  {
+    "id": "v6-extra-347",
+    "kind": "humor",
+    "text": "Mein Brotmesser ist scharf. Meine Einschätzung der Scheibendicke nicht."
+  },
+  {
+    "id": "v6-extra-348",
+    "kind": "humor",
+    "text": "Der Duft heißt „Meeresbrise“. Mein Bad liegt trotzdem neben der Küche."
+  },
+  {
+    "id": "v6-extra-349",
+    "kind": "humor",
+    "text": "Ich habe aufgeräumt, bevor Besuch kommt. Jetzt darf niemand mehr leben."
+  },
+  {
+    "id": "v6-extra-350",
+    "kind": "humor",
+    "text": "Mein Schlüsselanhänger ist größer als der Schlüssel. Die Verpackung hat gewonnen."
+  },
+  {
+    "id": "v6-extra-351",
+    "kind": "humor",
+    "text": "Der Hund sieht mich an, als hätte ich das Wetter bestellt."
+  },
+  {
+    "id": "v6-extra-352",
+    "kind": "humor",
+    "text": "Ich habe die Brille hochgeschoben. Dort war schon die andere Brille."
+  },
+  {
+    "id": "v6-extra-353",
+    "kind": "humor",
+    "text": "Mein Teelöffel trifft seine Kollegen im Spülbecken zur Krisensitzung."
+  },
+  {
+    "id": "v6-extra-354",
+    "kind": "humor",
+    "text": "Der Mülleimerdeckel schließt noch. Das ist unser einziges Qualitätsmerkmal."
+  },
+  {
+    "id": "v6-extra-355",
+    "kind": "humor",
+    "text": "Ich habe die Wäsche abgenommen. Der einzelne Socken gibt eine Vermisstenanzeige auf."
+  },
+  {
+    "id": "v6-extra-356",
+    "kind": "humor",
+    "text": "Mein Einkaufszettel ist lesbar. Das garantiert noch nicht seine Bedeutung."
+  },
+  {
+    "id": "v6-extra-357",
+    "kind": "humor",
+    "text": "Der Topf kocht über. Er möchte am ganzen Herd teilnehmen."
+  },
+  {
+    "id": "v6-extra-358",
+    "kind": "humor",
+    "text": "Ich habe die Gewürze sortiert. „Irgendwas Rotes“ steht weiterhin unter I."
+  },
+  {
+    "id": "v6-extra-359",
+    "kind": "humor",
+    "text": "Mein Bett ist frisch bezogen. Der Kampf mit dem Bezug war im Preis enthalten."
+  },
+  {
+    "id": "v6-extra-360",
+    "kind": "humor",
+    "text": "Der Gartenstuhl klappt zusammen. Die Sitzung war noch nicht beendet."
+  },
+  {
+    "id": "v6-extra-361",
+    "kind": "humor",
+    "text": "Ich habe den Faden wiedergefunden. Er gehört zu einem anderen Gespräch."
+  },
+  {
+    "id": "v6-extra-362",
+    "kind": "humor",
+    "text": "Mein Wasserbecher steht neben dem Pinselglas. Kein guter Ort für Optimismus."
+  },
+  {
+    "id": "v6-extra-363",
+    "kind": "humor",
+    "text": "Der Käse ist zum Überbacken. Ein Teil wurde vorab mündlich geprüft."
+  },
+  {
+    "id": "v6-extra-364",
+    "kind": "humor",
+    "text": "Ich habe die Einkaufstüte repariert. Sie ist jetzt ein sehr vorsichtiger Beutel."
+  },
+  {
+    "id": "v6-extra-365",
+    "kind": "humor",
+    "text": "Mein Küchenradio hat guten Empfang. Besonders für Fettspritzer."
+  },
+  {
+    "id": "v6-extra-366",
+    "kind": "humor",
+    "text": "Der Stuhl ist höhenverstellbar. Meine Beine bleiben bei ihrer Meinung."
+  },
+  {
+    "id": "v6-extra-367",
+    "kind": "humor",
+    "text": "Ich habe das Fenster streifenfrei geputzt. Man muss im richtigen Winkel stehen."
+  },
+  {
+    "id": "v6-extra-368",
+    "kind": "humor",
+    "text": "Mein Rasenmäher ist laut. Das Gras hat schriftlich Beschwerde eingereicht."
+  },
+  {
+    "id": "v6-extra-369",
+    "kind": "humor",
+    "text": "Der Untersetzer ist dekorativ. Die Tasse steht grundsätzlich daneben."
+  },
+  {
+    "id": "v6-extra-370",
+    "kind": "humor",
+    "text": "Ich habe die Schere gesucht. Sie lag beim Geschenkpapier und fühlte sich im Recht."
+  },
+  {
+    "id": "v6-extra-371",
+    "kind": "humor",
+    "text": "Mein Strickprojekt wird ein Schal. Das ist die diplomatische Bezeichnung für seine Form."
+  },
+  {
+    "id": "v6-extra-372",
+    "kind": "humor",
+    "text": "Der Staubsaugerbeutel ist voll. Er hat seine Sammelleidenschaft übertrieben."
+  },
+  {
+    "id": "v6-extra-373",
+    "kind": "humor",
+    "text": "Ich habe Brot eingefroren. Meine Frühstücksplanung blieb flüssig."
+  },
+  {
+    "id": "v6-extra-374",
+    "kind": "humor",
+    "text": "Mein Fahrradkorb ist praktisch. Besonders für den Regen, den er sammelt."
+  },
+  {
+    "id": "v6-extra-375",
+    "kind": "humor",
+    "text": "Der Bilderrahmen hängt schief. Das Bild kann damit leben."
+  },
+  {
+    "id": "v6-extra-376",
+    "kind": "humor",
+    "text": "Ich habe die letzte Portion aufgehoben. Jemand mit meinem Gesicht hat sie gegessen."
+  },
+  {
+    "id": "v6-extra-377",
+    "kind": "humor",
+    "text": "Mein Reißverschluss steckt im Stoff. Er wollte wohl näheren Kontakt."
+  },
+  {
+    "id": "v6-extra-378",
+    "kind": "humor",
+    "text": "Der Kleiderschrank ist voll. Die Kleiderbügel fordern Mindestabstand."
+  },
+  {
+    "id": "v6-extra-379",
+    "kind": "humor",
+    "text": "Ich habe den Vogel beobachtet. Er mich auch. Keiner hat etwas gekauft."
+  },
+  {
+    "id": "v6-extra-380",
+    "kind": "humor",
+    "text": "Mein Kaffee ist entkoffeiniert. Meine Erwartungen wurden nicht informiert."
+  },
+  {
+    "id": "v6-extra-381",
+    "kind": "humor",
+    "text": "Der Handstaubsauger hat Krümel gefressen. Jetzt liegt er satt an der Ladestation."
+  },
+  {
+    "id": "v6-extra-382",
+    "kind": "humor",
+    "text": "Ich habe die Gardinen gewaschen. Der Raum wirkt zwei Wochen jünger."
+  },
+  {
+    "id": "v6-extra-383",
+    "kind": "humor",
+    "text": "Mein Basilikum hängt traurig. Er hat wohl das Pesto-Rezept gesehen."
+  },
+  {
+    "id": "v6-extra-384",
+    "kind": "humor",
+    "text": "Der Kaktus steht im Weg. Seine Beschwerde ist sehr direkt."
+  },
+  {
+    "id": "v6-extra-385",
+    "kind": "humor",
+    "text": "Ich habe den Staub auf dem Regal bemerkt. Damit endet vorerst die Untersuchung."
   }
 ];const active=lines.filter(v=>!v.retired),byId=new Map(lines.map(v=>[v.id,v]));
 

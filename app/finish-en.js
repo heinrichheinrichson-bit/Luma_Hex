@@ -5262,5 +5262,1253 @@
   "v2-riddle-17": {
     "text": "What animal is hiding at the start of CATFISH?",
     "answer": "CAT."
+  },
+  "v6-thought-0": {
+    "text": "You can be proud, even if no one else notices."
+  },
+  "v6-thought-1": {
+    "text": "A small step is still a step."
+  },
+  "v6-thought-2": {
+    "text": "Not every day has to be your best."
+  },
+  "v6-thought-3": {
+    "text": "You do not have to get everything done today."
+  },
+  "v6-thought-4": {
+    "text": "Taking a break does not erase your progress."
+  },
+  "v6-thought-5": {
+    "text": "Sometimes a good idea needs a little quiet first."
+  },
+  "v6-thought-6": {
+    "text": "What feels difficult today may feel familiar tomorrow."
+  },
+  "v6-thought-7": {
+    "text": "You are allowed to do something simply because it makes you happy."
+  },
+  "v6-thought-8": {
+    "text": "A detour can help you find what you were looking for."
+  },
+  "v6-thought-9": {
+    "text": "You do not need a perfect day to have a lovely moment."
+  },
+  "v6-thought-10": {
+    "text": "Do not let one bad moment tell the story of your whole day."
+  },
+  "v6-thought-11": {
+    "text": "Patience also means being kind to yourself."
+  },
+  "v6-thought-12": {
+    "text": "You are allowed to change your mind when you learn something new."
+  },
+  "v6-thought-13": {
+    "text": "A fresh start does not have to wait until Monday."
+  },
+  "v6-thought-14": {
+    "text": "A little curiosity can take you further than a grand plan."
+  },
+  "v6-thought-15": {
+    "text": "Some days are for growing. Others are for catching your breath."
+  },
+  "v6-thought-16": {
+    "text": "You do not have to earn the right to enjoy yourself."
+  },
+  "v6-thought-17": {
+    "text": "Your pace is allowed to fit your life."
+  },
+  "v6-thought-18": {
+    "text": "Trying something for the first time is brave in itself."
+  },
+  "v6-thought-19": {
+    "text": "Not everything that matters can be counted."
+  },
+  "v6-thought-20": {
+    "text": "Something is allowed to feel easy today."
+  },
+  "v6-thought-21": {
+    "text": "You can take something seriously and still laugh about it."
+  },
+  "v6-thought-22": {
+    "text": "A kind message does not need a special occasion."
+  },
+  "v6-thought-23": {
+    "text": "You are allowed to feel content before everything is finished."
+  },
+  "v6-thought-24": {
+    "text": "A good idea is allowed to start small."
+  },
+  "v6-thought-25": {
+    "text": "You are more than what you get done in a day."
+  },
+  "v6-thought-26": {
+    "text": "Sometimes carrying on is brave. Sometimes stopping is wise."
+  },
+  "v6-thought-27": {
+    "text": "A quiet moment does not have to achieve anything."
+  },
+  "v6-thought-28": {
+    "text": "Perhaps something small deserves your full attention today."
+  },
+  "v6-thought-29": {
+    "text": "You can enjoy a lovely moment without trying to capture it."
+  },
+  "v6-extra-0": {
+    "text": "A conversation can help without ending in a solution."
+  },
+  "v6-extra-1": {
+    "text": "What would you try if nobody were judging?"
+  },
+  "v6-extra-2": {
+    "text": "Perhaps the right question matters more than a quick answer."
+  },
+  "v6-extra-3": {
+    "text": "You can listen without carrying someone's entire burden."
+  },
+  "v6-extra-4": {
+    "text": "A favourite place can be perfectly ordinary."
+  },
+  "v6-extra-5": {
+    "text": "It is lovely when someone says your name with delight."
+  },
+  "v6-extra-6": {
+    "text": "Some memories fit inside a single scent."
+  },
+  "v6-extra-7": {
+    "text": "Which song would you play for someone who wanted to know you?"
+  },
+  "v6-extra-8": {
+    "text": "You do not have to accept every invitation to belong."
+  },
+  "v6-extra-9": {
+    "text": "With some people, silence needs no filling."
+  },
+  "v6-extra-10": {
+    "text": "What surprised you even though you had seen it many times?"
+  },
+  "v6-extra-11": {
+    "text": "Mending something old can feel better than buying something new."
+  },
+  "v6-extra-12": {
+    "text": "A handwritten note has its own voice."
+  },
+  "v6-extra-13": {
+    "text": "Perhaps a lovely memory is still waiting for you to make it."
+  },
+  "v6-extra-14": {
+    "text": "What would be a good name for your day today?"
+  },
+  "v6-extra-15": {
+    "text": "Adults are allowed to be beginners too."
+  },
+  "v6-extra-16": {
+    "text": "A window has the same frame and a different picture every day."
+  },
+  "v6-extra-17": {
+    "text": "Perhaps you need fewer answers and more fresh air right now."
+  },
+  "v6-extra-18": {
+    "text": "Not every free minute needs filling."
+  },
+  "v6-extra-19": {
+    "text": "A thank-you does not lose its value through use."
+  },
+  "v6-extra-20": {
+    "text": "A sincere “How are you?” can change an evening."
+  },
+  "v6-extra-21": {
+    "text": "What small thing would make tomorrow's you happy?"
+  },
+  "v6-extra-22": {
+    "text": "A good listener makes room for unfinished thoughts."
+  },
+  "v6-extra-23": {
+    "text": "You can miss something and still be glad to be where you are."
+  },
+  "v6-extra-24": {
+    "text": "Not every lovely thing has to become a hobby."
+  },
+  "v6-extra-25": {
+    "text": "Some books are allowed to remain unfinished."
+  },
+  "v6-extra-26": {
+    "text": "A walk needs no destination."
+  },
+  "v6-extra-27": {
+    "text": "What colour would your favourite sound be?"
+  },
+  "v6-extra-28": {
+    "text": "Some friendships resume halfway through a sentence after a long silence."
+  },
+  "v6-extra-29": {
+    "text": "Sometimes an empty calendar is good news."
+  },
+  "v6-extra-30": {
+    "text": "Not everyone has to like what you love."
+  },
+  "v6-extra-31": {
+    "text": "A sincere apology does not need a “but”."
+  },
+  "v6-extra-32": {
+    "text": "You do not have to turn every experience into a lesson."
+  },
+  "v6-extra-33": {
+    "text": "Some things only make sense when you tell someone about them."
+  },
+  "v6-extra-34": {
+    "text": "Which habit would you keep if nobody noticed?"
+  },
+  "v6-extra-35": {
+    "text": "Home can be the way someone greets you."
+  },
+  "v6-extra-36": {
+    "text": "A familiar path can look entirely new in the rain."
+  },
+  "v6-extra-37": {
+    "text": "You can set a boundary without giving a speech about it."
+  },
+  "v6-extra-38": {
+    "text": "Gratitude and wanting change can exist together."
+  },
+  "v6-extra-39": {
+    "text": "What would you like to make with your own hands?"
+  },
+  "v6-extra-40": {
+    "text": "Good advice leaves the decision with you."
+  },
+  "v6-extra-41": {
+    "text": "Sometimes a person needs company rather than suggestions for improvement."
+  },
+  "v6-extra-42": {
+    "text": "Some evenings improve the moment the big light goes off."
+  },
+  "v6-extra-43": {
+    "text": "A favourite mug is rarely just a mug."
+  },
+  "v6-extra-44": {
+    "text": "You can find something beautiful without explaining why."
+  },
+  "v6-extra-45": {
+    "text": "Which memory would you visit for a minute?"
+  },
+  "v6-extra-46": {
+    "text": "A good conversation can begin on a park bench."
+  },
+  "v6-extra-47": {
+    "text": "What looks easy sometimes took years of practice."
+  },
+  "v6-extra-48": {
+    "text": "You can have an opinion and still be curious."
+  },
+  "v6-extra-49": {
+    "text": "It is worth getting to know people again from time to time."
+  },
+  "v6-extra-50": {
+    "text": "A compliment can be specific: “That was thoughtful of you.”"
+  },
+  "v6-extra-51": {
+    "text": "What little tradition would you like to invent?"
+  },
+  "v6-extra-52": {
+    "text": "A table covered in crumbs can tell the story of a lovely afternoon."
+  },
+  "v6-extra-53": {
+    "text": "Sometimes the best part of an outing is going home together."
+  },
+  "v6-extra-54": {
+    "text": "You do not have to be reachable everywhere to be there for someone."
+  },
+  "v6-extra-55": {
+    "text": "Giving something away can give it a new story."
+  },
+  "v6-extra-56": {
+    "text": "What would you ask someone from your childhood?"
+  },
+  "v6-extra-57": {
+    "text": "A morning can be good even when the plan falls through."
+  },
+  "v6-extra-58": {
+    "text": "Perhaps your favourite spot is closer than you think."
+  },
+  "v6-extra-59": {
+    "text": "A thought can change while you write it down."
+  },
+  "v6-extra-60": {
+    "text": "You can keep something because it reminds you of someone."
+  },
+  "v6-extra-61": {
+    "text": "Who would you like to tell that you still think of them?"
+  },
+  "v6-extra-62": {
+    "text": "A mistake is easier to discuss when nobody makes it your whole identity."
+  },
+  "v6-extra-63": {
+    "text": "Sometimes courage is asking a question."
+  },
+  "v6-extra-64": {
+    "text": "You can say no kindly and still mean it."
+  },
+  "v6-extra-65": {
+    "text": "Which view would you like to share with someone?"
+  },
+  "v6-extra-66": {
+    "text": "A kitchen can smell like home before anyone says a word."
+  },
+  "v6-extra-67": {
+    "text": "It is lovely when someone knows how you take your tea."
+  },
+  "v6-extra-68": {
+    "text": "“I don't know” can open an interesting conversation."
+  },
+  "v6-extra-69": {
+    "text": "Not every change of plan is a problem."
+  },
+  "v6-extra-70": {
+    "text": "You can take a photograph. You can also simply look."
+  },
+  "v6-extra-71": {
+    "text": "What would you show a visitor to your neighbourhood first?"
+  },
+  "v6-extra-72": {
+    "text": "Some things are precious precisely because they are ordinary."
+  },
+  "v6-extra-73": {
+    "text": "A kind look is a small act of welcome."
+  },
+  "v6-extra-74": {
+    "text": "You do not have to win every argument to stay true to yourself."
+  },
+  "v6-extra-75": {
+    "text": "What could you deliberately do more slowly today?"
+  },
+  "v6-extra-76": {
+    "text": "Some gifts only reveal their meaning years later."
+  },
+  "v6-extra-77": {
+    "text": "A new perspective sometimes costs no more than a different seat."
+  },
+  "v6-extra-78": {
+    "text": "You can enjoy things you are not especially good at."
+  },
+  "v6-extra-79": {
+    "text": "What did you collect as a child, and why that particular thing?"
+  },
+  "v6-extra-80": {
+    "text": "A good ending does not have to be loud."
+  },
+  "v6-extra-81": {
+    "text": "Sometimes the nicest word in a message is “we”."
+  },
+  "v6-extra-82": {
+    "text": "You can admire someone without wanting their life."
+  },
+  "v6-extra-83": {
+    "text": "What ordinary thing would you miss if it vanished tomorrow?"
+  },
+  "v6-extra-84": {
+    "text": "A repaired object is allowed to show its history."
+  },
+  "v6-extra-85": {
+    "text": "Some songs bring a place with them the moment they begin."
+  },
+  "v6-extra-86": {
+    "text": "You can try something and discover it is not for you."
+  },
+  "v6-extra-87": {
+    "text": "What would make your journey home a little nicer?"
+  },
+  "v6-extra-88": {
+    "text": "The best company lets you be yourself."
+  },
+  "v6-extra-89": {
+    "text": "A closed door can mean a needed rest."
+  },
+  "v6-extra-90": {
+    "text": "You do not have to know immediately how you feel about something."
+  },
+  "v6-extra-91": {
+    "text": "Which skill do you admire that rarely gets applause?"
+  },
+  "v6-extra-92": {
+    "text": "A cosy evening is a perfectly valid plan."
+  },
+  "v6-extra-93": {
+    "text": "Finding something again can feel like receiving it twice."
+  },
+  "v6-extra-94": {
+    "text": "Some people make you feel that you have not arrived too late."
+  },
+  "v6-extra-95": {
+    "text": "You can ask for help before everything becomes too much."
+  },
+  "v6-extra-96": {
+    "text": "What sentence once comforted you unexpectedly?"
+  },
+  "v6-extra-97": {
+    "text": "A garden does not have to be tidy to feel alive."
+  },
+  "v6-extra-98": {
+    "text": "Tidying up together can simply be time together."
+  },
+  "v6-extra-99": {
+    "text": "You can honour a memory without holding on to every detail."
+  },
+  "v6-extra-100": {
+    "text": "What sounds make a Sunday feel like Sunday to you?"
+  },
+  "v6-extra-101": {
+    "text": "An old joke can be lovely because everyone already knows it."
+  },
+  "v6-extra-102": {
+    "text": "You are allowed to pause over a beautiful sentence."
+  },
+  "v6-extra-103": {
+    "text": "Perhaps someone learned something from you without your knowing."
+  },
+  "v6-extra-104": {
+    "text": "What would you like to see without looking through a camera?"
+  },
+  "v6-extra-105": {
+    "text": "A shared meal sometimes begins while chopping the vegetables."
+  },
+  "v6-extra-106": {
+    "text": "You can celebrate a success before choosing the next goal."
+  },
+  "v6-extra-107": {
+    "text": "Sometimes you can move somewhere new inside your own thoughts."
+  },
+  "v6-extra-108": {
+    "text": "What endearing little habit do you especially like in someone?"
+  },
+  "v6-extra-109": {
+    "text": "A home makes room for real people, not just nice photographs."
+  },
+  "v6-extra-110": {
+    "text": "You can leave a path even after walking it for a long time."
+  },
+  "v6-extra-111": {
+    "text": "An unplanned afternoon can become a very good memory."
+  },
+  "v6-extra-112": {
+    "text": "What would you like to do again, even though you are all grown up?"
+  },
+  "v6-extra-113": {
+    "text": "Some replies only become kind enough after a night's sleep."
+  },
+  "v6-extra-114": {
+    "text": "You are allowed to say: “I need to think about that.”"
+  },
+  "v6-extra-115": {
+    "text": "A favourite recipe sometimes holds more memories than ingredients."
+  },
+  "v6-extra-116": {
+    "text": "Whose laugh would you recognise instantly?"
+  },
+  "v6-extra-117": {
+    "text": "A brief visit can mean more than a perfectly worded message."
+  },
+  "v6-extra-118": {
+    "text": "You can keep a lovely idea without putting it into practice today."
+  },
+  "v6-extra-119": {
+    "text": "A good host also lets you leave early."
+  },
+  "v6-extra-120": {
+    "text": "Which season suits your favourite music?"
+  },
+  "v6-extra-121": {
+    "text": "Anticipation is one of those things that can grow when shared."
+  },
+  "v6-extra-122": {
+    "text": "You can find something silly and join in anyway."
+  },
+  "v6-extra-123": {
+    "text": "A familiar face can transform an unfamiliar place."
+  },
+  "v6-extra-124": {
+    "text": "What would you like to do, even if it were completely impractical?"
+  },
+  "v6-extra-125": {
+    "text": "An empty chair can be a memory or an invitation."
+  },
+  "v6-extra-126": {
+    "text": "You can change a tradition so that it fits you again."
+  },
+  "v6-extra-127": {
+    "text": "A good friend notices when your “I'm fine” needs another question."
+  },
+  "v6-extra-128": {
+    "text": "What small thing would you put in a time capsule?"
+  },
+  "v6-extra-129": {
+    "text": "Waiting together can feel less like waiting."
+  },
+  "v6-extra-130": {
+    "text": "You do not have to recommend everything you like."
+  },
+  "v6-extra-131": {
+    "text": "Saying something behind someone's back can be kind, too."
+  },
+  "v6-extra-132": {
+    "text": "Which street would you like to walk down without hurrying?"
+  },
+  "v6-extra-133": {
+    "text": "It is lovely to have something you do not need to prove to anyone."
+  },
+  "v6-extra-134": {
+    "text": "Sometimes you rescue a day by stopping trying to rescue it."
+  },
+  "v6-extra-135": {
+    "text": "A balcony can be big enough for a tiny holiday."
+  },
+  "v6-extra-136": {
+    "text": "What flower would you draw if resemblance did not matter?"
+  },
+  "v6-extra-137": {
+    "text": "“Come on, let's go” can be the loveliest suggestion."
+  },
+  "v6-extra-138": {
+    "text": "You can listen to the same song again. And again."
+  },
+  "v6-extra-139": {
+    "text": "An inside joke is a tiny language for two."
+  },
+  "v6-extra-140": {
+    "text": "What did someone younger than you last teach you?"
+  },
+  "v6-extra-141": {
+    "text": "Sometimes you find a good book because it is on the wrong shelf."
+  },
+  "v6-extra-142": {
+    "text": "You can be generous without forgetting yourself."
+  },
+  "v6-extra-143": {
+    "text": "An outing can last half an hour and still count."
+  },
+  "v6-extra-144": {
+    "text": "Which childhood rule would you gently retire today?"
+  },
+  "v6-extra-145": {
+    "text": "“I brought you something” often holds an “I was thinking of you.”"
+  },
+  "v6-extra-146": {
+    "text": "You can ask when you have not understood something. Even a second time."
+  },
+  "v6-extra-147": {
+    "text": "An imperfect gift can suit someone perfectly."
+  },
+  "v6-extra-148": {
+    "text": "What would you show someone who had never seen snow?"
+  },
+  "v6-extra-149": {
+    "text": "Sometimes the kindest verdict on a day is simply: “It happened.”"
+  },
+  "v6-extra-150": {
+    "text": "You do not have to rank your favourite things by importance."
+  },
+  "v6-extra-151": {
+    "text": "A patch of sunlight on the floor can make a whole room feel cosy."
+  },
+  "v6-extra-152": {
+    "text": "What simple activity settles your thoughts?"
+  },
+  "v6-extra-153": {
+    "text": "Closeness can mean letting someone finish their own sentence."
+  },
+  "v6-extra-154": {
+    "text": "You can take your time saying a proper goodbye."
+  },
+  "v6-extra-155": {
+    "text": "An old coat can feel like safety."
+  },
+  "v6-extra-156": {
+    "text": "What would you like to look at more closely on your next walk?"
+  },
+  "v6-extra-157": {
+    "text": "A gathering goes well when nobody notices how late it has become."
+  },
+  "v6-extra-158": {
+    "text": "You can do something differently because it feels better to you."
+  },
+  "v6-extra-159": {
+    "text": "A warm goodbye can make you look forward to meeting again."
+  },
+  "v6-extra-160": {
+    "text": "Which memory would you like to keep in a jar?"
+  },
+  "v6-extra-161": {
+    "text": "Sometimes a person needs someone to stay, rather than cheer them up."
+  },
+  "v6-extra-162": {
+    "text": "You can believe in someone without expecting something from them."
+  },
+  "v6-extra-163": {
+    "text": "A new word can give a name to an old feeling."
+  },
+  "v6-extra-164": {
+    "text": "What would you like to really taste at your next meal, rather than eat absent-mindedly?"
+  },
+  "v6-extra-165": {
+    "text": "“That was lovely” can be a complete description."
+  },
+  "v6-extra-166": {
+    "text": "You can care about someone and still need time away from them."
+  },
+  "v6-extra-167": {
+    "text": "A detour you choose can be the outing itself."
+  },
+  "v6-extra-168": {
+    "text": "Who once made you feel truly welcome?"
+  },
+  "v6-extra-169": {
+    "text": "The best part of learning can be becoming curious again."
+  },
+  "v6-extra-170": {
+    "text": "You can take your time learning to like things."
+  },
+  "v6-extra-171": {
+    "text": "An evening with no story to tell can still be a good evening."
+  },
+  "v6-extra-172": {
+    "text": "What would you like to notice for the first time today?"
+  },
+  "v6-extra-173": {
+    "text": "My shopping list gets out more than my hiking boots."
+  },
+  "v6-extra-174": {
+    "text": "I water my plants by instinct. They would prefer a calendar."
+  },
+  "v6-extra-175": {
+    "text": "My wardrobe has three sizes: fits, used to fit, and optimistic."
+  },
+  "v6-extra-176": {
+    "text": "The vacuum cleaner and I both keep bumping into things."
+  },
+  "v6-extra-177": {
+    "text": "I have been consistently inconsistent today."
+  },
+  "v6-extra-178": {
+    "text": "My tea is at the perfect temperature. Or was, ten minutes ago."
+  },
+  "v6-extra-179": {
+    "text": "I can keep secrets. Especially my passwords from myself."
+  },
+  "v6-extra-180": {
+    "text": "The last slice of bread is thinner than my hopes for breakfast."
+  },
+  "v6-extra-181": {
+    "text": "My bag has one main compartment and a parallel universe."
+  },
+  "v6-extra-182": {
+    "text": "I found the remote. The sofa denies all involvement."
+  },
+  "v6-extra-183": {
+    "text": "My alarm clock is the only one with real expectations of me in the morning."
+  },
+  "v6-extra-184": {
+    "text": "I exercised: I turned the idea over several times."
+  },
+  "v6-extra-185": {
+    "text": "The instruction manual and I usually meet after the problem."
+  },
+  "v6-extra-186": {
+    "text": "My fridge is a museum of good intentions."
+  },
+  "v6-extra-187": {
+    "text": "I fold fitted sheets using a secret technique called giving up."
+  },
+  "v6-extra-188": {
+    "text": "My umbrella reliably waits wherever it is not raining."
+  },
+  "v6-extra-189": {
+    "text": "I am on time. My shoes just had to disappear once more."
+  },
+  "v6-extra-190": {
+    "text": "My notebook says “Ideas”. The first page says “Milk”."
+  },
+  "v6-extra-191": {
+    "text": "The drawer is called “miscellaneous” so nobody asks about the system."
+  },
+  "v6-extra-192": {
+    "text": "I have an excellent memory for things I never wanted to know."
+  },
+  "v6-extra-193": {
+    "text": "My houseplant rejects criticism. It just drops a leaf."
+  },
+  "v6-extra-194": {
+    "text": "I meant to cook tidily. Now everything is evenly covered in flour."
+  },
+  "v6-extra-195": {
+    "text": "The clear space on the table was a very brief historical moment."
+  },
+  "v6-extra-196": {
+    "text": "My shopping bag can carry anything. If I remember to bring it."
+  },
+  "v6-extra-197": {
+    "text": "I am looking for something specific. My brain offers an old advertising jingle."
+  },
+  "v6-extra-198": {
+    "text": "The biscuits were for guests. I briefly visited the kitchen."
+  },
+  "v6-extra-199": {
+    "text": "My desk has a clear structure: desk underneath, everything else on top."
+  },
+  "v6-extra-200": {
+    "text": "I only meant to air the room. Now all the papers have new addresses."
+  },
+  "v6-extra-201": {
+    "text": "The pasta needs another minute. It has needed one for four minutes."
+  },
+  "v6-extra-202": {
+    "text": "My favourite tool is someone who knows where the right tool is."
+  },
+  "v6-extra-203": {
+    "text": "I planned the day well. The day never agreed to it."
+  },
+  "v6-extra-204": {
+    "text": "The sock behind the washing machine apparently values its privacy."
+  },
+  "v6-extra-205": {
+    "text": "My reading glasses help me read. They are less helpful at finding themselves."
+  },
+  "v6-extra-206": {
+    "text": "The shopping list is at home, guarding the empty fridge."
+  },
+  "v6-extra-207": {
+    "text": "My bike does not squeak. It provides commentary."
+  },
+  "v6-extra-208": {
+    "text": "I cooked with leftovers. Now we have new leftovers."
+  },
+  "v6-extra-209": {
+    "text": "My calendar is full. I would like the abridged edition."
+  },
+  "v6-extra-210": {
+    "text": "I tidied a drawer. The rest of the flat is waiting to see what happens."
+  },
+  "v6-extra-211": {
+    "text": "The banana was green. I looked away briefly. Now it is a baking ingredient."
+  },
+  "v6-extra-212": {
+    "text": "I improvise very well once the original plan has failed."
+  },
+  "v6-extra-213": {
+    "text": "My oven has two settings: not yet, and too late."
+  },
+  "v6-extra-214": {
+    "text": "The soap smells of woodland. Luckily, woodland does not smell of bathrooms."
+  },
+  "v6-extra-215": {
+    "text": "Tidying helps me find things I was not looking for. That motivates me more than tidiness."
+  },
+  "v6-extra-216": {
+    "text": "My gloves are a couple in a long-distance relationship."
+  },
+  "v6-extra-217": {
+    "text": "I made myself a memory aid. Now I cannot remember what it was for."
+  },
+  "v6-extra-218": {
+    "text": "The bread basket is empty. The crumbs are staging a small exhibition."
+  },
+  "v6-extra-219": {
+    "text": "I am not bad at wrapping. The gift just looks as though it has a story."
+  },
+  "v6-extra-220": {
+    "text": "My plant guide says “easy care”. The plant has stopped commenting."
+  },
+  "v6-extra-221": {
+    "text": "The coffee machine has shown more commitment than I have today."
+  },
+  "v6-extra-222": {
+    "text": "I neatly coiled my charging cable. It reconsidered overnight."
+  },
+  "v6-extra-223": {
+    "text": "The delivery driver arrives when I am briefly not available for doors."
+  },
+  "v6-extra-224": {
+    "text": "My kitchen is small. I still have to hunt for every spoon."
+  },
+  "v6-extra-225": {
+    "text": "I halved the recipe. The mess stayed full-sized."
+  },
+  "v6-extra-226": {
+    "text": "The sticky tape has lost its end. I am slowly losing my patience."
+  },
+  "v6-extra-227": {
+    "text": "My clock is ahead. At least one of us is."
+  },
+  "v6-extra-228": {
+    "text": "I kept the box. For the important day when I need a box."
+  },
+  "v6-extra-229": {
+    "text": "The washing-up does not do itself. I watched it for quite a while to check."
+  },
+  "v6-extra-230": {
+    "text": "I am very sensible when shopping. Until I reach the cheese counter."
+  },
+  "v6-extra-231": {
+    "text": "My coat pocket holds a receipt, a button, and a mystery about the button."
+  },
+  "v6-extra-232": {
+    "text": "I meant to go to bed earlier. Unfortunately, it got later first."
+  },
+  "v6-extra-233": {
+    "text": "The tea bag split. Now my tea comes with scenery."
+  },
+  "v6-extra-234": {
+    "text": "My to-do list has had offspring."
+  },
+  "v6-extra-235": {
+    "text": "I shook out the rug. The balcony now has a rug of its own."
+  },
+  "v6-extra-236": {
+    "text": "The window is freshly cleaned. A bird is already inspecting the quality."
+  },
+  "v6-extra-237": {
+    "text": "I spontaneously have no plans. I planned that ages ago."
+  },
+  "v6-extra-238": {
+    "text": "My suitcase closes. Provided nobody breathes."
+  },
+  "v6-extra-239": {
+    "text": "The spoon slipped into the soup. It takes immersion seriously."
+  },
+  "v6-extra-240": {
+    "text": "I waterproofed my shoes. The puddle seemed unimpressed."
+  },
+  "v6-extra-241": {
+    "text": "My phone knows the route. I know how much battery it costs."
+  },
+  "v6-extra-242": {
+    "text": "The pen works again. Right on the finger that fixed it."
+  },
+  "v6-extra-243": {
+    "text": "I fluffed the cushions. The sofa looks busier than I do."
+  },
+  "v6-extra-244": {
+    "text": "My favourite sport is just making it through a green light."
+  },
+  "v6-extra-245": {
+    "text": "The fridge is humming. It is probably considering dinner."
+  },
+  "v6-extra-246": {
+    "text": "I organised my cables. They are already organising resistance."
+  },
+  "v6-extra-247": {
+    "text": "The towel always falls off the same hook. A very consistent piece of fabric."
+  },
+  "v6-extra-248": {
+    "text": "My plant grows sideways. It has a clear opinion about the light."
+  },
+  "v6-extra-249": {
+    "text": "I took the wrong turn. Now I know a nice petrol station."
+  },
+  "v6-extra-250": {
+    "text": "The first pancake is a draft."
+  },
+  "v6-extra-251": {
+    "text": "I cleared out the wardrobe. Nostalgia has its own hanger."
+  },
+  "v6-extra-252": {
+    "text": "My rice burned. The kitchen has a very definite theme."
+  },
+  "v6-extra-253": {
+    "text": "The shopping trolley pulls to the left. I will not comment on its politics."
+  },
+  "v6-extra-254": {
+    "text": "I hid the present. It is safe from me as well."
+  },
+  "v6-extra-255": {
+    "text": "My book has a bookmark. I have still forgotten who everyone is."
+  },
+  "v6-extra-256": {
+    "text": "The tablecloth is wrinkle-free. Between the wrinkles."
+  },
+  "v6-extra-257": {
+    "text": "I closed the window. The fly would like to speak to the manager."
+  },
+  "v6-extra-258": {
+    "text": "My backpack is light. Until I pack what I might not need."
+  },
+  "v6-extra-259": {
+    "text": "The printer needs paper. There is plenty on the floor, but it insists on service."
+  },
+  "v6-extra-260": {
+    "text": "I divided the chocolate. Between now and a moment from now."
+  },
+  "v6-extra-261": {
+    "text": "My walk had no destination. The bakery volunteered."
+  },
+  "v6-extra-262": {
+    "text": "The woolly jumper itches. It wants its presence acknowledged."
+  },
+  "v6-extra-263": {
+    "text": "I tasted the food. Then again. Now we are a portion short."
+  },
+  "v6-extra-264": {
+    "text": "My front-door key never hides. It offers treasure hunts."
+  },
+  "v6-extra-265": {
+    "text": "The wallpaper has held for years. The poster managed twelve minutes."
+  },
+  "v6-extra-266": {
+    "text": "I turned my alarm down. It disagreed."
+  },
+  "v6-extra-267": {
+    "text": "The kettle is ready. I was still busy forgetting about it."
+  },
+  "v6-extra-268": {
+    "text": "I found a coin under the sofa. The cleaning bonus is modest."
+  },
+  "v6-extra-269": {
+    "text": "My pizza dough is rising. At least someone is moving up today."
+  },
+  "v6-extra-270": {
+    "text": "The mug is dishwasher-safe. My enthusiasm for unloading it is less durable."
+  },
+  "v6-extra-271": {
+    "text": "I changed my password. To something new to forget."
+  },
+  "v6-extra-272": {
+    "text": "My flowerpot has a hole. The saucer took it personally."
+  },
+  "v6-extra-273": {
+    "text": "The last parking space is reserved for someone who apparently never arrives."
+  },
+  "v6-extra-274": {
+    "text": "I opened the jam jar. My wrist expects a medal."
+  },
+  "v6-extra-275": {
+    "text": "My umbrella opens automatically. Closing it is a personal project."
+  },
+  "v6-extra-276": {
+    "text": "The laundry is sorted. A red sock is in talks with the white shirts."
+  },
+  "v6-extra-277": {
+    "text": "I arranged the food beautifully. Hunger closed the exhibition."
+  },
+  "v6-extra-278": {
+    "text": "My chair creaks when I get up. It comments on my departures."
+  },
+  "v6-extra-279": {
+    "text": "The thread fits through the needle's eye. I am still working on the practical proof."
+  },
+  "v6-extra-280": {
+    "text": "I started a list of my lists. This feels dangerous."
+  },
+  "v6-extra-281": {
+    "text": "My herb pot provides basil for a very small Italian holiday."
+  },
+  "v6-extra-282": {
+    "text": "The delivery box is empty. The cat has already furnished it."
+  },
+  "v6-extra-283": {
+    "text": "I dusted. The dust briefly moved elsewhere."
+  },
+  "v6-extra-284": {
+    "text": "My vegetable drawer is where cucumbers become philosophical."
+  },
+  "v6-extra-285": {
+    "text": "The lift is slow. At least the journey is easy to follow."
+  },
+  "v6-extra-286": {
+    "text": "I put the wrong lid on the saucepan. Now it is wearing a hat."
+  },
+  "v6-extra-287": {
+    "text": "My scarf is long enough to wrap up my decisions."
+  },
+  "v6-extra-288": {
+    "text": "The butter is spreadable. Unfortunately, only in the advert."
+  },
+  "v6-extra-289": {
+    "text": "I adjusted the desk lamp. Now I can see exactly where the dust is."
+  },
+  "v6-extra-290": {
+    "text": "My shopping list ends with “and something nice”. Finally, a clear instruction."
+  },
+  "v6-extra-291": {
+    "text": "The new broom sweeps well. The old one understood breaks better."
+  },
+  "v6-extra-292": {
+    "text": "I cut into the cake. For quality-control purposes."
+  },
+  "v6-extra-293": {
+    "text": "My laptop is getting warm. It puts its whole body into thinking."
+  },
+  "v6-extra-294": {
+    "text": "The zip is stuck. It is standing its ground."
+  },
+  "v6-extra-295": {
+    "text": "I set the table. The cat is reviewing the arrangement up close."
+  },
+  "v6-extra-296": {
+    "text": "My bin is full. The next wrapper still believes in itself."
+  },
+  "v6-extra-297": {
+    "text": "The pen is missing. The stain on my sleeve is an early clue."
+  },
+  "v6-extra-298": {
+    "text": "I remembered something. Just not why it mattered."
+  },
+  "v6-extra-299": {
+    "text": "My drying rack is an obstacle course with shirts."
+  },
+  "v6-extra-300": {
+    "text": "The honey is dripping. Slowly, determinedly, and just beside the target."
+  },
+  "v6-extra-301": {
+    "text": "I cleaned my shoes. The street is waiting with new ideas."
+  },
+  "v6-extra-302": {
+    "text": "My pillow has two sides: cool and formerly cool."
+  },
+  "v6-extra-303": {
+    "text": "The oven is beeping. Finally, someone is thinking about my dinner."
+  },
+  "v6-extra-304": {
+    "text": "I opened the window. A curtain immediately joined in."
+  },
+  "v6-extra-305": {
+    "text": "My toolbox has everything. I just need something else."
+  },
+  "v6-extra-306": {
+    "text": "The last biscuit was all alone. I could not allow that."
+  },
+  "v6-extra-307": {
+    "text": "I took a shortcut. It was scenically thorough."
+  },
+  "v6-extra-308": {
+    "text": "My pyjamas follow a clear style choice: soft."
+  },
+  "v6-extra-309": {
+    "text": "The oven mitt is exactly where I do not need it while holding a hot pan."
+  },
+  "v6-extra-310": {
+    "text": "I opened the fridge and forgot the mission. A classic site inspection."
+  },
+  "v6-extra-311": {
+    "text": "My rug has a pattern. Since the coffee, a very personal one."
+  },
+  "v6-extra-312": {
+    "text": "The calendar says spring. My feet are requesting winter socks."
+  },
+  "v6-extra-313": {
+    "text": "I posted the letter. Now I have thought of a better opening sentence."
+  },
+  "v6-extra-314": {
+    "text": "My pile of books is not a mess. It is a queue."
+  },
+  "v6-extra-315": {
+    "text": "The brush is shedding. My painting is growing fur."
+  },
+  "v6-extra-316": {
+    "text": "I turned off the light and saw something important: nothing."
+  },
+  "v6-extra-317": {
+    "text": "My laundry basket is in a long-term relationship with overtime."
+  },
+  "v6-extra-318": {
+    "text": "The screw-top lid is tight. It has apparently been lifting weights."
+  },
+  "v6-extra-319": {
+    "text": "I organised my notes. Now I have to decipher the handwriting."
+  },
+  "v6-extra-320": {
+    "text": "My bread is toasted. One corner is already an archaeological find."
+  },
+  "v6-extra-321": {
+    "text": "The shopping trolley rolls by itself. Towards a different future."
+  },
+  "v6-extra-322": {
+    "text": "I made the bed. It looks unused and slightly offended."
+  },
+  "v6-extra-323": {
+    "text": "My lemon tree has three leaves and great ambitions."
+  },
+  "v6-extra-324": {
+    "text": "The spoon does not fit in the jar. Dessert requires tool expertise."
+  },
+  "v6-extra-325": {
+    "text": "I distributed the shopping bags. The potatoes took the leading role."
+  },
+  "v6-extra-326": {
+    "text": "My radio is crackling. It is playing the extended version of the sea."
+  },
+  "v6-extra-327": {
+    "text": "The garden hose has a kink. It is probably practising yoga."
+  },
+  "v6-extra-328": {
+    "text": "I hung the towel neatly. It is decoratively crooked."
+  },
+  "v6-extra-329": {
+    "text": "My shopping fits in one bag. The leek has other ideas."
+  },
+  "v6-extra-330": {
+    "text": "The box says “Fragile: glass”. It holds socks. The warning is overqualified."
+  },
+  "v6-extra-331": {
+    "text": "I climbed the mountain. The mountain was ironing."
+  },
+  "v6-extra-332": {
+    "text": "My jumper has shrunk. It is pursuing a career as a gift."
+  },
+  "v6-extra-333": {
+    "text": "The pot is upright. The plant finds that too simplistic."
+  },
+  "v6-extra-334": {
+    "text": "I misplaced the tape measure. The distance to its location is unknown."
+  },
+  "v6-extra-335": {
+    "text": "My soup bowl is deep. My caution was not."
+  },
+  "v6-extra-336": {
+    "text": "The timer is ringing. I remember setting it, but not why."
+  },
+  "v6-extra-337": {
+    "text": "I folded the blanket. The sofa misses its natural state."
+  },
+  "v6-extra-338": {
+    "text": "My letterbox gets more advertising than visitors. It is very popular."
+  },
+  "v6-extra-339": {
+    "text": "The bouquet needs a vase. My watering can suddenly looks elegant."
+  },
+  "v6-extra-340": {
+    "text": "I packed everything for the outing. Now I need room for the outing."
+  },
+  "v6-extra-341": {
+    "text": "My hallway has a shoe collection. It is curated by tripping over it."
+  },
+  "v6-extra-342": {
+    "text": "The curtain is finally up. I am slightly worn out."
+  },
+  "v6-extra-343": {
+    "text": "I decorated the cake. You can tell a human was involved."
+  },
+  "v6-extra-344": {
+    "text": "My pen only writes after a little encouragement."
+  },
+  "v6-extra-345": {
+    "text": "Holiday sand lasts longer than the feeling of being rested."
+  },
+  "v6-extra-346": {
+    "text": "I simplified my keyring. Now all it needs is the right keys."
+  },
+  "v6-extra-347": {
+    "text": "My bread knife is sharp. My judgement of slice thickness is not."
+  },
+  "v6-extra-348": {
+    "text": "The fragrance is called “Ocean Breeze”. My bathroom is still next to the kitchen."
+  },
+  "v6-extra-349": {
+    "text": "I tidied before the guests arrive. Now nobody is allowed to live here."
+  },
+  "v6-extra-350": {
+    "text": "My keyring is bigger than the key. The packaging won."
+  },
+  "v6-extra-351": {
+    "text": "The dog looks at me as though I ordered the weather."
+  },
+  "v6-extra-352": {
+    "text": "I pushed my glasses up. My other glasses were already there."
+  },
+  "v6-extra-353": {
+    "text": "My teaspoon is meeting its colleagues in the sink for crisis talks."
+  },
+  "v6-extra-354": {
+    "text": "The bin lid still closes. That is our only quality standard."
+  },
+  "v6-extra-355": {
+    "text": "I took the washing down. The lone sock is filing a missing-person report."
+  },
+  "v6-extra-356": {
+    "text": "My shopping list is legible. That does not guarantee it makes sense."
+  },
+  "v6-extra-357": {
+    "text": "The saucepan is boiling over. It wants to involve the whole hob."
+  },
+  "v6-extra-358": {
+    "text": "I sorted the spices. “Something red” is still under S."
+  },
+  "v6-extra-359": {
+    "text": "My bed has clean sheets. The battle with the duvet cover was included."
+  },
+  "v6-extra-360": {
+    "text": "The garden chair folds up. The sitting was not over."
+  },
+  "v6-extra-361": {
+    "text": "I picked up the thread again. It belongs to another conversation."
+  },
+  "v6-extra-362": {
+    "text": "My drinking glass is next to the paint-water jar. No place for optimism."
+  },
+  "v6-extra-363": {
+    "text": "The cheese is for the topping. Some underwent an oral examination first."
+  },
+  "v6-extra-364": {
+    "text": "I repaired the shopping bag. It is now a very cautious bag."
+  },
+  "v6-extra-365": {
+    "text": "My kitchen radio has good reception. Especially for grease splashes."
+  },
+  "v6-extra-366": {
+    "text": "The chair adjusts in height. My legs remain firm in their position."
+  },
+  "v6-extra-367": {
+    "text": "I cleaned the window without streaks. You have to stand at the right angle."
+  },
+  "v6-extra-368": {
+    "text": "My lawnmower is loud. The grass submitted its complaint in writing."
+  },
+  "v6-extra-369": {
+    "text": "The coaster is decorative. The mug invariably sits beside it."
+  },
+  "v6-extra-370": {
+    "text": "I looked for the scissors. They were with the wrapping paper and felt entirely justified."
+  },
+  "v6-extra-371": {
+    "text": "My knitting project is becoming a scarf. That is the diplomatic description of its shape."
+  },
+  "v6-extra-372": {
+    "text": "The vacuum bag is full. It took its collecting hobby too far."
+  },
+  "v6-extra-373": {
+    "text": "I froze bread. My breakfast plans remained fluid."
+  },
+  "v6-extra-374": {
+    "text": "My bike basket is useful. Especially for the rain it collects."
+  },
+  "v6-extra-375": {
+    "text": "The picture frame is crooked. The picture can live with it."
+  },
+  "v6-extra-376": {
+    "text": "I saved the last portion. Someone with my face ate it."
+  },
+  "v6-extra-377": {
+    "text": "My zip caught in the fabric. It probably wanted a closer relationship."
+  },
+  "v6-extra-378": {
+    "text": "The wardrobe is full. The hangers are demanding personal space."
+  },
+  "v6-extra-379": {
+    "text": "I watched the bird. It watched me. Neither of us bought anything."
+  },
+  "v6-extra-380": {
+    "text": "My coffee is decaf. My expectations were not informed."
+  },
+  "v6-extra-381": {
+    "text": "The handheld vacuum ate the crumbs. Now it rests, satisfied, at its charging station."
+  },
+  "v6-extra-382": {
+    "text": "I washed the curtains. The room looks two weeks younger."
+  },
+  "v6-extra-383": {
+    "text": "My basil is drooping sadly. It probably saw the pesto recipe."
+  },
+  "v6-extra-384": {
+    "text": "The cactus is in the way. Its complaint is very direct."
+  },
+  "v6-extra-385": {
+    "text": "I noticed the dust on the shelf. That concludes the investigation for now."
   }
 };if(typeof module!=='undefined')module.exports=entries;else root.HexFinishEnglish=entries;})(typeof window!=='undefined'?window:globalThis);

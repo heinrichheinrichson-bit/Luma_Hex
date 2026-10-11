@@ -1,3 +1,7 @@
+# Version 0.30.6
+
+1.324 aktive Abschluss-Texte für 1.200 Rätsel. Buchstabensalate werden nicht mehr ausgewählt; frühere Text-IDs bleiben für Spielstände erhalten. 415 neue Gedanken, motivierende Impulse und humorvolle Beobachtungen, jeweils deutsch und englisch. Fakten, belegte Zitate und andere kleine Rätsel bleiben enthalten. Keine eigene Textsammlung.
+
 # Hex & Joy 0.30.0
 
 Zwei parallel installierbare Varianten: Spielversion ohne Entwicklerwerkzeuge, Entwicklerversion mit allen Werkzeugen. Siehe BUILD-VARIANTS.md. Spielsteine und Layout unverändert.
@@ -62,7 +66,7 @@ Prüfungen: leere und alte Spielstände, doppelte Formen/Lesemomente, Testaussch
 
 # Version 0.16.0 – Persönliche Lesemomente
 
-1208 unterschiedliche Texte: Fakten, belegte Zitate, Humor, Gedanken und kleine Rätsel mit aufklappbarer Antwort. Zufällige Auswahl ohne Wiederholung bis der Vorrat durchlaufen wurde; danach werden lange zurückliegende Texte bevorzugt, die letzten 72 ausgeschlossen. Kategorien, Themen und Autoren werden nach Möglichkeit abgewechselt. Jeder erneut gespielte Abschluss erhält einen neuen Text. Öffnen, Neuladen, Übungen und automatische Testabschlüsse verbrauchen keine persönlichen Lesemomente. Sammlung → Deine Lesemomente zeigt gelesene Texte auf Seiten mit je 20 Einträgen. Spielstandsicherungen enthalten die Lesehistorie; alte Sicherungen bleiben unterstützt. Fakten und Zitate enthalten Quellen.
+1208 unterschiedliche Texte: Fakten, belegte Zitate, Humor, Gedanken und kleine Rätsel mit aufklappbarer Antwort. Zufällige Auswahl ohne Wiederholung bis der Vorrat durchlaufen wurde; danach werden lange zurückliegende Texte bevorzugt, die letzten 72 ausgeschlossen. Kategorien, Themen und Autoren werden nach Möglichkeit abgewechselt. Jeder erneut gespielte Abschluss erhält einen neuen Text. Öffnen, Neuladen, Übungen und automatische Testabschlüsse verbrauchen keine persönlichen Lesemomente. Die Texte erscheinen ausschließlich beim Rätselabschluss. Spielstandsicherungen enthalten die Lesehistorie; alte Sicherungen bleiben unterstützt. Fakten und Zitate enthalten Quellen.
 
 # Version 0.13.0 – 1200 Rätsel
 

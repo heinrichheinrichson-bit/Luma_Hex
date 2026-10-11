@@ -1,4 +1,5 @@
 const assert=require('assert/strict'),fs=require('fs'),vm=require('vm'),F=require('./finish.js'),S=require('./save.js');
+assert(F.active.length>require('./motifs.js').motifs.length,'active readings exceed puzzle count');assert(F.active.every(x=>!x.anagram&&!x.scramble&&!/Buchstabensalat|Letter scramble/i.test(x.text)),'no letter scrambles remain in selection');
 let seed=84731;const random=()=>((seed=Math.imul(seed,1664525)+1013904223>>>0)/4294967296);
 const mem=F.normalize(),seen=new Set(),kinds=new Set();for(let n=0;n<F.active.length;n++){const l=F.award(mem,String(n%1200),random);assert(!l.retired);assert(!seen.has(l.id),'unseen pool drawn without replacement');seen.add(l.id);if(n<5)kinds.add(l.kind);}assert.equal(kinds.size,5);assert.equal(seen.size,F.active.length);
 for(let n=0;n<1600;n++){const recent=mem.recent.slice();const l=F.award(mem,String(n%1200),random);assert(!recent.includes(l.id),'exhausted pool repeats only outside recent 72');}
