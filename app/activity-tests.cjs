@@ -1,0 +1,13 @@
+const assert=require('assert/strict'),A=require('./activity.js'),S=require('./save.js');
+let s=A.normalize();assert.equal(A.stats(s,'2026-10-11').total,0);
+for(const d of ['2026-10-01','2026-10-02','2026-10-03'])assert(A.record(s,d).added);
+assert.equal(A.stats(s,'2026-10-04').current,3);assert.equal(A.stats(s,'2026-10-05').current,0);assert.equal(A.stats(s,'2026-10-05').longest,3);
+assert(!A.record(s,'2026-10-03').added);
+for(const d of ['2026-10-05','2026-10-07','2026-10-09'])assert(!A.record(s,d).reward);
+assert(A.record(s,'2026-10-11').reward);assert(!A.record(s,'2026-10-11').reward);assert.equal(A.stats(s,'2026-10-11').total,7);
+assert(!A.record(s,'2026-09-30').reward,'Backwards clock cannot recross a rewarded count');
+assert.equal(A.shift('2024-02-28',1),'2024-02-29');assert.equal(A.shift('2025-02-28',1),'2025-03-01');assert.equal(A.shift('2026-12-31',1),'2027-01-01');assert.equal(A.shift('2026-03-29',1),'2026-03-30');
+assert.equal(A.ordinal('2026-02-29'),null);assert.deepEqual(A.normalize({days:['x','2026-10-01','2026-10-01']}),{days:['2026-10-01']});
+assert.equal(A.month(2024,1).count,29);assert.equal(A.month(2026,9).offset,3);
+const saved={index:0,done:[],attempts:{},records:{},sound:true,vibration:true,introSeen:true,activityState:s};assert.deepEqual(S.decode(S.encode(saved)).activityState,s);
+console.log('PASS: unique playdays, streak grace/reset/history, cumulative bonus, clock reversal, leap years, DST-independent dates, calendar and backup.');
