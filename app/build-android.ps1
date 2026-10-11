@@ -8,6 +8,7 @@ $root = $PSScriptRoot
 $build = Join-Path $root '../../work/android-build'
 New-Item -ItemType Directory -Force -Path $build, "$build/classes", "$build/dex", "$build/assets" | Out-Null
 foreach ($name in @('i18n-en.js','finish-en.js','i18n.js','index.html','style.css','ui-theme.css','motifs.js','engine.js','curriculum.js','journey.js','finish.js','save.js','achievements.js','game.js','timer.js','hints.js','ads.js','activity.js','icon.svg','manifest.webmanifest')) { Copy-Item -LiteralPath (Join-Path $root $name) -Destination "$build/assets/$name" }
+Copy-Item -LiteralPath "$root/assets" -Destination "$build/assets" -Recurse -Force
 function Checked { param([string]$Exe,[string[]]$Arguments) & $Exe @Arguments; if ($LASTEXITCODE -ne 0) { throw "Build failed: $Exe" } }
 Checked "$tools/aapt.exe" @('package','-f','-M',"$root/android/AndroidManifest.xml",'-S',"$root/android/res",'-A',"$build/assets",'-I',$platform,'-F',"$build/unsigned.apk")
 Checked "$jdk/bin/javac.exe" @('-source','8','-target','8','-classpath',$platform,'-d',"$build/classes","$root/android/MainActivity.java")

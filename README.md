@@ -1,3 +1,7 @@
+# Hex & Joy 0.29.3
+
+Aktuelle Testversion: releases/Hex-and-Joy-0.29.3-Test.apk. Neues Icon und freigegebener Schriftzug; Spielsteine unverändert. Details: releases/Hex-and-Joy-0.29.3-Notizen.md.
+
 # Luma Hex
 
 Eigenständiger Hexagon-Puzzle-Prototyp für Android und Browser.
@@ -76,4 +80,5 @@ Prüfung: `node app/tests.cjs` — 100 Level erfolgreich geprüft.
 Jede neue Version wird mit Quellcode, aktualisierten Testdateien, Änderungsnotizen und einem Git-Tag gesichert und nach GitHub übertragen. Private Signierschlüssel und lokale Zugangsdaten gehören nicht ins Repository.
 
 Android-Buildhinweise stehen in `app/README.md` und `app/build-android.ps1`. Der lokale Test-Signierschlüssel ist bewusst nicht enthalten; für Updates einer bereits installierten APK wird derselbe Schlüssel benötigt.
+
 
