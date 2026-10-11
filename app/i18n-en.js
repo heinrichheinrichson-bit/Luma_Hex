@@ -1,4 +1,11 @@
 (function(root){'use strict';const dictionary={
+"Werbung simulieren · +1 Hinweis":"Simulate ad · +1 hint",
+"Simuliere ein Werbevideo und erhalte einen weiteren Hinweis.":"Simulate a video ad to receive another hint.",
+"Werbesimulation läuft. Nach 3 Sekunden kannst du die Belohnung abholen.":"Ad simulation running. Collect your reward after 3 seconds.",
+"Simulation abschließen · +1 Hinweis":"Finish simulation · +1 hint",
+ "Kostenlosen Hinweis holen":"Get a free hint",
+ "Keine Hinweise mehr?":"Out of hints?",
+ "Hol dir kostenlos einen weiteren Hinweis.":"Pick up another hint for free.",
   "Hier wurde noch kein Lesemoment gesammelt.": "No reading moment has been unlocked here yet.",
   "Antwort ansehen": "Reveal answer",
   "Quelle": "Source",
