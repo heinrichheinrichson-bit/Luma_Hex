@@ -345,7 +345,7 @@ if(typeof HexI18n!=='undefined'){$('languageSelect').value=L.preference;$('langu
 // Simulated rewarded provider: reward and close are separate lifecycle events.
 var hintRewardSession=null;
 function refreshFreeHint(){const empty=!unlimitedHints&&hintWallet.count===0;$("freeHint").hidden=!empty;$("freeHint").disabled=false;$("freeHint").textContent=L.t("Werbung simulieren · +1 Hinweis");if(empty){$("hintDialogTitle").textContent=L.t("Keine Hinweise mehr?");$("hintDialogStatus").textContent=L.t("Simuliere ein Werbevideo und erhalte einen weiteren Hinweis.");}}
-function finishHintReward(completed){if(!hintRewardSession)return;const session=hintRewardSession;hintRewardSession=null;closeDialog("hintRewardAd");if(completed&&HexHints.reward(hintWallet,session.id)){syncAds();HexAds.shown(adState);persist();}refreshHints();openDialog("hintDialog");}
+function finishHintReward(completed){if(!hintRewardSession)return;const session=hintRewardSession;hintRewardSession=null;closeDialog("hintRewardAd");if(completed&&HexHints.reward(hintWallet,session.id)){syncAds();HexAds.shown(adState);persist();}refreshHints();if(completed)toast("+1 Hinweis");else openDialog("hintDialog");}
 $("freeHint").onclick=()=>{if(!$("hintDialog").open||unlimitedHints||hintWallet.count!==0||hintRewardSession)return;hintRewardSession={id:"simulated-video-"+Date.now()+"-"+Math.random()};closeDialog("hintDialog");openDialog("hintRewardAd");};
 $("finishHintRewardAd").onclick=()=>finishHintReward(true);
 $("cancelHintRewardAd").onclick=()=>finishHintReward(false);
