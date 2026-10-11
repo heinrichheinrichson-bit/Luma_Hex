@@ -10,7 +10,7 @@ function context(preference,system='en-US',store=new Map(),session=new Map()){
 }
 const en=context(undefined,'en-US');assert.equal(en.c.HexI18n.preference,'system');assert.equal(en.c.document.documentElement.lang,'en');assert.equal(context(undefined,'de-AT').c.HexI18n.language,'de');assert.equal(context(undefined,'fr-FR').c.HexI18n.language,'en');assert.equal(context('de','en-US').c.HexI18n.language,'de');assert.equal(context('en','de-AT').c.HexI18n.language,'en');assert.equal(context('broken','de-DE').c.HexI18n.preference,'system');
 const L=en.c.HexI18n;assert.equal(L.t('Rätsel 42 spielen'),'Play puzzle 42');assert.equal(L.t('3 von 20 Feldern'),'3 of 20 cells');assert.equal(L.t('1 Hinweis'),'1 hint');
-for(const m of html.matchAll(/>([^<>]+)</g)){const text=m[1].trim();if(!/[A-Za-zÄÖÜäöüß]/.test(text)||/^(?:LUMA|HEX|LEVEL|Vibration|Deutsch|English|\d+ px)/.test(text))continue;assert.notEqual(L.t(text),text,'static text has an English translation: '+text);}
+for(const m of html.matchAll(/>([^<>]+)</g)){const text=m[1].trim().replaceAll('&amp;','&');if(!/[A-Za-zÄÖÜäöüß]/.test(text)||/^(?:LUMA|HEX|& JOY|LEVEL|Vibration|Deutsch|English|\d+ px)/.test(text))continue;assert.notEqual(L.t(text),text,'static text has an English translation: '+text);}
 for(const name of ['Johann Wolfgang von Goethe','Marie von Ebner-Eschenbach'])assert.equal(L.t('— '+name),'— '+name,'author names are never translated');
 const F=en.c.HexFinish,english=en.c.HexFinishEnglish;assert.equal(Object.keys(english).length,F.lines.length);
 const sorted=s=>s.replace(/[^A-Z]/g,'').split('').sort().join('');for(const row of F.lines){const x=F.get(row.id);assert.equal(x.id,row.id);assert.equal(x.text,english[row.id].text);assert.ok(x.text.trim().length>5);if(row.answer)assert.ok(x.answer);if(x.anagram)assert.equal(sorted(x.scramble),sorted(x.anagram),x.id);if(row.source)assert.equal(x.source.url,row.source.url);if(row.author)assert.equal(x.author,row.author);}
@@ -26,3 +26,5 @@ const decoded=back.c.HexSave.decode(back.c.HexSave.encode(JSON.parse(back.store.
 back.run('showMenu()');back.e.jumpNumber.value=9999;back.e.jumpLevel.onclick();assert.equal(back.e.toast.textContent,'Please enter a puzzle number from 1 to 1200.');
 back.c.navigator.languages=['fr-FR'];back.c.HexI18n.setPreference('system');assert.equal(back.c.HexI18n.checkSystem(),false);back.c.navigator.languages=['de-DE'];assert.equal(back.c.HexI18n.checkSystem(),true);assert.equal(back.c.reloaded,true);
 console.log('PASS: system/default/explicit languages, fallback, all reading entries, English anagrams, stable history, bilingual game flow, reload persistence, calendar, rewards and backup.');
+
+
