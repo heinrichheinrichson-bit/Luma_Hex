@@ -23,15 +23,16 @@ import org.json.JSONObject;
 
 public class MainActivity extends Activity {
  private WebView web;
+ private boolean lifecyclePaused;
  private String pendingBackup;
  private static final int SAVE_BACKUP=900,OPEN_BACKUP=901;
  @Override public void onCreate(Bundle state){
   super.onCreate(state);
-  getWindow().setStatusBarColor(Color.rgb(16,44,54));
-  getWindow().setNavigationBarColor(Color.rgb(16,44,54));
-  FrameLayout frame=new FrameLayout(this);frame.setBackgroundColor(Color.rgb(16,44,54));
+  getWindow().setStatusBarColor(Color.rgb(8,15,28));
+  getWindow().setNavigationBarColor(Color.rgb(8,15,28));
+  FrameLayout frame=new FrameLayout(this);frame.setBackgroundColor(Color.rgb(8,15,28));
   frame.setOnApplyWindowInsetsListener((v,insets)->{android.graphics.Insets bars=insets.getInsets(WindowInsets.Type.systemBars()|WindowInsets.Type.displayCutout());v.setPadding(bars.left,bars.top,bars.right,bars.bottom);return insets;});
-  web=new WebView(this);web.setBackgroundColor(Color.rgb(16,44,54));
+  web=new WebView(this);web.setBackgroundColor(Color.rgb(8,15,28));
   web.getSettings().setUseWideViewPort(true);web.getSettings().setLoadWithOverviewMode(true);
   web.getSettings().setJavaScriptEnabled(true);web.getSettings().setDomStorageEnabled(true);
   web.getSettings().setAllowFileAccess(false);web.getSettings().setAllowContentAccess(false);
@@ -69,7 +70,7 @@ public class MainActivity extends Activity {
   else {try(InputStream stream=getContentResolver().openInputStream(data.getData());ByteArrayOutputStream bytes=new ByteArrayOutputStream()){if(stream==null)throw new Exception();byte[] buffer=new byte[8192];int n;while((n=stream.read(buffer))!=-1){if(bytes.size()+n>1000000)throw new Exception();bytes.write(buffer,0,n);}String text=new String(bytes.toByteArray(),StandardCharsets.UTF_8);web.evaluateJavascript("window.LumaReceiveBackup("+JSONObject.quote(text)+")",null);}catch(Exception e){notifyUser("Die Sicherung konnte nicht gelesen werden. Maximale Größe: 1 MB.");}}
  }
  @Override public void onBackPressed(){web.evaluateJavascript("window.LumaBack ? window.LumaBack() : false",result->{if(!"true".equals(result))super.onBackPressed();});}
- @Override protected void onPause(){super.onPause();web.onPause();}
- @Override protected void onResume(){super.onResume();if(web!=null)web.onResume();}
+ @Override protected void onPause(){lifecyclePaused=true;super.onPause();if(web!=null)web.evaluateJavascript("window.LumaPauseClock&&window.LumaPauseClock()",value->{if(lifecyclePaused&&web!=null)web.onPause();});}
+ @Override protected void onResume(){super.onResume();lifecyclePaused=false;if(web!=null){web.onResume();web.evaluateJavascript("window.LumaResumeClock&&window.LumaResumeClock()",null);}}
  @Override protected void onDestroy(){web.destroy();super.onDestroy();}
 }

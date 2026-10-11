@@ -3,6 +3,7 @@
  const M=typeof module!=='undefined'?require('./motifs.js'):root.HexMotifs;
  const E=typeof module!=='undefined'?require('./engine.js'):root.HexEngine;
  const F=typeof module!=='undefined'?require('./finish.js'):root.HexFinish;
+ const T=typeof module!=='undefined'?require('./timer.js'):root.HexTimer;
  const object=value=>value&&typeof value==='object'&&!Array.isArray(value);
  function encode(save){return JSON.stringify({app:'luma-hex',format:1,catalog:M.motifs.map(m=>m.id),savedAt:new Date().toISOString(),save},null,2);}
  function decode(text){
@@ -21,7 +22,8 @@
     if(String(Number(id))!==id||!E.fits(data,placements,Number(id),at))throw Error('Ein gespeichertes Teil liegt außerhalb des Spielfelds oder überlappt.');
     placements[id]=[...at];
    }
-   attempts[n]={placements,hints:Number.isInteger(attempt.hints)&&attempt.hints>=0?attempt.hints:0,testUsed:attempt.testUsed===true};
+   attempts[n]={placements,hints:Number.isInteger(attempt.hints)&&attempt.hints>=0?attempt.hints:0,testUsed:attempt.testUsed===true,...(attempt.timing!==undefined?{timing:T.normalize(attempt.timing)}:{})};
+   if(attempt.timing!==undefined&&!attempts[n].timing)throw Error('Eine gespeicherte Spielzeit ist ungültig.');
   }
   const records={};
   if(object(raw.records))for(const [n,value] of Object.entries(raw.records))if(valid(Number(n))&&object(value)&&['own','hint','test','legacy'].includes(value.mode))records[n]={mode:value.mode,hints:Number.isInteger(value.hints)&&value.hints>=0?value.hints:0};
@@ -29,7 +31,7 @@
   if(raw.finishMemory!==undefined){const f=raw.finishMemory,ids=value=>Array.isArray(value)&&value.length<=F.lines.length&&value.every(id=>typeof id==='string'&&F.get(id))&&new Set(value).size===value.length,keys=value=>object(value)&&Object.keys(value).every(n=>String(Number(n))===n&&valid(Number(n)));
    if(!object(f)||!Array.isArray(f.recent)||f.recent.length>72||!f.recent.every(id=>F.get(id))||!keys(f.byPuzzle)||!Object.values(f.byPuzzle).every(id=>F.get(id))||('seen' in f&&!ids(f.seen))||('history' in f&&(!keys(f.history)||!Object.values(f.history).every(ids))))throw Error('Die gespeicherten Abschlusstexte sind ungültig.');finishMemory=F.normalize(f);
   }
-  return {...(finishMemory?{finishMemory}:{}),...(raw.skin!==undefined?{skin:["classic","glass","pearl","rings","ceramic","obsidian","facets","enamel","velvet","core","mosaic","chrome"].includes(raw.skin)?raw.skin:'classic'}:{}),index:raw.index,done:[...new Set(raw.done)],attempts,records,...(Number.isFinite(raw.dragGap)?{dragGap:Math.max(24,Math.min(100,raw.dragGap))}:{}),sound:raw.sound!==false,vibration:raw.vibration!==false,introSeen:raw.introSeen===true,...(Number.isInteger(raw.tutorialProgress)&&raw.tutorialProgress>=0&&raw.tutorialProgress<=6?{tutorialProgress:raw.tutorialProgress}:{})};
+  return {...(raw.timerEnabled!==undefined?{timerEnabled:raw.timerEnabled===true}:{}),...(raw.bestTimes!==undefined?{bestTimes:T.bests(raw.bestTimes,count)}:{}),...(finishMemory?{finishMemory}:{}),...(raw.skin!==undefined?{skin:["classic","glass","pearl","rings","ceramic","obsidian","facets","enamel","velvet","core","mosaic","chrome"].includes(raw.skin)?raw.skin:'classic'}:{}),index:raw.index,done:[...new Set(raw.done)],attempts,records,...(Number.isFinite(raw.dragGap)?{dragGap:Math.max(24,Math.min(100,raw.dragGap))}:{}),sound:raw.sound!==false,vibration:raw.vibration!==false,introSeen:raw.introSeen===true,...(Number.isInteger(raw.tutorialProgress)&&raw.tutorialProgress>=0&&raw.tutorialProgress<=6?{tutorialProgress:raw.tutorialProgress}:{})};
  }
  const api={encode,decode};if(typeof module!=='undefined')module.exports=api;else root.HexSave=api;
 })(typeof window!=='undefined'?window:globalThis);
