@@ -1,3 +1,7 @@
+# Luma Hex 0.29.1
+
+Rätselanzeige korrigiert: RÄTSEL / PUZZLE statt LEVEL. Nummerierung unverändert. UI- und Übersetzungstests bestanden; Android-Code 54 signaturgeprüft.
+
 # Luma Hex 0.29.0
 
 Deutsch / English / Systemsprache (Standard). Vollständig offline lokalisierte Oberfläche und 1.208 aktive Lesemomente; englische Wortspiele angepasst. Spielstände und Text-Historie bleiben beim Sprachwechsel erhalten. Alle 17 Testsuiten bestanden; Android-Code 53 signaturgeprüft. Physischer S22-Test noch offen. Details: Luma-Hex-0.29.0-Notizen.md.
@@ -218,3 +222,4 @@ Ein Teil ziehen oder antippen und danach ein Zielfeld antippen. Der weiße Licht
 Geprüft: alle 30 Motivrätsel auf zusammenhängende Felder und Teile, vollständige Lösbarkeit, Bildschirmgrenzen, Kollisionen, vorhandene Texte und gültige, zum Ziel führende Hinweise. Im Browser: Einstieg, Antippen, Entfernen und erneutes Einsetzen, Levelabschluss, individuelle Texte, Sammlung, gesperrte Motive, Motivdetails, Levelwechsel und Speicherung einzelner angefangener Rätsel nach Wechsel und Neuladen. Darstellung mit 360 × 780 und 360 × 700 Browser-Viewport geprüft. APK kompiliert und Signatur geprüft. Noch kein Test auf einem echten Android-Gerät; Touch-Dragging, Haptik und Klang benötigen den S22-Test.
 
 Dies ist eine spielbare Produktstudie, keine Play-Store-Veröffentlichung. Für die Produktversion folgen insbesondere eine bessere Leveldramaturgie, weitere Animationen, Onboarding, Gerätetests, Release-Build mit AAB und eigenem Veröffentlichungsschlüssel, Store-Material, Datenschutz sowie gegebenenfalls Werbung und Käufe. Der Arbeitstitel ist noch nicht auf Verfügbarkeit geprüft.
+

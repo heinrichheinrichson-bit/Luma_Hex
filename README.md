@@ -2,6 +2,12 @@
 
 Eigenständiger Hexagon-Puzzle-Prototyp für Android und Browser.
 
+## Version 0.29.1
+
+RÄTSEL / PUZZLE ersetzt LEVEL im Spiel. Nummerierung unverändert. UI- und Übersetzungstests bestanden; APK signaturgeprüft.
+
+Aktuelle Android-Testversion: releases/Luma-Hex-0.29.1-Test.apk.
+
 ## Version 0.29.0
 
 Deutsch / English / Systemsprache (Standard), offline inklusive 1.208 aktiver Abschlusstexte. Englische Worträtsel angepasst, Sprachwechsel bewahrt Fortschritt. Alle 17 Testsuiten bestanden; S22-Darstellung noch zu prüfen.
@@ -70,3 +76,4 @@ Prüfung: `node app/tests.cjs` — 100 Level erfolgreich geprüft.
 Jede neue Version wird mit Quellcode, aktualisierten Testdateien, Änderungsnotizen und einem Git-Tag gesichert und nach GitHub übertragen. Private Signierschlüssel und lokale Zugangsdaten gehören nicht ins Repository.
 
 Android-Buildhinweise stehen in `app/README.md` und `app/build-android.ps1`. Der lokale Test-Signierschlüssel ist bewusst nicht enthalten; für Updates einer bereits installierten APK wird derselbe Schlüssel benötigt.
+
