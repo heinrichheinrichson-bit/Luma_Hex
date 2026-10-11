@@ -2,6 +2,12 @@
 
 Eigenständiger Hexagon-Puzzle-Prototyp für Android und Browser.
 
+## Version 0.29.0
+
+Deutsch / English / Systemsprache (Standard), offline inklusive 1.208 aktiver Abschlusstexte. Englische Worträtsel angepasst, Sprachwechsel bewahrt Fortschritt. Alle 17 Testsuiten bestanden; S22-Darstellung noch zu prüfen.
+
+Aktuelle Android-Testversion: releases/Luma-Hex-0.29.0-Test.apk. Details: releases/Luma-Hex-0.29.0-Notizen.md.
+
 ## Version 0.28.1
 
 Abschlussfenster platzsparender, ohne Änderungen anderer Ansichten. APK: releases/Luma-Hex-0.28.1-Test.apk. Details: releases/Luma-Hex-0.28.1-Notizen.md.

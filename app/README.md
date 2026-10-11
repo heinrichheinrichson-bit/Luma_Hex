@@ -1,3 +1,7 @@
+# Luma Hex 0.29.0
+
+Deutsch / English / Systemsprache (Standard). Vollständig offline lokalisierte Oberfläche und 1.208 aktive Lesemomente; englische Wortspiele angepasst. Spielstände und Text-Historie bleiben beim Sprachwechsel erhalten. Alle 17 Testsuiten bestanden; Android-Code 53 signaturgeprüft. Physischer S22-Test noch offen. Details: Luma-Hex-0.29.0-Notizen.md.
+
 # Luma Hex 0.28.1
 
 Abschlussfenster mit kompakterer Vorschau und weniger Leerraum. Lange Inhalte bleiben erreichbar. Details: Luma-Hex-0.28.1-Notizen.md.

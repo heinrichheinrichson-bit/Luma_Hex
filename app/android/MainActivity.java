@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
  private WebView web;
  private boolean lifecyclePaused;
  private String pendingBackup;
+ private volatile String language="en";
  private static final int SAVE_BACKUP=900,OPEN_BACKUP=901;
  @Override public void onCreate(Bundle state){
   super.onCreate(state);
@@ -50,24 +51,26 @@ public class MainActivity extends Activity {
   web.loadUrl("file:///android_asset/index.html");
  }
  public class Feedback {
+  @JavascriptInterface public String getSystemLanguage(){return java.util.Locale.getDefault().toLanguageTag();}
+  @JavascriptInterface public void setLanguage(String value){language="de".equals(value)?"de":"en";}
   @JavascriptInterface public void vibrate(){Vibrator v=(Vibrator)getSystemService(VIBRATOR_SERVICE);if(v!=null&&v.hasVibrator())v.vibrate(VibrationEffect.createOneShot(12,VibrationEffect.DEFAULT_AMPLITUDE));}
-  @JavascriptInterface public void saveBackup(String text){if(text==null||text.length()>1000000)return;runOnUiThread(()->{if(pendingBackup!=null)return;pendingBackup=text;Intent intent=new Intent(Intent.ACTION_CREATE_DOCUMENT);intent.addCategory(Intent.CATEGORY_OPENABLE);intent.setType("application/json");intent.putExtra(Intent.EXTRA_TITLE,"Luma-Hex-Spielstand.json");try{startActivityForResult(intent,SAVE_BACKUP);}catch(Exception e){pendingBackup=null;notifyUser("Die Dateiauswahl konnte nicht geöffnet werden.");}});}
-  @JavascriptInterface public void openBackup(){runOnUiThread(()->{Intent intent=new Intent(Intent.ACTION_OPEN_DOCUMENT);intent.addCategory(Intent.CATEGORY_OPENABLE);intent.setType("*/*");try{startActivityForResult(intent,OPEN_BACKUP);}catch(Exception e){notifyUser("Die Dateiauswahl konnte nicht geöffnet werden.");}});}
+  @JavascriptInterface public void saveBackup(String text){if(text==null||text.length()>1000000)return;runOnUiThread(()->{if(pendingBackup!=null)return;pendingBackup=text;Intent intent=new Intent(Intent.ACTION_CREATE_DOCUMENT);intent.addCategory(Intent.CATEGORY_OPENABLE);intent.setType("application/json");intent.putExtra(Intent.EXTRA_TITLE,"Luma-Hex-Progress.json");try{startActivityForResult(intent,SAVE_BACKUP);}catch(Exception e){pendingBackup=null;notifyUser("de".equals(language)?"Die Dateiauswahl konnte nicht geöffnet werden.":"The file picker could not be opened.");}});}
+  @JavascriptInterface public void openBackup(){runOnUiThread(()->{Intent intent=new Intent(Intent.ACTION_OPEN_DOCUMENT);intent.addCategory(Intent.CATEGORY_OPENABLE);intent.setType("*/*");try{startActivityForResult(intent,OPEN_BACKUP);}catch(Exception e){notifyUser("de".equals(language)?"Die Dateiauswahl konnte nicht geöffnet werden.":"The file picker could not be opened.");}});}
  }
  private void openSource(Uri uri){
   String scheme=uri.getScheme();
   if(!"https".equalsIgnoreCase(scheme)&&!"http".equalsIgnoreCase(scheme))return;
   Intent intent=new Intent(Intent.ACTION_VIEW,uri);
   intent.addCategory(Intent.CATEGORY_BROWSABLE);
-  try{startActivity(intent);}catch(ActivityNotFoundException e){notifyUser("Kein Browser zum Öffnen der Quelle gefunden.");}
+  try{startActivity(intent);}catch(ActivityNotFoundException e){notifyUser("de".equals(language)?"Kein Browser zum Öffnen der Quelle gefunden.":"No browser was found to open the source.");}
  }
  private void notifyUser(String text){Toast.makeText(this,text,Toast.LENGTH_LONG).show();}
  @Override protected void onActivityResult(int request,int result,Intent data){
   super.onActivityResult(request,result,data);
   if(request!=SAVE_BACKUP&&request!=OPEN_BACKUP)return;
   if(result!=RESULT_OK||data==null||data.getData()==null){if(request==SAVE_BACKUP)pendingBackup=null;return;}
-  if(request==SAVE_BACKUP){String text=pendingBackup;pendingBackup=null;if(text==null)return;try(OutputStream stream=getContentResolver().openOutputStream(data.getData(),"wt")){if(stream==null)throw new Exception();stream.write(text.getBytes(StandardCharsets.UTF_8));notifyUser("Spielstand gesichert.");}catch(Exception e){notifyUser("Die Sicherung konnte nicht gespeichert werden.");}}
-  else {try(InputStream stream=getContentResolver().openInputStream(data.getData());ByteArrayOutputStream bytes=new ByteArrayOutputStream()){if(stream==null)throw new Exception();byte[] buffer=new byte[8192];int n;while((n=stream.read(buffer))!=-1){if(bytes.size()+n>1000000)throw new Exception();bytes.write(buffer,0,n);}String text=new String(bytes.toByteArray(),StandardCharsets.UTF_8);web.evaluateJavascript("window.LumaReceiveBackup("+JSONObject.quote(text)+")",null);}catch(Exception e){notifyUser("Die Sicherung konnte nicht gelesen werden. Maximale Größe: 1 MB.");}}
+  if(request==SAVE_BACKUP){String text=pendingBackup;pendingBackup=null;if(text==null)return;try(OutputStream stream=getContentResolver().openOutputStream(data.getData(),"wt")){if(stream==null)throw new Exception();stream.write(text.getBytes(StandardCharsets.UTF_8));notifyUser("de".equals(language)?"Spielstand gesichert.":"Progress backed up.");}catch(Exception e){notifyUser("de".equals(language)?"Die Sicherung konnte nicht gespeichert werden.":"The backup could not be saved.");}}
+  else {try(InputStream stream=getContentResolver().openInputStream(data.getData());ByteArrayOutputStream bytes=new ByteArrayOutputStream()){if(stream==null)throw new Exception();byte[] buffer=new byte[8192];int n;while((n=stream.read(buffer))!=-1){if(bytes.size()+n>1000000)throw new Exception();bytes.write(buffer,0,n);}String text=new String(bytes.toByteArray(),StandardCharsets.UTF_8);web.evaluateJavascript("window.LumaReceiveBackup("+JSONObject.quote(text)+")",null);}catch(Exception e){notifyUser("de".equals(language)?"Die Sicherung konnte nicht gelesen werden. Maximale Größe: 1 MB.":"The backup could not be read. Maximum size: 1 MB.");}}
  }
  @Override public void onBackPressed(){web.evaluateJavascript("window.LumaBack ? window.LumaBack() : false",result->{if(!"true".equals(result))super.onBackPressed();});}
  @Override protected void onPause(){lifecyclePaused=true;super.onPause();if(web!=null)web.evaluateJavascript("window.LumaPauseClock&&window.LumaPauseClock()",value->{if(lifecyclePaused&&web!=null)web.onPause();});}
