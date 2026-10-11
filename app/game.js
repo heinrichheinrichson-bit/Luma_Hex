@@ -23,10 +23,18 @@ let dragGap=Math.max(24,Math.min(100,Number(saved.dragGap)||48)),suppressBoardCl
 let skinTest=readSave('lumahex-skin-preview-v1').enabled===true;
 let selectedSkin=HexAchievements.skins.some(s=>s.id===saved.skin)?saved.skin:'classic';if(!HexAchievements.rewards(HexAchievements.evaluate(done,records,finishMemory,C.byIndex,ORDER),skinTest).some(s=>s.id===selectedSkin&&s.unlocked))selectedSkin='classic';
 const clone=value=>JSON.parse(JSON.stringify(value));
+const adState=HexAds.normalize(saved.adState,TOTAL);for(const n of done)if(records[n]?.mode!=='test'&&!adState.completed.includes(n))adState.completed.push(n);if(!saved.adState)adState.seen=[...new Set(adState.completed.map(chapterOf))];
+let adTestEnabled=readSave('lumahex-ad-test-v1').enabled===true,adFreeSimulated=readSave('lumahex-ad-test-v1').adFree===true,pendingAdContinuation=null;
+const activeAdClock=HexAds.clock(adState);
+function syncAds(){activeAdClock.sync(!clockSuspended&&!document.hidden&&tutorialIndex===null&&!!data&&!testUsed&&!puzzleTimer.finished&&!document.querySelector('dialog[open]'));}
+function adPreferences(){try{localStorage.setItem('lumahex-ad-test-v1',JSON.stringify({enabled:adTestEnabled,adFree:adFreeSimulated}));}catch{}updateAdStatus();}
+function updateAdStatus(){$('adTestToggle').checked=adTestEnabled;$('adFreeToggle').checked=adFreeSimulated;$('adTestStatus').textContent=adState.rounds+' neue Abschlüsse · '+Math.floor(adState.activeMs/60000)+' aktive Minuten seit der letzten Anzeige';}
+function requestNext(){if(pendingAdContinuation)return;if(tutorialIndex!==null){continuePuzzle(index+1);return;}if(E.occupied(data,placements).size!==data.cells.length)return;const next=nextUnsolved(0),boundary=next===undefined||chapterOf(next)!==chapterOf(index)||chapterItems(chapterOf(index)).every(n=>done.has(n));syncAds();const allowed=!testUsed&&HexAds.eligible(adState,{normal:true,chapter:chapterOf(index),chapterBoundary:boundary,adFree:adFreeSimulated});if(!allowed||!adTestEnabled){continuePuzzle(index+1);return;}pendingAdContinuation=()=>continuePuzzle(index+1);openDialog('adTestDialog');HexAds.shown(adState);persist();updateAdStatus();}
+function dismissTestAd(){const continuation=pendingAdContinuation;if(!continuation)return;pendingAdContinuation=null;closeDialog('adTestDialog');continuation();}
 let timerEnabled=saved.timerEnabled===true,bestTimes=HexTimer.bests(saved.bestTimes,TOTAL),bestTimeHints=Object.fromEntries(Object.entries(saved.bestTimeHints||{}).filter(([id,n])=>bestTimes[id]&&Number.isInteger(n)&&n>=0)),puzzleTimer=HexTimer.create(),clockResult=null,clockTick=null,clockSuspended=false,restoringSave=false,lastClockSave=0;
 function clockCanRun(){return timerEnabled&&!clockSuspended&&!document.hidden&&tutorialIndex===null&&data&&!puzzleTimer.finished&&!document.querySelector('dialog[open]');}
 function updateClock(){const visible=timerEnabled&&tutorialIndex===null;$('puzzleClock').hidden=!visible;$('clockElapsed').textContent=HexTimer.format(puzzleTimer.read());$('clockBest').textContent=bestTimes[index]?'Bestzeit '+HexTimer.format(bestTimes[index])+(bestTimeHints[index]?' · '+hintCountLabel(bestTimeHints[index]):''):'';$('timerToggle').checked=timerEnabled;}
-function syncClock(){if(clockCanRun())puzzleTimer.start();else puzzleTimer.pause();updateClock();}
+function syncClock(){if(clockCanRun())puzzleTimer.start();else puzzleTimer.pause();updateClock();syncAds();}
 function openDialog(id){$(id).showModal();syncClock();}
 function closeDialog(id){$(id).close();syncClock();}
 function newPuzzleClock(stored,fresh=false){const legacyPartial=!!stored&&Object.keys(stored.placements||{}).length>0;puzzleTimer=HexTimer.create(!fresh?stored?.timing:null,timerEnabled&&!legacyPartial);clockResult=null;syncClock();}
@@ -35,7 +43,7 @@ function hintCountLabel(n){return n===1?'1 Hinweis':n+' Hinweise';}
 function showClockResult(){const result=clockResult;$('winTiming').hidden=!timerEnabled||tutorialIndex!==null||!result;if(!result)return;const best=bestTimes[index],used=result.hintCount||0;$('winTiming').textContent='Deine Zeit: '+HexTimer.format(result.elapsedMs)+(used?' · '+hintCountLabel(used):'')+(result.record?' · Neue persönliche Bestzeit!':best?' · Bestzeit: '+HexTimer.format(best)+(bestTimeHints[index]?' ('+hintCountLabel(bestTimeHints[index])+')':''):'')+(!result.eligible?' · Ohne Bestzeitwertung':'');}
 
 const hintWallet=HexHints.normalize(saved.hintWallet);HexHints.advance(hintWallet);
-function persist(){if(restoringSave)return;if(tutorialIndex===null)attempts[index]={placements:clone(placements),hints,testUsed,timing:puzzleTimer.snapshot()};try{localStorage.setItem(STORAGE,JSON.stringify({index,attempts,done:[...done],records,dragGap,sound,vibration,introSeen,tutorialProgress,finishMemory,skin:selectedSkin,timerEnabled,bestTimes,bestTimeHints,hintWallet}));}catch{}syncClock();}
+function persist(){if(restoringSave)return;syncAds();if(tutorialIndex===null)attempts[index]={placements:clone(placements),hints,testUsed,timing:puzzleTimer.snapshot()};try{localStorage.setItem(STORAGE,JSON.stringify({index,attempts,done:[...done],records,dragGap,sound,vibration,introSeen,tutorialProgress,finishMemory,skin:selectedSkin,timerEnabled,bestTimes,bestTimeHints,hintWallet,adState}));}catch{}syncClock();}
 function point(q,r,s){return [Math.sqrt(3)*s*(q+r/2),1.5*s*r];}
 function polygon(x,y,s){return Array.from({length:6},(_,i)=>{const a=(60*i-30)*Math.PI/180;return `${(x+s*Math.cos(a)).toFixed(2)},${(y+s*Math.sin(a)).toFixed(2)}`;}).join(' ');}
 function defs(){return '<defs>'+colors.map((c,i)=>`<linearGradient id="gem${i}" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="${c[0]}"/><stop offset=".48" stop-color="${c[1]}"/><stop offset="1" stop-color="${c[2]}"/></linearGradient>`).join('')+colors.map((c,i)=>'<radialGradient id="pearl'+i+'" cx="32%" cy="22%" r="85%"><stop stop-color="#fff6eb"/><stop offset=".38" stop-color="'+c[0]+'"/><stop offset=".8" stop-color="'+c[1]+'"/><stop offset="1" stop-color="#62727c"/></radialGradient>').join('')+'<linearGradient id="chrome" x1="0" y1="0" x2=".3" y2="1"><stop stop-color="#fff"/><stop offset=".28" stop-color="#8babb9"/><stop offset=".46" stop-color="#e9f7ff"/><stop offset=".5" stop-color="#304955"/><stop offset=".8" stop-color="#7895a4"/><stop offset="1" stop-color="#dcecf3"/></linearGradient></defs>';}
@@ -73,7 +81,7 @@ function load(n,fresh=false){
  tutorialIndex=null;completionAwarded=false;runMoment=null;
  clearTimeout(winTimer);$('board').classList.remove('completed');$('ghost').innerHTML='';drag=null;index=n;data=E.level(n);placements={};const stored=!fresh?attempts[n]:null;
  if(stored&&stored.placements&&typeof stored.placements==='object')for(const p of data.pieces)if(E.fits(data,placements,p.id,stored.placements[p.id]))placements[p.id]=[...stored.placements[p.id]];
- window.scrollTo?.({top:0,behavior:'instant'});history=[];selected=null;hints=stored?Math.max(0,Number(stored.hints)||0):0;testUsed=stored?.testUsed===true;newPuzzleClock(stored,fresh);render();
+ window.scrollTo?.({top:0,behavior:'instant'});history=[];selected=null;hints=stored?Math.max(0,Number(stored.hints)||0):0;testUsed=stored?.testUsed===true;HexAds.opened(adState,chapterOf(index));newPuzzleClock(stored,fresh);render();
  if(E.occupied(data,placements).size===data.cells.length){completionAwarded=true;runMoment=HexFinish.get(finishMemory.byPuzzle[index]);complete(false);}
 }
 function checkpoint(){history.push({placements:clone(placements),hints,testUsed});if(history.length>100)history.shift();}
@@ -85,7 +93,7 @@ function complete(playSound=true){
  if(E.occupied(data,placements).size!==data.cells.length)return;
  finishClock();
  const beforeRewards=HexAchievements.rewards(achievementState()).filter(s=>s.earned).map(s=>s.id);const beforeAchievements=achievementState().filter(a=>a.earned).map(a=>a.id);const awardAchievements=!completionAwarded&&!testUsed;
- const fresh=!done.has(index);done.add(index);
+ const fresh=!done.has(index);if(!testUsed&&!completionAwarded)HexAds.completed(adState,index,chapterOf(index));done.add(index);
  const mode=testUsed?'test':hints?'hint':'own',rank={legacy:0,test:1,hint:2,own:3},prior=records[index];
  if(!prior||rank[mode]>rank[prior.mode]||mode===prior.mode&&hints<prior.hints)records[index]={mode,hints};
  persist();$('collectionCount').textContent=M.motifs.filter((m,i)=>unlocked(i).length).length;if(playSound)tone(true);$('board').classList.add('completed');
@@ -131,9 +139,9 @@ $('testPrevious').onclick=()=>{closeDialogs();load(ORDER[(C.position[index]+TOTA
 function refreshHints(){const changed=HexHints.advance(hintWallet);const full=data&&E.occupied(data,placements).size===data.cells.length;if(data){const label=tutorialIndex!==null?'Hinweis':full?'Weiter':'Hinweis · '+hintWallet.count;$('hint').innerHTML='<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="'+(full?'M5 12h14m-6-6 6 6-6 6':'M9 18h6M10 22h4M8 12a6 6 0 1 1 8 0l-1 3H9Z')+'"/></svg></span>'+label;$('hint').setAttribute('aria-label',full?'Weiter':tutorialIndex!==null?'Hinweis in der Einführung':'Hinweis, '+hintWallet.count+' verfügbar');}
  $('hintDialogTitle').textContent=hintWallet.count?'Ein Teil einsetzen?':'Deine Hinweise laden auf';$('hintDialogStatus').textContent=hintWallet.count?hintWallet.count+' Hinweise verfügbar. Ein Hinweis setzt ein Teil an seinen richtigen Platz.':'Du kannst weiterknobeln oder später einen kostenlosen Hinweis nutzen.';$('hintDialogRefill').textContent=hintWallet.count<3?'Nächster kostenloser Hinweis in '+HexHints.wait(HexHints.remaining(hintWallet))+'.':'Der kostenlose Vorrat ist voll.';$('confirmHint').hidden=!hintWallet.count;$('hintVideo').hidden=hintWallet.count>0;$('testHintBalance').textContent='Vorrat: '+hintWallet.count+(hintWallet.count<3?' · Nächster in '+HexHints.wait(HexHints.remaining(hintWallet)):'');if(changed)persist();}
 function useHint(){const result=E.hint(data,placements);if(!result)return false;if(tutorialIndex===null&&!HexHints.spend(hintWallet)){refreshHints();return false;}checkpoint();placements=result.placements;selected=null;hints++;if(tutorialIndex===null)puzzleTimer.assist('hint');render();tone();toast(result.returned?'Ein Teil sitzt richtig. Überlappende Teile liegen wieder unten.':'Ein Teil sitzt richtig.');complete();return true;}
-$('hint').onclick=()=>{if(!E.hint(data,placements)){continuePuzzle(index+1);return;}if(tutorialIndex!==null){useHint();return;}refreshHints();openDialog('hintDialog');};
+$('hint').onclick=()=>{if(!E.hint(data,placements)){requestNext();return;}if(tutorialIndex!==null){useHint();return;}refreshHints();openDialog('hintDialog');};
 $('confirmHint').onclick=()=>{if(!$('hintDialog').open)return;closeDialog('hintDialog');useHint();refreshHints();};$('cancelHint').onclick=()=>closeDialog('hintDialog');
-$('testHintsRefill').onclick=()=>{hintWallet.count=3;hintWallet.nextAt=null;hintWallet.lastNow=Date.now();persist();refreshHints();};$('testHintsEmpty').onclick=()=>{hintWallet.count=0;hintWallet.nextAt=Date.now()+HexHints.INTERVAL;hintWallet.lastNow=Date.now();persist();refreshHints();};$('testHintsReward').onclick=()=>{HexHints.reward(hintWallet,'dev-'+Date.now()+'-'+Math.random());persist();refreshHints();};$('testHintsAdvance').onclick=()=>{if(hintWallet.nextAt!==null)hintWallet.nextAt-=HexHints.INTERVAL;refreshHints();persist();};
+$('testHintsRefill').onclick=()=>{hintWallet.count=3;hintWallet.nextAt=null;hintWallet.lastNow=Date.now();persist();refreshHints();};$('testHintsEmpty').onclick=()=>{hintWallet.count=0;hintWallet.nextAt=Date.now()+HexHints.INTERVAL;hintWallet.lastNow=Date.now();persist();refreshHints();};$('testHintsReward').onclick=()=>{if(HexHints.reward(hintWallet,'dev-'+Date.now()+'-'+Math.random())){syncAds();HexAds.shown(adState);}persist();refreshHints();};$('testHintsAdvance').onclick=()=>{if(hintWallet.nextAt!==null)hintWallet.nextAt-=HexHints.INTERVAL;refreshHints();persist();};
 
 function closeDialogs(){for(const d of document.querySelectorAll('dialog[open]'))d.close();syncClock();}
 function nextUnsolved(){return ORDER.find(n=>!done.has(n));}
@@ -149,8 +157,8 @@ $('collection').onclick=showGallery;$('winCollection').onclick=()=>showDetail(in
 $('galleryGrid').onclick=e=>{const card=e.target.closest('[data-motif]');if(card&&!card.disabled)showDetail(+card.dataset.motif);};
 $('detailPlay').textContent='Noch einmal spielen →';
 $('detailPlay').onclick=()=>{const next=Array.from({length:VARIANTS},(_,v)=>detailMotif+v*COUNT).find(n=>!done.has(n));closeDialogs();load(next??detailMotif,next===undefined);};
-$('next').onclick=()=>{continuePuzzle(index+1);};$('replay').onclick=()=>{closeDialogs();if(tutorialIndex!==null)loadLesson(tutorialIndex);else load(index,true);};
-function showMenu(){closeDialogs();$('testAllSkins').checked=skinTest;$('sound').checked=sound;$('vibration').checked=vibration;$('dragGap').value=dragGap;$('dragGapValue').textContent=dragGap+' px';$('levelSelect').innerHTML='<p class="fine-print">'+TOTAL+' unterschiedliche Rätsel · '+Math.ceil(TOTAL/10)+' Kapitel<br>Alle Spielfelder findest du in deiner Rätselreise.</p>';openDialog('menu');}
+$('next').onclick=requestNext;$('replay').onclick=()=>{closeDialogs();if(tutorialIndex!==null)loadLesson(tutorialIndex);else load(index,true);};
+function showMenu(){closeDialogs();updateAdStatus();$('testAllSkins').checked=skinTest;$('sound').checked=sound;$('vibration').checked=vibration;$('dragGap').value=dragGap;$('dragGapValue').textContent=dragGap+' px';$('levelSelect').innerHTML='<p class="fine-print">'+TOTAL+' unterschiedliche Rätsel · '+Math.ceil(TOTAL/10)+' Kapitel<br>Alle Spielfelder findest du in deiner Rätselreise.</p>';openDialog('menu');}
 $('settings').onclick=showMenu;$('levelSelect').onclick=e=>{const b=e.target.closest('[data-level]');if(b){closeDialogs();load(+b.dataset.level);}};$('closeMenu').onclick=()=>closeDialog('menu');$('sound').onchange=e=>{sound=e.target.checked;persist();if(sound)tone();};$('vibration').onchange=e=>{vibration=e.target.checked;persist();};
 $('start').onclick=()=>{introSeen=true;persist();closeDialog('intro');tone();};$('intro').addEventListener('cancel',()=>{introSeen=true;persist();});
 load(nextUnsolved(0)??index);
@@ -230,12 +238,12 @@ document.addEventListener('click',e=>{const button=e.target.closest?.('[data-rou
 $('gameHome').onclick=showHome;$('gameJourney').onclick=showJourney;
 $('openHelp').onclick=()=>{closeDialogs();openDialog('help');};$('closeHelp').onclick=showMenu;
 
-function backView(){if($('chapterPicker').open){closeDialog('chapterPicker');openDialog('journey');return true;}
+function backView(){if($('adTestDialog').open){dismissTestAd();return true;}if($('chapterPicker').open){closeDialog('chapterPicker');openDialog('journey');return true;}
  for(const [id,parent] of [['hintDialog',null],['achievements','gallery'],['resetDialog',null],['detail','gallery'],['backup','menu'],['help','menu'],['win',null],['intro','home'],['journey','home'],['gallery','home'],['menu','home']])if($(id).open){$(id).close();if(id==='intro'){introSeen=true;persist();}if(parent)routeView(parent);return true;}
  if($('home').open)return false;showHome();return true;
 }
 window.LumaBack=backView;
-for(const id of ['home','journey','gallery','menu','detail','backup','help','resetDialog','win','achievements','chapterPicker','hintDialog'])$(id).addEventListener('cancel',e=>{if(id==='home')return;e.preventDefault();backView();});
+for(const id of ['home','journey','gallery','menu','detail','backup','help','resetDialog','win','achievements','chapterPicker','hintDialog','adTestDialog'])$(id).addEventListener('cancel',e=>{if(id==='home')return;e.preventDefault();backView();});
 $('start').onclick=()=>{introSeen=true;persist();loadLesson(tutorialProgress<6?tutorialProgress:0);};
 if(introSeen)showHome();
 
@@ -272,10 +280,12 @@ function setAmbientStrength(value){const number=Number(value);ambientStrength=Nu
 $('ambientToggle').onchange=e=>setAmbient(e.target.checked);$('ambientStrength').oninput=e=>setAmbientStrength(e.target.value);setAmbient(ambientEnabled);setAmbientStrength(ambientStrength);
 
 $('timerToggle').onchange=e=>{const enabled=e.target.checked;if(enabled!==timerEnabled){puzzleTimer.invalidate();if(enabled&&!Object.keys(placements).length&&puzzleTimer.read()===0&&!puzzleTimer.finished)puzzleTimer=HexTimer.create(null,true);timerEnabled=enabled;syncClock();persist();if(enabled&&!puzzleTimer.valid)toast("Für eine Bestzeit bitte dieses Rätsel neu starten.");}showClockResult();};
-if(typeof setInterval==='function')clockTick=setInterval(()=>{syncClock();refreshHints();if(clockCanRun()&&Date.now()-lastClockSave>=5000){lastClockSave=Date.now();persist();}},1000);
+if(typeof setInterval==='function')clockTick=setInterval(()=>{syncClock();refreshHints();if((clockCanRun()||(!clockSuspended&&!document.hidden&&!document.querySelector('dialog[open]')&&tutorialIndex===null&&!puzzleTimer.finished))&&Date.now()-lastClockSave>=5000){lastClockSave=Date.now();persist();}},1000);
 if(typeof MutationObserver==='function')new MutationObserver(()=>syncClock()).observe(document.body,{attributes:true,subtree:true,attributeFilter:['open']});
 syncClock();
 
 window.LumaPauseClock=()=>{clockSuspended=true;syncClock();persist();};window.LumaResumeClock=()=>{clockSuspended=false;syncClock();refreshHints();};
 
 refreshHints();
+
+$('adTestToggle').onchange=e=>{adTestEnabled=e.target.checked;adPreferences();};$('adFreeToggle').onchange=e=>{adFreeSimulated=e.target.checked;adPreferences();};$('closeAdTest').onclick=dismissTestAd;updateAdStatus();

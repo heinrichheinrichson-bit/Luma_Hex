@@ -1,0 +1,8 @@
+(function(root){'use strict';const GAP=360000,ROUNDS=4,GRACE=5,MAX=365*24*3600000;
+function normalize(raw,count=1200){const r=raw&&typeof raw==='object'?raw:{},valid=n=>Number.isInteger(n)&&n>=0&&n<count;return {completed:[...new Set((Array.isArray(r.completed)?r.completed:[]).filter(valid))],rounds:Number.isInteger(r.rounds)&&r.rounds>=0?Math.min(r.rounds,count):0,activeMs:Number.isFinite(r.activeMs)&&r.activeMs>=0?Math.min(r.activeMs,MAX):0,seen:[...new Set((Array.isArray(r.seen)?r.seen:[]).filter(n=>Number.isInteger(n)&&n>=0&&n<Math.ceil(count/10)))],protectedChapter:Number.isInteger(r.protectedChapter)&&r.protectedChapter>=0&&r.protectedChapter<Math.ceil(count/10)?r.protectedChapter:null};}
+function opened(state,ch){if(!state.seen.includes(ch)){state.seen.push(ch);state.protectedChapter=ch;}}
+function completed(state,id,ch){if(state.completed.includes(id))return false;state.completed.push(id);state.rounds++;if(state.protectedChapter===ch)state.protectedChapter=null;return true;}
+function eligible(state,{normal=false,chapter=0,chapterBoundary=false,adFree=false}={}){return normal&&!adFree&&!chapterBoundary&&state.completed.length>GRACE&&state.rounds>=ROUNDS&&state.activeMs>=GAP&&state.protectedChapter!==chapter;}
+function shown(state){state.rounds=0;state.activeMs=0;}
+function clock(state,now=()=>typeof performance!=='undefined'?performance.now():Date.now()){let since=null;return {sync(active){const time=now();if(since!==null)state.activeMs=Math.min(MAX,state.activeMs+Math.max(0,time-since));since=active?time:null;},pause(){this.sync(false);}};}
+const api={GAP,ROUNDS,GRACE,normalize,opened,completed,eligible,shown,clock};if(typeof module!=='undefined')module.exports=api;else root.HexAds=api;})(typeof window!=='undefined'?window:globalThis);
