@@ -1,3 +1,7 @@
+# Luma Hex 0.28.1
+
+Abschlussfenster mit kompakterer Vorschau und weniger Leerraum. Lange Inhalte bleiben erreichbar. Details: Luma-Hex-0.28.1-Notizen.md.
+
 # Luma Hex 0.28.0
 
 Aktuell: 1.200 Rätsel, 120 Kapitel, 16 Steinsets, 1.208 Lesemomente. Rückwege folgen dem tatsächlichen Ursprung. Sammlung, Steinsets und Erfolge sind getrennt; ein nächstes Set ist als Fortschrittsziel sichtbar. Glas ab 40 Rätseln. Kompakter Abschluss mit direkter Set-Auswahl. Neue Kapitelzusammenstellung schützt bereits erreichte Nummern und speichert die Reihenfolge im Spielstand.

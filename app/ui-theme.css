@@ -43,3 +43,16 @@ body{background-color:var(--ui-bg)}dialog::backdrop{background:#030812ba;backdro
 .chapter-focus{font-size:11px;color:var(--ui-muted);margin:0 0 8px;text-align:center;line-height:1.5}.finish-successes{font-size:11px;margin:8px 0;color:var(--ui-muted)}.finish-successes summary{min-height:36px;display:list-item;align-content:center;cursor:pointer}.finish-successes ul{list-style:none;margin:4px 0 10px;padding:0;line-height:1.8}.finish-set{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--ui-line);text-align:left}.finish-set>span{display:flex;align-items:center;gap:6px;min-width:0}.finish-set svg{width:58px;flex:none}.finish-set strong{font-size:12px;font-weight:600;color:var(--ui-gold)}.finish-set button{min-height:44px;padding:8px 10px;border:1px solid var(--ui-line);border-radius:10px;background:var(--ui-surface);color:var(--ui-accent);font-size:11px;flex:none;box-shadow:none}.finish-more{margin:8px 0 0}.finish-more summary{min-height:44px;align-content:center;cursor:pointer;font-size:12px;color:var(--ui-muted)}#win .win-activity{font-size:11px!important;color:var(--ui-muted)!important;margin:10px 0!important}#win #winText:empty{display:none}#winAchievements:empty{display:none}#win #winQuote{margin-bottom:12px}#win .finish-more #winCollection,#win .finish-more #replay{font-size:12px;min-height:44px}
 
 .collection-shortcuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:6px 0 12px}.collection-shortcuts .achievement-entry{margin:0;min-height:64px;padding:8px 0;gap:8px;min-width:0;text-align:left}.collection-shortcuts .achievement-entry-mark{font-size:24px}.collection-shortcuts .achievement-entry-mark svg{width:23px;height:28px}.collection-shortcuts .achievement-entry>span:nth-child(2){flex:1;min-width:0}.collection-shortcuts .achievement-entry strong{font-size:13px}.collection-shortcuts .achievement-entry small{font-size:10px}.collection-shortcuts .achievement-entry>b{display:none}
+
+/* Compact completion spacing only; long or expanded reading remains scrollable. */
+#win{padding:18px 20px 12px}
+#win #winArt{height:clamp(120px,24dvh,210px);margin-bottom:8px}
+#win h2{margin:6px 0 8px}
+#win #winTiming{margin:4px 0 8px}
+#win #winQuote{min-height:0;margin-bottom:8px}
+#win .moment-extra{margin-bottom:8px}
+#win .moment-extra:empty{display:none}
+#win #next{margin:10px 0 8px;min-height:60px}
+#win #next .next-preview{margin:0}
+#win .finish-more{margin-top:2px}
+@media(max-height:640px){#win{padding:12px 16px 8px}#win #winArt{height:clamp(90px,20dvh,128px)}#win h2{margin:4px 0 6px}#win #next{margin:6px 0}}

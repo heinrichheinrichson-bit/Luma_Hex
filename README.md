@@ -2,6 +2,10 @@
 
 Eigenständiger Hexagon-Puzzle-Prototyp für Android und Browser.
 
+## Version 0.28.1
+
+Abschlussfenster platzsparender, ohne Änderungen anderer Ansichten. APK: releases/Luma-Hex-0.28.1-Test.apk. Details: releases/Luma-Hex-0.28.1-Notizen.md.
+
 ## Version 0.28.0
 
 1.200 Rätsel in 120 Kapiteln, 16 Steinsets und 1.208 Lesemomente. Navigation mit tatsächlichen Rückwegen, eigene Set-Auswahl, nächstes Belohnungsziel, Glas ab 40 Rätseln, kompakter Abschluss mit direkter Set-Auswahl. Neue Kapitelzusammenstellung schützt erreichte Nummern und wird mitgesichert. Testwerkzeuge bleiben erhalten. Alle 16 Testsuiten bestanden; APK signaturgeprüft. Physische S22-Prüfung noch offen.
