@@ -1,3 +1,13 @@
+# Luma Hex 0.28.0
+
+Aktuell: 1.200 Rätsel, 120 Kapitel, 16 Steinsets, 1.208 Lesemomente. Rückwege folgen dem tatsächlichen Ursprung. Sammlung, Steinsets und Erfolge sind getrennt; ein nächstes Set ist als Fortschrittsziel sichtbar. Glas ab 40 Rätseln. Kompakter Abschluss mit direkter Set-Auswahl. Neue Kapitelzusammenstellung schützt bereits erreichte Nummern und speichert die Reihenfolge im Spielstand.
+
+Tester: Einstellungen → Entwicklung & Tests. Alle Steinsets testen, unbegrenzte Hinweise und Hinweis-Werbung simulieren bleiben verfügbar. Set-Auswahl jetzt unter Sammlung → Steinsets.
+
+Alle 16 Testsuiten bestanden; APK signaturgeprüft. Physische S22-Prüfung noch offen. Details: Luma-Hex-0.28.0-Notizen.md im übergeordneten outputs-Ordner beziehungsweise releases im Repository.
+
+## Bisherige Versionsnotizen
+
 # Luma Hex 0.20.0 – Pfad im Mittelpunkt
 
 Reiseseite neu gewichtet: kompakter Kopf mit Fortschritt, dezenter Sprung zum aktuellen Rätsel, schlanke Kapitelnavigation und direkter Einstieg am Pfad. Großer Weiter-Button, Erklärungstexte, Einführungskarte und ausladende Kapitelreihe entfallen auf dieser Seite. Die Einführung bleibt über die Hilfe erreichbar. Tippen auf die Kapitelanzeige öffnet eine separate Kapitelübersicht mit vorhandenem Fortschritt; vorherige/nächste Kapitel bleiben direkt erreichbar. Pro Ansicht bleibt ein Scrollbereich. Der bereits angenommene Pfad und die Kristallstationen bleiben erhalten.
