@@ -1,4 +1,5 @@
 (function(root){'use strict';const dictionary={
+"Simulation beendet. Du kannst deinen Hinweis abholen.":"Simulation finished. You can collect your hint.",
 "Werbung simulieren · +1 Hinweis":"Simulate ad · +1 hint",
 "Simuliere ein Werbevideo und erhalte einen weiteren Hinweis.":"Simulate a video ad to receive another hint.",
 "Werbesimulation läuft. Nach 3 Sekunden kannst du die Belohnung abholen.":"Ad simulation running. Collect your reward after 3 seconds.",
