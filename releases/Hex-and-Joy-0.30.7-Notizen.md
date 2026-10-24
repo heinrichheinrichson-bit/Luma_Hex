@@ -1,0 +1,3 @@
+# Hex & Joy 0.30.7
+Ein per Hinweis neu gesetztes Modul wird 2,2 Sekunden sanft aufgehellt. Ein Lichtsaum in der Steinfarbe folgt der Außenkontur, ohne innere Kanten zu betonen oder Eingaben abzufangen. Danach endet die Markierung vollständig. Bei reduzierten Animationen: kurze gleichmäßige Hervorhebung ohne Puls. Keine dauerhafte Speicherung des Effekts.
+Automatisch geprüft: nur betroffenes Modul markiert, alle 16 Steinsets, Ablaufzeit bleibt beim Neuzeichnen erhalten, keine Markierung am gezogenen Modul, Ablauf/Undo/Rätselwechsel entfernen Effekt, reduzierte Animationen. UI-, Varianten- und Übersetzungstests bestanden. Beide Android-Varianten gebaut und signaturgeprüft. Visuelle Prüfung auf dem S22 steht aus.

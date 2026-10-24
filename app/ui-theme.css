@@ -61,3 +61,10 @@ body{background-color:var(--ui-bg)}dialog::backdrop{background:#030812ba;backdro
 
 /* Approved Hex & Joy wordmark; layout stays within existing header rows. */
 #home .home-logo{display:flex;align-items:center;flex:0 1 180px;min-width:0;letter-spacing:0;line-height:0}#home .home-logo .brand-wordmark{display:block;width:100%;height:auto;max-height:54px;object-fit:contain;object-position:left center}.app .brand{min-width:0;line-height:0;flex:0 1 132px}.app .brand .brand-wordmark{display:block;width:100%;height:auto;max-height:44px;object-fit:contain;object-position:left center}@media(max-width:360px){#home .home-logo{flex-basis:156px}.app .brand{flex-basis:116px}}@media(max-height:600px){#home .home-logo .brand-wordmark{max-height:42px}}
+
+/* Brief, input-transparent feedback for the module placed by a hint. */
+#board .hint-lit{animation:hint-piece-light 2.2s ease-out both}
+#board .hint-outline{fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;animation:hint-piece-outline 2.2s ease-out both}
+@keyframes hint-piece-light{0%{filter:brightness(1)}18%{filter:brightness(1.48)}50%{filter:brightness(1.16)}100%{filter:brightness(1)}}
+@keyframes hint-piece-outline{0%{opacity:0}18%{opacity:.9;filter:drop-shadow(0 0 5px currentColor)}55%{opacity:.55;filter:drop-shadow(0 0 3px currentColor)}100%{opacity:0;filter:none}}
+@media(prefers-reduced-motion:reduce){#board .hint-lit{animation:none;filter:brightness(1.18)}#board .hint-outline{animation:none;opacity:.65;filter:none}}

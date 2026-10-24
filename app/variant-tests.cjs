@@ -19,3 +19,13 @@ elements.freeHint.onclick();run('backView()');assert.equal(run('hintWallet.count
 elements.freeHint.onclick();elements.finishHintRewardAd.onclick();assert(!elements.hintDialog.open);assert.equal(run('document.querySelector("dialog[open]")'),null);assert(!elements.hintRewardAd.open);assert.equal(run('hintWallet.count'),1);elements.finishHintRewardAd.onclick();assert.equal(run('hintWallet.count'),1);const savedHintCount=run('hints');run('refreshHints();persist()');assert.equal(run('hints'),savedHintCount);elements.hint.onclick();assert(elements.hintDialog.open);elements.confirmHint.onclick();assert.equal(run('hintWallet.count'),0);assert.equal(run('testUsed'),false);
 elements.hint.onclick();elements.freeHint.onclick();elements.finishHintRewardAd.onclick();assert.equal(run('hintWallet.count'),1);
 console.log('PASS: dedicated ad screen, refresh isolation, cancellation/back without reward, completion once, return to hint dialog, normal hint use and repeatability.');
+
+run('closeDialogs();load(ORDER[0],true);hintWallet.count=3;useHint()');assert(run('hintGlow'));const hintId=run('hintGlow.id'),litSize=run('data.pieces.find(p=>p.id===hintGlow.id).shape.length');assert.equal((elements.board.innerHTML.match(/class="hint-lit"/g)||[]).length,litSize);assert(elements.board.innerHTML.includes('class="hint-outline"'));
+const glowDeadline=run('hintGlow.until');run('refreshHints();renderBoard()');assert.equal(run('hintGlow.until'),glowDeadline);
+for(const skin of ctx.HexAchievements.skins){run('selectedSkin='+JSON.stringify(skin.id)+';renderBoard()');assert(elements.board.innerHTML.includes('class="hint-outline"'),skin.id);assert.equal((elements.board.innerHTML.match(/class="hint-lit"/g)||[]).length,litSize,skin.id);}
+run('renderBoard(null,hintGlow.id)');assert(!elements.board.innerHTML.includes('class="hint-outline"'));
+run('hintGlow.until=Date.now()-1;renderBoard()');assert(!elements.board.innerHTML.includes('class="hint-outline"'));assert(!elements.board.innerHTML.includes('class="hint-lit"'));
+run('load(ORDER[0],true);hintWallet.count=3;useHint()');elements.undo.onclick();assert.equal(run('hintGlow'),null);assert(!elements.board.innerHTML.includes('class="hint-outline"'));
+run('useHint();load(ORDER[1],true)');assert.equal(run('hintGlow'),null);assert(!elements.board.innerHTML.includes('class="hint-outline"'));
+const glowCss=fs.readFileSync(root+'/ui-theme.css','utf8');assert(glowCss.includes('@media(prefers-reduced-motion:reduce)'));assert(glowCss.includes('pointer-events:none;animation:hint-piece-outline'));
+console.log('PASS: only hinted module lights up across 16 skins; redraw preserves expiry, drag excludes module, expiry/undo/level clear feedback, reduced motion and nonblocking outline.');
