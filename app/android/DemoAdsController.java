@@ -1,4 +1,4 @@
-package com.heinrichheinrichson.hexandjoy;
+package com.thinkheim.hexandjoy;
 
 import android.os.Handler;
 import android.os.Looper;

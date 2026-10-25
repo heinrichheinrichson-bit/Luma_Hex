@@ -1,3 +1,7 @@
+# Version 0.31.2 – Thinkheim-Paketname
+
+Korrigierte Anwendungs-ID: `com.thinkheim.hexandjoy`, Versionscode 67. Den alten Play-Eintrag nicht weiterverwenden. Neue AAB und Entwicklerversion gebaut; separater Entwicklervarianten-Paketname bleibt für bestehende Testdaten erhalten.
+
 # Version 0.31.1 – Play-Ziel-API 36
 
 Versionscode 66, Ziel-API 36 und moderne native Zurück-Navigation ab Android 13; API-30/31/32-Fallback bleibt. Korrigiert die von Play blockierte Ziel-API des ersten internen Uploads.

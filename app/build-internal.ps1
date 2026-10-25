@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
 $workspace = [IO.Path]::GetFullPath((Join-Path $root '../..'))
-$build = Join-Path $workspace 'work/hexjoy-gradle'
+$build = Join-Path $workspace 'work/hexjoy-gradle-thinkheim'
 $keys = Join-Path $workspace 'work/hexjoy-upload-signing'
 $sdk = Join-Path $env:LOCALAPPDATA 'Android/Sdk'
 $jdk = 'C:/Program Files/Android/Android Studio/jbr'
@@ -9,7 +9,7 @@ $env:JAVA_HOME = $jdk
 $gradle = Get-ChildItem -LiteralPath (Join-Path $env:USERPROFILE '.gradle/wrapper/dists/gradle-8.14.3-all') -Recurse -Filter gradle.bat | Select-Object -First 1 -ExpandProperty FullName
 if (-not $gradle) { $gradle = Join-Path $root 'android-gradle/gradlew.bat' }
 function Checked { param([string]$Exe,[string[]]$Arguments) & $Exe @Arguments; if ($LASTEXITCODE -ne 0) { throw "Build failed: $Exe" } }
-New-Item -ItemType Directory -Force -Path $build,$keys,"$build/app/src/main/assets","$build/app/src/main/java/com/heinrichheinrichson/hexandjoy" | Out-Null
+New-Item -ItemType Directory -Force -Path $build,$keys,"$build/app/src/main/assets","$build/app/src/main/java/com/thinkheim/hexandjoy" | Out-Null
 Copy-Item -Path "$root/android-gradle/*" -Destination $build -Recurse -Force
 # On this PC Norton inspects TLS. Reuse its already OS-trusted root in a local
 # copy of Java's CA store; certificate/hostname validation stays enabled.
@@ -32,9 +32,9 @@ $manifest = $manifest.Replace('<uses-permission android:name="android.permission
 $manifest = $manifest -replace '<uses-sdk[^>]*/>',''
 $manifest = $manifest.Replace('<activity android:name=".MainActivity"','<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3940256099942544~3347511713"/><activity android:name=".MainActivity"')
 Set-Content -LiteralPath "$main/AndroidManifest.xml" -Value $manifest -Encoding utf8
-$java = (Get-Content -LiteralPath "$root/android/MainActivity.java" -Raw).Replace('package com.lumahex.prototype;','package com.heinrichheinrichson.hexandjoy;')
-Set-Content -LiteralPath "$main/java/com/heinrichheinrichson/hexandjoy/MainActivity.java" -Value $java -Encoding utf8
-Copy-Item -LiteralPath "$root/android/DemoAdsController.java" -Destination "$main/java/com/heinrichheinrichson/hexandjoy/DemoAdsController.java" -Force
+$java = (Get-Content -LiteralPath "$root/android/MainActivity.java" -Raw).Replace('package com.lumahex.prototype;','package com.thinkheim.hexandjoy;')
+Set-Content -LiteralPath "$main/java/com/thinkheim/hexandjoy/MainActivity.java" -Value $java -Encoding utf8
+Copy-Item -LiteralPath "$root/android/DemoAdsController.java" -Destination "$main/java/com/thinkheim/hexandjoy/DemoAdsController.java" -Force
 Copy-Item -LiteralPath "$root/android/res" -Destination $main -Recurse -Force
 Set-Content -LiteralPath "$build/local.properties" -Value ('sdk.dir='+$sdk.Replace('\','/').Replace(':','\:')) -Encoding ascii
 $properties = Join-Path $keys 'signing.properties'
@@ -54,8 +54,8 @@ if (-not (Test-Path -LiteralPath $properties)) {
 $env:HEXJOY_SIGNING_PROPERTIES = $properties
 Checked $gradle @('--project-dir',$build,'--console=plain','bundleRelease','assembleRelease','lintRelease')
 $out = [IO.Path]::GetFullPath((Join-Path $root '..'))
-Copy-Item -LiteralPath "$build/app/build/outputs/bundle/release/app-release.aab" -Destination "$out/Hex-and-Joy-0.31.1-Interner-Test.aab" -Force
-Copy-Item -LiteralPath "$build/app/build/outputs/apk/release/app-release.apk" -Destination "$out/Hex-and-Joy-0.31.1-AdMob-Demo.apk" -Force
-Checked "$jdk/bin/jarsigner.exe" @('-verify',"$out/Hex-and-Joy-0.31.1-Interner-Test.aab")
-Checked "$sdk/build-tools/35.0.0/apksigner.bat" @('verify',"$out/Hex-and-Joy-0.31.1-AdMob-Demo.apk")
+Copy-Item -LiteralPath "$build/app/build/outputs/bundle/release/app-release.aab" -Destination "$out/Hex-and-Joy-0.31.2-Interner-Test.aab" -Force
+Copy-Item -LiteralPath "$build/app/build/outputs/apk/release/app-release.apk" -Destination "$out/Hex-and-Joy-0.31.2-AdMob-Demo.apk" -Force
+Checked "$jdk/bin/jarsigner.exe" @('-verify',"$out/Hex-and-Joy-0.31.2-Interner-Test.aab")
+Checked "$sdk/build-tools/35.0.0/apksigner.bat" @('verify',"$out/Hex-and-Joy-0.31.2-AdMob-Demo.apk")
 Write-Output "Internal demo AAB/APK built. Signing files remain private in $keys"

@@ -1,4 +1,4 @@
-# Interner Android-Test 0.31.1
+# Interner Android-Test 0.31.2
 
 Dieser Build enthält das echte Google Mobile Ads SDK 25.5.0 mit ausschließlich
 Googles Demo-App-ID und Demo-Anzeigenblöcken. Er erzielt keine Werbeeinnahmen.
@@ -7,7 +7,7 @@ Die im AdMob-Konto angelegten produktiven Kennungen sind nicht aktiviert.
 ## Varianten
 
 - `build-internal.ps1`: signierte AAB und APK, Paket
-  `com.heinrichheinrichson.hexandjoy`, ohne Entwicklerwerkzeuge und ohne simulierten
+  `com.thinkheim.hexandjoy`, ohne Entwicklerwerkzeuge und ohne simulierten
   Anzeigenbildschirm. Rewarded und Interstitial werden nativ angezeigt.
 - `build-android.ps1 -Variant developer`: separate App `Hex & Joy Test`, Paket
   `com.lumahex.prototype`, bestehende Testwerkzeuge/Simulation und bisheriger Testschlüssel.
@@ -36,7 +36,7 @@ Die geplante Bereinigung der Einstellungen wurde nicht vorweggenommen.
 ## Build und Schlüssel
 
 Gradle 8.14.3, Android Gradle Plugin 8.13.2, Java 17+, compileSdk 36,
-targetSdk 36, minSdk 30; Versionscode 66. Gradle Wrapper liegt bei.
+targetSdk 36, minSdk 30; Versionscode 67. Gradle Wrapper liegt bei.
 Der Windows-Build verwendet die vorhandene Android-Studio-Java-Installation.
 Auf diesem PC wird Nortons bereits im Windows-Zertifikatsspeicher vertrautes
 TLS-Rootzertifikat in eine lokale Kopie der Java-CA-Liste übernommen.
@@ -76,3 +76,6 @@ Keine produktiven Kennungen allein durch Textaustausch aktivieren.
 
 ## Play-Korrektur 0.31.1
 Die Console verlangt seit August 2026 Ziel-API 36. Version 0.31.0 (Code 65) wurde als Entwurf hochgeladen, wegen targetSdk 35 blockiert und aus dem Release entfernt; sie bleibt in der Artefaktbibliothek. Code 66 adressiert API 36 und registriert Androids native Zurück-Callbacks ab API 33, mit Legacy-Fallback auf Android 11/12.
+
+## Thinkheim-Korrektur 0.31.2
+Verbindlicher Paketname: com.thinkheim.hexandjoy. Neuer Play-Eintrag erforderlich. Der frühere interne Test mit dem abweichenden Paketnamen ist ein verworfener Einrichtungsstand und darf nicht als offizieller Testlink verwendet werden. Kein automatisches Löschen des alten Eintrags. Die korrigierte AAB wurde unabhängig per bundletool auf den tatsächlichen Paketnamen geprüft.

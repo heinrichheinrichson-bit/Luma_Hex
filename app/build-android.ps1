@@ -17,8 +17,8 @@ if ($LASTEXITCODE -ne 0) { throw 'Variant generation failed' }
 $manifestText = Get-Content -LiteralPath "$root/android/AndroidManifest.xml" -Raw
 $javaText = Get-Content -LiteralPath "$root/android/MainActivity.java" -Raw
 if ($Variant -eq 'closed') {
- $manifestText = $manifestText.Replace('com.lumahex.prototype','com.heinrichheinrichson.hexandjoy')
- $javaText = $javaText.Replace('package com.lumahex.prototype;','package com.heinrichheinrichson.hexandjoy;')
+ $manifestText = $manifestText.Replace('com.lumahex.prototype','com.thinkheim.hexandjoy')
+ $javaText = $javaText.Replace('package com.lumahex.prototype;','package com.thinkheim.hexandjoy;')
 } else {
  $manifestText = $manifestText.Replace('android:label="Hex &amp; Joy"','android:label="Hex &amp; Joy Test"').Replace('@mipmap/ic_launcher','@mipmap/ic_launcher_test')
 }
@@ -39,7 +39,7 @@ Checked "$tools/apksigner.bat" @('sign','--ks',$keystore,'--ks-pass','pass:lumah
 Checked "$tools/apksigner.bat" @('verify','--verbose',$apkPath)
 $badging = (& "$tools/aapt.exe" dump badging $apkPath) -join "
 "
-$expectedPackage = if ($Variant -eq 'closed') { 'com.heinrichheinrichson.hexandjoy' } else { 'com.lumahex.prototype' }
+$expectedPackage = if ($Variant -eq 'closed') { 'com.thinkheim.hexandjoy' } else { 'com.lumahex.prototype' }
 $expectedLabel = if ($Variant -eq 'closed') { 'Hex & Joy' } else { 'Hex & Joy Test' }
 if (-not $badging.Contains("name='$expectedPackage'")) { throw 'Wrong application ID in APK' }
 if (-not $badging.Contains("application-label:'$expectedLabel'")) { throw 'Wrong application label in APK' }

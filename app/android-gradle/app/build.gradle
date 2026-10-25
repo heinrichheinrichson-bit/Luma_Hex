@@ -4,14 +4,14 @@ def signingFile = System.getenv('HEXJOY_SIGNING_PROPERTIES')
 if (!signingFile) throw new GradleException('HEXJOY_SIGNING_PROPERTIES is required; never use a debug key for this AAB.')
 file(signingFile).withInputStream { signing.load(it) }
 android {
-    namespace 'com.heinrichheinrichson.hexandjoy'
+    namespace 'com.thinkheim.hexandjoy'
     compileSdk 36
     defaultConfig {
-        applicationId 'com.heinrichheinrichson.hexandjoy'
+        applicationId 'com.thinkheim.hexandjoy'
         minSdk 30
         targetSdk 36
-        versionCode 66
-        versionName '0.31.1'
+        versionCode 67
+        versionName '0.31.2'
     }
     signingConfigs { upload {
         storeFile file(signing.getProperty('storeFile'))
