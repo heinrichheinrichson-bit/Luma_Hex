@@ -1,3 +1,7 @@
+# Version 0.31.1 – Play-Ziel-API 36
+
+Versionscode 66, Ziel-API 36 und moderne native Zurück-Navigation ab Android 13; API-30/31/32-Fallback bleibt. Korrigiert die von Play blockierte Ziel-API des ersten internen Uploads.
+
 # Version 0.31.0 – interner AdMob-Test
 
 Signierte AAB mit echten Google-Demoanzeigen und separate Entwicklerversion mit Simulation. Noch kein Play-Upload und kein physischer Gerätetest. Die geplante Einstellungsbereinigung ist weiterhin offen. Details und Build: [ADMOB-INTERNAL.md](ADMOB-INTERNAL.md).

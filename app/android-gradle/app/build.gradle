@@ -9,9 +9,9 @@ android {
     defaultConfig {
         applicationId 'com.heinrichheinrichson.hexandjoy'
         minSdk 30
-        targetSdk 35
-        versionCode 65
-        versionName '0.31.0'
+        targetSdk 36
+        versionCode 66
+        versionName '0.31.1'
     }
     signingConfigs { upload {
         storeFile file(signing.getProperty('storeFile'))

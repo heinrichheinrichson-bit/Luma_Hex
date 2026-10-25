@@ -56,6 +56,7 @@ public class MainActivity extends Activity {
   web.addJavascriptInterface(new Feedback(),"LumaFeedback");
   frame.addView(web,new FrameLayout.LayoutParams(-1,-1));setContentView(frame);
   web.loadUrl("file:///android_asset/index.html");
+  if(android.os.Build.VERSION.SDK_INT>=33)getOnBackInvokedDispatcher().registerOnBackInvokedCallback(android.window.OnBackInvokedDispatcher.PRIORITY_DEFAULT,this::handleBack);
  }
  public class Feedback {
   @JavascriptInterface public boolean isAdMobDemo(){return ads!=null;}
@@ -83,7 +84,10 @@ public class MainActivity extends Activity {
   if(request==SAVE_BACKUP){String text=pendingBackup;pendingBackup=null;if(text==null)return;try(OutputStream stream=getContentResolver().openOutputStream(data.getData(),"wt")){if(stream==null)throw new Exception();stream.write(text.getBytes(StandardCharsets.UTF_8));notifyUser("de".equals(language)?"Spielstand gesichert.":"Progress backed up.");}catch(Exception e){notifyUser("de".equals(language)?"Die Sicherung konnte nicht gespeichert werden.":"The backup could not be saved.");}}
   else {try(InputStream stream=getContentResolver().openInputStream(data.getData());ByteArrayOutputStream bytes=new ByteArrayOutputStream()){if(stream==null)throw new Exception();byte[] buffer=new byte[8192];int n;while((n=stream.read(buffer))!=-1){if(bytes.size()+n>1000000)throw new Exception();bytes.write(buffer,0,n);}String text=new String(bytes.toByteArray(),StandardCharsets.UTF_8);web.evaluateJavascript("window.LumaReceiveBackup("+JSONObject.quote(text)+")",null);}catch(Exception e){notifyUser("de".equals(language)?"Die Sicherung konnte nicht gelesen werden. Maximale Größe: 1 MB.":"The backup could not be read. Maximum size: 1 MB.");}}
  }
- @Override public void onBackPressed(){web.evaluateJavascript("window.LumaBack ? window.LumaBack() : false",result->{if(!"true".equals(result))super.onBackPressed();});}
+ private void handleBack(){web.evaluateJavascript("window.LumaBack ? window.LumaBack() : false",result->{if(!"true".equals(result))finish();});}
+ // Legacy fallback for Android 11/12; API 33+ uses the registered native callback above.
+ @android.annotation.SuppressLint("GestureBackNavigation")
+ @Override public void onBackPressed(){handleBack();}
  @Override protected void onPause(){lifecyclePaused=true;super.onPause();if(web!=null)web.evaluateJavascript("window.LumaPauseClock&&window.LumaPauseClock()",value->{if(lifecyclePaused&&web!=null)web.onPause();});}
  @Override protected void onResume(){super.onResume();lifecyclePaused=false;if(web!=null){web.onResume();web.evaluateJavascript("window.LumaResumeClock&&window.LumaResumeClock()",null);}}
  @Override protected void onDestroy(){destroyed=true;if(ads!=null)ads.destroy();web.destroy();super.onDestroy();}
