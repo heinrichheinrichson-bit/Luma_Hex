@@ -209,7 +209,7 @@ $('journeyNext').onclick=()=>{for(let ch=journeyChapter+1;ch<CHAPTERS.length;ch+
 // Direct jumps are deliberately confined to development tools.
 $('jumpLevel').onclick=()=>{const n=Number($('jumpNumber').value);if(!Number.isInteger(n)||n<1||n>TOTAL){toast('Bitte eine Rätselnummer von 1 bis '+TOTAL+' eingeben.');return;}closeDialogs();load(ORDER[n-1]);};
 document.querySelector('.brand').onclick=e=>{e.preventDefault();showHome();};
- $('openJourney').onclick=showJourney;$('closeJourney').onclick=backView;
+ $('closeJourney').onclick=backView;
  $('journeyChapters').onclick=e=>{const button=e.target.closest('[data-journey]');if(button&&accessible(+button.dataset.journey)){closeDialogs();load(+button.dataset.journey);}};
 
 function recordLabel(n){const mode=records[n]?.mode;return mode==='own'?'✦ Ohne Hinweise':mode==='hint'?'✓ Mit Hinweis':mode==='test'?'⚙ Testansicht':'✓ Gelöst';}
@@ -228,7 +228,9 @@ $('backupFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;
 
 document.addEventListener('visibilitychange',()=>{syncClock();persist();});window.addEventListener?.('pagehide',()=>{clockSuspended=true;syncClock();persist();});window.addEventListener?.('pageshow',()=>{clockSuspended=false;syncClock();});window.addEventListener?.('blur',()=>{clockSuspended=true;syncClock();persist();});window.addEventListener?.('focus',()=>{clockSuspended=false;syncClock();});
 
-$('dragGap').oninput=e=>{dragGap=Math.max(24,Math.min(100,Number(e.target.value)||48));$('dragGapValue').textContent=L.t(dragGap+' px');persist();};
+function updateDragGap(value){dragGap=Math.max(24,Math.min(100,Number(value)||48));$('dragGap').value=dragGap;$('dragGapValue').textContent=L.t(dragGap+' px');persist();}
+$('dragGap').oninput=e=>updateDragGap(e.target.value);
+$('resetDragGap').onclick=()=>updateDragGap(48);
 
 // Main destinations are peers. Opening one never stacks it over another.
 function showHome(){
@@ -305,10 +307,9 @@ $('winJourney').onclick=()=>{clearTimeout(winTimer);showJourney();};
 $('openChapterPicker').onclick=()=>{closeDialogs();openDialog('chapterPicker');};$('closeChapterPicker').onclick=backView;
 
 // Decorative preference is separate from puzzle/achievement progress.
-const ambientLayers=["ambient-game","ambient-win","ambient-menu","ambient-gallery","ambient-detail","ambient-intro","ambient-journey","ambient-backup","ambient-home","ambient-help","ambient-achievements","ambient-stoneSets","ambient-chapterPicker","ambient-resetDialog"];let ambientEnabled=true,ambientStrength=65;try{ambientEnabled=localStorage.getItem('lumahex-ambient-v1')!=='off';const saved=Number(localStorage.getItem('lumahex-ambient-strength-v1'));if(Number.isFinite(saved)&&saved>=10&&saved<=100)ambientStrength=saved;}catch{}
-function setAmbient(enabled){ambientEnabled=!!enabled;$('ambientToggle').checked=ambientEnabled;for(const id of ambientLayers)$(id).style.display=ambientEnabled?'':'none';$('ambientStrength').disabled=!ambientEnabled;try{localStorage.setItem('lumahex-ambient-v1',ambientEnabled?'on':'off');}catch{}}
-function setAmbientStrength(value){const number=Number(value);ambientStrength=Number.isFinite(number)?Math.max(10,Math.min(100,number)):65;$('ambientStrength').value=ambientStrength;$('ambientStrengthValue').textContent=L.t(ambientStrength+' %');for(const id of ambientLayers)$(id).style.setProperty('--ambient-strength',String(ambientStrength/100));try{localStorage.setItem('lumahex-ambient-strength-v1',String(ambientStrength));}catch{}}
-$('ambientToggle').onchange=e=>setAmbient(e.target.checked);$('ambientStrength').oninput=e=>setAmbientStrength(e.target.value);setAmbient(ambientEnabled);setAmbientStrength(ambientStrength);
+const ambientLayers=["ambient-game","ambient-win","ambient-menu","ambient-gallery","ambient-detail","ambient-intro","ambient-journey","ambient-backup","ambient-home","ambient-help","ambient-achievements","ambient-stoneSets","ambient-chapterPicker","ambient-resetDialog"];
+// Fixed visual design: independent of legacy user preferences.
+for(const id of ambientLayers){$(id).style.display='';$(id).style.setProperty('--ambient-strength','0.65');}
 
 $('timerToggle').onchange=e=>{const enabled=e.target.checked;if(enabled!==timerEnabled){puzzleTimer.invalidate();if(enabled&&!Object.keys(placements).length&&puzzleTimer.read()===0&&!puzzleTimer.finished)puzzleTimer=HexTimer.create(null,true);timerEnabled=enabled;syncClock();persist();if(enabled&&!puzzleTimer.valid)toast("Für eine Bestzeit bitte dieses Rätsel neu starten.");}showClockResult();};
 if(typeof setInterval==='function')clockTick=setInterval(()=>{syncClock();refreshHints();if($('achievements').open&&activityRenderedDay!==HexActivity.key())renderActivity();if($('home').open)renderHomeStreak();if((clockCanRun()||(!clockSuspended&&!document.hidden&&!document.querySelector('dialog[open]')&&tutorialIndex===null&&!puzzleTimer.finished))&&Date.now()-lastClockSave>=5000){lastClockSave=Date.now();persist();}},1000);

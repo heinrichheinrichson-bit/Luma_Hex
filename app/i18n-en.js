@@ -1,4 +1,5 @@
 (function(root){'use strict';const dictionary={
+"Standard wiederherstellen":"Restore default",
 "Anzeige wird geladen …":"Loading ad …",
 "Video ansehen · +1 Hinweis":"Watch video · +1 hint",
 "Sieh dir ein Video an und erhalte einen Hinweis.":"Watch a video to receive one hint.",
