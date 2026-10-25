@@ -54,8 +54,8 @@ if (-not (Test-Path -LiteralPath $properties)) {
 $env:HEXJOY_SIGNING_PROPERTIES = $properties
 Checked $gradle @('--project-dir',$build,'--console=plain','bundleRelease','assembleRelease','lintRelease')
 $out = [IO.Path]::GetFullPath((Join-Path $root '..'))
-Copy-Item -LiteralPath "$build/app/build/outputs/bundle/release/app-release.aab" -Destination "$out/Hex-and-Joy-0.31.3-Interner-Test.aab" -Force
-Copy-Item -LiteralPath "$build/app/build/outputs/apk/release/app-release.apk" -Destination "$out/Hex-and-Joy-0.31.3-AdMob-Demo.apk" -Force
-Checked "$jdk/bin/jarsigner.exe" @('-verify',"$out/Hex-and-Joy-0.31.3-Interner-Test.aab")
-Checked "$sdk/build-tools/35.0.0/apksigner.bat" @('verify',"$out/Hex-and-Joy-0.31.3-AdMob-Demo.apk")
+Copy-Item -LiteralPath "$build/app/build/outputs/bundle/release/app-release.aab" -Destination "$out/Hex-and-Joy-0.31.4-Interner-Test.aab" -Force
+Copy-Item -LiteralPath "$build/app/build/outputs/apk/release/app-release.apk" -Destination "$out/Hex-and-Joy-0.31.4-AdMob-Demo.apk" -Force
+Checked "$jdk/bin/jarsigner.exe" @('-verify',"$out/Hex-and-Joy-0.31.4-Interner-Test.aab")
+Checked "$sdk/build-tools/35.0.0/apksigner.bat" @('verify',"$out/Hex-and-Joy-0.31.4-AdMob-Demo.apk")
 Write-Output "Internal demo AAB/APK built. Signing files remain private in $keys"

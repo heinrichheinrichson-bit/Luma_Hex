@@ -171,7 +171,7 @@ $('collection').onclick=showGallery;$('winCollection').onclick=()=>showDetail(in
 $('galleryGrid').onclick=e=>{const card=e.target.closest('[data-motif]');if(card&&!card.disabled)showDetail(+card.dataset.motif);};
 $('detailPlay').textContent=L.t('Noch einmal spielen →');
 $('detailPlay').onclick=()=>{const next=Array.from({length:VARIANTS},(_,v)=>detailMotif+v*COUNT).find(n=>!done.has(n));closeDialogs();load(next??detailMotif,next===undefined);};
-$('next').onclick=requestNext;$('replay').onclick=()=>{closeDialogs();if(tutorialIndex!==null)loadLesson(tutorialIndex);else load(index,true);};
+$('next').onclick=()=>requestNext();$('replay').onclick=()=>{closeDialogs();if(tutorialIndex!==null)loadLesson(tutorialIndex);else load(index,true);};
 function showMenu(){closeDialogs();updateAdStatus();$('testAllSkins').checked=skinTest;$('sound').checked=sound;$('vibration').checked=vibration;$('dragGap').value=dragGap;$('dragGapValue').textContent=L.t(dragGap+' px');$('levelSelect').innerHTML=L.html('<p class="fine-print">'+TOTAL+' unterschiedliche Rätsel · '+Math.ceil(TOTAL/10)+' Kapitel<br>Alle Spielfelder findest du in deiner Rätselreise.</p>');openDialog('menu');}
 $('settings').onclick=showMenu;$('levelSelect').onclick=e=>{const b=e.target.closest('[data-level]');if(b){closeDialogs();load(+b.dataset.level);}};$('closeMenu').onclick=backView;$('sound').onchange=e=>{sound=e.target.checked;persist();if(sound)tone();};$('vibration').onchange=e=>{vibration=e.target.checked;persist();};
 $('start').onclick=()=>{introSeen=true;persist();closeDialog('intro');tone();};$('intro').addEventListener('cancel',e=>{e.preventDefault();backView();});
