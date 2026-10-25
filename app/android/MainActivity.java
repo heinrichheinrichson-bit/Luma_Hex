@@ -23,6 +23,12 @@ import org.json.JSONObject;
 
 public class MainActivity extends Activity {
  private WebView web;
+ private AdGateway ads;
+ private boolean destroyed;
+ public interface AdGateway { void request(String kind,String id); void cancel(String id); boolean isShowing(); void destroy(); }
+ public boolean canShowAd(){return !lifecyclePaused&&!destroyed;}
+ public void adEvent(String id,String event){if(destroyed||web==null)return;String payload="{\"id\":"+JSONObject.quote(id)+",\"event\":"+JSONObject.quote(event)+"}";web.evaluateJavascript("window.HexNativeAdEvent&&window.HexNativeAdEvent("+payload+")",null);}
+
  private boolean lifecyclePaused;
  private String pendingBackup;
  private volatile String language="en";
@@ -46,11 +52,16 @@ public class MainActivity extends Activity {
     return true;
    }
   });
+  try { ads=(AdGateway)Class.forName(getPackageName()+".DemoAdsController").getConstructor(MainActivity.class).newInstance(this); } catch(ClassNotFoundException e) { /* Developer build has no ad SDK. */ } catch(Exception e) { throw new IllegalStateException("Demo ads setup failed",e); }
   web.addJavascriptInterface(new Feedback(),"LumaFeedback");
   frame.addView(web,new FrameLayout.LayoutParams(-1,-1));setContentView(frame);
   web.loadUrl("file:///android_asset/index.html");
  }
  public class Feedback {
+  @JavascriptInterface public boolean isAdMobDemo(){return ads!=null;}
+  @JavascriptInterface public void requestAd(String kind,String id){if(id==null||!id.matches("[a-zA-Z0-9_-]{1,100}")||!("rewarded".equals(kind)||"interstitial".equals(kind)))return;runOnUiThread(()->{if(ads==null||destroyed||lifecyclePaused){adEvent(id,"failed");return;}ads.request(kind,id);});}
+  @JavascriptInterface public void cancelAd(String id){runOnUiThread(()->{if(ads!=null)ads.cancel(id);});}
+
   @JavascriptInterface public String getSystemLanguage(){return java.util.Locale.getDefault().toLanguageTag();}
   @JavascriptInterface public void setLanguage(String value){language="de".equals(value)?"de":"en";}
   @JavascriptInterface public void vibrate(){Vibrator v=(Vibrator)getSystemService(VIBRATOR_SERVICE);if(v!=null&&v.hasVibrator())v.vibrate(VibrationEffect.createOneShot(12,VibrationEffect.DEFAULT_AMPLITUDE));}
@@ -75,5 +86,5 @@ public class MainActivity extends Activity {
  @Override public void onBackPressed(){web.evaluateJavascript("window.LumaBack ? window.LumaBack() : false",result->{if(!"true".equals(result))super.onBackPressed();});}
  @Override protected void onPause(){lifecyclePaused=true;super.onPause();if(web!=null)web.evaluateJavascript("window.LumaPauseClock&&window.LumaPauseClock()",value->{if(lifecyclePaused&&web!=null)web.onPause();});}
  @Override protected void onResume(){super.onResume();lifecyclePaused=false;if(web!=null){web.onResume();web.evaluateJavascript("window.LumaResumeClock&&window.LumaResumeClock()",null);}}
- @Override protected void onDestroy(){web.destroy();super.onDestroy();}
+ @Override protected void onDestroy(){destroyed=true;if(ads!=null)ads.destroy();web.destroy();super.onDestroy();}
 }

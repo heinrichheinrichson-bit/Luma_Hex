@@ -19,5 +19,16 @@ function closed(html,game){
  for(const forbidden of ['testAction','setSkinTest','hintTestPreferences','adTestDialog','hintAdTest','adFreeSimulated','lumahex-hint-test','lumahex-skin-preview','lumahex-ad-test',"$('test", "$('jumpNumber", "$('hintVideo"]){if(game.includes(forbidden))throw Error('Developer reference remains: '+forbidden);}
  return {html,game};
 }
-module.exports={closed};
-if(require.main===module){const [source,dest,variant]=process.argv.slice(2);if(!source||!dest||!['developer','closed'].includes(variant))throw Error('source dest developer|closed required');fs.mkdirSync(dest,{recursive:true});let html=fs.readFileSync(path.join(source,'index.html'),'utf8'),game=fs.readFileSync(path.join(source,'game.js'),'utf8');if(variant==='closed')({html,game}=closed(html,game));else html=html.replace('HEX &amp; JOY · Version','HEX &amp; JOY TEST · Version');fs.writeFileSync(path.join(dest,'index.html'),html);fs.writeFileSync(path.join(dest,'game.js'),game);}
+function internal(html,game){
+ ({html,game}=closed(html,game));
+ html=html.replace(/<dialog id="hintRewardAd"[\s\S]*?<\/dialog>/,'').replace('Werbung simulieren · +1 Hinweis','Video ansehen · +1 Hinweis');
+ game=game.slice(0,game.indexOf('// Simulated rewarded provider:'));
+ game=game.replace(" if($('hintRewardAd').open){finishHintReward(false);return true;}"," if(window.HexNativeAds?.cancel())return true;");
+ game=game.replace('function clockCanRun(){return ', 'function clockCanRun(){return !window.HexNativeAds?.busy()&&');
+ game=game.replace('activeAdClock.sync(!clockSuspended', 'activeAdClock.sync(!window.HexNativeAds?.busy()&&!clockSuspended');
+ game+='\nlet pendingAdContinuation=null;\nfunction refreshFreeHint(){window.HexNativeAds?.refresh();}\n'+fs.readFileSync(path.join(__dirname,'native-ads.js'),'utf8');
+ if(/hintRewardAd|finishHintReward|hintRewardSession/.test(game))throw Error('Simulation remains in internal build');
+ return {html,game};
+}
+module.exports={closed,internal};
+if(require.main===module){const [source,dest,variant]=process.argv.slice(2);if(!source||!dest||!['developer','closed','internal'].includes(variant))throw Error('source dest developer|closed|internal required');fs.mkdirSync(dest,{recursive:true});let html=fs.readFileSync(path.join(source,'index.html'),'utf8'),game=fs.readFileSync(path.join(source,'game.js'),'utf8');if(variant==='internal')({html,game}=internal(html,game));else if(variant==='closed')({html,game}=closed(html,game));else html=html.replace('HEX &amp; JOY · Version','HEX &amp; JOY TEST · Version');fs.writeFileSync(path.join(dest,'index.html'),html);fs.writeFileSync(path.join(dest,'game.js'),game);}

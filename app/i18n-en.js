@@ -1,4 +1,8 @@
 (function(root){'use strict';const dictionary={
+"Anzeige wird geladen …":"Loading ad …",
+"Video ansehen · +1 Hinweis":"Watch video · +1 hint",
+"Sieh dir ein Video an und erhalte einen Hinweis.":"Watch a video to receive one hint.",
+"Werbevideo gerade nicht verfügbar. Bitte später erneut versuchen.":"Video ad unavailable right now. Please try again later.",
 "Abbrechen":"Cancel",
 "Simulierte Werbeanzeige":"Simulated ad",
 "Hier würde jetzt das Werbevideo laufen.":"The video ad would play here.",

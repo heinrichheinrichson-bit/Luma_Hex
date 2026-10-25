@@ -1,3 +1,7 @@
+# Version 0.31.0 – interner AdMob-Test
+
+Signierte AAB mit echten Google-Demoanzeigen und separate Entwicklerversion mit Simulation. Noch kein Play-Upload und kein physischer Gerätetest. Die geplante Einstellungsbereinigung ist weiterhin offen. Details und Build: [ADMOB-INTERNAL.md](ADMOB-INTERNAL.md).
+
 # Version 0.30.6
 
 1.324 aktive Abschluss-Texte für 1.200 Rätsel. Buchstabensalate werden nicht mehr ausgewählt; frühere Text-IDs bleiben für Spielstände erhalten. 415 neue Gedanken, motivierende Impulse und humorvolle Beobachtungen, jeweils deutsch und englisch. Fakten, belegte Zitate und andere kleine Rätsel bleiben enthalten. Keine eigene Textsammlung.

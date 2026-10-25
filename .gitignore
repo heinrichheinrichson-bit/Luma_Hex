@@ -5,3 +5,8 @@ local.properties
 .env.*
 node_modules/
 android-build/
+signing.properties
+*-PRIVAT/
+hexjoy-upload-signing/
+**/android-gradle/.gradle/
+**/android-gradle/**/build/
